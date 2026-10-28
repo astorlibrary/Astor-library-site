@@ -3339,3 +3339,78 @@ main.passage-room-page .passage-card + .passage-card {
   border: 0 !important;
   border-top: 1px solid var(--line, var(--ed-rule)) !important;
 }
+
+/* Hardbacks: one list per collection, with a buying link under each. */
+main[data-hub="hardbacks"] {
+  max-width: 1120px;
+  padding: 40px 24px 96px;
+  color: var(--text, var(--ed-ink));
+}
+
+main[data-hub="hardbacks"] .hub-intro {
+  display: block;
+  max-width: 46rem;
+  margin: 0;
+  padding: 0 0 36px;
+  border: 0;
+  border-bottom: 1px solid var(--line, var(--ed-rule));
+  background: none;
+  box-shadow: none;
+  color: inherit;
+}
+
+main[data-hub="hardbacks"] .hub-intro h1 {
+  margin: 0;
+  color: var(--text, var(--ed-ink));
+  font: 400 clamp(40px, 6vw, 64px)/1.05 var(--serif);
+}
+
+main[data-hub="hardbacks"] .hub-intro .deck {
+  margin: 22px 0 0;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 20px/1.55 var(--serif);
+}
+
+main[data-hub="hardbacks"] .hub-lead {
+  max-width: 46rem;
+  margin: 12px 0 0;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 17px/1.6 var(--serif);
+}
+
+main[data-hub="hardbacks"] .hardback-collection {
+  display: block;
+  max-width: 50rem;
+  margin: 64px 0 0;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+main[data-hub="hardbacks"] .hardback-collection h2 {
+  margin: 0;
+  color: var(--text, var(--ed-ink));
+  font: 400 34px/1.15 var(--serif);
+  letter-spacing: -0.005em;
+}
+
+main[data-hub="hardbacks"] .hub-books {
+  display: block;
+  margin: 20px 0 0;
+}
+
+.hub-book .hub-book-links a {
+  color: var(--wine-text, var(--ed-wine));
+  font: 400 15px/1.4 var(--sans);
+  text-underline-offset: 3px;
+}
+
+main .hub-book p.hub-book-links {
+  margin-top: 10px !important;
+}
+
+@media (max-width: 640px) {
+  main[data-hub="hardbacks"] {
+    padding: 24px 16px 72px;
+  }
+}

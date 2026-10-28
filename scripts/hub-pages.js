@@ -50,12 +50,13 @@ function datesList(block, className) {
   return items.length >= 2 ? '<dl class="hub-dates ' + className + '">' + items.join('') + '</dl>' : '';
 }
 
-function bookEntry({ href, image, alt, title, meta, copy }) {
+function bookEntry({ href, image, alt, title, meta, copy, links }) {
   return '<article class="hub-book">' +
     '<a class="hub-book-cover" href="' + href + '" tabindex="-1" aria-hidden="true"><img src="' + image + '" alt="' + (alt || '') + '" loading="lazy" decoding="async"></a>' +
     '<div><h3><a href="' + href + '">' + title + '</a></h3>' +
     (meta ? '<p class="hub-book-meta">' + meta + '</p>' : '') +
     (copy ? '<p>' + copy + '</p>' : '') +
+    (links ? '<p class="hub-book-links">' + links + '</p>' : '') +
     '</div></article>';
 }
 
@@ -245,7 +246,39 @@ function readingRoutes(html, href) {
   });
 }
 
+// --- hardbacks ------------------------------------------------------------------------
+function hardbacksPage(html) {
+  return html.replace(/(<main\b[^>]*class="[^"]*\bhardback-page\b[^"]*"[^>]*>)([\s\S]*?)(<\/main>)/, (whole, open, body, close) => {
+    const note = inner((body.match(/<section class="hardback-editorial-note"[\s\S]*?<\/section>/) || [''])[0], 'p');
+    body = body.replace(/<section class="hardback-hero">[\s\S]*?<\/section>/, hero =>
+      '<section class="page-intro hub-intro"><h1>' + headingText(inner(hero, 'h1')) + '</h1><p class="deck">' + inner(hero, 'p', 'deck') + '</p>' + (note ? '<p class="hub-lead">' + note + '</p>' : '') + '</section>');
+    body = body.replace(/<section class="hardback-editorial-note"[\s\S]*?<\/section>\s*/, '');
+    body = body.replace(/<div class="hardback-collection-heading"><div>[\s\S]*?(<h2[^>]*>[\s\S]*?<\/h2>)\s*<\/div>\s*(<p>[\s\S]*?<\/p>)?\s*<a class="home-text-link" href="([^"]+)">[\s\S]*?<\/a><\/div>/g,
+      (heading, h2, intro, href) => h2 + (intro ? intro.replace('<p>', '<p class="hub-lead">') : ''));
+    body = body.replace(/<div class="hardback-grid">([\s\S]*?)<\/div>\s*(?=<\/section>)/g, (grid, cards) => {
+      const entries = [...cards.matchAll(/<article class="hardback-card">([\s\S]*?)<\/article>/g)].map(match => {
+        const card = match[1];
+        const href = (card.match(/<a class="hardback-cover" href="([^"]+)"/) || [])[1] || '';
+        const buy = (card.match(/<a class="button secondary" href="([^"]+)"/) || [])[1] || '';
+        const copy = [...card.replace(/<div class="button-row">[\s\S]*?<\/div>/, '').matchAll(/<p>([\s\S]*?)<\/p>/g)].map(item => item[1]).pop() || '';
+        return bookEntry({
+          href,
+          ...imageOf(card),
+          title: inner(inner(card, 'h3'), 'a') || inner(card, 'h3'),
+          meta: inner(card, 'p', 'hardback-author'),
+          copy,
+          links: buy ? '<a href="' + buy + '" rel="noopener">Buy the hardback on Amazon</a>' : ''
+        });
+      });
+      return '<div class="hardback-grid hub-books">' + entries.join('') + '</div>';
+    });
+    body = stripHeadingStops(stripLabels(body));
+    return open.replace('<main', '<main data-hub="hardbacks"') + body + close;
+  });
+}
+
 function plainHubPage(html, href) {
+  html = hardbacksPage(html);
   html = authorPage(html);
   html = subjectPage(html);
   html = authorsIndex(html);
