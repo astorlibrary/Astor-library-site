@@ -183,10 +183,9 @@ function bookPage(book) {
   // The overview is the account of the work; the editorial notes describe
   // this edition's text and what the edition adds. Each is printed once.
   const readings = '<article class="prod-card prose-card">' + paragraphs(book.overview) + '</article>';
-  const contexts = [
-    { title: 'Editorial method', body: book.editorial[0] },
-    { title: 'Context and interpretation', body: book.editorial[1] }
-  ].filter(item => item.body).map(item => '<article><h3>' + escapeHtml(item.title) + '</h3><p>' + escapeHtml(item.body) + '</p></article>').join('');
+  // What the edition does with the text, in two plain paragraphs under the
+  // section's own heading.
+  const contexts = '<article class="prod-card edition-method">' + book.editorial.filter(Boolean).map(text => '<p>' + escapeHtml(text) + '</p>').join('') + '</article>';
   const topics = book.topics.map((topic, index) => '<article><span>' + String(index + 1).padStart(2, '0') + '</span><h3>' + escapeHtml(topic.title) + '</h3><p>' + escapeHtml(topic.body) + '</p></article>').join('');
   const rangeCrumb = book.range === 'apocrypha'
     ? '<span aria-hidden="true">/</span><a href="/shakespeare/apocrypha/">Shakespeare Apocrypha</a>'

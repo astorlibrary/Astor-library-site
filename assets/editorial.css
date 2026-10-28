@@ -1409,6 +1409,162 @@ main.book-page .source-list a b {
   color: inherit;
 }
 
+/* The eight pages built from book-enrichment-data.js: their pictures,
+   essays, story sections and sources, set like the rest of the book pages. */
+main.book-page .book-document-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+  margin: 24px 0 0;
+}
+
+main.book-page .book-document-figure {
+  display: block;
+  margin: 0;
+  background: none;
+  color: inherit;
+}
+
+main.book-page .book-document-figure img {
+  width: 100%;
+  height: 320px;
+  padding: 0;
+  object-fit: contain;
+  object-position: left bottom;
+  background: none;
+}
+
+main.book-page .book-document-figure figcaption {
+  padding: 10px 0 0;
+  font: 400 16px/1.5 var(--serif);
+  color: var(--text-soft, var(--ed-soft));
+}
+
+main.book-page .book-document-figure figcaption span {
+  display: block;
+  font: inherit;
+}
+
+main.book-page .book-document-figure figcaption small {
+  display: block;
+  margin-top: 6px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 13px/1.5 var(--sans);
+}
+
+main.book-page .book-document-figure figcaption a {
+  color: var(--wine-text, var(--ed-wine));
+}
+
+main.book-page .book-body :is(.book-context-essays, .book-movement-grid, .book-close-reading-grid) {
+  display: block;
+  margin: 0;
+  border: 0;
+}
+
+main.book-page .book-body :is(.book-context-essays, .book-movement-grid, .book-close-reading-grid) > article {
+  margin: 28px 0 0;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+main.book-page .book-body .book-movement-grid > article > span,
+main.book-page .book-body .book-context-essays .year {
+  display: none;
+}
+
+main.book-page .book-body :is(.book-context-essays, .book-movement-grid, .book-close-reading-grid, .book-chronology) h3 {
+  margin: 0 0 10px;
+  font: 400 24px/1.25 var(--serif);
+  letter-spacing: 0;
+}
+
+main.book-page .book-body .book-reading-phrase {
+  min-height: 0;
+  margin: 0 0 8px;
+  font: italic 400 20px/1.4 var(--serif);
+  letter-spacing: 0;
+}
+
+main.book-page .book-body :is(.book-context-essays, .book-movement-grid, .book-close-reading-grid, .book-chronology) p:not(.book-reading-phrase) {
+  font-family: var(--serif);
+}
+
+main.book-page .book-body .book-chronology {
+  margin: 36px 0 0;
+}
+
+main.book-page .book-body .book-chronology article {
+  grid-template-columns: 8.5rem minmax(0, 1fr);
+  gap: 20px;
+  padding: 14px 0;
+}
+
+main.book-page .book-body .book-chronology time {
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.5 var(--sans);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+main.book-page .book-body .book-chronology h3 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+main.book-page .book-source-grid {
+  display: block;
+  margin: 18px 0 0;
+  border: 0;
+}
+
+main.book-page .book-source-grid a {
+  display: block;
+  min-height: 0;
+  padding: 10px 0;
+  border: 0;
+  border-top: 1px solid var(--line, var(--ed-rule));
+  background: none;
+  text-decoration: none;
+}
+
+main.book-page .book-source-grid a:hover,
+main.book-page .book-source-grid a:focus-visible {
+  background: none;
+  outline: none;
+}
+
+main.book-page .book-source-grid a:focus-visible {
+  outline: 2px solid var(--wine-text, var(--ed-wine));
+  outline-offset: 2px;
+}
+
+main.book-page .book-source-grid strong {
+  display: block;
+  color: var(--wine-text, var(--ed-wine));
+  font: 400 17px/1.4 var(--serif);
+}
+
+main.book-page .book-source-grid span {
+  display: block;
+  margin-top: 2px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.45 var(--serif);
+}
+
+@media (max-width: 600px) {
+  main.book-page .book-document-figure img {
+    height: auto;
+    max-height: 420px;
+  }
+
+  main.book-page .book-body .book-chronology article {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}
+
 /* The foot of the page. */
 main.book-page .book-also {
   max-width: 46rem;

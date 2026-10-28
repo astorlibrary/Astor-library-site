@@ -69,7 +69,9 @@ const KICKER_RULES = {
   'edition contents': { role: 'edition' },
   'this astor edition': { role: 'edition' },
   'about the work': { role: 'study' },
-  'reading routes': { role: 'study' },
+  // Three one-line "routes" through the book say less than the sections
+  // around them.
+  'reading routes': { role: 'drop' },
   'critical reading': { role: 'study' },
   'plot and structure': { role: 'study' },
   'characters': { role: 'study' },
@@ -80,7 +82,12 @@ const KICKER_RULES = {
   'further reference': { role: 'sources' },
   'sources': { role: 'sources' },
   'the shape of the work': { role: 'study' },
-  'book, history and form': { role: 'keep' }
+  'book, history and form': { role: 'keep' },
+  'how the work moves': { role: 'study' },
+  'close reading': { role: 'study' },
+  'from the archive': { role: 'keep' },
+  'history and context': { role: 'keep' },
+  'sources and further reading': { role: 'sources' }
 };
 
 // Blocks that carry thematic summaries in coloured panels ("Crown — Henry
@@ -92,7 +99,7 @@ function classOf(block) {
 }
 
 function isSectionTitle(block) {
-  return /^<section class="section-title"/.test(block);
+  return /^<section class="section-title\b/.test(block);
 }
 
 function headingOf(block) {
@@ -131,8 +138,9 @@ function cardContents(card) {
   return { list, note };
 }
 
+// Drops a heading's closing full stop, but not the one after an initial ("W. S.").
 function cleanHeading(text) {
-  return text.replace(/\.\s*$/, '');
+  return text.replace(/(?<!\b[A-Z])\.\s*$/, '');
 }
 
 // A section-title block, rewritten as a plain heading. The line of
@@ -145,7 +153,7 @@ function slug(text) {
 
 function plainSectionTitle(block, heading) {
   const h2 = heading || cleanHeading(inner(block, 'h2'));
-  const id = (block.match(/^<section class="section-title"[^>]*\bid="([^"]+)"/) || [])[1] || slug(h2);
+  const id = (block.match(/^<section class="section-title[^"]*"[^>]*\bid="([^"]+)"/) || [])[1] || slug(h2);
   const rest = block
     .replace(/^<section[^>]*>/, '')
     .replace(/<\/section>\s*$/, '')
@@ -316,6 +324,20 @@ function restructureBookPage(html, ctx) {
     const list = (block.match(/<details class="book-depth-sources">[\s\S]*?(<ul>[\s\S]*?<\/ul>)/) || [])[1] || '';
     if (list) depthSources = '<h3>Publication and history</h3>' + list;
     return ['<section class="section-title" id="further-context"><h2>Publication and history</h2></section>', grid];
+  });
+
+  // --- the "Reader's guide" opening ---------------------------------------------------
+  // Eight pages open with a reading of the book under a "Reader's guide" label.
+  // Where a study guide exists, that reading belongs to the guide. Elsewhere it
+  // stays under its own heading, without the label or the line announcing it.
+  blocks = blocks.flatMap(block => {
+    if (!/^<section class="book-editorial-opening"/.test(block)) return [block];
+    if (guideSlug) return [];
+    const lead = (block.match(/<div class="book-editorial-lead">([\s\S]*?)<\/div>/) || [])[1] || '';
+    const heading = cleanHeading(inner(lead, 'h3'));
+    const body = lead.replace(/<h3[\s\S]*?<\/h3>/, '').trim();
+    if (!heading || !body) return [];
+    return ['<section class="section-title" id="work"><h2>' + heading + '</h2></section>', '<div class="book-reading">' + body + '</div>'];
   });
 
   // --- drop what repeats or what belongs elsewhere --------------------------------
