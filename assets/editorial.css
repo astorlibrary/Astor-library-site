@@ -3414,3 +3414,183 @@ main .hub-book p.hub-book-links {
     padding: 24px 16px 72px;
   }
 }
+
+/* Free guide pages: one introduction with the cover, the sign-in line, an
+   account of the guide and the related pages. */
+main[data-hub="resource"] {
+  max-width: 1120px;
+  padding: 40px 24px 96px;
+  color: var(--text, var(--ed-ink));
+}
+
+main[data-hub="resource"] .resource-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 48px;
+  align-items: start;
+  max-width: 60rem;
+  margin: 0;
+  padding: 0 0 36px;
+  border: 0;
+  border-bottom: 1px solid var(--line, var(--ed-rule));
+  background: none;
+  box-shadow: none;
+}
+
+main[data-hub="resource"] .resource-intro h1 {
+  margin: 0;
+  color: var(--text, var(--ed-ink));
+  font: 400 clamp(36px, 5vw, 56px)/1.08 var(--serif);
+  letter-spacing: -0.01em;
+}
+
+main[data-hub="resource"] .resource-intro .deck {
+  margin: 20px 0 0;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 20px/1.55 var(--serif);
+}
+
+main[data-hub="resource"] .hub-lead {
+  margin: 14px 0 0;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 16px/1.55 var(--serif);
+}
+
+main[data-hub="resource"] .resource-open {
+  margin: 22px 0 0;
+}
+
+main[data-hub="resource"] .resource-cover {
+  margin: 0;
+  line-height: 0;
+}
+
+main[data-hub="resource"] .resource-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 1px 2px rgba(31, 27, 24, 0.12), 0 8px 22px rgba(31, 27, 24, 0.14);
+}
+
+main[data-hub="resource"] .resource-library-panel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 24px;
+  max-width: 46rem;
+  margin: 28px 0 0;
+  padding: 0 0 20px;
+  border: 0;
+  border-bottom: 1px solid var(--line, var(--ed-rule));
+  background: none;
+  box-shadow: none;
+}
+
+main[data-hub="resource"] .resource-library-panel p {
+  margin: 0;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 16px/1.5 var(--serif);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+main[data-hub="resource"] .resource-library-panel .resource-library-access {
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 14px/1.4 var(--sans);
+}
+
+main[data-hub="resource"] .resource-library-actions {
+  display: flex;
+  gap: 18px;
+}
+
+main[data-hub="resource"] .resource-library-actions :is(a, button) {
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--wine-text, var(--ed-wine));
+  font: 400 16px/1.5 var(--serif);
+  letter-spacing: 0;
+  text-transform: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+main[data-hub="resource"] .hub-section {
+  display: block;
+  max-width: 46rem;
+  margin: 56px 0 0;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+main[data-hub="resource"] .hub-section h2 {
+  margin: 0 0 16px;
+  color: var(--text, var(--ed-ink));
+  font: 400 34px/1.15 var(--serif);
+}
+
+main[data-hub="resource"] .hub-section p {
+  margin: 0 0 12px;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 18px/1.65 var(--serif);
+}
+
+main[data-hub="resource"] .hub-links span {
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 14px/1.4 var(--sans);
+}
+
+main[data-hub="resource"] .hub-links a {
+  color: var(--wine-text, var(--ed-wine));
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  main[data-hub="resource"] {
+    padding: 24px 16px 72px;
+  }
+
+  main[data-hub="resource"] .resource-intro {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  main[data-hub="resource"] .resource-cover {
+    order: -1;
+    max-width: 160px;
+  }
+}
+
+main[data-hub="resource"] .astor-page-credit {
+  display: block;
+  max-width: 46rem;
+  margin: 56px 0 0;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+main[data-hub="resource"] .astor-page-credit p {
+  margin: 0;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.55 var(--serif);
+}
+
+main[data-hub="resource"] .astor-page-credit a {
+  color: var(--wine-text, var(--ed-wine));
+  text-underline-offset: 3px;
+}
+
+main[data-hub="resource"] .hub-links li {
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 17px/1.55 var(--serif);
+}
+
+main[data-hub="resource"] .astor-page-credit a {
+  font-weight: 400;
+}

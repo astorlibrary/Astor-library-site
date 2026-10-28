@@ -308,9 +308,12 @@ for (const match of resourcesHtml.matchAll(resourcePattern)) {
     const detailHtml = fs.readFileSync(detailFile, 'utf8');
     const discovered = Array.from(detailHtml.matchAll(/href="(\/books\/[^"]+\/)"/g), function (book) { return book[1]; });
     relatedBooks = unique(relatedBooks.concat(discovered));
+    // The page's own headings describe the guide; the ones every guide page
+    // shares ("Read now. Save for later.") describe the page, and are left out.
+    const furniture = /^(read now\. save for later|what the guide (is for|covers)|open the illustrated guide|books and guides that go with it|questions and evidence|related editions and guides)\.?$/i;
     tags.push.apply(tags, Array.from(detailHtml.matchAll(/<h[23][^>]*>([\s\S]*?)<\/h[23]>/g), function (heading) {
       return textOnly(heading[1]);
-    }));
+    }).filter(function (heading) { return !furniture.test(heading); }));
   }
 
   const title = textOnly(titleHtml);

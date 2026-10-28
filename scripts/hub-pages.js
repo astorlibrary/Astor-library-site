@@ -277,7 +277,64 @@ function hardbacksPage(html) {
   });
 }
 
+// --- free guides --------------------------------------------------------------------
+// Each guide page said what the guide was for three times, behind a navy
+// panel, a band of labelled cards and a second call to open it. It now has
+// one introduction, one way in, the sign-in line, a short account of the
+// guide and the related pages.
+function resourcePage(html) {
+  return html.replace(/(<main\b[^>]*class="[^"]*\bresource-landing-page\b[^"]*"[^>]*>)([\s\S]*?)(<\/main>)/, (whole, open, body, close) => {
+    const intro = (body.match(/<section class="page-intro resource-page-intro">[\s\S]*?<\/section>/) || [''])[0];
+    const hero = (body.match(/<section class="resource-layout resource-landing-hero">[\s\S]*?<\/section>/) || [''])[0];
+    const reading = (body.match(/<section class="resource-reading-section">[\s\S]*?<\/section>/) || [''])[0];
+    const note = inner((body.match(/<aside class="note-box resource-use-note">[\s\S]*?<\/aside>/) || [''])[0], 'p');
+    const shelf = (body.match(/<section class="context-image-shelf"[\s\S]*?<\/section>/) || [''])[0];
+    if (!intro) return whole;
+
+    const title = inner(intro, 'h1');
+    const deck = inner(intro, 'p', 'deck');
+    const preview = (intro.match(/<a class="button primary" href="([^"]+)"/) || [])[1] || '';
+    const access = inner((intro.match(/<aside class="source-note">[\s\S]*?<\/aside>/) || [''])[0].replace(/<p><strong>[\s\S]*?<\/strong><\/p>/, ''), 'p');
+    const length = plain(inner(intro, 'strong')).replace(/\s*·\s*written and published by Astor Library/i, '');
+    const cover = (hero.match(/<img\b[^>]*>/) || [''])[0];
+    const heroParagraphs = [...hero.matchAll(/<p>([\s\S]*?)<\/p>/g)].map(match => match[1]).filter(text => plain(text) !== plain(deck));
+    // The notes, without the coursework question at the end.
+    const notes = [...reading.matchAll(/<article><p class="year">([\s\S]*?)<\/p>\s*<h3>([\s\S]*?)<\/h3>\s*<p>([\s\S]*?)<\/p>\s*<\/article>/g)]
+      .filter(match => !/question/i.test(plain(match[1])))
+      .map(match => match[3]);
+    const about = [...heroParagraphs, ...notes].filter((text, index, all) => all.indexOf(text) === index);
+    const related = [...shelf.matchAll(/<a class="context-image-card" href="([^"]+)">[\s\S]*?<small>([\s\S]*?)<\/small><strong>([\s\S]*?)<\/strong>[\s\S]*?<\/a>/g)]
+      .map(match => '<li><a href="' + match[1] + '">' + match[3] + '</a> <span>' + plain(match[2]).toLowerCase() + '</span></li>');
+
+    const top = '<section class="page-intro hub-intro resource-intro"><div><h1>' + title + '</h1>' +
+      (deck ? '<p class="deck">' + deck + '</p>' : '') +
+      '<p class="hub-lead">' + [length ? length + ', written and published by Astor Library.' : '', access].filter(Boolean).join(' ') + '</p>' +
+      (preview ? '<p class="resource-open"><a class="button primary" href="' + preview + '">Open the guide</a></p>' : '') +
+      '</div>' + (cover ? '<figure class="resource-cover">' + cover + '</figure>' : '') + '</section>';
+
+    body = body.replace(intro, top);
+    // The credit moves from under the title to the foot of the page.
+    body = body.replace(/<aside class="astor-page-credit"[\s\S]*?<\/aside>\s*/, '');
+    body = body.replace(/(<nav class="book-end-nav resource-end-nav")/, '<aside class="astor-page-credit" aria-label="About this page"><p>Written and published by Astor Library for reading, teaching and independent study. See the <a href="/editorial/">editorial standards</a>.</p></aside>\n$1');
+    // The library panel keeps its controls; its heading and label go.
+    body = body.replace(/(<section class="resource-library-panel"[^>]*)aria-labelledby="resource-library-title"([^>]*>)\s*<div><p class="kicker">[\s\S]*?<\/p>\s*<h2 id="resource-library-title">[\s\S]*?<\/h2>/,
+      '$1aria-label="Your Astor library"$2<div>');
+    body = body.replace(hero, about.length ? '<section class="hub-section resource-about"><h2>About the guide</h2>' + about.map(text => '<p>' + text + '</p>').join('') + (note ? '<p>' + plain(note).replace(/^How to use this guide\.\s*/, '') + '</p>' : '') + '</section>' : '');
+    body = body.replace(reading, '');
+    body = body.replace(/<section class="resource-contents-section"><div class="resource-contents-heading">(?:<p class="kicker">[\s\S]*?<\/p>)?(<h2>[\s\S]*?<\/h2>)\s*(<p>[\s\S]*?<\/p>)?\s*<\/div>\s*<ol class="resource-contents">([\s\S]*?)<\/ol><\/section>/,
+      (section, heading, lead, items) => '<section class="hub-section resource-contents-list">' + heading + (lead || '') + '<ul class="hub-links">' +
+        [...items.matchAll(/<li><span>\d+<\/span><p>([\s\S]*?)<\/p>\s*<\/li>/g)].map(item => '<li>' + item[1] + '</li>').join('') + '</ul></section>');
+    body = body.replace(/<aside class="note-box resource-use-note">[\s\S]*?<\/aside>\s*/, '');
+    body = body.replace(/<section class="resource-open-band">[\s\S]*?<\/section>\s*/, '');
+    body = body.replace(/<section class="resource-related">[\s\S]*?<\/section>\s*/, '');
+    body = body.replace(shelf, related.length ? '<section class="hub-section resource-related-list"><h2>Related pages</h2><ul class="hub-links">' + related.join('') + '</ul></section>' : '');
+    body = stripHeadingStops(stripLabels(body));
+    return open.replace('<main', '<main data-hub="resource"') + body + close;
+  });
+}
+
 function plainHubPage(html, href) {
+  html = resourcePage(html);
   html = hardbacksPage(html);
   html = authorPage(html);
   html = subjectPage(html);
