@@ -69,10 +69,10 @@ const collectionCopy = {
   },
   'romantic-regency/index.html': {
     title: 'Romantic and Regency Literature | Astor Library',
-    description: 'Astor editions of Goethe, Coleridge, Austen and Shelley, with material on Romantic poetry and fiction, courtship, inheritance, nature, guilt, science and the Gothic.',
+    description: 'Astor editions of Goethe, Coleridge, Keats, Austen and Shelley, with material on Romantic poetry and fiction, courtship, inheritance, nature, guilt, science and the Gothic.',
     kicker: 'Period',
     heading: 'Romantic &amp; Regency.',
-    deck: 'Goethe&rsquo;s <em>Werther</em>, Wordsworth and Coleridge&rsquo;s <em>Lyrical Ballads</em>, Coleridge&rsquo;s poems and <em>Ancient Mariner</em>, two of Austen&rsquo;s novels and Mary Shelley&rsquo;s <em>Frankenstein</em>. Austen&rsquo;s courtships answer to money and inheritance; Shelley&rsquo;s creature learns to speak, and accuses the man who made him.'
+    deck: 'Goethe&rsquo;s <em>Werther</em>, Wordsworth and Coleridge&rsquo;s <em>Lyrical Ballads</em>, Coleridge&rsquo;s poems and <em>Ancient Mariner</em>, the last book of poems Keats published, two of Austen&rsquo;s novels and Mary Shelley&rsquo;s <em>Frankenstein</em>. Austen&rsquo;s courtships answer to money and inheritance; Shelley&rsquo;s creature learns to speak, and accuses the man who made him.'
   },
   'victorian/index.html': {
     title: 'Victorian Literature | Astor Library',
@@ -83,10 +83,10 @@ const collectionCopy = {
   },
   'modern/index.html': {
     title: 'Modern Classic Literature | Astor Library',
-    description: 'Astor editions of Virginia Woolf, G. K. Chesterton and George Orwell, with material on modernism, London, consciousness, political language, conspiracy and revolution.',
+    description: 'Astor editions of Joyce, Shaw, Virginia Woolf, Yeats, Wilfred Owen, G. K. Chesterton and George Orwell, with material on modernism, London, consciousness, political language, conspiracy and revolution.',
     kicker: 'Period',
     heading: 'Modern.',
-    deck: 'Books from the turn of the twentieth century onwards: Kafka&rsquo;s <em>The Metamorphosis</em>, Woolf&rsquo;s <em>Mrs Dalloway</em> and <em>A Room of One&rsquo;s Own</em>, Chesterton, Yeats, Mansfield and Orwell&rsquo;s <em>Animal Farm</em>, with ghost stories by M. R. James and Algernon Blackwood and children&rsquo;s classics from <em>The Railway Children</em> to <em>The Wind in the Willows</em>.'
+    deck: 'Books from the turn of the twentieth century onwards: Kafka&rsquo;s <em>The Metamorphosis</em>, Joyce&rsquo;s <em>Dubliners</em>, Shaw&rsquo;s <em>Pygmalion</em>, Woolf&rsquo;s <em>Mrs Dalloway</em>, <em>To the Lighthouse</em> and <em>A Room of One&rsquo;s Own</em>, Yeats&rsquo;s <em>The Tower</em>, Wilfred Owen&rsquo;s war poems, Chesterton, Mansfield and Orwell&rsquo;s <em>Animal Farm</em>, with ghost stories by M. R. James and Algernon Blackwood and children&rsquo;s classics from <em>The Railway Children</em> to <em>The Wind in the Willows</em>.'
   }
 };
 

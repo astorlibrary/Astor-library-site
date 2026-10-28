@@ -1251,7 +1251,7 @@ function buildBookPage(html, source) {
     passages,
     seasons: seasonLinks,
     creditNote: octoberCatalogue.some(edition => edition.href === book.href)
-      ? 'The edition description and paperback details are checked against the Amazon listing.'
+      ? 'The edition description and paperback details are checked against the Amazon listing, and the publication history against the sources listed on this page.'
       : ''
   });
   if (!html.includes('href="/assets/seasons.css"')) html = html.replace('</head>', '<link rel="stylesheet" href="/assets/seasons.css"></head>');

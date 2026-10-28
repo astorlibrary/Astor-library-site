@@ -30,10 +30,10 @@ const collectionCopy = {
   },
   'american/index.html': {
     title: 'American Classic Literature | Astor Library',
-    description: 'Astor editions of American classics by Hawthorne, Stowe, Douglass, Melville, Twain, Crane and London, with notes, context and study material.',
+    description: 'Astor editions of American classics by Hawthorne, Stowe, Douglass, Melville, Twain, Crane, London, Fitzgerald and McKay, with notes, context and study material.',
     kicker: 'Period',
     heading: 'American.',
-    deck: 'American books from Hawthorne and Poe to Fitzgerald: slavery and freedom in Douglass, Stowe and Twain, the sea in <em>Moby-Dick</em>, the Civil War in <em>The Red Badge of Courage</em>, the Klondike in Jack London, and ghost stories and Christmas stories from American magazines.'
+    deck: 'American books from Hawthorne and Poe to Fitzgerald and Claude McKay: slavery and freedom in Douglass, Stowe and Twain, the sea in <em>Moby-Dick</em> and a Wall Street office in <em>Bartleby</em>, the Civil War in <em>The Red Badge of Courage</em>, the Klondike in Jack London, Harlem after the First World War in <em>Home to Harlem</em>, and ghost stories and Christmas stories from American magazines.'
   }
 };
 

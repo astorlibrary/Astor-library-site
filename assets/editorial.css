@@ -1276,6 +1276,10 @@ main.book-page .book-body .catalogue-essay {
   margin: 64px 0 0;
 }
 
+main.book-page .book-body .book-reading {
+  margin: 16px 0 0;
+}
+
 main.book-page .book-body .catalogue-essay h2 {
   margin: 0 0 16px;
   color: var(--text, var(--ed-ink));
