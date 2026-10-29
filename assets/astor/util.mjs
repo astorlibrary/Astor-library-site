@@ -126,14 +126,17 @@ export function download(name, text, type = 'text/plain;charset=utf-8') {
 
 // The site's own data files, fetched like the page itself (with its cookies,
 // so a preview behind a sign-in still loads them). A request that fails is
-// tried again past the browser's copy, then at a new address no cache has
-// seen, before giving up; the reason is written to the console and carried
-// on the error, so the page can show it. `isWhole`, when given, rejects a
-// copy that parses but is not the shape the caller needs (an old cached one).
+// tried again, after a pause, past the browser's copy, then at a new address
+// no cache has seen, before giving up: the pauses let a passing fault (a
+// dropped signal, the offline helper being replaced) clear first. The reason
+// is written to the console and carried on the error, so the page can show
+// it. `isWhole`, when given, rejects a copy that parses but is not the shape
+// the caller needs (an old cached one).
 export async function fetchJson(url, isWhole = null) {
   let lastError = null;
   const fresh = url + (url.includes('?') ? '&' : '?') + 'fresh=' + Date.now();
-  for (const [address, cache] of [[url, 'default'], [url, 'reload'], [fresh, 'no-store']]) {
+  for (const [address, cache, pause] of [[url, 'default', 0], [url, 'reload', 700], [fresh, 'no-store', 2000]]) {
+    if (pause) await new Promise(resolve => setTimeout(resolve, pause));
     try {
       const response = await fetch(address, { credentials: 'same-origin', cache });
       if (!response.ok) throw new Error(url + ' answered ' + response.status);

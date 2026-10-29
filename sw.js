@@ -13,14 +13,16 @@
 const VERSION = '__ASTOR_BUILD__';
 const CACHE = 'astor-' + VERSION;
 const MODULES = __ASTOR_MODULES__;
+// Only the small things are fetched on install. The large indexes (several
+// megabytes) are kept when a page first uses them, as all data is, instead
+// of being downloaded again in the background after every deploy.
 const CORE = [
   '/offline/',
   '/assets/styles.css',
   '/assets/navigation.css',
   '/assets/theme.css',
   '/assets/astor-study.css',
-  '/assets/study-index.json',
-  '/assets/search-index.json'
+  '/assets/revise-index.json'
 ].concat(MODULES);
 
 const STUDY_ROUTES = /^\/(play|explore|today|my-library|for-teachers|books|study|offline)\//;
@@ -31,21 +33,24 @@ self.addEventListener('install', event => {
     const cache = await caches.open(CACHE);
     // One missing file must not stop the rest from being kept.
     await Promise.all(CORE.map(url => cache.add(url).catch(() => null)));
-    await self.skipWaiting();
   })());
 });
 
+// A new worker waits until no page is using the old one, rather than taking
+// over pages that are open (and part-way through loading their data). Every
+// script, stylesheet and data file comes from the network first in either
+// worker, so waiting never leaves a reader on old content.
 self.addEventListener('activate', event => {
   event.waitUntil((async () => {
     for (const key of await caches.keys()) {
       if (key.startsWith('astor-') && key !== CACHE) await caches.delete(key);
     }
-    await self.clients.claim();
   })());
 });
 
 function isData(url) {
   return url.pathname.startsWith('/data/books/') ||
+    url.pathname === '/assets/revise-index.json' ||
     url.pathname === '/assets/study-index.json' ||
     url.pathname === '/assets/search-index.json' ||
     url.pathname === '/assets/content-index.json' ||
