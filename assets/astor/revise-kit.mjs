@@ -45,7 +45,7 @@ let shelfRequest = null;
 
 export function loadShelf() {
   if (!shelfRequest) {
-    shelfRequest = fetchJson('/assets/revise-index.json')
+    shelfRequest = fetchJson('/assets/revise-index.json', data => Array.isArray(data?.books) && data.books.every(book => book?.slug && book.title))
       .then(data => ({ icons: data.icons || {}, books: data.books.slice().sort((a, b) => a.title.localeCompare(b.title)) }))
       .catch(error => { shelfRequest = null; throw error; });
   }
@@ -710,13 +710,14 @@ export function bookHead(head, books, meta, onChoose, options = {}) {
   studyBar(head, { books, meta, onChoose, icons: options.icons, active: options.active });
 }
 
-// When the books cannot be fetched: say so, and offer to try again (the
-// cause is in the console, from fetchJson).
-export function loadFailed(mount, message = 'The books didn’t load.') {
+// When the books cannot be fetched: say so, offer to try again, and give the
+// reason in small print, so a reader who reports it can say what it was.
+export function loadFailed(mount, message = 'The books didn’t load.', error = null) {
   clear(mount);
   mount.append(el('div', { class: 'rv-empty rx-load-failed' }, [
     el('p', { text: message + ' Check your connection, then try again.' }),
-    el('button', { type: 'button', class: 'rx-button is-primary', text: 'Try again', onclick: () => window.location.reload() })
+    el('button', { type: 'button', class: 'rx-button is-primary', text: 'Try again', onclick: () => window.location.reload() }),
+    error ? el('p', { class: 'rx-load-reason', text: 'Reason: ' + (error.message || String(error)) }) : null
   ]));
 }
 
@@ -725,8 +726,8 @@ export function loadFailed(mount, message = 'The books didn’t load.') {
 // overwrites a quicker, later choice.
 export async function openBookPage({ head, mount, filter, render, active }) {
   let shelf;
-  try { shelf = await loadShelf(); } catch {
-    loadFailed(mount);
+  try { shelf = await loadShelf(); } catch (error) {
+    loadFailed(mount, undefined, error);
     return;
   }
   const books = filter ? shelf.books.filter(filter) : shelf.books;
