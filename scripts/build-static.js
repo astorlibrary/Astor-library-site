@@ -1309,6 +1309,19 @@ function addStudyEditionPage(html, source) {
 const catalogueBookCount = fs.readdirSync(path.join(root, 'books'))
   .filter(slug => fs.existsSync(path.join(root, 'books', slug, 'index.html'))).length;
 
+// The Revise pages carry the shelf (assets/revise-index.json) in the page
+// itself, so choosing a book never waits on, or fails with, a second request.
+const REVISE_SCRIPTS = /\/assets\/astor\/(?:revise-hub|quiz-page|flashcard-deck)\.mjs/;
+const reviseShelfJson = (() => {
+  const file = path.join(root, 'assets', 'revise-index.json');
+  return fs.existsSync(file) ? JSON.stringify(JSON.parse(fs.readFileSync(file, 'utf8'))).replace(/</g, '\\u003c') : '';
+})();
+
+function addReviseShelf(html) {
+  if (!reviseShelfJson || !REVISE_SCRIPTS.test(html) || html.includes('id="astor-shelf"')) return html;
+  return html.replace('</body>', '<script type="application/json" id="astor-shelf">' + reviseShelfJson + '</script>\n</body>');
+}
+
 function prepareHtml(html, source) {
   html = html.replace(/(<span data-count="books">)\d+(<\/span>)/g, '$1' + catalogueBookCount + '$2');
   // The site publishes British English and stamps en-GB metadata everywhere;
@@ -1339,6 +1352,7 @@ function prepareHtml(html, source) {
     html = addStudyEditionPage(html, source);
     html = plainHubPage(html, pageHref(source), discovery);
   }
+  html = addReviseShelf(html);
   html = addSiteIndexLink(html, source);
   html = addGlobalNavigation(html, source);
   html = addSeasonalTheme(html, source);
@@ -1504,10 +1518,10 @@ fs.writeFileSync(path.join(outDir, '_headers'), `# Astor Library static hosting 
   Cache-Control: public, max-age=300, stale-while-revalidate=3600
 
 /assets/*.js
-  Cache-Control: public, max-age=300, stale-while-revalidate=3600
+  Cache-Control: public, max-age=0, must-revalidate
 
 /assets/*.mjs
-  Cache-Control: public, max-age=300, stale-while-revalidate=3600
+  Cache-Control: public, max-age=0, must-revalidate
 
 /assets/vendor/*
   Cache-Control: public, max-age=31536000, immutable

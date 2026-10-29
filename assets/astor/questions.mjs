@@ -175,7 +175,10 @@ function startsWord(text, at) {
 
 export function fillTheLine(book, random = Math.random) {
   const vocabulary = [...new Set(book.quotations.flatMap(quotation =>
-    quotation.text.split(/\s+/).map(word => word.replace(/[^\p{L}'’-]/gu, ''))
+    // The words themselves: letters, with apostrophes and single hyphens
+    // inside them. Dashes, ellipses and quotation marks are not part of a
+    // word, so "much—Robinson" or "doing.…Men" give two decoys, not one.
+    (quotation.text.match(/[\p{L}'’]+(?:-[\p{L}'’]+)*/gu) || []).map(word => word.replace(/^['’]+|['’]+$/g, ''))
   ).filter(word => word.length > 3 && !STOP_WORDS.has(word.toLowerCase())))];
 
   return book.quotations.map(quotation => {

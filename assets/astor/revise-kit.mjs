@@ -43,9 +43,23 @@ export function quizName(id) {
 
 let shelfRequest = null;
 
+const wholeShelf = data => Array.isArray(data?.books) && data.books.length > 0 && data.books.every(book => book?.slug && book.title);
+
+// The build writes the shelf into every Revise page; the separate file is
+// only asked for when a page somehow lacks it.
+function shelfInPage() {
+  try {
+    const data = JSON.parse(document.getElementById('astor-shelf')?.textContent || 'null');
+    return wholeShelf(data) ? data : null;
+  } catch {
+    return null;
+  }
+}
+
 export function loadShelf() {
   if (!shelfRequest) {
-    shelfRequest = fetchJson('/assets/revise-index.json', data => Array.isArray(data?.books) && data.books.every(book => book?.slug && book.title))
+    const inPage = shelfInPage();
+    shelfRequest = (inPage ? Promise.resolve(inPage) : fetchJson('/assets/revise-index.json', wholeShelf))
       .then(data => ({ icons: data.icons || {}, books: data.books.slice().sort((a, b) => a.title.localeCompare(b.title)) }))
       .catch(error => { shelfRequest = null; throw error; });
   }

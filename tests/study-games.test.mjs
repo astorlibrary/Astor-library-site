@@ -220,3 +220,16 @@ test('no browser script builds a lookbehind, which Safari before 16.4 cannot com
     assert.ok(!/\(\?<[=!]/.test(fs.readFileSync(file, 'utf8')), path.relative(root, file) + ' uses a lookbehind');
   }
 });
+
+test('fill the line offers only real words from the book as choices', () => {
+  for (const book of books) {
+    const text = book.quotations.map(quotation => quotation.text).join(' ');
+    for (const question of fillTheLine(book, seededRandom(1))) {
+      for (const word of question.bank) {
+        const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        assert.ok(new RegExp('(?:^|[^\\p{L}])' + escaped + '(?:$|[^\\p{L}])', 'iu').test(text),
+          book.slug + ': "' + word + '" is offered but is not a word in the quotations');
+      }
+    }
+  }
+});

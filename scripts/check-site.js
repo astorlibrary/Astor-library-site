@@ -1642,6 +1642,23 @@ for (const page of generatedPages) {
   if (!html.includes('/assets/astor-study.css')) failures.push('/' + page + '/ is missing the study stylesheet');
 }
 
+// Every built Revise page carries its shelf, so choosing a book never waits on
+// a second request (see addReviseShelf in build-static.js).
+if (fs.existsSync(distDir)) {
+  const revisePages = [];
+  walk(path.join(distDir, 'play'), revisePages);
+  for (const file of revisePages.filter(name => name.endsWith('.html'))) {
+    const html = fs.readFileSync(file, 'utf8');
+    if (!/\/assets\/astor\/(?:revise-hub|quiz-page|flashcard-deck)\.mjs/.test(html)) continue;
+    const shelf = html.match(/<script type="application\/json" id="astor-shelf">([\s\S]*?)<\/script>/);
+    let books = [];
+    try { books = JSON.parse(shelf?.[1] || 'null')?.books || []; } catch { /* reported below */ }
+    if (!books.length || !books.every(book => book.slug && book.title)) {
+      failures.push(path.relative(distDir, file) + ' is missing the book list Revise reads from the page');
+    }
+  }
+}
+
 // sizes="auto" is never valid here: the build only adds a srcset when an image
 // declares a width, and an automatic sizes attribute breaks that contract.
 for (const file of htmlFiles) {
