@@ -126,19 +126,25 @@ export function download(name, text, type = 'text/plain;charset=utf-8') {
 
 // The site's own data files, fetched like the page itself (with its cookies,
 // so a preview behind a sign-in still loads them). A request that fails is
-// tried once more past any cached copy before giving up, and the reason is
-// written to the console so a failure can be diagnosed.
-export async function fetchJson(url) {
+// tried again past the browser's copy, then at a new address no cache has
+// seen, before giving up; the reason is written to the console and carried
+// on the error, so the page can show it. `isWhole`, when given, rejects a
+// copy that parses but is not the shape the caller needs (an old cached one).
+export async function fetchJson(url, isWhole = null) {
   let lastError = null;
-  for (const cache of ['default', 'reload']) {
+  const fresh = url + (url.includes('?') ? '&' : '?') + 'fresh=' + Date.now();
+  for (const [address, cache] of [[url, 'default'], [url, 'reload'], [fresh, 'no-store']]) {
     try {
-      const response = await fetch(url, { credentials: 'same-origin', cache });
+      const response = await fetch(address, { credentials: 'same-origin', cache });
       if (!response.ok) throw new Error(url + ' answered ' + response.status);
       const type = response.headers.get('content-type') || '';
       const text = await response.text();
-      try { return JSON.parse(text); } catch {
+      let data;
+      try { data = JSON.parse(text); } catch {
         throw new Error(url + ' did not return JSON (' + (type || 'no content type') + ', starts "' + text.slice(0, 40).replace(/\s+/g, ' ') + '")');
       }
+      if (isWhole && !isWhole(data)) throw new Error(url + ' was not in the expected form');
+      return data;
     } catch (error) {
       lastError = error;
     }

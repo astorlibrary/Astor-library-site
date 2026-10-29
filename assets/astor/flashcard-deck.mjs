@@ -60,8 +60,8 @@ let keyHandler = null;
 async function start() {
   mount.append(el('p', { class: 'rv-loading', text: 'Shuffling the deck…' }));
   let shelf;
-  try { shelf = await loadShelf(); } catch {
-    loadFailed(mount, 'The cards didn’t load.');
+  try { shelf = await loadShelf(); } catch (error) {
+    loadFailed(mount, 'The cards didn’t load.', error);
     return;
   }
   const books = shelf.books.filter(book => book.quotations >= 5);

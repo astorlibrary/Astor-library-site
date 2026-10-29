@@ -24,8 +24,8 @@ let shelf = null;
 async function start() {
   try {
     shelf = await loadShelf();
-  } catch {
-    loadFailed(hubMount);
+  } catch (error) {
+    loadFailed(hubMount, undefined, error);
     return;
   }
   const recent = recentlyViewed(20).map(entry => entry.slug);

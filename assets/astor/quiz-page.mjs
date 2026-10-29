@@ -33,15 +33,15 @@ async function start(container) {
     let shelf = { books: [], icons: {} };
     try {
       [index, shelf] = await Promise.all([loadIndex(), loadShelf().catch(() => shelf)]);
-    } catch {
-      return emptyState(container, 'The quiz didn’t load. Check your connection, then try again.', [{ href: window.location.href, label: 'Try again' }, { href: '/play/', label: 'More revision' }]);
+    } catch (error) {
+      return emptyState(container, 'The quiz didn’t load. Check your connection, then try again.', [{ href: window.location.href, label: 'Try again' }, { href: '/play/', label: 'More revision' }], error);
     }
     return runLibrary(container, gameId, index, shelf);
   }
 
   let shelf;
-  try { shelf = await loadShelf(); } catch {
-    return emptyState(container, 'The quiz didn’t load. Check your connection, then try again.', [{ href: window.location.href, label: 'Try again' }, { href: '/library/', label: 'Browse the catalogue' }]);
+  try { shelf = await loadShelf(); } catch (error) {
+    return emptyState(container, 'The quiz didn’t load. Check your connection, then try again.', [{ href: window.location.href, label: 'Try again' }, { href: '/library/', label: 'Browse the catalogue' }], error);
   }
   const wanted = preferredSlug();
   const first = shelf.books.find(book => book.slug === wanted)
@@ -75,9 +75,9 @@ async function runBook(container, gameId, shelf, meta) {
   container.append(el('p', { class: 'rv-loading', text: 'Opening ' + meta.title + '…' }));
 
   let book;
-  try { book = await loadBook(meta.slug); } catch {
+  try { book = await loadBook(meta.slug); } catch (error) {
     if (ticket !== generation) return;
-    return emptyState(container, 'That book didn’t load. Check your connection, then try again.', [{ href: window.location.href, label: 'Try again' }, { href: '/play/', label: 'More revision' }]);
+    return emptyState(container, 'That book didn’t load. Check your connection, then try again.', [{ href: window.location.href, label: 'Try again' }, { href: '/play/', label: 'More revision' }], error);
   }
   if (ticket !== generation || book.slug !== meta.slug) return;
 

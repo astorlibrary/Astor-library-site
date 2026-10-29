@@ -905,7 +905,7 @@ function ordinal(number) {
   return number + tail;
 }
 
-export function emptyState(container, message, links = []) {
+export function emptyState(container, message, links = [], error = null) {
   clear(container);
   const panel = el('div', { class: 'rx-empty' });
   panel.append(el('p', { text: message }));
@@ -914,6 +914,7 @@ export function emptyState(container, message, links = []) {
     links.forEach((link, index) => row.append(el('a', { class: 'rx-button ' + (index ? 'is-secondary' : 'is-primary'), href: link.href, text: link.label })));
     panel.append(row);
   }
+  if (error) panel.append(el('p', { class: 'rx-load-reason', text: 'Reason: ' + (error.message || String(error)) }));
   container.append(panel);
 }
 
