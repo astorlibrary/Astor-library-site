@@ -124,6 +124,15 @@ export function download(name, text, type = 'text/plain;charset=utf-8') {
   window.setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
+// "Safari 17.4 on iPhone", for the small print under a failure message, so a
+// reader who reports a problem says where it happened without being asked.
+export function browserName() {
+  const ua = navigator.userAgent;
+  const device = (ua.match(/iPhone|iPad|Android|Macintosh|Windows|Linux/) || ['unknown device'])[0];
+  const name = ua.match(/(Edg|Firefox|CriOS|FxiOS|Chrome)\/(\d+)/) || ua.match(/Version\/([\d.]+).*(Safari)/) || [];
+  return (name.length ? (name[2] === 'Safari' ? 'Safari ' + name[1] : name[1] + ' ' + name[2]) : 'browser') + ' on ' + device;
+}
+
 // The site's own data files, fetched like the page itself (with its cookies,
 // so a preview behind a sign-in still loads them). A request that fails is
 // tried again, after a pause, past the browser's copy, then at a new address

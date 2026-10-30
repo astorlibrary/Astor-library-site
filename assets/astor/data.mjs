@@ -21,8 +21,25 @@ async function getJson(url) {
   return request;
 }
 
+// A book's record comes first from its module (/data/books/<slug>.mjs, written
+// by the build), which is fetched the way this page's own scripts are; the
+// JSON is the fallback. Some browsers and networks refuse a script's request
+// for data while letting the scripts themselves through.
 export function loadBook(slug) {
-  return getJson('/data/books/' + slug + '.json');
+  const url = '/data/books/' + slug + '.mjs';
+  if (cache.has(url)) return cache.get(url);
+  const request = import(url)
+    .then(module => {
+      if (module.default?.slug !== slug) throw new Error(url + ' was not in the expected form');
+      return module.default;
+    })
+    .catch(() => getJson('/data/books/' + slug + '.json'))
+    .catch(error => {
+      cache.delete(url);
+      throw error;
+    });
+  cache.set(url, request);
+  return request;
 }
 
 export function loadIndex() {

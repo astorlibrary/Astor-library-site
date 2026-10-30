@@ -1656,6 +1656,16 @@ if (fs.existsSync(distDir)) {
     if (!books.length || !books.every(book => book.slug && book.title)) {
       failures.push(path.relative(distDir, file) + ' is missing the book list Revise reads from the page');
     }
+    if (!html.includes('data-revise-watchdog')) failures.push(path.relative(distDir, file) + ' is missing the Revise watchdog');
+  }
+  // Revise loads each book from its module first; every record needs one.
+  const booksDir = path.join(distDir, 'data', 'books');
+  for (const name of fs.existsSync(booksDir) ? fs.readdirSync(booksDir).filter(item => item.endsWith('.json')) : []) {
+    const moduleFile = path.join(booksDir, name.replace(/\.json$/, '.mjs'));
+    const record = fs.existsSync(moduleFile) ? fs.readFileSync(moduleFile, 'utf8') : '';
+    if (!record.startsWith('export default {') || !record.includes('"slug":"' + name.replace(/\.json$/, '') + '"')) {
+      failures.push('data/books/' + name + ' has no matching module for Revise');
+    }
   }
 }
 

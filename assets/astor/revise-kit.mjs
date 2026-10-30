@@ -6,7 +6,7 @@
 // /assets/revise-index.json for the chooser and then fetch only the chosen
 // book's record. The whole-library study index is left to the explorers.
 
-import { el, clear, shuffle, seededRandom, prefersReducedMotion, fetchJson } from './util.mjs';
+import { el, clear, shuffle, seededRandom, prefersReducedMotion, fetchJson, browserName } from './util.mjs';
 import { loadBook, cardId } from './data.mjs';
 import { snapshot, today, recentlyViewed } from './store.mjs';
 import { GAME_BUILDERS } from './questions.mjs';
@@ -731,7 +731,7 @@ export function loadFailed(mount, message = 'The books didn’t load.', error = 
   mount.append(el('div', { class: 'rv-empty rx-load-failed' }, [
     el('p', { text: message + ' Check your connection, then try again.' }),
     el('button', { type: 'button', class: 'rx-button is-primary', text: 'Try again', onclick: () => window.location.reload() }),
-    error ? el('p', { class: 'rx-load-reason', text: 'Reason: ' + (error.message || String(error)) }) : null
+    error ? el('p', { class: 'rx-load-reason', text: 'Reason: ' + (error.message || String(error)) + ' (' + browserName() + ')' }) : null
   ]));
 }
 

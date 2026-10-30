@@ -1317,9 +1317,72 @@ const reviseShelfJson = (() => {
   return fs.existsSync(file) ? JSON.stringify(JSON.parse(fs.readFileSync(file, 'utf8'))).replace(/</g, '\\u003c') : '';
 })();
 
+// A watchdog in plain ES5, so it runs in any browser even when the modules do
+// not. If Revise has not started after fifteen seconds it clears this site's
+// service worker and caches and reloads, once; if that does not help, it says
+// so on the page with the error and the browser, so a reader can report it.
+const REVISE_WATCHDOG = `<script data-revise-watchdog>(function () {
+  var notes = [];
+  function note(text) { if (text && notes.length < 4) notes.push(String(text).slice(0, 160)); }
+  window.addEventListener('error', function (event) {
+    var target = event.target;
+    if (target && target !== window && (target.src || target.href)) note('Could not load ' + String(target.src || target.href).replace(location.origin, ''));
+    else note(event.message);
+  }, true);
+  window.addEventListener('unhandledrejection', function (event) { var reason = event.reason; note(reason && reason.message ? reason.message : reason); });
+  function browser() {
+    var ua = navigator.userAgent, device = (ua.match(/iPhone|iPad|Android|Macintosh|Windows|Linux/) || ['unknown device'])[0];
+    var name = (ua.match(/(Edg|Firefox|CriOS|FxiOS|Chrome)\\/(\\d+)/) || ua.match(/Version\\/([\\d.]+).*(Safari)/) || []);
+    return (name.length ? (name[2] === 'Safari' ? 'Safari ' + name[1] : name[1] + ' ' + name[2]) : 'browser') + ' on ' + device;
+  }
+  function remembered(key, value) {
+    try { if (value) sessionStorage.setItem(key, value); return sessionStorage.getItem(key); } catch (error) { return null; }
+  }
+  function reset(then) {
+    var jobs = [];
+    if (navigator.serviceWorker && navigator.serviceWorker.getRegistrations) {
+      jobs.push(navigator.serviceWorker.getRegistrations().then(function (all) { return Promise.all(all.map(function (one) { return one.unregister(); })); }));
+    }
+    if (window.caches && caches.keys) {
+      jobs.push(caches.keys().then(function (keys) { return Promise.all(keys.map(function (key) { return caches.delete(key); })); }));
+    }
+    Promise.all(jobs).then(then, then);
+  }
+  setTimeout(function () {
+    var mount = document.querySelector('#rv-hub, #astor-game, #astor-flashcards');
+    if (!mount) return;
+    var first = mount.firstElementChild;
+    if (first && !(mount.children.length === 1 && first.className === 'rv-loading')) return;
+    if (!remembered('astor-revise-reset')) {
+      remembered('astor-revise-reset', '1');
+      reset(function () { location.reload(); });
+      return;
+    }
+    var panel = document.createElement('div');
+    panel.className = 'rv-empty rx-load-failed';
+    var message = document.createElement('p');
+    message.textContent = 'Revise has not started in this browser.';
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'rx-button is-primary';
+    button.textContent = 'Reset and try again';
+    button.onclick = function () { reset(function () { location.reload(); }); };
+    var reason = document.createElement('p');
+    reason.className = 'rx-load-reason';
+    reason.textContent = 'Reason: ' + (notes.length ? notes.join(' / ') : 'no error was reported') + ' (' + browser() + ')';
+    while (mount.firstChild) mount.removeChild(mount.firstChild);
+    panel.appendChild(message);
+    panel.appendChild(button);
+    panel.appendChild(reason);
+    mount.appendChild(panel);
+  }, 15000);
+})();</script>`;
+
 function addReviseShelf(html) {
   if (!reviseShelfJson || !REVISE_SCRIPTS.test(html) || html.includes('id="astor-shelf"')) return html;
-  return html.replace('</body>', '<script type="application/json" id="astor-shelf">' + reviseShelfJson + '</script>\n</body>');
+  return html
+    .replace(/<head>/, '<head>\n' + REVISE_WATCHDOG)
+    .replace('</body>', '<script type="application/json" id="astor-shelf">' + reviseShelfJson + '</script>\n</body>');
 }
 
 function prepareHtml(html, source) {
@@ -1466,6 +1529,19 @@ function collectSitemap(directory) {
 
 collectSitemap(outDir);
 sitemapUrls.sort((a, b) => a.url.localeCompare(b.url, 'en'));
+
+// Each book's record is also published as a module (export default {...}),
+// which Revise loads the way it loads its own scripts. Some browsers and
+// networks refuse a page's script-made requests for data while letting its
+// scripts through; the JSON stays for everything else.
+{
+  const booksDir = path.join(outDir, 'data', 'books');
+  for (const name of fs.existsSync(booksDir) ? fs.readdirSync(booksDir) : []) {
+    if (!name.endsWith('.json')) continue;
+    const record = JSON.stringify(JSON.parse(fs.readFileSync(path.join(booksDir, name), 'utf8')));
+    fs.writeFileSync(path.join(booksDir, name.replace(/\.json$/, '.mjs')), 'export default ' + record + ';\n');
+  }
+}
 // The service worker is stamped with a version drawn from the files it keeps,
 // so a deploy that changes any of them is a new worker and a fresh cache.
 {
