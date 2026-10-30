@@ -53,8 +53,6 @@ function saveMode(id) {
   try { window.localStorage.setItem(MODE_KEY, id); } catch { /* optional */ }
 }
 
-if (mount) start();
-
 let keyHandler = null;
 
 async function start() {
@@ -394,3 +392,8 @@ export function memoriseLine(quotation, step) {
   });
   return line;
 }
+
+// Started last, once every declaration above has run. Safari stops with
+// "Cannot access ... before initialization" when a module-level variable
+// is assigned (even after an await) before its `let` line has run.
+if (mount) start();

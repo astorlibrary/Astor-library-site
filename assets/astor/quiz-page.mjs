@@ -20,7 +20,6 @@ import {
 
 const mount = document.querySelector('#astor-game');
 const head = document.querySelector('#rv-head-book');
-if (mount) start(mount);
 
 async function start(container) {
   const gameId = container.dataset.game;
@@ -128,3 +127,8 @@ function runLibrary(container, gameId, index, shelf) {
   });
   round.start();
 }
+
+// Started last, once every declaration above has run. Safari stops with
+// "Cannot access ... before initialization" when a module-level variable
+// is assigned (even after an await) before its `let` line has run.
+if (mount) start(mount);
