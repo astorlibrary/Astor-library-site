@@ -17,8 +17,6 @@ import {
 const titleMount = document.querySelector('#rv-title');
 const hubMount = document.querySelector('#rv-hub');
 
-if (hubMount) start();
-
 let shelf = null;
 
 async function start() {
@@ -187,3 +185,8 @@ function drawLibrary(day) {
     ])
   ]);
 }
+
+// Started last, once every declaration above has run. Safari stops with
+// "Cannot access ... before initialization" when a module-level variable
+// is assigned (even after an await) before its `let` line has run.
+if (hubMount) start();

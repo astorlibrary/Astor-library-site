@@ -233,3 +233,40 @@ test('fill the line offers only real words from the book as choices', () => {
     }
   }
 });
+
+test('every module starts only after its top-level declarations, which Safari requires', () => {
+  // Safari (JavaScriptCore) throws "Cannot access 'x' before initialization"
+  // when a function started at the top of a module assigns a module-level
+  // `let` declared further down, even after an await; V8 does not. This
+  // broke the Revise page on every iPhone and Mac.
+  const fs = require('node:fs');
+  const path = require('node:path');
+  const dir = path.join(path.dirname(new URL(import.meta.url).pathname), '..', 'assets', 'astor');
+  for (const name of fs.readdirSync(dir).filter(file => file.endsWith('.mjs'))) {
+    const lines = fs.readFileSync(path.join(dir, name), 'utf8').split('\n');
+    const lastDeclaration = lines.reduce((last, line, index) => (/^(?:let|const|var|class) /.test(line) ? index : last), -1);
+    lines.forEach((line, index) => {
+      if (/^(?:if \([^)]*\) )?[A-Za-z_$][\w$.]*\(.*\);$/.test(line) && index < lastDeclaration) {
+        assert.fail(name + ':' + (index + 1) + ' starts work ("' + line + '") before the declaration on line ' + (lastDeclaration + 1));
+      }
+    });
+  }
+});
+
+test('no stylesheet has an unclosed bracket, which makes browsers drop every rule after it', () => {
+  // ":is(.rx-step-label {" once threw away the last 600 lines of
+  // astor-study.css, and with them the Revise page's whole layout.
+  const fs = require('node:fs');
+  const path = require('node:path');
+  const dir = path.join(path.dirname(new URL(import.meta.url).pathname), '..', 'assets');
+  for (const name of fs.readdirSync(dir).filter(file => file.endsWith('.css'))) {
+    const css = fs.readFileSync(path.join(dir, name), 'utf8').replace(/\/\*[\s\S]*?\*\//g, '').replace(/"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'/g, '""');
+    let line = 1;
+    for (const piece of css.split(/(?<=[{};])/)) {
+      const count = character => piece.split(character).length - 1;
+      assert.ok(count('(') === count(')') && count('[') === count(']'),
+        name + ' near line ' + line + ' has an unclosed bracket: ' + piece.trim().slice(0, 80));
+      line += count('\n');
+    }
+  }
+});

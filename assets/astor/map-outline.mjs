@@ -102,8 +102,6 @@ let live = null;
 let detailMount = null;
 let drawing = 0;
 
-if (mapMount) start();
-
 async function start() {
   let index;
   try {
@@ -641,3 +639,8 @@ function project(longitude, latitude, bounds) {
     y: bounds.height - ((latitude - bounds.south) / (bounds.north - bounds.south)) * bounds.height
   };
 }
+
+// Started last, once every declaration above has run. Safari stops with
+// "Cannot access ... before initialization" when a module-level variable
+// is assigned (even after an await) before its `let` line has run.
+if (mapMount) start();
