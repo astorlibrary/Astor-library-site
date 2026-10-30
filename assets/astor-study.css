@@ -2955,7 +2955,6 @@ html[data-edition] main.has-band .rx-head h1 { text-transform: uppercase; letter
 html[data-edition] main.has-band .rx-acts-arrow { background: var(--ed-surface); color: var(--ed-ink); border-color: var(--ed-line-strong); }
 html[data-edition] main.has-band .rx-bar { box-shadow: 0 10px 30px -18px rgba(0, 0, 0, .45); }
 html[data-edition] main.has-band .rx-act:not(.is-here) { box-shadow: 0 4px 14px -10px rgba(0, 0, 0, .5); }
-html[data-edition] main.has-band :is(.rx-step-label { color: var(--ed-band-text); }
 
 /* --- progress: the book's emblems, lit as they are won ---------------------------- */
 
@@ -3433,6 +3432,19 @@ html[data-edition] .rx-flip:focus-visible .rx-flip-inner { outline: 3px solid va
 .rx-hub-hero .rx-hero-start span { font: 400 15px/1.45 var(--serif, Georgia, serif); color: #5f5650; }
 .rx-hub-hero .rx-hero-links { margin-top: 14px; }
 html[data-ed-layout="centred"] .rx-hub-hero .rx-hero-links { justify-content: center; }
+/* In a book's own colours the card and the link follow the book, in light and dark. */
+html[data-edition] .rx-hub-hero .rx-hero-start span { color: var(--ed-soft); }
+html[data-edition] .rx-hub-progress a,
+html[data-edition] .rx-hub-row:is(:hover, :focus-visible) .rx-hub-name { color: var(--ed-accent-text); }
+/* On a phone the cover sits beside the kicker; the author, the start card and
+   the buttons each take the full width instead of the cover's narrow column. */
+@media (max-width: 560px) {
+  .rx-hub-hero .rx-hero-words > :is(.rx-hero-author, .rx-hero-start, .rx-hero-links) { grid-column: 1 / -1; }
+  .rx-hub-hero .rx-hero-start { display: grid; gap: 4px; max-width: none; }
+  /* The grid's own gap spaces these; the centred layout keeps its margins. */
+  html:not([data-ed-layout="centred"]) .rx-hub-hero .rx-hero-author { margin: 0; }
+  html:not([data-ed-layout="centred"]) .rx-hub-hero .rx-hero-links { margin-top: 2px; }
+}
 
 #rv-hub { max-width: 760px; margin: 0 auto; padding: 8px 0 0; }
 .rx-hub-list { margin: 40px 0 0; }

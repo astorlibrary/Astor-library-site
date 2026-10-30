@@ -252,3 +252,21 @@ test('every module starts only after its top-level declarations, which Safari re
     });
   }
 });
+
+test('no stylesheet has an unclosed bracket, which makes browsers drop every rule after it', () => {
+  // ":is(.rx-step-label {" once threw away the last 600 lines of
+  // astor-study.css, and with them the Revise page's whole layout.
+  const fs = require('node:fs');
+  const path = require('node:path');
+  const dir = path.join(path.dirname(new URL(import.meta.url).pathname), '..', 'assets');
+  for (const name of fs.readdirSync(dir).filter(file => file.endsWith('.css'))) {
+    const css = fs.readFileSync(path.join(dir, name), 'utf8').replace(/\/\*[\s\S]*?\*\//g, '').replace(/"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'/g, '""');
+    let line = 1;
+    for (const piece of css.split(/(?<=[{};])/)) {
+      const count = character => piece.split(character).length - 1;
+      assert.ok(count('(') === count(')') && count('[') === count(']'),
+        name + ' near line ' + line + ' has an unclosed bracket: ' + piece.trim().slice(0, 80));
+      line += count('\n');
+    }
+  }
+});
