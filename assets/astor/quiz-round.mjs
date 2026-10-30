@@ -21,7 +21,7 @@
 // Keyboard: 1 to 9 or A to D answer, H narrows the choices, Enter checks or
 // moves on, R starts again at the end.
 
-import { el, clear, shuffle, announce, prefersReducedMotion, formatYear } from './util.mjs';
+import { el, clear, shuffle, announce, prefersReducedMotion, formatYear, browserName } from './util.mjs';
 import { recordScore, reviewCard, scores, toggleCommonplace, inCommonplace, isRemembering } from './store.mjs';
 import { cardId } from './data.mjs';
 import { quotationKey, quotationFor, firstSentence, drawing, quizName, shortTitle, monogram, coverImage, quoted, headerOffset, motif, hasMotifs, currentBook } from './revise-kit.mjs';
@@ -914,7 +914,7 @@ export function emptyState(container, message, links = [], error = null) {
     links.forEach((link, index) => row.append(el('a', { class: 'rx-button ' + (index ? 'is-secondary' : 'is-primary'), href: link.href, text: link.label })));
     panel.append(row);
   }
-  if (error) panel.append(el('p', { class: 'rx-load-reason', text: 'Reason: ' + (error.message || String(error)) }));
+  if (error) panel.append(el('p', { class: 'rx-load-reason', text: 'Reason: ' + (error.message || String(error)) + ' (' + browserName() + ')' }));
   container.append(panel);
 }
 
