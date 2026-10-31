@@ -926,6 +926,7 @@
 .astor-compare-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; border: 1px solid var(--astor-line); }
 .astor-compare-grid > div { padding: 20px 22px; border-right: 1px solid var(--astor-line); }
 .astor-compare-grid > div:last-child { border-right: 0; }
+.astor-compare-grid .astor-analysis { margin: 0 0 16px; font: 400 16px/1.6 var(--serif, Georgia, serif); color: var(--text-soft, #49413b); }
 .astor-compare-row { border-bottom: 1px solid var(--astor-line); }
 .astor-compare-row:last-child { border-bottom: 0; }
 .astor-compare-heading {
@@ -2676,8 +2677,10 @@ html[data-edition] {
   --rx-button: var(--ed-button);
   --rx-on-button: var(--ed-button-ink);
   --rx-on-accent: var(--ed-button-ink);
-  --surface-paper: var(--ed-ground);
 }
+/* The book's paper is for the page, not the site header, whose text follows
+   the site's own light or dark theme. */
+html[data-edition] main { --surface-paper: var(--ed-ground); }
 html[data-edition] main, html[data-edition] main [style*="--book-accent"] {
   --rx-accent: var(--ed-accent);
   --rx-accent-ink: var(--ed-accent-text);
@@ -2946,7 +2949,8 @@ html[data-edition] main.has-band { position: relative; isolation: isolate; }
 html[data-ed-mode="dark"] .rx-band-art { opacity: .7; }
 
 /* what sits on the band takes the cover's lettering colour */
-html[data-edition] main.has-band > .book-breadcrumb, html[data-edition] main.has-band > .book-breadcrumb a { color: var(--ed-band-soft); }
+html[data-edition] main.has-band > .book-breadcrumb, html[data-edition] main.has-band > .book-breadcrumb a,
+html[data-edition] main.has-band > .book-breadcrumb span[aria-current="page"] { color: var(--ed-band-soft); }
 html[data-edition] main.has-band .rx-head :is(h1, .kicker) { color: var(--ed-band-text); }
 html[data-edition] main.has-band .rx-head p { color: var(--ed-band-soft); }
 html[data-edition] main.has-band :is(.rx-progress-count, .rx-progress-count span, .rx-run) { color: var(--ed-band-text); }
@@ -3496,8 +3500,8 @@ html[data-edition] .rx-hub-row:is(:hover, :focus-visible) .rx-hub-name { color: 
 .today-card { padding: 28px 0 0; border-top: 1px solid var(--rx-line); }
 .today-count { margin: 0 0 10px; color: var(--rx-muted); font: 400 15px/1.3 var(--astor-sans, system-ui, sans-serif); }
 .today-question { margin: 0 0 22px; font: 400 clamp(24px, 3vw, 30px)/1.3 var(--serif, Georgia, serif); letter-spacing: 0; color: var(--rx-ink); }
-.today-question:focus { outline: none; }
-.today-question:focus-visible { outline: 2px solid var(--wine-text, var(--burgundy, #6e1f2b)); outline-offset: 4px; }
+/* Focus is moved here for screen readers, not for clicking: no ring. */
+.today-question:focus, .today-question:focus-visible { outline: none; }
 .today-options { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
 .today-option {
   display: grid;
