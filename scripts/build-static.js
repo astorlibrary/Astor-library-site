@@ -140,7 +140,29 @@ function promoteFirstMainImage(html) {
   return beforeMain + mainAndAfter;
 }
 
-function useBookThumbnail(tag, sourceFile) {
+// The widths covers in lists are actually shown at, on a phone and wider,
+// measured across the site. Without them a phone took the 640px file for a
+// 72px cover (sizes was the declared width, or there was no srcset at all).
+const LIST_COVER_SIZES = {
+  'catalog-cover': '(max-width: 560px) 72px, 88px',
+  'collection-entry-cover': '(max-width: 560px) 76px, 112px',
+  'hub-book-cover': '(max-width: 560px) 68px, 88px',
+  'explore-card-image': '64px',
+  'context-image-cover': '52px',
+  'resource-thumb': '52px',
+  'hub-entry-covers': '46px',
+  'book-format-cover': '48px'
+};
+
+function listCoverSizes(tag, wrapper) {
+  const own = tag.match(/\bclass="([^"]*)"/i)?.[1] || '';
+  for (const name of (own + ' ' + wrapper).split(/\s+/)) {
+    if (LIST_COVER_SIZES[name]) return LIST_COVER_SIZES[name];
+  }
+  return '';
+}
+
+function useBookThumbnail(tag, sourceFile, wrapper = '') {
   const source = tag.match(/\bsrc="([^"]+)"/i)?.[1];
   if (!source || /^(?:[a-z]+:|\/\/)/i.test(source)) return tag;
   const pageDirectory = path.posix.dirname(pageHref(sourceFile));
@@ -157,6 +179,11 @@ function useBookThumbnail(tag, sourceFile) {
   // until it decodes, which showed as squashed covers. Undeclared widths keep
   // the plain 720px source.
   const smallThumbnail = thumbnail.replace(/\.jpg$/, '-360.jpg');
+  const listSizes = listCoverSizes(result, wrapper);
+  if (listSizes && thumbnail.startsWith('/assets/book-thumbs/') && fs.existsSync(path.join(root, smallThumbnail.replace(/^\//, '')))) {
+    return result.replace(/\s(?:srcset|sizes)="[^"]*"/gi, '')
+      .replace('<img', '<img srcset="' + smallThumbnail + ' 320w, ' + thumbnail + ' 640w" sizes="' + listSizes + '"');
+  }
   const declaredWidth = result.match(/\bwidth="(\d+)"/i)?.[1];
   if (declaredWidth && /\bloading="lazy"/i.test(result) && !/\bsrcset=/i.test(result) &&
       thumbnail.startsWith('/assets/book-thumbs/') &&
@@ -1447,7 +1474,13 @@ function prepareHtml(html, source) {
 
   html = html.replace(/<img\b[^>]*>/gi, addImageHints);
   html = promoteFirstMainImage(html);
-  html = html.replace(/<img\b[^>]*>/gi, function (tag) { return useBookThumbnail(tag, source); });
+  html = html.replace(/<img\b[^>]*>/gi, function (tag, offset, whole) {
+    // The class of the nearest element opened before the image: the cover's
+    // own wrapper in every list that LIST_COVER_SIZES knows.
+    const before = whole.slice(Math.max(0, offset - 400), offset);
+    const wrapper = [...before.matchAll(/<(?!img\b)[a-z][^>]*\bclass="([^"]*)"/gi)].pop()?.[1] || '';
+    return useBookThumbnail(tag, source, wrapper);
+  });
   // Last of all, once every script and stylesheet this page will load has been
   // added: stamp each with a version taken from its contents.
   return versionAssets(html);
