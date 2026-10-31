@@ -926,6 +926,7 @@
 .astor-compare-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; border: 1px solid var(--astor-line); }
 .astor-compare-grid > div { padding: 20px 22px; border-right: 1px solid var(--astor-line); }
 .astor-compare-grid > div:last-child { border-right: 0; }
+.astor-compare-grid .astor-analysis { margin: 0 0 16px; font: 400 16px/1.6 var(--serif, Georgia, serif); color: var(--text-soft, #49413b); }
 .astor-compare-row { border-bottom: 1px solid var(--astor-line); }
 .astor-compare-row:last-child { border-bottom: 0; }
 .astor-compare-heading {
@@ -3496,8 +3497,8 @@ html[data-edition] .rx-hub-row:is(:hover, :focus-visible) .rx-hub-name { color: 
 .today-card { padding: 28px 0 0; border-top: 1px solid var(--rx-line); }
 .today-count { margin: 0 0 10px; color: var(--rx-muted); font: 400 15px/1.3 var(--astor-sans, system-ui, sans-serif); }
 .today-question { margin: 0 0 22px; font: 400 clamp(24px, 3vw, 30px)/1.3 var(--serif, Georgia, serif); letter-spacing: 0; color: var(--rx-ink); }
-.today-question:focus { outline: none; }
-.today-question:focus-visible { outline: 2px solid var(--wine-text, var(--burgundy, #6e1f2b)); outline-offset: 4px; }
+/* Focus is moved here for screen readers, not for clicking: no ring. */
+.today-question:focus, .today-question:focus-visible { outline: none; }
 .today-options { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
 .today-option {
   display: grid;

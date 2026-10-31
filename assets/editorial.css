@@ -2580,6 +2580,25 @@ main.explore-page .explore-card > a:hover h2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 26px 18px;
   }
+
+  /* Older phone rules in styles.css force the cover beside the text, which
+     two columns cannot fit; keep the cover above, as on every other width. */
+  .study-index .study-card {
+    display: block !important;
+    min-height: 0;
+    padding: 0;
+  }
+
+  .study-index .study-card img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .study-index .study-card p {
+    display: block;
+    overflow: visible;
+    -webkit-line-clamp: none;
+  }
 }
 
 /* One plain paper for every page. Older rules in styles.css shaded the page
@@ -3903,4 +3922,14 @@ main[data-hub="classic"] .classic-intro {
 main[data-hub="classic"] .hub-links li {
   color: var(--text-soft, var(--ed-soft));
   font: 400 18px/1.6 var(--serif);
+}
+
+/* The annotated passage on a phone: at 24px a line held about 28 characters,
+   so nearly every line of verse broke and stranded its last word. */
+@media (max-width: 560px) {
+  .passage-paper .passage-text,
+  .passage-paper.paper-verse .passage-text,
+  .passage-paper .passage-text.passage-prose {
+    font-size: 19px;
+  }
 }

@@ -1385,6 +1385,16 @@ function addReviseShelf(html) {
     .replace('</body>', '<script type="application/json" id="astor-shelf">' + reviseShelfJson + '</script>\n</body>');
 }
 
+// Headings close without a full stop across the site, as the book and hub
+// pages already do. The homepage and the seasonal pages keep their wording,
+// and an abbreviation keeps its point ("The Sigsand MS.").
+function plainHeadingStops(html, source) {
+  const href = pageHref(source);
+  if (href === '/' || href.startsWith('/seasons/')) return html;
+  return html.replace(/(<(h[1-3])\b[^>]*>)([\s\S]*?)<\/\2>/g, (whole, open, tag, inner) =>
+    open + inner.replace(/(?<!\b(?:[A-Z]|MS|St|Mr|Mrs|Dr))\.(\s*)$/, '$1') + '</' + tag + '>');
+}
+
 function prepareHtml(html, source) {
   html = html.replace(/(<span data-count="books">)\d+(<\/span>)/g, '$1' + catalogueBookCount + '$2');
   // The site publishes British English and stamps en-GB metadata everywhere;
@@ -1416,6 +1426,7 @@ function prepareHtml(html, source) {
     html = plainHubPage(html, pageHref(source), discovery);
   }
   html = addReviseShelf(html);
+  html = plainHeadingStops(html, source);
   html = addSiteIndexLink(html, source);
   html = addGlobalNavigation(html, source);
   html = addSeasonalTheme(html, source);
