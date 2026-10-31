@@ -2677,8 +2677,10 @@ html[data-edition] {
   --rx-button: var(--ed-button);
   --rx-on-button: var(--ed-button-ink);
   --rx-on-accent: var(--ed-button-ink);
-  --surface-paper: var(--ed-ground);
 }
+/* The book's paper is for the page, not the site header, whose text follows
+   the site's own light or dark theme. */
+html[data-edition] main { --surface-paper: var(--ed-ground); }
 html[data-edition] main, html[data-edition] main [style*="--book-accent"] {
   --rx-accent: var(--ed-accent);
   --rx-accent-ink: var(--ed-accent-text);
@@ -2947,7 +2949,8 @@ html[data-edition] main.has-band { position: relative; isolation: isolate; }
 html[data-ed-mode="dark"] .rx-band-art { opacity: .7; }
 
 /* what sits on the band takes the cover's lettering colour */
-html[data-edition] main.has-band > .book-breadcrumb, html[data-edition] main.has-band > .book-breadcrumb a { color: var(--ed-band-soft); }
+html[data-edition] main.has-band > .book-breadcrumb, html[data-edition] main.has-band > .book-breadcrumb a,
+html[data-edition] main.has-band > .book-breadcrumb span[aria-current="page"] { color: var(--ed-band-soft); }
 html[data-edition] main.has-band .rx-head :is(h1, .kicker) { color: var(--ed-band-text); }
 html[data-edition] main.has-band .rx-head p { color: var(--ed-band-soft); }
 html[data-edition] main.has-band :is(.rx-progress-count, .rx-progress-count span, .rx-run) { color: var(--ed-band-text); }

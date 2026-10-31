@@ -3933,3 +3933,9 @@ main[data-hub="classic"] .hub-links li {
     font-size: 19px;
   }
 }
+
+/* The Passage Room's closing panel is burgundy; its heading keeps the panel's
+   light ink rather than the dark ink of the page's other headings. */
+main.passage-room-page .passage-next h2 {
+  color: #fffaf4;
+}
