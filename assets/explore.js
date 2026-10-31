@@ -23,13 +23,36 @@
       .replace(/[’']/g, '');
   }
 
+  // While searching, the best title matches come first ("macbeth" finds the
+  // book before the close readings that mention it), books before the rest.
+  const results = cards[0].parentElement;
+  const typeOrder = ['book', 'study', 'author', 'collection', 'subject', 'passage', 'resource', 'season'];
+  const plain = value => normalise(value).replace(/[^\p{L}\p{N}\s]/gu, '').replace(/\s+/g, ' ').trim();
+  const titles = new Map(cards.map(card => [card, plain(card.querySelector('h2')?.textContent || '')]));
+
+  function ranked(query, words) {
+    if (!words.length) return cards;
+    const wanted = plain(query);
+    const rank = card => {
+      const title = titles.get(card);
+      const place = title === wanted ? 0 : title.startsWith(wanted) ? 1 : words.every(word => title.includes(plain(word))) ? 2 : 3;
+      const type = typeOrder.indexOf(card.dataset.type);
+      return place * 100 + (type === -1 ? 99 : type);
+    };
+    return cards.map((card, index) => ({ card, index, rank: rank(card) }))
+      .sort((a, b) => a.rank - b.rank || a.index - b.index)
+      .map(entry => entry.card);
+  }
+
   function updateResults() {
     const query = normalise(search.value.trim());
     const words = query.split(/\s+/).filter(Boolean);
     let matching = 0;
     let shown = 0;
+    const ordered = ranked(query, words);
+    results.append(...ordered);
 
-    for (const card of cards) {
+    for (const card of ordered) {
       const matchesType = activeType === 'all' || card.dataset.type === activeType;
       const searchableText = normalise((card.dataset.search || '') + ' ' + card.textContent);
       const matchesSearch = words.every(word => searchableText.includes(word));

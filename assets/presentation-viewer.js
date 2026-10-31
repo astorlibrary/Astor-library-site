@@ -395,6 +395,8 @@ export class AstorPresentationViewer extends HTMLElement {
   #applyAuthState(authenticated) {
     const wasAuthenticated = this.#access === true;
     this.#access = Boolean(authenticated);
+    // With no guide chosen (/presentations/ alone) there is nothing to update.
+    if (!this._presentation) return;
     if (!this.#access) {
       this.#saved = false;
       this.#libraryLoaded = false;
