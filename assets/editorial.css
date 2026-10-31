@@ -3602,16 +3602,14 @@ main[data-hub="resource"] .astor-page-credit p {
 
 main[data-hub="resource"] .astor-page-credit a {
   color: var(--wine-text, var(--ed-wine));
+  font-weight: 400;
+  text-decoration: underline;
   text-underline-offset: 3px;
 }
 
 main[data-hub="resource"] .hub-links li {
   color: var(--text-soft, var(--ed-soft));
   font: 400 17px/1.55 var(--serif);
-}
-
-main[data-hub="resource"] .astor-page-credit a {
-  font-weight: 400;
 }
 
 /* A single close reading: the title, the source beside it, then the passage
