@@ -744,6 +744,8 @@ body:has(.astor-palette[open]) { overflow: hidden; }
 
 @media print {
   .astor-palette { display: none !important; }
+  /* A fixed element prints on every page; the keyboard link has no use on paper. */
+  .skip-link { display: none !important; }
 }
 
 /* Small capitals are a house habit, but eight and nine pixels cannot be read
