@@ -362,7 +362,10 @@ function restructureBookPage(html, ctx) {
     if (ALWAYS_DROP.some(pattern => pattern.test(heading)) || rule?.role === 'drop') continue;
     const study = rule?.role === 'study' || (!rule && STUDY_HEADINGS.some(pattern => pattern.test(heading)));
     if (study && guideSlug) continue;
-    const isSources = rule?.role === 'sources' || /^(sources|texts and publication records|texts, archives)/i.test(heading);
+    // Only the reading list goes to the end. "Sources and story traditions"
+    // and the like are about the book's own sources (Ovid, Holinshed) and
+    // stay where they stand, under their own heading.
+    const isSources = rule?.role === 'sources' || /^(sources|sources and further reading|texts and publication records)\.?$|^texts, archives/i.test(heading);
     const title = plainSectionTitle(group.title, isSources ? 'Sources' : undefined);
     const section = title + group.body.join('\n');
     if (isSources) sourcesHtml += section;

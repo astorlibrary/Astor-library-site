@@ -1204,6 +1204,17 @@ if (fs.existsSync(distDir)) {
       if (/\bTeaching Rooms?\b/i.test(html)) failures.push('dist/' + fileName + ' still contains retired Teaching Room branding');
       if (html.includes('/assets/teaching.css')) failures.push('dist/' + fileName + ' still loads the retired Teaching Room stylesheet');
 
+      // The build reshapes pages, so ids are checked again after it: a repeated
+      // id breaks the "On this page" links, a missing one empties a label.
+      const builtIds = new Set();
+      for (const [, id] of html.matchAll(/\bid="([^"]+)"/gi)) {
+        if (builtIds.has(id)) failures.push('dist/' + fileName + ' repeats the id #' + id);
+        builtIds.add(id);
+      }
+      for (const [, ids] of html.matchAll(/\baria-labelledby="([^"]+)"/gi)) {
+        for (const id of ids.split(/\s+/)) if (!builtIds.has(id)) failures.push('dist/' + fileName + ' is labelled by a missing id #' + id);
+      }
+
       const mainHtml = html.match(/<main\b[\s\S]*?<\/main>/i)?.[0] || '';
       const mainImages = Array.from(mainHtml.matchAll(/<img\b[^>]*>/gi), match => match[0]);
       const eagerMainImages = mainImages.filter(tag => /\bloading="eager"/i.test(tag));
