@@ -5,9 +5,9 @@
 // account, and every quotation on a sheet carries its reference so a pupil can
 // look it up and a colleague can check it.
 
-import { el, clear, shuffle, sample, prefersReducedMotion } from './util.mjs';
+import { el, clear, shuffle, sample, prefersReducedMotion, quoted } from './util.mjs';
 import { withBooks } from './chooser.mjs';
-import { maskName } from './questions.mjs';
+import { maskName, maskSpeaker } from './questions.mjs';
 
 const chooser = document.querySelector('#astor-teacher-chooser');
 const actions = document.querySelector('#astor-teacher-actions');
@@ -66,12 +66,12 @@ function starters(book) {
   const sheet = sheetShell(book, 'Five lesson starters', 'ready to use');
   const quotations = sample(book.quotations, 3);
   const items = [
-    'Put this on the board: “' + (quotations[0]?.text || '') + '” (' + (quotations[0]?.reference || '') + '). Ask who gains from this line. Allow four minutes.',
-    'Read out this description: “' + maskName(book.characters[0].clue || book.characters[0].summary, book.characters[0].name) + '” Who is it? Which word gave it away?',
-    'In pairs, put the ' + (book.form === 'play' ? 'acts' : 'sections') + ' in order: ' + shuffle(book.structure.map(stage => stage.label)).join(', ') + '. Allow two minutes. Could any of them swap places?',
-    'Write the theme ' + book.themes[0].name + ' on the board. Give them a minute to find a line about it. Collect three and vote on the strongest.',
+    'Put this on the board: ' + quoted(quotations[0]?.text) + ' (' + (quotations[0]?.reference || '') + '). Ask who gains from this line. Allow four minutes.',
+    'Read out this description: ' + quoted(maskName(book.characters[0].clue || book.characters[0].summary, book.characters[0].name)) + ' Who is it? Which word gave it away?',
+    'In pairs, put the ' + (book.form === 'play' ? 'acts' : 'sections') + ' in order: ' + shuffle(book.structure.map(stage => stage.title)).join('; ') + '. Allow two minutes. Could any of them swap places?',
+    'Write the theme ' + quoted(book.themes[0].name) + ' on the board. Give them a minute to find a line about it. Collect three and vote on the strongest.',
     quotations[1]
-      ? 'Read this aloud twice, once well and once badly: “' + quotations[1].text + '” What changed?'
+      ? 'Read this aloud twice, once well and once badly: ' + quoted(quotations[1].text) + ' What changed?'
       : 'Read the first page together. What does it tell you about the rest of the book?'
   ];
   sheet.append(el('ol', {}, items.map(item => el('li', { text: item }))));
@@ -112,7 +112,8 @@ function characterSheet(book) {
 
 function sequenceSheet(book) {
   const sheet = sheetShell(book, 'Sequencing worksheet', 'cut up, or number in order');
-  const shuffled = shuffle(book.structure.map(stage => stage.label + ': ' + stage.title));
+  // Titles only: "Stave III" or "Act II" would give the order away.
+  const shuffled = shuffle(book.structure.map(stage => stage.title));
   sheet.append(el('p', { text: 'Number these from first to last. Then pick one and say what it leads to.' }));
   const list = el('ol', {});
   for (const line of shuffled) {
@@ -134,7 +135,7 @@ function knowledgeSheet(book) {
   const events = sample(book.timeline || [], 2);
 
   const questions = [
-    ...quotations.map(quotation => 'Who says “' + quotation.text + '”, and where?'),
+    ...quotations.map(quotation => 'Who says ' + quoted(quotation.speaker ? maskSpeaker(quotation.text, quotation.speaker) : quotation.text) + ', and where?'),
     ...characters.map(character => maskName(character.clue || character.summary, character.name) + ' Who is this?'),
     ...events.map(event => 'In which year: ' + event.label + '?')
   ];

@@ -227,20 +227,23 @@ export class QuizRound {
   }
 
   renderPrompt(question, kind) {
-    if (kind === 'character') {
-      // The masked name is drawn as a struck-out bar, like a redacted file.
+    // A masked name is drawn as a struck-out bar, like a redacted file.
+    const redacted = () => {
       const text = el('p', {});
       String(question.quote).split('———').forEach((part, index) => {
         if (index) text.append(el('span', { class: 'rx-redact', 'aria-label': 'name hidden', role: 'img' }));
         text.append(document.createTextNode(part));
       });
-      return el('figure', { class: 'rx-dossier' }, [el('p', { class: 'rx-dossier-label', text: 'Character file' }), text]);
+      return text;
+    };
+    if (kind === 'character') {
+      return el('figure', { class: 'rx-dossier' }, [el('p', { class: 'rx-dossier-label', text: 'Character file' }), redacted()]);
     }
     if (kind === 'context') return el('figure', { class: 'rx-event' }, [el('p', { text: question.quote })]);
     if (kind === 'opening') {
       return el('figure', { class: 'rx-quote is-opening' }, [el('p', { class: 'rx-quote-chapter', text: 'Chapter the first' }), el('blockquote', {}, [el('p', { text: question.quote })])]);
     }
-    if (kind === 'who') return el('figure', { class: 'rx-quote is-speech' }, [el('blockquote', {}, [el('p', { text: question.quote })])]);
+    if (kind === 'who') return el('figure', { class: 'rx-quote is-speech' }, [el('blockquote', {}, [redacted()])]);
     return el('figure', { class: 'rx-quote' + (kind === 'technique' ? ' is-lens' : '') }, [el('blockquote', {}, [el('p', { text: question.quote })])]);
   }
 

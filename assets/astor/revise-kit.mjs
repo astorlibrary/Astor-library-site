@@ -274,12 +274,9 @@ export function firstSentence(text) {
   return (match ? match[0] : String(text || '')).trim();
 }
 
-// A line in curly quotation marks, without doubling marks the line already has.
-export function quoted(text) {
-  // Only double marks: a leading apostrophe is usually an elision ('Tis).
-  const inner = String(text || '').trim().replace(/^[“"]+/, '').replace(/[”"]+$/, '');
-  return '“' + inner + '”';
-}
+// A line in curly quotation marks (it lives with the other helpers, so the
+// teachers' worksheets set lines the same way).
+export { quoted } from './util.mjs';
 
 export function clip(text, length = 80) {
   const value = String(text || '').replace(/\s+/g, ' ').trim();

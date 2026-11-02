@@ -116,7 +116,7 @@ export function whoSaidIt(book, random = Math.random) {
     .map(quotation => makeChoice({
       id: 'who:' + book.slug + ':' + quotation.id,
       stem: 'Who says this?',
-      quote: quotation.text,
+      quote: maskSpeaker(quotation.text, quotation.speaker),
       correct: quotation.speaker,
       distractors: otherSpeakers(book, quotation),
       explain: quotation.analysis,
@@ -313,6 +313,27 @@ export function techniqueSpotter(book, random = Math.random) {
 // Articles are not part of a name, so masking them would blank out half the
 // clue: "The creature" hides "creature", not "the".
 const NAME_NOISE = new Set(['the', 'and', 'of', 'a', 'an', 'to', 'in']);
+
+// "“Are there no prisons?” asked Scrooge" would answer its own question, so
+// the speaker's name is hidden in the line. Only as a name, though: the whole
+// name, or a capitalised word of it that is not a title, so "every inch a
+// king" and "more pliable" (said by More) stay as written.
+const SPEAKER_TITLES = new Set(['king', 'queen', 'prince', 'princess', 'lady', 'lord', 'duke', 'duchess', 'sir', 'dame', 'mr', 'mrs', 'miss', 'mistress', 'master', 'dr', 'doctor', 'captain', 'father', 'mother', 'friar', 'ghost', 'little', 'old', 'young', 'first', 'second', 'third', 'reverend', 'then']);
+
+export function maskSpeaker(text, speaker) {
+  const whole = String(speaker || '').trim();
+  if (!whole) return text;
+  const escape = value => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  // A name of two words or more ("The clergyman") is hidden in any case.
+  const patterns = [new RegExp('\\b' + escape(whole) + "(?:'s|’s)?\\b", whole.includes(' ') ? 'gi' : 'g')];
+  const words = whole.split(/[\s,]+/)
+    .map(word => word.replace(/[.]$/, '').replace(/['’]s$/, ''))
+    .filter(word => word.length > 2 && /^\p{Lu}/u.test(word) && !SPEAKER_TITLES.has(word.toLowerCase()) && !NAME_NOISE.has(word.toLowerCase()));
+  for (const word of [...new Set(words)].sort((a, b) => b.length - a.length)) {
+    patterns.push(new RegExp('\\b' + escape(word) + "(?:'s|’s)?\\b", 'g'));
+  }
+  return patterns.reduce((masked, pattern) => masked.replace(pattern, '———'), text);
+}
 
 export function maskName(text, name) {
   const parts = [name, ...name.split(/\s+/)]
