@@ -79,6 +79,22 @@ body {
   transform: translateY(0);
 }
 
+/* Revise, Today and Compare fill their pages after loading. With the main
+   area filling the screen below the header (113px, or 57px when compact),
+   the footer starts at the foot of the screen and does not jump down it
+   while they do. */
+main#main-content {
+  min-height: calc(100vh - 113px);
+}
+
+@media (max-width: 1040px) {
+  main#main-content { min-height: calc(100vh - 57px); }
+}
+
+@media print {
+  main#main-content { min-height: 0; }
+}
+
 /* The header: a masthead row and a navigation row, both on the page's own paper. */
 
 .astor-global-header.site-header {

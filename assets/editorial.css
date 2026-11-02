@@ -3800,8 +3800,12 @@ main[data-hub="passage"] .passage-context-links a {
   text-underline-offset: 3px;
 }
 
-main[data-hub="passage"] .passage-context-links a + a {
-  margin-left: 22px;
+/* Each link wraps as a whole, so "Read the final / soliloquy" never runs
+   into the next link on a phone. */
+main[data-hub="passage"] .passage-context-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 22px;
 }
 
 main[data-hub="passage"] .passage-related-head {
