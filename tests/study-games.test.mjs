@@ -6,7 +6,7 @@ import {
   GAME_BUILDERS, buildRound,
   whoSaidIt, fillTheLine, orderThePlot, themeMatch, techniqueSpotter,
   characterIdentification, whichBook, contextSprint, openingLines,
-  clozeWords, maskName, sameName
+  clozeWords, maskName, maskSpeaker, sameName
 } from '../assets/astor/questions.mjs';
 import { seededRandom } from '../assets/astor/util.mjs';
 
@@ -164,6 +164,22 @@ test('clozeWords honours a declared list', () => {
 test('maskName removes every part of a name', () => {
   const masked = maskName('Lady Macbeth reads Macbeth’s letter and judges Macbeth accurately.', 'Lady Macbeth');
   assert.ok(!/macbeth/i.test(masked), masked);
+});
+
+test('who said it hides the speaker named in the line, and only as a name', () => {
+  assert.equal(maskSpeaker('“Are there no prisons?” asked Scrooge.', 'Scrooge'), '“Are there no prisons?” asked ———.');
+  assert.equal(maskSpeaker('“I think,” said the clergyman, “it was loving-kindness.”', 'The clergyman'), '“I think,” said ———, “it was loving-kindness.”');
+  assert.equal(maskSpeaker('My name is Sherlock Holmes.', 'Sherlock Holmes'), 'My name is ———.');
+  // Titles and ordinary words that happen to be in the name stay as written.
+  assert.equal(maskSpeaker('God save the king! Will no man say amen?', 'King Richard II'), 'God save the king! Will no man say amen?');
+  assert.equal(maskSpeaker('another philosophy that is more pliable', 'More'), 'another philosophy that is more pliable');
+  assert.equal(maskSpeaker('And I am black, but O my soul is white', 'The little black boy'), 'And I am black, but O my soul is white');
+  for (const book of books) {
+    for (const question of whoSaidIt(book, fixed())) {
+      const right = question.options[question.answer];
+      assert.ok(!new RegExp('\\b(?:said|asked|cried|replied) ' + right.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b').test(question.quote), book.slug + ' names its speaker: ' + question.quote);
+    }
+  }
 });
 
 test('who said it never offers two names for one person', () => {

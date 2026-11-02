@@ -164,3 +164,21 @@ export async function fetchJson(url, isWhole = null) {
   console.error('Astor Library: could not load data.', lastError);
   throw lastError;
 }
+
+// A line in curly quotation marks. A line that is one speech keeps its own
+// marks; a line with speech and narration in it ("“Are there no prisons?”
+// asked Scrooge.") has its marks turned to single ones, so they nest instead
+// of doubling. Only double marks are touched: a leading apostrophe is usually
+// an elision ('Tis).
+export function quoted(text) {
+  const line = String(text || '').trim();
+  const marks = (line.match(/[“”"]/g) || []).length;
+  const whole = line.match(/^[“"]([^“”"]*)[”"]$/);
+  if (whole) return '“' + whole[1] + '”';
+  // One mark at an end is a speech that runs on past the excerpt.
+  if (marks === 1 && /^[“"]|[”"]$/.test(line)) return '“' + line.replace(/^[“"]|[”"]$/, '') + '”';
+  const nested = line
+    .replace(/“/g, '‘').replace(/”/g, '’')
+    .replace(/(^|[\s(\[—–-])"/g, '$1‘').replace(/"/g, '’');
+  return '“' + nested + '”';
+}

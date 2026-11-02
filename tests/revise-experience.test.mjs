@@ -60,6 +60,11 @@ test('lines are quoted once, however the record punctuates them', () => {
   assert.equal(quoted('“I am no bird.”'), '“I am no bird.”');
   assert.equal(quoted('"Reader, I married him."'), '“Reader, I married him.”');
   assert.equal(quoted("'Tis now the very witching time"), "“'Tis now the very witching time”");
+  // Speech with narration: the line's own marks nest inside instead of doubling.
+  assert.equal(quoted('“Are there no prisons?” asked Scrooge.'), '“‘Are there no prisons?’ asked Scrooge.”');
+  assert.equal(quoted('“If they would rather die,” said Scrooge, “they had better do it.”'), '“‘If they would rather die,’ said Scrooge, ‘they had better do it.’”');
+  // A speech that runs on past the excerpt.
+  assert.equal(quoted('“Marley was dead: to begin with'), '“Marley was dead: to begin with”');
 });
 
 test('speaker monograms skip articles and joining words', () => {
