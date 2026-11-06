@@ -21,6 +21,20 @@ test('every Today question has four different options, a hint and an explanation
   }
 });
 
+// A right answer far longer and more detailed than every wrong one can be
+// picked without knowing the book. A title is what it is, so the few
+// questions whose answer is a real title are let through by name.
+test('the right answer does not stand out by its length', () => {
+  const titles = new Set(['romeo-brooke', 'tess-subtitle', 'willows-piper']);
+  const length = text => text.replace(/\*/g, '').length;
+  for (const question of bank) {
+    if (titles.has(question.id)) continue;
+    const right = length(question.options[0]);
+    const longestWrong = Math.max(...question.options.slice(1).map(length));
+    assert.ok(right < 1.6 * longestWrong || right - longestWrong < 12, question.id + ' gives itself away by length: ' + question.options.join(' | '));
+  }
+});
+
 test('titles in Today questions are marked in pairs', () => {
   for (const question of bank) {
     for (const text of [question.question, question.hint, question.explanation, ...question.options]) {
