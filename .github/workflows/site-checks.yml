@@ -22,9 +22,12 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
+      # The homepage's seasonal hero follows the date. It is regenerated here
+      # for the season it was committed with, so the check does not fail each
+      # time the calendar turns; the build puts in the day's own season.
       - name: Regenerated pages match the committed ones
         run: |
-          node scripts/rebuild-library.js
+          ASTOR_HOME_SEASON=$(grep -o -m1 'data-home-theme="[a-z-]*"' index.html | cut -d'"' -f2) node scripts/rebuild-library.js
           git diff --exit-code
 
       - name: Build the static site

@@ -13,6 +13,7 @@ const { accentFor, motifSvg, motifSvgByName, motifName, identityFor } = require(
 const { restructureBookPage } = require('./book-page');
 const { plainHubPage } = require('./hub-pages');
 const { searchDescription } = require('./text-excerpt');
+const { astorHomeCalendar } = require('./home-calendar-rules');
 
 const root = process.cwd();
 const seasonalStylesVersion = require('crypto').createHash('sha256').update(fs.readFileSync(path.join(root, 'assets/seasons.css'))).digest('hex').slice(0, 10);
@@ -1422,7 +1423,29 @@ function plainHeadingStops(html, source) {
     open + inner.replace(/(?<!\b(?:[A-Z]|MS|St|Mr|Mrs|Dr))\.(\s*)$/, '$1') + '</' + tag + '>');
 }
 
+// The homepage's seasonal hero follows the calendar. The committed page holds
+// the season it was last regenerated in; the build puts in the one for the
+// day it runs (from the fragments rebuild-seasons writes and check-site
+// checks), so a deploy never serves an old season for the reader's browser
+// to swap out after loading.
+function currentSeasonHero(html, source) {
+  if (path.relative(root, source) !== 'index.html') return html;
+  const committed = (html.match(/data-home-theme="([a-z-]+)"/) || [])[1];
+  const calendar = JSON.parse(fs.readFileSync(path.join(__dirname, 'home-calendar.json'), 'utf8'));
+  const date = process.env.ASTOR_HOME_DATE ? new Date(process.env.ASTOR_HOME_DATE + 'T12:00:00') : new Date();
+  const today = process.env.ASTOR_HOME_SEASON || astorHomeCalendar(date, calendar).theme;
+  const fragment = path.join(root, 'assets', 'home-heroes', today + '.json');
+  if (!committed || today === committed || !fs.existsSync(fragment)) return html;
+  const marker = '<!-- seasonal-hero:start -->';
+  const from = html.indexOf(marker);
+  const to = html.indexOf('<script data-home-calendar>', from);
+  if (from === -1 || to === -1) return html;
+  const hero = JSON.parse(fs.readFileSync(fragment, 'utf8')).html;
+  return html.slice(0, from + marker.length) + '\n  ' + hero + '\n  ' + html.slice(to);
+}
+
 function prepareHtml(html, source) {
+  html = currentSeasonHero(html, source);
   html = html.replace(/(<span data-count="books">)\d+(<\/span>)/g, '$1' + catalogueBookCount + '$2');
   // The site publishes British English and stamps en-GB metadata everywhere;
   // normalise the bare lang="en" used by older source pages to match.
