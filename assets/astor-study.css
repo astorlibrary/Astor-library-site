@@ -630,6 +630,20 @@
 /* --------------------------------------------------------- character graph */
 
 .astor-graph-wrap { border: 1px solid var(--astor-line); background: var(--astor-panel); padding: 12px 8px 14px; overflow: hidden; }
+
+/* The map, the character graph and the timeline build their controls and
+   drawings after loading. While scripts run (data-theme is set by one), each
+   empty place is held at the smallest size it arrives at, so the page below
+   does not jump down as they fill. */
+html[data-theme] :is(#astor-map-controls, #astor-character-chooser):empty { min-height: 102px; }
+html[data-theme] #astor-map:empty { min-height: 642px; }
+html[data-theme] #astor-stage-switch:empty { min-height: 36px; }
+html[data-theme] #astor-character-graph:empty { min-height: 439px; }
+/* The timeline's controls hold room for the row of century links shown under them too. */
+html[data-theme] #astor-timeline-controls:empty { min-height: 114px; }
+@media (max-width: 760px) { html[data-theme] #astor-map-controls:empty { min-height: 178px; } }
+@media (min-width: 760px) { html[data-theme] #astor-character-graph:empty { min-height: 613px; } }
+@media (max-width: 620px) { html[data-theme] #astor-timeline-controls:empty { min-height: 174px; } }
 .astor-graph { display: block; width: 100%; height: auto; max-width: 100%; font-family: var(--astor-sans); }
 .astor-graph .astor-edge { fill: none; stroke: rgba(var(--line-rgb,32,28,26),0.34); stroke-width: 1.5; transition: opacity .2s ease, stroke-width .2s ease; }
 .astor-graph .astor-edge.is-enemy { stroke: var(--red-text,var(--astor-red)); stroke-dasharray: 5 4; }
