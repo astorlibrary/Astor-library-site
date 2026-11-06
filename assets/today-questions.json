@@ -656,7 +656,7 @@
       "id": "thane",
       "question": "In *Macbeth*, what is a thane?",
       "options": [
-        "A Scottish nobleman holding land from the king",
+        "A Scottish nobleman",
         "A Norwegian general",
         "A priest of the old religion",
         "A royal messenger"
@@ -673,7 +673,7 @@
       "id": "groundlings",
       "question": "In *Hamlet*, who are the “groundlings”?",
       "options": [
-        "Spectators who stood in the yard of the playhouse",
+        "Standing playgoers",
         "Gravediggers",
         "Soldiers on watch",
         "The court’s spies"
@@ -775,7 +775,7 @@
       "id": "odyssey-shroud",
       "question": "Penelope tells her suitors she will choose a husband when she has finished weaving a shroud. Whose shroud is it?",
       "options": [
-        "Laertes’, Odysseus’s father",
+        "Laertes’",
         "Odysseus’s",
         "Her own",
         "Telemachus’s"
@@ -826,14 +826,14 @@
       "id": "iliad-astyanax",
       "question": "In Book 6 of the *Iliad*, why does Hector’s baby son Astyanax cry when his father reaches for him?",
       "options": [
-        "He is frightened by the plume on Hector’s helmet",
-        "He wants his nurse",
+        "His father’s helmet frightens him",
+        "He is hungry",
         "He hears the battle outside",
-        "Andromache is weeping"
+        "He does not know his father’s voice"
       ],
       "answer": 0,
       "hint": "Hector laughs and takes the helmet off.",
-      "explanation": "Hector has come in from the fighting to see Andromache. He lays down the helmet, kisses the boy and prays that he will be a better man than his father.",
+      "explanation": "Hector has come in from the fighting to see Andromache. The boy shrinks back from the bronze helmet and its horsehair plume; Hector lays it down, kisses him and prays that he will be a better man than his father.",
       "link": {
         "href": "/guides/the-iliad/",
         "label": "The Iliad study guide"
@@ -860,7 +860,7 @@
       "id": "aeneid-augustus",
       "question": "According to the ancient lives of Virgil, he asked for the unfinished *Aeneid* to be burned. Who overruled him?",
       "options": [
-        "The emperor Augustus",
+        "Augustus",
         "Maecenas",
         "Horace",
         "Ovid"
@@ -877,14 +877,14 @@
       "id": "aeneid-dido",
       "question": "Which queen falls in love with Aeneas and kills herself when he leaves?",
       "options": [
-        "Dido, Queen of Carthage",
+        "Dido",
         "Lavinia",
         "Camilla",
         "Hecuba"
       ],
       "answer": 0,
       "hint": "Her city is in North Africa.",
-      "explanation": "Mercury reminds Aeneas that he is meant to found a new home in Italy, and he sails from Carthage. Dido dies on a pyre in Book 4.",
+      "explanation": "Dido is Queen of Carthage. Mercury reminds Aeneas that he is meant to found a new home in Italy, and he sails from Carthage. Dido dies on a pyre in Book 4.",
       "link": {
         "href": "/books/the-aeneid/",
         "label": "The Aeneid"
@@ -996,14 +996,14 @@
       "id": "malfi-cover-her-face",
       "question": "In *The Duchess of Malfi*, who says “Cover her face; mine eyes dazzle: she died young”?",
       "options": [
-        "Ferdinand, her twin brother",
+        "Ferdinand",
         "Bosola",
         "The Cardinal",
         "Antonio"
       ],
       "answer": 0,
       "hint": "He ordered her death.",
-      "explanation": "Ferdinand speaks over the Duchess’s body in Act 4, scene 2. Soon afterwards he turns on Bosola, who carried out the murder.",
+      "explanation": "Ferdinand, the Duchess’s twin brother, speaks over her body in Act 4, scene 2. Soon afterwards he turns on Bosola, who carried out the murder.",
       "link": {
         "href": "/books/the-duchess-of-malfi/",
         "label": "The Duchess of Malfi"
@@ -1574,10 +1574,10 @@
       "id": "blake-printing",
       "question": "How did William Blake print *Songs of Innocence and of Experience*?",
       "options": [
-        "By relief etching on copper plates, coloured by hand",
-        "By movable type with woodcuts",
-        "By lithography",
-        "By engraving on steel"
+        "By relief etching, coloured by hand",
+        "By movable type, with woodcuts",
+        "By lithography, in coloured inks",
+        "By engraving on steel plates"
       ],
       "answer": 0,
       "hint": "Text and pictures were made on the same plate.",
@@ -1931,14 +1931,14 @@
       "id": "sign-of-four-cocaine",
       "question": "At the start of *The Sign of Four*, what is Holmes injecting himself with?",
       "options": [
-        "A seven-per-cent solution of cocaine",
+        "Cocaine",
         "Morphine",
         "Laudanum",
         "Opium"
       ],
       "answer": 0,
       "hint": "Watson asks which it is today.",
-      "explanation": "Holmes says he takes the drug when he has no work for his mind. Mary Morstan then arrives with her case.",
+      "explanation": "It is cocaine, a seven-per-cent solution. Holmes says he takes the drug when he has no work for his mind. Mary Morstan then arrives with her case.",
       "link": {
         "href": "/books/sign-of-four/",
         "label": "The Sign of Four"
@@ -2033,14 +2033,14 @@
       "id": "war-of-worlds-horsell",
       "question": "Where does the first Martian cylinder land in *The War of the Worlds*?",
       "options": [
-        "Horsell Common, near Woking",
+        "Horsell Common",
         "Hampstead Heath",
         "Richmond Park",
         "Salisbury Plain"
       ],
       "answer": 0,
       "hint": "Wells was living in Woking when he wrote the book.",
-      "explanation": "The cylinder lands on Horsell Common, a short walk from Wells’s house. The Martians later advance on London.",
+      "explanation": "The cylinder lands on Horsell Common, near Woking and a short walk from Wells’s house. The Martians later advance on London.",
       "link": {
         "href": "/books/war-of-the-worlds/",
         "label": "The War of the Worlds"
@@ -2339,7 +2339,7 @@
       "id": "douglass-escape",
       "question": "Why did Douglass leave out the details of his escape from his *Narrative* of 1845?",
       "options": [
-        "To protect the people and routes that helped him",
+        "To protect the people who helped him",
         "Because he had not yet escaped",
         "Because his publisher objected",
         "Because he had forgotten them"
@@ -2356,9 +2356,9 @@
       "id": "uncle-tom-eliza",
       "question": "In *Uncle Tom’s Cabin*, how does Eliza escape across the Ohio River with her child?",
       "options": [
-        "By jumping from one ice floe to the next",
-        "By ferry at night",
-        "By swimming",
+        "Across the ice floes",
+        "On a ferry at night",
+        "By swimming with him",
         "Over a railway bridge"
       ],
       "answer": 0,
@@ -2373,10 +2373,10 @@
       "id": "call-wild-buck",
       "question": "Where does Buck live before he is stolen and sold in *The Call of the Wild*?",
       "options": [
-        "On Judge Miller’s estate in the Santa Clara Valley",
-        "In a lumber camp in Oregon",
-        "On a farm in Kansas",
-        "In Dawson City"
+        "On Judge Miller’s estate, Santa Clara Valley",
+        "In a lumber camp on the Columbia River",
+        "On a cattle ranch in western Kansas",
+        "At a trading post in Dawson City"
       ],
       "answer": 0,
       "hint": "It is in California.",
@@ -2441,10 +2441,10 @@
       "id": "sleepy-hollow-hessian",
       "question": "According to the legend in Washington Irving’s story, who was the Headless Horseman in life?",
       "options": [
-        "A Hessian trooper whose head was carried away by a cannonball",
-        "A murdered schoolmaster",
-        "A Dutch farmer",
-        "A British spy"
+        "A Hessian trooper killed by a cannonball",
+        "A Dutch farmer killed in a feud",
+        "A British spy hanged by the patriots",
+        "A schoolmaster lost in a snowstorm"
       ],
       "answer": 0,
       "hint": "He fought in the American Revolutionary War.",
@@ -2526,10 +2526,10 @@
       "id": "blue-castle-letter",
       "question": "What news makes Valancy Stirling change her life in L. M. Montgomery’s *The Blue Castle*?",
       "options": [
-        "A doctor’s letter saying she has a year to live",
-        "An inheritance from an uncle",
-        "A proposal of marriage",
-        "Her mother’s death"
+        "A doctor’s letter giving her a year to live",
+        "Word of an inheritance from a rich uncle",
+        "An unexpected proposal of marriage",
+        "The sudden death of her mother"
       ],
       "answer": 0,
       "hint": "The letter later turns out to have been meant for someone else.",
