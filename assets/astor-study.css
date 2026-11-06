@@ -1632,6 +1632,15 @@ html.rx-locked { overflow: hidden; }
   content: ''; position: absolute; inset: 0; z-index: -1; opacity: .5; pointer-events: none;
   background: repeating-linear-gradient(90deg, rgba(255, 255, 255, .025) 0 1px, transparent 1px 7px);
 }
+/* Until the hub draws the book (cover, title and buttons), its hero is held at
+   the smallest height any book's hero has at that width, so the activities
+   below do not jump down as far when it arrives. */
+html[data-theme] #rv-title.rx-hub-hero:not(:has(.rx-hero-cover)) { min-height: 327px; }
+@media (min-width: 1100px) { html[data-theme] #rv-title.rx-hub-hero:not(:has(.rx-hero-cover)) { min-height: 349px; } }
+@media (max-width: 560px) { html[data-theme] #rv-title.rx-hub-hero:not(:has(.rx-hero-cover)) { min-height: 439px; } }
+/* The activities under it never come to less than 824px, so their place is held
+   too, and the links at the foot of the page start below the screen. */
+html[data-theme] #rv-hub:has(> .rv-loading) { min-height: 820px; }
 .rx-hero-inner { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: clamp(22px, 3.4vw, 44px); align-items: center; }
 .rx-hero-cover { display: block; width: clamp(130px, 15vw, 190px); line-height: 0; transform: rotate(-2.5deg); transition: transform .3s var(--rx-ease); }
 .rx-hero-cover:hover { transform: rotate(-1deg) translateY(-4px); }
