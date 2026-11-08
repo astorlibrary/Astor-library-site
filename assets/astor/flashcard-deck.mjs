@@ -32,9 +32,9 @@ const SITTING = 10;
 const MODE_KEY = 'astor-flashcard-mode';
 
 const MODES = [
-  { id: 'recall', name: 'Recall', note: 'See the line. Say who, where and why.' },
-  { id: 'complete', name: 'Complete', note: 'See the moment. Say the line.' },
-  { id: 'memorise', name: 'Memorise', note: 'Learn it word for word.' }
+  { id: 'recall', name: 'Recall', note: 'Read a line, then say who speaks it, where and why.' },
+  { id: 'complete', name: 'Complete', note: 'Read where a line comes from and its first words, then say the rest.' },
+  { id: 'memorise', name: 'Memorise', note: 'Learn a line by heart, with less of it shown each time.' }
 ];
 
 const BOXES = [

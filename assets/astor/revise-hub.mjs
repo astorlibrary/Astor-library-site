@@ -166,7 +166,7 @@ function drawLibrary(day) {
   const rows = [
     el('li', {}, [el('a', { class: 'rx-hub-row', href: '/today/' }, [
       el('span', { class: 'rx-hub-name', text: 'Today' }),
-      el('span', { class: 'rx-hub-note', text: 'Five questions on literature, new each day.' }),
+      el('span', { class: 'rx-hub-note', text: 'Five questions a day on books, plays and poems.' }),
       done ? el('span', { class: 'rx-hub-status', text: 'Done today, ' + done.score + ' of ' + (done.total || 5) }) : null
     ])])
   ];

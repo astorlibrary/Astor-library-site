@@ -74,10 +74,11 @@ test('all generated resource pages expose the appropriate library or external ac
 test('dashboard and viewer expose the complete private-library interaction contract', () => {
   const account = read('account/index.html');
   for (const marker of [
-    'Continue Learning',
-    'Saved Resources',
-    'Recently Viewed',
-    'Account Settings',
+    // The four dashboard sections, by their headings' ids, so the wording can change.
+    'id="continue-learning-title"',
+    'id="saved-resources-title"',
+    'id="recently-viewed-title"',
+    'id="account-settings-title"',
     'data-load-more-saved',
     'data-current-consent',
     'data-email-change-form',

@@ -626,7 +626,7 @@ if (!fs.existsSync(authorsHubFile)) {
   failures.push('The writers directory is missing');
 } else {
   const authorsHub = fs.readFileSync(authorsHubFile, 'utf8');
-  if (!authorsHub.includes('<h1>Authors represented in Astor Library.</h1>')) failures.push('The writers directory is missing its main heading');
+  if (!authorsHub.includes('<h1>Writers.</h1>')) failures.push('The writers directory is missing its main heading');
   for (const authorHref of ['/authors/charles-dickens/', '/authors/frederick-douglass/', '/authors/jane-austen/', '/authors/mary-shelley/', '/authors/arthur-conan-doyle/', '/authors/h-g-wells/', '/authors/mark-twain/', '/shakespeare/']) {
     if (!authorsHub.includes('href="' + authorHref + '"')) failures.push('The writers directory is missing ' + authorHref);
   }

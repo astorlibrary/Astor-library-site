@@ -71,7 +71,7 @@ ${header()}
 <main class="page-wrap">
 <section class="page-intro"><div><p class="kicker">Free guides</p><h1>Free literature guides.</h1><p class="deck">${resources.length} guides to Shakespeare, poetry, fiction and drama, free to read.</p></div></section>
 <section class="resource-finder" aria-label="Find a guide"><label for="resource-search">What are you studying?</label><div class="resource-search-row"><input id="resource-search" type="search" autocomplete="off" placeholder="Try Gatsby, Dracula, Shakespeare or gender"><p id="resource-count" aria-live="polite">${resources.length} guides</p></div><div class="resource-filters" aria-label="Filter free resources"><button class="resource-filter is-active" type="button" data-resource-filter="all" aria-pressed="true">All</button>${filters}</div></section>
-<p class="resource-empty" id="resource-empty" hidden>No guide matches that search yet. Try the book title, an author or a broader idea.</p>
+<p class="resource-empty" id="resource-empty" hidden>No guide matches that search. Try a book title or an author.</p>
 ${sections}
 <section class="resource-editorial"><h2>What a guide holds.</h2><p>Plot, passages and context, with the quotations you are likely to need. Written to sit beside the book.</p><p><a href="/site-index/#free-guides">Every guide in the site index.</a></p></section>
 <p class="resource-support">The guides are free. <a href="https://ko-fi.com/astorlibrary">Support Astor Library</a> if they help.</p>

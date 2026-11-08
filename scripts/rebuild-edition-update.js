@@ -51,7 +51,7 @@ const collectionCopy = {
     description: 'Astor editions of Skelton, More, Machiavelli, Marlowe, Webster and Milton, with material on Tudor poetry, humanism, drama, epic, print and political power.',
     kicker: 'Period',
     heading: 'Renaissance &amp; Early Modern.',
-    deck: 'Tudor verse, political thought, tragedy and epic: Skelton&rsquo;s poems, More&rsquo;s <em>Utopia</em>, Machiavelli&rsquo;s <em>The Prince</em>, Marlowe&rsquo;s <em>Doctor Faustus</em>, Webster&rsquo;s <em>The Duchess of Malfi</em>, Milton&rsquo;s <em>Paradise Lost</em> and the writings of Charles I. Most of them are about power: who holds it, and how.'
+    deck: 'Tudor verse, political thought, tragedy and epic: Skelton&rsquo;s poems, More&rsquo;s <em>Utopia</em>, Machiavelli&rsquo;s <em>The Prince</em>, Marlowe&rsquo;s <em>Doctor Faustus</em>, Webster&rsquo;s <em>The Duchess of Malfi</em>, Milton&rsquo;s <em>Paradise Lost</em> and the writings of Charles I. Most of them are about who holds power, and how.'
   },
   'shakespeare/index.html': {
     title: 'Shakespeare Standard Editions, Scholarly Editions and Apocrypha | Astor Library',
@@ -76,10 +76,10 @@ const collectionCopy = {
   },
   'victorian/index.html': {
     title: 'Victorian Literature | Astor Library',
-    description: 'Victorian editions by Dickens, Brontë, Hardy, Stevenson, Stoker, Wilde, Wells, Conan Doyle, Henry James and Ibsen, including Jane Eyre and Christmas writing, with notes and context.',
+    description: 'Victorian editions by Dickens, the Brontës, Hardy, Stevenson, Stoker, Wilde, Wells, Conan Doyle, Henry James and Ibsen, including Jane Eyre and Christmas writing, with notes and context.',
     kicker: 'Period',
     heading: 'Victorian.',
-    deck: 'Dickens and Bront&euml; join Hardy, Stevenson, Stoker, Wilde, Wells, Conan Doyle, Henry James and Ibsen in a collection moving between Christmas rooms, city streets, country houses, moors, laboratories and consulting rooms. Each edition places the work beside its publication and social history.'
+    deck: 'Dickens&rsquo;s Christmas books and <em>Great Expectations</em>, Charlotte Bront&euml;&rsquo;s <em>Jane Eyre</em> and Emily Bront&euml;&rsquo;s <em>Wuthering Heights</em>, Hardy&rsquo;s <em>Tess of the d&rsquo;Urbervilles</em>, Wilkie Collins&rsquo;s <em>The Woman in White</em> and <em>The Moonstone</em>, Stevenson&rsquo;s <em>Jekyll and Hyde</em>, Stoker&rsquo;s <em>Dracula</em>, Wilde&rsquo;s <em>Dorian Gray</em> and <em>The Importance of Being Earnest</em>, Conan Doyle&rsquo;s Sherlock Holmes, Wells&rsquo;s <em>The War of the Worlds</em>, Henry James&rsquo;s <em>The Turn of the Screw</em> and Ibsen&rsquo;s <em>A Doll&rsquo;s House</em>, with Victorian ghost stories and the comedy of <em>Three Men in a Boat</em> and <em>The Diary of a Nobody</em>.'
   },
   'modern/index.html': {
     title: 'Modern Classic Literature | Astor Library',

@@ -309,8 +309,8 @@ for (const match of resourcesHtml.matchAll(resourcePattern)) {
     const discovered = Array.from(detailHtml.matchAll(/href="(\/books\/[^"]+\/)"/g), function (book) { return book[1]; });
     relatedBooks = unique(relatedBooks.concat(discovered));
     // The page's own headings describe the guide; the ones every guide page
-    // shares ("Read now. Save for later.") describe the page, and are left out.
-    const furniture = /^(read now\. save for later|what the guide (is for|covers)|open the illustrated guide|books and guides that go with it|questions and evidence|related editions and guides)\.?$/i;
+    // shares ("Save this guide.") describe the page, and are left out.
+    const furniture = /^(save this guide|what the guide (is for|covers)|open the illustrated guide|books and guides that go with it|questions and evidence|related editions and guides)\.?$/i;
     tags.push.apply(tags, Array.from(detailHtml.matchAll(/<h[23][^>]*>([\s\S]*?)<\/h[23]>/g), function (heading) {
       return textOnly(heading[1]);
     }).filter(function (heading) { return !furniture.test(heading); }));
@@ -1026,7 +1026,7 @@ const entryCards = entries.map(function (entry) {
 const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +
   '<title>Search the Catalogue | Astor Library</title>' +
-  '<meta name="description" content="Search Astor Library books, close readings, writers, subject guides, free literature resources and study editions in one place.">' +
+  '<meta name="description" content="Search Astor Library books, close readings, writers, subject guides, free literature guides and study editions.">' +
   '<link rel="stylesheet" href="/assets/styles.css"><style>.explore-paths{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:1050px){.explore-paths{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.explore-paths{grid-template-columns:1fr}}</style><script src="/assets/explore.js" defer></script>' +
   '</head><body>' + siteHeader() +
   '<main class="page-wrap explore-page">' +
@@ -1105,12 +1105,12 @@ const authorDirectoryCards = authors.map(function (author) {
 
 const authorsHtml = '<!doctype html><html lang="en"><head>' +
   '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +
-  '<title>Classic Authors and Writers | Astor Library</title><meta name="description" content="Author pages with biographical information, publication context, literary analysis and links to every Astor Library edition by each writer.">' +
+  '<title>Classic Authors and Writers | Astor Library</title><meta name="description" content="Every writer in the Astor Library catalogue, with links to their books, guides and study editions.">' +
   '<link rel="stylesheet" href="/assets/styles.css"></head><body>' + siteHeader() +
-  '<main class="page-wrap authors-page"><section class="authors-hero"><div><p class="kicker">Authors and editions</p><h1>Authors represented in Astor Library.</h1><p class="deck">Author pages include biographical information, publication context, discussion of literary form and links to the writer’s books, guides and study editions.</p><div class="button-row"><a class="button primary" href="#all-writers">See every writer</a><a class="button secondary" href="/library/">Browse all books</a></div></div><div class="authors-hero-shelf" aria-hidden="true"><img src="/Great%20Expectations.png" alt=""><img src="/Pride%20and%20Prejudice.png" alt=""><img src="/Adventures%20of%20Sherlock%20Holmes.png" alt=""></div></section>' +
-  '<section class="authors-intro"><p>Writer pages include full biographical guides and concise catalogues of available books. Anthologies are also listed under their named contributors.</p></section>' +
-  '<section class="featured-authors" aria-labelledby="featured-authors-title"><div class="section-title"><p class="kicker">Detailed pages</p><h2 id="featured-authors-title">Author biographies and reading guides.</h2></div>' + featuredAuthorCards + '</section>' +
-  '<section class="author-directory" id="all-writers" aria-labelledby="all-writers-title"><div class="author-directory-head"><div><p class="kicker">Author directory</p><h2 id="all-writers-title">All authors.</h2></div><p>' + authors.length + ' writers currently appear in Astor Library. Every entry links to the relevant books and collections.</p></div><div class="author-directory-grid">' + authorDirectoryCards + '</div></section>' +
+  '<main class="page-wrap authors-page"><section class="authors-hero"><div><p class="kicker">The catalogue</p><h1>Writers.</h1><p class="deck">Every writer in the catalogue, with links to their books, guides and study editions.</p><div class="button-row"><a class="button primary" href="#all-writers">See every writer</a><a class="button secondary" href="/library/">Browse all books</a></div></div><div class="authors-hero-shelf" aria-hidden="true"><img src="/Great%20Expectations.png" alt=""><img src="/Pride%20and%20Prejudice.png" alt=""><img src="/Adventures%20of%20Sherlock%20Holmes.png" alt=""></div></section>' +
+  '<section class="authors-intro"><p>Anthologies are listed under each writer they include.</p></section>' +
+  '<section class="featured-authors" aria-labelledby="featured-authors-title"><div class="section-title"><p class="kicker">Lives</p><h2 id="featured-authors-title">Biographies.</h2></div>' + featuredAuthorCards + '</section>' +
+  '<section class="author-directory" id="all-writers" aria-labelledby="all-writers-title"><div class="author-directory-head"><div><p class="kicker">A to Z</p><h2 id="all-writers-title">All writers.</h2></div><p>' + authors.length + ' writers, each listed with their books.</p></div><div class="author-directory-grid">' + authorDirectoryCards + '</div></section>' +
   '</main><footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Author pages, complete classic texts and study resources.</p></div><div class="footer-links"><a href="/library/">All books</a><a href="/explore/">Search</a><a href="/reading-routes/">Reading routes</a><a href="/resources/">Free resources</a></div></footer></body></html>';
 
 fs.mkdirSync(path.join(root, 'authors'), { recursive: true });
@@ -1158,7 +1158,7 @@ const passageLinks = passages
 
 const siteIndexHtml = '<!doctype html><html lang="en"><head>' +
   '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +
-  '<title>Site Index | Astor Library</title><meta name="description" content="A complete, crawlable index of Astor Library books, close readings, writers, subject guides, free guides, study editions and reading routes.">' +
+  '<title>Site Index | Astor Library</title><meta name="description" content="Every Astor Library book, close reading, writer, subject guide, free guide, study edition and reading route, on one page.">' +
   '<link rel="stylesheet" href="/assets/styles.css"><style>' +
   '.site-index-quick{display:flex;gap:10px;flex-wrap:wrap;margin:30px 0 60px}.site-index-quick a{font-family:system-ui,-apple-system,BlinkMacSystemFont,\'Segoe UI\',sans-serif;font-weight:800;color:var(--wine-text,var(--burgundy));border:1px solid var(--line);background:var(--surface,#fff8ef);padding:10px 13px;text-decoration:none}.index-group{border-top:1px solid var(--line);padding:38px 0 14px}.index-group h2{font-size:clamp(34px,5vw,58px);line-height:.95;letter-spacing:-.04em;margin:0 0 22px}.index-group h2 a{text-decoration:none}.index-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.index-links>a{display:flex;flex-direction:column;gap:6px;min-height:92px;border:1px solid var(--line);background:rgba(var(--surface-rgb,255,248,239),0.86);padding:15px;text-decoration:none}.index-links span{font-size:21px;font-weight:700;line-height:1.08}.index-links small{font-family:system-ui,-apple-system,BlinkMacSystemFont,\'Segoe UI\',sans-serif;color:var(--text-muted,var(--muted));line-height:1.35}@media(max-width:820px){.index-links{grid-template-columns:1fr}}' +
   '</style></head><body>' + siteHeader() +
