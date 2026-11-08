@@ -487,7 +487,9 @@ for (const route of passageRoutes) {
   const noteCount = countMatches(passage, /data-passage-note=/g);
   if (markCount < 5 || markCount > 8) failures.push(route + ' must attach between five and eight notes to exact phrases');
   if (noteCount !== markCount) failures.push(route + ' margin notes must match its marked phrases');
-  if (!passage.includes('class="passage-question"')) failures.push(route + ' is missing its closing reading question');
+  const question = passage.match(/<section class="passage-question">[\s\S]*?<h2>([\s\S]*?)<\/h2>/);
+  if (!question) failures.push(route + ' is missing its closing reading question');
+  else if (!/\?[”’]?$/.test(question[1].replace(/<[^>]+>/g, '').trim())) failures.push(route + ' has a closing reading question that asks nothing');
   if (!passage.includes('Texts consulted')) failures.push(route + ' is missing its source note');
   const position = passageRoutes.indexOf(route) + 1;
   const kicker = passage.match(/<p class="kicker">Close reading (\d+)/);
