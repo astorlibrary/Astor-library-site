@@ -233,7 +233,7 @@ function hardbackPage(hardbacks) {
 
   return `<!doctype html>
 <html lang="en-GB">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Hardback Editions | Astor Library</title><meta name="description" content="Browse Astor Library hardback editions across epic, Shakespeare, Victorian and American literature, with matched paperback links on every book page."><link rel="stylesheet" href="/assets/styles.css"></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Hardback Editions | Astor Library</title><meta name="description" content="Astor Library hardback editions of epic, Shakespeare, Victorian and American literature, each shown beside its paperback on the book’s own page."><link rel="stylesheet" href="/assets/styles.css"></head>
 <body>${header()}
 <main id="main-content" class="page-wrap hardback-page">
   <section class="hardback-hero"><div class="hardback-hero-copy"><p class="kicker">Books to keep and give</p><h1>Hardback editions.</h1><p class="deck">${hardbacks.length} Astor books are also published in hardback. The covers on this page are the hardback covers.</p><div class="button-row"><a class="button primary" href="#hardback-shelf">Browse the hardback shelf</a><a class="button secondary" href="/library/">All Astor books</a></div></div><nav class="hardback-hero-covers" aria-label="Highlighted hardback editions">${heroCovers}</nav></section>

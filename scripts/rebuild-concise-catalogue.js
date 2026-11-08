@@ -55,7 +55,7 @@ if (!fs.existsSync(russianFile)) {
   fs.mkdirSync(path.dirname(russianFile), { recursive: true });
   fs.writeFileSync(russianFile, `<!doctype html>
 <html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Russian Literature | Astor Library</title><meta name="description" content="Astor annotated editions of Dostoevsky, Tolstoy and Gogol, with complete translations, explanatory notes and historical context."><link rel="stylesheet" href="/assets/styles.css"></head><body>${header}
-<main id="main-content" class="page-wrap"><section class="page-intro"><div><p class="kicker">Collection</p><h1>Russian.</h1><p class="deck">Complete works by Fyodor Dostoevsky, Leo Tolstoy and Nikolai Gogol, with explanatory notes and historical context.</p></div></section><section class="timeline"></section></main>${footer}</body></html>\n`);
+<main id="main-content" class="page-wrap"><section class="page-intro"><div><p class="kicker">Collection</p><h1>Russian.</h1><p class="deck">Dostoevsky’s <em>White Nights</em>, <em>Notes from Underground</em> and <em>The Brothers Karamazov</em>, Tolstoy’s <em>The Death of Ivan Ilyich</em> and Gogol’s <em>The Overcoat</em>, in complete texts with explanatory notes and historical context.</p></div></section><section class="timeline"></section></main>${footer}</body></html>\n`);
 }
 
 const seen = new Set();

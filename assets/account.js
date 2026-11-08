@@ -303,13 +303,13 @@
     const viewerFallback = `/presentations/?presentation=${encodeURIComponent(id)}`;
     return {
       id,
-      title: String(item.title || 'Astor Library resource'),
+      title: String(item.title || 'Astor Library guide'),
       description: String(item.description || item.focus || ''),
       resourceHref: localHref(item.resourceHref || item.href, viewerFallback),
       viewerUrl: localHref(item.viewerUrl || item.externalUrl, viewerFallback),
       image: localHref(item.image, '/assets/astor-header-mark.png'),
       imageIsFallback: !item.image,
-      type: String(item.typeLabel || item.type || 'Illustrated resource')
+      type: String(item.typeLabel || item.type || 'Illustrated guide')
     };
   }
 
@@ -386,13 +386,13 @@
     const id = resourceRecordId(record);
     return metadata.get(id) || {
       id,
-      title: 'Astor Library resource',
+      title: 'Astor Library guide',
       description: '',
       resourceHref: viewerHref(id),
       viewerUrl: viewerHref(id),
       image: '/assets/astor-header-mark.png',
       imageIsFallback: true,
-      type: 'Illustrated resource'
+      type: 'Illustrated guide'
     };
   }
 
@@ -559,12 +559,12 @@
       state.metadata = metadataResult.status === 'fulfilled' ? metadataResult.value : new Map();
       renderLibrary(state, elements);
       if (metadataResult.status === 'rejected') {
-        setLibraryStatus(elements.status, 'Your library loaded, but its resource details are temporarily unavailable. The links still work.', 'error');
+        setLibraryStatus(elements.status, 'Your guides loaded, but some of their details did not. The links still work.', 'error');
       } else {
         setLibraryStatus(elements.status, '');
       }
     } catch (error) {
-      setLibraryStatus(elements.status, error.message || 'Your resource library could not be loaded. Refresh the page to try again.', 'error');
+      setLibraryStatus(elements.status, error.message || 'Your guides could not be loaded. Reload the page to try again.', 'error');
       elements.continueEmpty.hidden = false;
       elements.savedEmpty.hidden = false;
       elements.recentEmpty.hidden = false;
@@ -576,7 +576,7 @@
       state.busy = true;
       elements.loadMore.disabled = true;
       elements.loadMore.setAttribute('aria-busy', 'true');
-      elements.loadMore.textContent = 'Loading saved resources…';
+      elements.loadMore.textContent = 'Loading saved guides…';
       setLibraryStatus(elements.status, '');
       try {
         const page = await auth.library(state.savedCursor);
@@ -592,14 +592,14 @@
         state.savedCursor = typeof page.savedCursor === 'string' ? page.savedCursor : null;
         state.savedHasMore = page.savedHasMore === true;
         renderLibrary(state, elements);
-        setLibraryStatus(elements.status, 'More saved resources have been loaded.', 'success');
+        setLibraryStatus(elements.status, 'More saved guides loaded.', 'success');
       } catch (error) {
-        setLibraryStatus(elements.status, error.message || 'More saved resources could not be loaded.', 'error');
+        setLibraryStatus(elements.status, error.message || 'More saved guides could not be loaded.', 'error');
       } finally {
         state.busy = false;
         elements.loadMore.disabled = false;
         elements.loadMore.removeAttribute('aria-busy');
-        elements.loadMore.textContent = 'Load more saved resources';
+        elements.loadMore.textContent = 'Show more saved guides';
       }
     });
 
@@ -627,12 +627,12 @@
           heading?.setAttribute('tabindex', '-1');
           heading?.focus();
         }
-        setLibraryStatus(elements.status, 'The resource was removed from your saved list.', 'success');
+        setLibraryStatus(elements.status, 'The guide was removed from your saved list.', 'success');
       } catch (error) {
         button.disabled = false;
         button.removeAttribute('aria-busy');
         button.textContent = originalLabel;
-        setLibraryStatus(elements.status, error.message || 'The resource could not be removed. Try again.', 'error');
+        setLibraryStatus(elements.status, error.message || 'The guide could not be removed. Try again.', 'error');
       }
     });
   }
@@ -713,9 +713,9 @@
       const introKicker = document.querySelector('[data-account-intro-kicker]');
       const introTitle = document.querySelector('[data-account-intro-title]');
       const introCopy = document.querySelector('[data-account-intro-copy]');
-      if (introKicker) introKicker.textContent = 'My account';
-      if (introTitle) introTitle.textContent = 'Your resource library.';
-      if (introCopy) introCopy.textContent = 'Continue illustrated guides, return to saved resources and manage the essential settings for your Astor Library account.';
+      if (introKicker) introKicker.textContent = 'Account';
+      if (introTitle) introTitle.textContent = 'Your illustrated guides';
+      if (introCopy) introCopy.textContent = 'Carry on with a guide from where you stopped, or open one you saved. Your settings are at the end of the page.';
       setupResourceLibrary(shell);
       setupDeleteAccount(shell);
     } else {
@@ -825,7 +825,7 @@
     try {
       const result = await auth.request('exchange-code', { code, ...(flowId ? { flowId } : {}) });
       window.history.replaceState({}, '', '/account/callback/');
-      setStatus(callback, 'Email confirmed. Opening your resource…', 'success');
+      setStatus(callback, 'Email confirmed. Opening your guide…', 'success');
       if (result.authenticated) window.location.replace(next);
     } catch (error) {
       setStatus(callback, error.message, 'error');

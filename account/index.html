@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>My Account | Astor Library</title>
-<meta name="description" content="Sign in to Astor Library, continue learning resources and manage saved guides and account settings.">
+<meta name="description" content="Sign in or create a free account to read the illustrated guides in full and keep your place in them.">
 <meta name="robots" content="noindex,nofollow">
 <link rel="stylesheet" href="/assets/styles.css">
 <link rel="stylesheet" href="/assets/account.css">
@@ -14,7 +14,7 @@
 <body>
 <header class="site-header"><a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-torch.svg" alt=""><span class="word">LIBRARY</span></a><nav class="nav" aria-label="Primary navigation"><a class="nav-link" href="/explore/">Explore</a><a class="nav-link" href="/library/">Books</a><a class="nav-link" href="/study/">Study editions</a><a class="nav-link" href="/resources/">Resources</a></nav></header>
 <main class="account-page">
-  <section class="account-intro"><p class="kicker" data-account-intro-kicker>Free resource access</p><h1 data-account-intro-title>Your Astor Library account.</h1><p data-account-intro-copy>Create one free account to continue beyond the public preview in Astor Library’s illustrated guides. Books, publishing information and ordinary reading pages remain public.</p></section>
+  <section class="account-intro"><p class="kicker" data-account-intro-kicker>Account</p><h1 data-account-intro-title>Your Astor Library account.</h1><p data-account-intro-copy>The illustrated guides show their first three slides to everyone. A free account opens the rest and keeps your place. Nothing else on the site needs one.</p></section>
   <section class="account-shell" data-account-shell aria-label="Account access">
     <div class="account-main">
       <p class="account-loading" data-account-loading>Checking your account…</p>
@@ -52,34 +52,33 @@
       <section class="account-signed-in" data-account-signed-in aria-labelledby="my-account-title" hidden>
         <header class="account-dashboard-heading">
           <p class="kicker">Signed in</p>
-          <h2 id="my-account-title">My Account</h2>
-          <p>Return to resources you have opened or saved, then manage the essentials of your Astor Library account.</p>
+          <h2 id="my-account-title">Your account</h2>
           <p class="account-dashboard-email">Signed in as <strong data-account-email></strong></p>
         </header>
 
-        <p class="account-library-status" data-library-status role="status" aria-live="polite">Loading your resource library…</p>
+        <p class="account-library-status" data-library-status role="status" aria-live="polite">Loading your guides…</p>
 
         <section class="account-library-section" aria-labelledby="continue-learning-title">
-          <header><p class="kicker">Pick up where you left off</p><h3 id="continue-learning-title">Continue Learning</h3><p>Open a recently read guide at the last slide you reached.</p></header>
+          <header><p class="kicker">Last read</p><h3 id="continue-learning-title">Where you stopped</h3><p>Open a recently read guide at the last slide you reached.</p></header>
           <div class="account-resource-grid account-resource-grid-featured" data-continue-list></div>
-          <p class="account-empty" data-continue-empty hidden>Open an illustrated resource and your place will appear here.</p>
+          <p class="account-empty" data-continue-empty hidden>Open an illustrated guide and your place in it will appear here.</p>
         </section>
 
         <section class="account-library-section" aria-labelledby="saved-resources-title">
-          <header><p class="kicker">Your reading list</p><h3 id="saved-resources-title">Saved Resources</h3><p>Keep useful guides together for another lesson or reading session.</p></header>
+          <header><p class="kicker">Saved</p><h3 id="saved-resources-title">Saved guides</h3><p>Guides you have saved, to come back to.</p></header>
           <div class="account-resource-grid" data-saved-list></div>
-          <p class="account-empty" data-saved-empty hidden>You have not saved a resource yet. Use <strong>Save resource</strong> in any illustrated guide to add it here.</p>
-          <div class="account-load-more"><button class="account-secondary" type="button" data-load-more-saved hidden>Load more saved resources</button></div>
+          <p class="account-empty" data-saved-empty hidden>You have not saved a guide yet. Use <strong>Save</strong> in any illustrated guide to add it here.</p>
+          <div class="account-load-more"><button class="account-secondary" type="button" data-load-more-saved hidden>Show more saved guides</button></div>
         </section>
 
         <section class="account-library-section" aria-labelledby="recently-viewed-title">
-          <header><p class="kicker">Reading history</p><h3 id="recently-viewed-title">Recently Viewed</h3><p>Your latest illustrated resources, ordered by the time you last opened them.</p></header>
+          <header><p class="kicker">History</p><h3 id="recently-viewed-title">Recently opened</h3><p>The illustrated guides you opened most recently, newest first.</p></header>
           <div class="account-recent-list" data-recent-list></div>
-          <p class="account-empty" data-recent-empty hidden>Your recently viewed resources will appear here.</p>
+          <p class="account-empty" data-recent-empty hidden>Guides you open will appear here.</p>
         </section>
 
         <section class="account-library-section account-settings-section" aria-labelledby="account-settings-title">
-          <header><p class="kicker">Privacy and access</p><h3 id="account-settings-title">Account Settings</h3><p>Manage your sign-in email, marketing choice, password access and account. No public profile is created.</p></header>
+          <header><p class="kicker">Settings</p><h3 id="account-settings-title">Account settings</h3><p>Your sign-in email, your email choice and your password. An account has no public profile.</p></header>
           <div class="account-settings-grid">
             <form class="account-form account-setting-card" data-consent-form>
               <h4>Astor Library email</h4>
@@ -106,8 +105,8 @@
           <details class="account-danger-zone">
             <summary>Delete this account</summary>
             <div class="account-danger-content">
-              <h4>Delete your account and resource library</h4>
-              <p>This permanently removes the account, saved resources, recent-resource activity and marketing choice. It cannot be undone.</p>
+              <h4>Delete your account and saved guides</h4>
+              <p>This permanently removes your account, your saved guides, the list of guides you have opened and your email choice. It cannot be undone.</p>
               <form class="account-delete-form" data-delete-account-form novalidate>
                 <label for="delete-account-password">Current password</label>
                 <input id="delete-account-password" name="password" type="password" autocomplete="current-password" minlength="8" required>
@@ -122,7 +121,7 @@
         </section>
       </section>
     </div>
-    <aside class="account-aside"><p class="kicker">What stays public</p><h2>Accounts are only for complete resources.</h2><p>You can browse books, authors, publishing information, subject guides, passages, About pages and the rest of the public site without signing in.</p><ul><li>Preview the first three slides of each illustrated resource.</li><li>Continue through the full resource after sign-in.</li><li>Marketing consent stays separate from account access.</li></ul></aside>
+    <aside class="account-aside"><p class="kicker">What needs an account</p><h2>Only the full illustrated guides.</h2><p>Books, writers, study guides, close readings, Revise and Today are all open without signing in.</p><ul><li>Anyone can read the first three slides of an illustrated guide.</li><li>Signing in opens the rest.</li><li>Marketing consent stays separate from account access.</li></ul></aside>
   </section>
 </main>
 <footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Classic books, study editions and literature resources.</p></div><div class="footer-links"><a href="/resources/">Resources</a><a href="/privacy/">Privacy</a><a href="mailto:support@astorlibrary.com">Support</a></div></footer>
