@@ -43,7 +43,7 @@ function renderHead() {
   head.append(
     el('h1', { class: 'today-title', text: 'Today' }),
     el('p', { class: 'today-date', text: now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' }) }),
-    el('p', { class: 'today-deck', text: 'Five questions on literature, one at a time. New questions every day.' })
+    el('p', { class: 'today-deck', text: 'Five questions a day on books, plays and poems.' })
   );
 }
 
