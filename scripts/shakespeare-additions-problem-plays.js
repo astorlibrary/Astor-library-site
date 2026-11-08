@@ -178,7 +178,7 @@ module.exports = [
         "Gower's presence allows the play to cross countries and years at remarkable speed. He reports action, interprets conduct, introduces dumb shows and sometimes tells us what a scene cannot afford to stage. This is not failed drama patched by narration. The alternation between telling and showing makes the audience conscious of imagination at work, particularly when a bare stage must become a ship, a storm, a tournament or a city reached after years of travel."
       ] },
       { label: "Act 3, Scene 1", title: "The storm at sea", paragraphs: [
-        "The storm scene forces incompatible events into the same few minutes. Pericles pleads with the elements, Lychorida brings him his newborn daughter, and the news of Thaisa's apparent death arrives with the child. The sailors' demand for immediate burial gives grief no ceremonial time. Their maritime necessity may sound brutal, but aboard a threatened ship it has the force of collective survival.",
+        "The storm scene forces incompatible events into the same few minutes. Pericles pleads with the elements, Lychorida brings him his newborn daughter, and the news of Thaisa's apparent death arrives with the child. The sailors’ demand for immediate burial gives grief no ceremonial time. Their maritime necessity may sound brutal, but aboard a threatened ship it has the force of collective survival.",
         "He names her Marina because she was born at sea. Pericles also places spices, jewels and a written account beside Thaisa, trusting objects and text to speak if her body is found. The scene therefore begins the play's long work of recognition. People separated by water cannot depend upon appearance alone; names, stories, tokens and the willingness to hear an unlikely account will eventually bring them together."
       ] },
       { label: "Act 5, Scene 1", title: "Pericles and Marina", paragraphs: [
@@ -213,7 +213,7 @@ module.exports = [
   },
   {
     slug: "the-winters-tale",
-    title: "The Winter's Tale",
+    title: "The Winter’s Tale",
     author: "William Shakespeare",
     image: "/The%20Winter%27s%20Tale%20Main%20COver.png",
     url: "https://astorlibrary.com/go/the-winters-tale",
