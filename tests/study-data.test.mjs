@@ -70,13 +70,14 @@ test('every hidden cloze word really appears in its quotation', () => {
 });
 
 // Quotations and notes are shown as written here, in Revise as well as on
-// the pages, so they carry curly quotation marks and real dashes.
-test('book records use curly quotation marks and real dashes', () => {
+// the pages, so they carry curly quotation marks, real dashes and ellipses.
+// (A four-dot run is left as the printed source sets it.)
+test('book records use curly quotation marks, real dashes and ellipses', () => {
   const straight = [];
   const walk = (value, where) => {
     if (Array.isArray(value)) value.forEach(item => walk(item, where));
     else if (value && typeof value === 'object') Object.entries(value).forEach(([key, item]) => walk(item, where + '.' + key));
-    else if (typeof value === 'string' && !/^(?:https?:|\/)/.test(value) && /['"]|(?<!-)--(?!-)/.test(value)) straight.push(where + ': ' + value.slice(0, 80));
+    else if (typeof value === 'string' && !/^(?:https?:|\/)/.test(value) && /['"]|(?<!-)--(?!-)|(?<!\.)\.\.\.(?!\.)/.test(value)) straight.push(where + ': ' + value.slice(0, 80));
   };
   for (const book of books) walk(book, book.slug);
   assert.deepEqual(straight, []);
