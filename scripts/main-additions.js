@@ -81,7 +81,7 @@ module.exports = [
       { title: 'How should Ferdinand be played?', body: 'Is his obsession chiefly dynastic anxiety, misogyny, sexual jealousy or an unstable combination of all three?' }
     ],
     sources: [
-      { href: 'https://www.earlymodernenglishdrama.folger.edu/malfi', label: 'Folger: early print and performance record' },
+      { href: 'https://emed.folger.edu/malfi', label: 'Folger: early print and performance record' },
       { href: 'https://www.rsc.org.uk/the-duchess-of-malfi/about-the-play/dates-and-sources', label: 'Royal Shakespeare Company: dates and sources' },
       { href: 'https://www.rsc.org.uk/the-duchess-of-malfi/plot', label: 'Royal Shakespeare Company: plot and characters' }
     ]
@@ -168,7 +168,7 @@ module.exports = [
       { title: 'Which play do we see?', body: 'How does the tragedy change when a production follows the A-text, B-text or a combination?' }
     ],
     sources: [
-      { href: 'https://www.earlymodernenglishdrama.folger.edu/drfaust', label: 'Folger: early print and performance record' },
+      { href: 'https://emed.folger.edu/drfaust', label: 'Folger: early print and performance record' },
       { href: 'https://quod.lib.umich.edu/e/eebo/a07009.0001.001?view=toc', label: 'University of Michigan: digitised 1604 edition' },
       { href: 'https://anthology.lib.virginia.edu/work/Marlowe/marlowe-faustus', label: 'University of Virginia: scholarly text and textual history' }
     ]
