@@ -194,7 +194,7 @@ function page(resource) {
   const linkAttributes = isAstorPresentation ? '' : ' target="_blank" rel="noopener noreferrer"';
   const externalArrow = isAstorPresentation ? '&rarr;' : '&nearr;';
   const completionNote = isAstorPresentation
-    ? `Preview the first ${PREVIEW_SLIDES} slides without signing in. A free account opens the complete illustrated guide in your browser.`
+    ? `The first ${PREVIEW_SLIDES} slides are free to read; a free account opens the rest.`
     : 'The complete illustrated guide opens in a new tab.';
   const openCopy = isAstorPresentation
     ? `Read the first ${PREVIEW_SLIDES} slides without signing in. Create a free Astor account or sign in when you are ready to continue.`
@@ -211,7 +211,7 @@ function page(resource) {
   const next = encodeURIComponent(resource.route);
   const libraryPanel = isAstorPresentation
     ? `<section class="resource-library-panel" data-resource-library data-resource-id="${escapeHtml(resourceId)}" aria-labelledby="resource-library-title">
-  <div><p class="kicker">Your Astor library</p><h2 id="resource-library-title">Read now. Save for later.</h2><p class="resource-library-access" data-resource-access-status>Guest access · first ${PREVIEW_SLIDES} slides available</p><p class="resource-library-message" data-resource-library-status role="status" aria-live="polite">Preview ${PREVIEW_SLIDES} slides now. Sign in to save this guide and read every slide.</p></div>
+  <div><p class="kicker">Your Astor library</p><h2 id="resource-library-title">Save this guide.</h2><p class="resource-library-access" data-resource-access-status>Not signed in</p><p class="resource-library-message" data-resource-library-status role="status" aria-live="polite">Preview ${PREVIEW_SLIDES} slides now. Sign in to save this guide and read every slide.</p></div>
   <div class="resource-library-actions"><button type="button" data-resource-save aria-pressed="false" hidden>Save guide</button><a href="/account/" data-resource-account hidden>Account</a><a href="/account/?mode=signin&amp;next=${next}" data-resource-signin>Sign in</a><a href="/account/?mode=register&amp;next=${next}" data-resource-register>Create free account</a></div>
 </section>`
     : `<section class="resource-library-panel resource-library-panel--external" data-resource-library aria-labelledby="resource-library-title">

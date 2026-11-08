@@ -435,7 +435,7 @@ export class AstorPresentationViewer extends HTMLElement {
     const nextSaved = !this.#saved;
     this.#libraryBusy = true;
     this.#updateLibraryControls();
-    this.#setLibraryStatus(nextSaved ? 'Saving this guide…' : 'Removing this guide from saved resources…');
+    this.#setLibraryStatus(nextSaved ? 'Saving this guide…' : 'Removing this guide from your saved guides…');
     try {
       const result = await window.AstorAuth.resourceAction(
         nextSaved ? 'save' : 'unsave',
@@ -443,7 +443,7 @@ export class AstorPresentationViewer extends HTMLElement {
       );
       const returned = savedState(result, this._presentation.slug);
       this.#saved = typeof returned === 'boolean' ? returned : nextSaved;
-      this.#setLibraryStatus(this.#saved ? 'Guide saved to your account.' : 'Guide removed from your saved resources.');
+      this.#setLibraryStatus(this.#saved ? 'Guide saved to your account.' : 'Guide removed from your saved guides.');
     } catch {
       this.#setLibraryStatus('That change could not be saved. Please try again.');
     } finally {
@@ -466,7 +466,7 @@ export class AstorPresentationViewer extends HTMLElement {
     }
     if (description) {
       description.textContent = authenticated
-        ? `You are signed in. All ${this._presentation.slideCount} slides are available, and your latest place can be saved to your private resource shelf.`
+        ? `You are signed in. All ${this._presentation.slideCount} slides are available, and your place in the guide is kept in your account.`
         : `Preview the first ${this._presentation.previewSlides} slides, then sign in or create a free account to continue through all ${this._presentation.slideCount} slides.`;
     }
     if (save) {
@@ -475,7 +475,7 @@ export class AstorPresentationViewer extends HTMLElement {
       save.setAttribute('aria-busy', String(this.#libraryBusy));
       save.textContent = this.#saved ? 'Saved' : 'Save';
       save.setAttribute('aria-pressed', String(this.#saved));
-      save.setAttribute('aria-label', this.#saved ? 'Remove this guide from saved resources' : 'Save this guide to your account');
+      save.setAttribute('aria-label', this.#saved ? 'Remove this guide from your saved guides' : 'Save this guide to your account');
       save.classList.toggle('is-saved', this.#saved);
     }
     if (account) account.hidden = !authenticated;

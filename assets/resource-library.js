@@ -63,8 +63,8 @@
 
       this.authenticated = Boolean(session?.authenticated);
       this.setDetail(this.authenticated
-        ? 'Your free account opens every slide. Save this guide to find it quickly next time.'
-        : 'Preview 3 slides now. Sign in to save this guide and read every slide.');
+        ? 'Every slide is open. Save the guide to find it again from your account.'
+        : 'Sign in to read every slide and to save the guide.');
       this.render();
       if (!this.authenticated || this.initialised) return;
       this.initialised = true;
@@ -101,13 +101,13 @@
       const nextSaved = !this.saved;
       this.busy = true;
       this.render();
-      this.setDetail(nextSaved ? 'Saving this guide…' : 'Removing this guide from saved resources…');
+      this.setDetail(nextSaved ? 'Saving this guide…' : 'Removing this guide from your saved guides…');
 
       try {
         const result = await window.AstorAuth.resourceAction(nextSaved ? 'save' : 'unsave', this.resourceId);
         const returned = savedFrom(result, this.resourceId);
         this.saved = typeof returned === 'boolean' ? returned : nextSaved;
-        this.setDetail(this.saved ? 'Guide saved to your account.' : 'Guide removed from your saved resources.');
+        this.setDetail(this.saved ? 'Guide saved to your account.' : 'Guide removed from your saved guides.');
       } catch {
         this.setDetail('That change could not be saved. Please try again.');
       } finally {
@@ -121,7 +121,7 @@
       if (this.status) {
         this.status.textContent = this.authenticated
           ? 'Signed in · complete guide available'
-          : 'Guest access · first 3 slides available';
+          : 'Not signed in';
       }
       if (this.saveButton) {
         this.saveButton.hidden = !this.authenticated;

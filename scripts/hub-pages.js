@@ -315,7 +315,7 @@ function resourcePage(html) {
     body = body.replace(intro, top);
     // The credit moves from under the title to the foot of the page.
     body = body.replace(/<aside class="astor-page-credit"[\s\S]*?<\/aside>\s*/, '');
-    body = body.replace(/(<nav class="book-end-nav resource-end-nav")/, '<aside class="astor-page-credit" aria-label="About this page"><p>Written and published by Astor Library for reading, teaching and independent study. See the <a href="/editorial/">editorial standards</a>.</p></aside>\n$1');
+    body = body.replace(/(<nav class="book-end-nav resource-end-nav")/, '<aside class="astor-page-credit" aria-label="About this page"><p>Written and published by Astor Library. See the <a href="/editorial/">editorial standards</a>.</p></aside>\n$1');
     // The library panel keeps its controls; its heading and label go.
     body = body.replace(/(<section class="resource-library-panel"[^>]*)aria-labelledby="resource-library-title"([^>]*>)\s*<div><p class="kicker">[\s\S]*?<\/p>\s*<h2 id="resource-library-title">[\s\S]*?<\/h2>/,
       '$1aria-label="Your Astor library"$2<div>');
