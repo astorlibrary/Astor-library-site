@@ -254,8 +254,8 @@ module.exports = [
       { href: '/resources/king-lear/summary-guide/', label: 'King Lear summary guide', copy: 'A route through the divided kingdom.' }
     ],
     sources: [
-      { href: 'https://www.earlymodernenglishdrama.folger.edu/drfaust', label: 'Folger: Doctor Faustus in early print and performance' },
-      { href: 'https://www.earlymodernenglishdrama.folger.edu/malfi', label: 'Folger: The Duchess of Malfi in early print and performance' },
+      { href: 'https://emed.folger.edu/drfaust', label: 'Folger: Doctor Faustus in early print and performance' },
+      { href: 'https://emed.folger.edu/malfi', label: 'Folger: The Duchess of Malfi in early print and performance' },
       { href: 'https://www.folger.edu/explore/shakespeares-works/', label: 'Folger Shakespeare Library: Shakespeare’s works' },
       { href: 'https://www.folger.edu/explore/shakespeare-in-print/first-folio/', label: 'Folger Shakespeare Library: the First Folio' },
       { href: 'https://www.folger.edu/podcasts/shakespeare-unlimited/how-shakespeare-revolutionized-tragedy-with-rhodri-lewis/', label: 'Folger: how Shakespeare changed tragedy' }
