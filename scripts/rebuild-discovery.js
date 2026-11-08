@@ -1180,7 +1180,7 @@ const siteIndexHtml = '<!doctype html><html lang="en"><head>' +
     ['/play/context-sprint/', 'Which year?', 'Place an event in the right year'],
     ['/play/opening-lines/', 'Opening lines', 'Name the book from its first sentence'],
     ['/play/flashcards/', 'Flashcards', 'Spaced repetition over a title’s quotations'],
-    ['/today/', 'Today', 'Five questions on literature, new each day'],
+    ['/today/', 'Today', 'Five questions a day on books, plays and poems'],
     ['/explore/quotations/', 'Quotation explorer', 'Search and filter every quotation'],
     ['/explore/timeline/', 'Literature timeline', 'Every book in order, with its dates'],
     ['/explore/characters/', 'Character maps', 'Who is linked to whom in each book'],

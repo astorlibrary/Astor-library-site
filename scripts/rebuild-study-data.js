@@ -248,7 +248,7 @@ for (const book of entries) {
 for (const tool of [
   ['Tool', 'Study guides', '/guides/', 'Plot, characters, themes, quotations, language and context', 'study guide guides notes summary'],
   ['Tool', 'Revise', '/play/', 'Quizzes and flashcards', 'play games revise quiz quizzes revision flashcards'],
-  ['Tool', 'Today', '/today/', 'Five questions on literature, new each day', 'daily puzzle today quiz'],
+  ['Tool', 'Today', '/today/', 'Five questions a day on books, plays and poems', 'daily puzzle today quiz'],
   ['Tool', 'Quotation explorer', '/explore/quotations/', 'Filter every quotation by theme, character and technique', 'quotations explorer filter'],
   ['Tool', 'Literature timeline', '/explore/timeline/', 'Every book in order, with its dates', 'timeline history dates'],
   ['Tool', 'Character maps', '/explore/characters/', 'Who is linked to whom in each book', 'characters relationships map diagram'],

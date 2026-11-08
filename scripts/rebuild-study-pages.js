@@ -174,12 +174,12 @@ function buildPages() {
     description: 'Free quizzes and flashcards on the quotations, characters, themes and plot of each book with an Astor study guide.',
     kicker: 'Revise',
     heading: 'Revise a book.',
-    deck: 'Quizzes and flashcards on one book at a time.',
+    deck: 'Quizzes and flashcards on any book with a study guide.',
     breadcrumb: '<a href="/">Astor Library</a><span aria-hidden="true">/</span><span aria-current="page">Revise</span>',
     module: 'revise-hub.mjs',
     bare: true,
     intro: `  <section class="rx-hero rx-hub-hero" id="rv-title" aria-label="The book you are revising">
-    <div class="rx-hero-inner"><div class="rx-hero-words"><p class="rx-hero-kicker">Revise</p><h1 class="rx-hero-title">Revise a book</h1><p class="rx-hero-author">Quizzes and flashcards on one book at a time.</p></div></div>
+    <div class="rx-hero-inner"><div class="rx-hero-words"><p class="rx-hero-kicker">Revise</p><h1 class="rx-hero-title">Revise a book</h1><p class="rx-hero-author">Quizzes and flashcards on any book with a study guide.</p></div></div>
   </section>`,
     mount: `  <div class="rv-hub" id="rv-hub"><p class="rv-loading">Finding your book…</p></div>`,
     fallback: 'The quizzes need JavaScript. The key quotations are in each <a href="/guides/">study guide</a>.',
