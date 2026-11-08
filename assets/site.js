@@ -419,10 +419,10 @@
       return room ? room.querySelectorAll('.passage-card:not([hidden])').length : 0;
     }
     function apply() {
-      const q = input.value.trim().toLowerCase();
+      const q = input.value.trim().toLowerCase().replace(/[’‘]/g, "'");
       let shown = 0;
       for (const card of cards) {
-        const hay = (card.getAttribute('data-search') || '') + ' ' + card.textContent.toLowerCase();
+        const hay = ((card.getAttribute('data-search') || '') + ' ' + card.textContent.toLowerCase()).replace(/[’‘]/g, "'");
         const match = !q || hay.indexOf(q) !== -1;
         card.hidden = !match;
         if (match) shown++;

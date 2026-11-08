@@ -1444,6 +1444,15 @@ function currentSeasonHero(html, source) {
   return html.slice(0, from + marker.length) + '\n  ' + hero + '\n  ' + html.slice(to);
 }
 
+// The house style sets a curly apostrophe, but titles and older pages carry
+// the straight one, so a list could show "A Midsummer Night's Dream" beside
+// "Love’s Labour’s Lost". In the text a reader sees (not in scripts, code,
+// attributes or the data behind them), one between two letters is curled.
+function curlApostrophes(html) {
+  return html.replace(/(<(script|style|pre|code|textarea)\b[\s\S]*?<\/\2>)|(<[^>]*>)|([^<]+)/gi, (match, skip, _name, tag, text) =>
+    text ? text.replace(/(\p{L})(?:'|&#39;|&#x27;)(?=\p{L})/gu, '$1’') : match);
+}
+
 function prepareHtml(html, source) {
   html = currentSeasonHero(html, source);
   html = html.replace(/(<span data-count="books">)\d+(<\/span>)/g, '$1' + catalogueBookCount + '$2');
@@ -1504,6 +1513,7 @@ function prepareHtml(html, source) {
     const wrapper = [...before.matchAll(/<(?!img\b)[a-z][^>]*\bclass="([^"]*)"/gi)].pop()?.[1] || '';
     return useBookThumbnail(tag, source, wrapper);
   });
+  html = curlApostrophes(html);
   // Last of all, once every script and stylesheet this page will load has been
   // added: stamp each with a version taken from its contents.
   return versionAssets(html);

@@ -12,13 +12,13 @@
   let toolkitOnly = false;
 
   function updateCatalogue() {
-    const query = search.value.trim().toLocaleLowerCase();
+    const query = search.value.trim().toLocaleLowerCase().replace(/[’‘]/g, "'");
     let visible = 0;
 
     for (const card of cards) {
       const matchesCollection = activeCollection === 'all' || card.dataset.collection === activeCollection;
       const matchesToolkit = !toolkitOnly || card.dataset.toolkit === 'yes';
-      const searchableText = `${card.textContent} ${card.dataset.search || ''}`.toLocaleLowerCase();
+      const searchableText = `${card.textContent} ${card.dataset.search || ''}`.toLocaleLowerCase().replace(/[’‘]/g, "'");
       const matchesSearch = !query || searchableText.includes(query);
       card.hidden = !(matchesCollection && matchesSearch && matchesToolkit);
       if (!card.hidden) visible += 1;
