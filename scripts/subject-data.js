@@ -25,14 +25,14 @@ module.exports = [
       { label: 'The self', title: 'The monster is not safely outside', copy: 'The creature, double, portrait and vampire all trouble the boundary between threat and victim. Gothic writing is interested in who gets called a monster, whose desire is hidden, and what a respectable society has to disown in order to call itself orderly.' }
     ],
     books: [
-      { href: '/books/frankenstein/', title: 'Frankenstein', author: 'Mary Shelley', year: '1818', image: '/Frankenstein.png', copy: 'Creation, abandonment and the danger of treating life as an experiment without obligation.' },
-      { href: '/books/sleepy-hollow-and-other-stories/', title: 'Sleepy Hollow and Other American Halloween Stories', author: 'Washington Irving, Edgar Allan Poe and others', year: '1820–1921 · anthology', image: '/Sleepy%20Hollow%20Main%20Cover.png', copy: 'Twelve American supernatural stories, returned to their publication settings and traced into the later Halloween tradition.' },
-      { href: '/books/wuthering-heights/', title: 'Wuthering Heights', author: 'Emily Brontë', year: '1847', image: '/Wuthering%20Heights.png', copy: 'A house, an inheritance and a passion whose effects continue through another generation.' },
-      { href: '/books/victorian-ghost-stories/', title: 'Victorian Ghost Stories', author: 'Elizabeth Gaskell, Charles Dickens and others', year: '1844–1905 · anthology', image: '/Victorian%20Ghost%20Stories%20Main%20Cover.png', copy: 'Haunted houses, phantom journeys and railway danger beside Victorian spiritualism and psychical research.' },
-      { href: '/books/jekyll-and-hyde/', title: 'Jekyll and Hyde', author: 'Robert Louis Stevenson', year: '1886', image: '/Jekyll%20and%20Hyde.png', copy: 'The divided self, professional secrecy and a London investigation that arrives through documents.' },
-      { href: '/books/dorian-gray/', title: 'The Picture of Dorian Gray', author: 'Oscar Wilde', year: '1890–91', image: '/Picture%20of%20Dorian%20Gray.png', copy: 'Beauty, influence and a portrait made to bear the consequences its owner refuses.' },
-      { href: '/books/the-yellow-wallpaper-and-the-giant-wistaria/', title: 'The Yellow Wallpaper and the Giant Wistaria', author: 'Charlotte Perkins Gilman', year: '1891–92', image: '/The%20Yellow%20Paper%20and%20The%20Giant%20Wistaria%20Main%20Cover.png', copy: 'Two stories in which domestic space, medical authority and what a household conceals become sources of terror.' },
-      { href: '/books/dracula/', title: 'Dracula', author: 'Bram Stoker', year: '1897', image: '/0194_1_like-the-one-attached-match-background-c_8YvDNXceV1S2geaPKOSiFg_oMVpLDveSW6UbY4s9hlomg_cover.png', copy: 'Ancient predation meets blood science, transport, recording technology and a fragile archive of evidence.' }
+      { href: '/books/frankenstein/', title: 'Frankenstein', author: 'Mary Shelley', year: '1818', image: '/Frankenstein.png', copy: 'Victor Frankenstein makes a living creature and runs from it, and the creature tells its own story of abandonment.' },
+      { href: '/books/sleepy-hollow-and-other-stories/', title: 'Sleepy Hollow and Other American Halloween Stories', author: 'Washington Irving, Edgar Allan Poe and others', year: '1820–1921 · anthology', image: '/Sleepy%20Hollow%20Main%20Cover.png', copy: 'Twelve American supernatural stories, each with an account of where it first appeared and its place in the later Halloween tradition.' },
+      { href: '/books/wuthering-heights/', title: 'Wuthering Heights', author: 'Emily Brontë', year: '1847', image: '/Wuthering%20Heights.png', copy: 'Heathcliff takes his revenge on two families through their houses and their children.' },
+      { href: '/books/victorian-ghost-stories/', title: 'Victorian Ghost Stories', author: 'Elizabeth Gaskell, Charles Dickens and others', year: '1844–1905 · anthology', image: '/Victorian%20Ghost%20Stories%20Main%20Cover.png', copy: 'Haunted houses, a phantom coach and Dickens’s signalman, read beside Victorian spiritualism and psychical research.' },
+      { href: '/books/jekyll-and-hyde/', title: 'Jekyll and Hyde', author: 'Robert Louis Stevenson', year: '1886', image: '/Jekyll%20and%20Hyde.png', copy: 'A London lawyer looks into his friend Dr Jekyll’s strange will, and the truth comes out in two written statements.' },
+      { href: '/books/dorian-gray/', title: 'The Picture of Dorian Gray', author: 'Oscar Wilde', year: '1890–91', image: '/Picture%20of%20Dorian%20Gray.png', copy: 'Dorian Gray stays young while his portrait shows what his life has done to him.' },
+      { href: '/books/the-yellow-wallpaper-and-the-giant-wistaria/', title: 'The Yellow Wallpaper and the Giant Wistaria', author: 'Charlotte Perkins Gilman', year: '1891–92', image: '/The%20Yellow%20Paper%20and%20The%20Giant%20Wistaria%20Main%20Cover.png', copy: 'A wife confined to one room for a rest cure studies its wallpaper, and an old New England house hides a family secret.' },
+      { href: '/books/dracula/', title: 'Dracula', author: 'Bram Stoker', year: '1897', image: '/0194_1_like-the-one-attached-match-background-c_8YvDNXceV1S2geaPKOSiFg_oMVpLDveSW6UbY4s9hlomg_cover.png', copy: 'Count Dracula comes to England, and his pursuers fight him with blood transfusions, railway timetables and typewritten diaries.' }
     ],
     reading: {
       heading: 'Watch for what the story will not show directly.',
@@ -86,21 +86,21 @@ module.exports = [
     ],
     books: [
       { href: '/books/comedy-of-errors/', title: 'The Comedy of Errors', author: 'William Shakespeare', year: 'c.1590s', image: '/Comedy%20of%20Errors%20%28Main%20Page%29.png', copy: 'Separated twins, mistaken identity and a farce whose first scene begins under a sentence of death.' },
-      { href: '/books/taming-of-the-shrew/', title: 'The Taming of the Shrew', author: 'William Shakespeare', year: 'c.1590–94', image: '/The%20Taming%20of%20the%20Shrew%20Main%20Cover.jpg', copy: 'Courtship, household power and performed obedience in a comedy whose final speech remains contested.' },
-      { href: '/books/the-two-gentlemen-of-verona/', title: 'The Two Gentlemen of Verona', author: 'William Shakespeare', year: 'c.1590–94', image: '/Two%20Gentleman%20of%20Verona%20Main%20Cover.png', copy: 'Friendship, betrayal and Julia’s disguise put the word ‘gentleman’ under scrutiny.' },
-      { href: '/books/a-midsummer-nights-dream/', title: 'A Midsummer Night’s Dream', author: 'William Shakespeare', year: 'c.1595–96', image: '/4A5A73B5-A856-4507-94DD-FC862EC2F9A7.png', copy: 'Athenian law, fairy interference and amateur theatre meet in a night of unstable desire.' },
-      { href: '/books/loves-labours-lost/', title: 'Love’s Labour’s Lost', author: 'William Shakespeare', year: 'c.1595–96', image: '/Love%27s%20Labour%27s%20Lost%20Main%20Cover.jpg', copy: 'An impossible academy collapses into courtship, verbal display and a year of waiting.' },
-      { href: '/books/the-merchant-of-venice/', title: 'The Merchant of Venice', author: 'William Shakespeare', year: 'c.1596–97', image: '/The%20Merchant%20of%20Venice%20Main%20Cover.jpg', copy: 'Contracts, prejudice and a trial complicate the movement towards marriage at Belmont.' },
-      { href: '/books/much-ado-about-nothing/', title: 'Much Ado About Nothing', author: 'William Shakespeare', year: 'c.1598–99', image: '/Much%20Ado%20About%20Nothing.png', copy: 'Wit, surveillance and slander place two very different courtships under public pressure.' },
-      { href: '/books/as-you-like-it/', title: 'As You Like It', author: 'William Shakespeare', year: 'c.1599', image: '/As%20you%20like%20it.png', copy: 'Exile and disguise let Rosalind test romantic language while Arden keeps labour and inequality in sight.' },
-      { href: '/books/twelfth-night/', title: 'Twelfth Night', author: 'William Shakespeare', year: 'c.1601', image: '/Twelfth%20Night%20Main%20Cover.jpg', copy: 'Viola’s borrowed identity redirects desire while festivity shades into punishment.' },
+      { href: '/books/taming-of-the-shrew/', title: 'The Taming of the Shrew', author: 'William Shakespeare', year: 'c.1590–94', image: '/The%20Taming%20of%20the%20Shrew%20Main%20Cover.jpg', copy: 'Petruchio marries Katherina and sets out to tame her, and her last speech on obedience is still argued over.' },
+      { href: '/books/the-two-gentlemen-of-verona/', title: 'The Two Gentlemen of Verona', author: 'William Shakespeare', year: 'c.1590–94', image: '/Two%20Gentleman%20of%20Verona%20Main%20Cover.png', copy: 'Proteus betrays his friend Valentine to pursue Silvia, while Julia follows Proteus disguised as a boy.' },
+      { href: '/books/a-midsummer-nights-dream/', title: 'A Midsummer Night’s Dream', author: 'William Shakespeare', year: 'c.1595–96', image: '/4A5A73B5-A856-4507-94DD-FC862EC2F9A7.png', copy: 'Four lovers run into a wood where fairies meddle with their eyes, while Athenian workmen rehearse a play for the duke’s wedding.' },
+      { href: '/books/loves-labours-lost/', title: 'Love’s Labour’s Lost', author: 'William Shakespeare', year: 'c.1595–96', image: '/Love%27s%20Labour%27s%20Lost%20Main%20Cover.jpg', copy: 'The King of Navarre and his lords swear off women for three years of study, and break the oath when the Princess of France arrives.' },
+      { href: '/books/the-merchant-of-venice/', title: 'The Merchant of Venice', author: 'William Shakespeare', year: 'c.1596–97', image: '/The%20Merchant%20of%20Venice%20Main%20Cover.jpg', copy: 'Antonio borrows from Shylock against a pound of his flesh, while Bassanio courts Portia at Belmont.' },
+      { href: '/books/much-ado-about-nothing/', title: 'Much Ado About Nothing', author: 'William Shakespeare', year: 'c.1598–99', image: '/Much%20Ado%20About%20Nothing.png', copy: 'Beatrice and Benedick are tricked into love, and Claudio is tricked into shaming Hero at the altar.' },
+      { href: '/books/as-you-like-it/', title: 'As You Like It', author: 'William Shakespeare', year: 'c.1599', image: '/As%20you%20like%20it.png', copy: 'Banished to the Forest of Arden, Rosalind disguises herself as a young man and tests Orlando’s love.' },
+      { href: '/books/twelfth-night/', title: 'Twelfth Night', author: 'William Shakespeare', year: 'c.1601', image: '/Twelfth%20Night%20Main%20Cover.jpg', copy: 'Shipwrecked Viola, disguised as a young man, loves Orsino and is loved by Olivia, while Malvolio is tricked and locked up.' },
       { href: '/books/merry-wives-of-windsor/', title: 'The Merry Wives of Windsor', author: 'William Shakespeare', year: 'c.1597–1601', image: '/Merry%20Wives%20of%20Windsor.png', copy: 'Mistress Ford and Mistress Page answer Falstaff’s scheme with a series of traps, and in the end the whole town joins in.' },
-      { href: '/books/measure-for-measure/', title: 'Measure for Measure', author: 'William Shakespeare', year: 'c.1603–04', image: '/Measure%20for%20Measure%20Main%20Cover.png', copy: 'Law, sexual coercion and disguised rule lead to an ending whose silences matter.' },
+      { href: '/books/measure-for-measure/', title: 'Measure for Measure', author: 'William Shakespeare', year: 'c.1603–04', image: '/Measure%20for%20Measure%20Main%20Cover.png', copy: 'Angelo offers to spare Isabella’s brother if she sleeps with him, while the Duke watches in disguise.' },
       { href: '/books/alls-well-that-ends-well/', title: 'All’s Well That Ends Well', author: 'William Shakespeare', year: 'c.1604–05', image: '/Alls%20Well%20That%20Ends%20Well%20Main%20Cover.png', copy: 'Helena cures the King and wins Bertram as her reward, then has to trick an unwilling husband into the marriage.' },
-      { href: '/books/pericles-prince-of-tyre/', title: 'Pericles, Prince of Tyre', author: 'William Shakespeare', year: 'c.1607–08', image: '/Pericles%2C%20Prince%20of%20Tyre%20Main%20COver.png', copy: 'Shipwreck, apparent death and recognition turn an old story towards family recovery.' },
-      { href: '/books/the-winters-tale/', title: 'The Winter’s Tale', author: 'William Shakespeare', year: 'c.1609–11', image: '/The%20Winter%27s%20Tale%20Main%20COver.png', copy: 'Jealous tyranny gives way to pastoral renewal and a reunion that cannot restore every loss.' },
-      { href: '/books/the-two-noble-kinsmen/', title: 'The Two Noble Kinsmen', author: 'William Shakespeare', year: 'c.1613–14', image: '/The%20Two%20Noble%20Kinsmen%20Main%20Cover.jpg', copy: 'Friendship, rivalry and fate meet in a tragicomedy written with John Fletcher.' },
-      { href: '/books/the-tempest/', title: 'The Tempest', author: 'William Shakespeare', year: 'c.1610–11', image: '/The%20Tempest.png', copy: 'A staged shipwreck gives Prospero the power to punish, educate, forgive and finally release his audience.' }
+      { href: '/books/pericles-prince-of-tyre/', title: 'Pericles, Prince of Tyre', author: 'William Shakespeare', year: 'c.1607–08', image: '/Pericles%2C%20Prince%20of%20Tyre%20Main%20COver.png', copy: 'Pericles loses his wife and daughter to shipwreck and apparent death, and finds them again years later.' },
+      { href: '/books/the-winters-tale/', title: 'The Winter’s Tale', author: 'William Shakespeare', year: 'c.1609–11', image: '/The%20Winter%27s%20Tale%20Main%20COver.png', copy: 'Leontes’ jealousy costs him his wife, his son and his daughter, and sixteen years later only two of them are given back.' },
+      { href: '/books/the-two-noble-kinsmen/', title: 'The Two Noble Kinsmen', author: 'William Shakespeare', year: 'c.1613–14', image: '/The%20Two%20Noble%20Kinsmen%20Main%20Cover.jpg', copy: 'Two cousins in prison together fall in love with the same woman, in a play Shakespeare wrote with John Fletcher.' },
+      { href: '/books/the-tempest/', title: 'The Tempest', author: 'William Shakespeare', year: 'c.1610–11', image: '/The%20Tempest.png', copy: 'Prospero wrecks his enemies on his island, then chooses to forgive them and give up his magic.' }
     ],
     reading: {
       heading: 'Follow who controls the scene, and when that control changes hands.',
@@ -159,11 +159,11 @@ module.exports = [
       { href: '/books/henry-iv-part-2/', title: 'Henry IV, Part 2', author: 'William Shakespeare', year: 'c.1597–98', image: '/Henry%20IV%20part%202%20Main.jpeg', copy: 'An ageing king and an exhausted realm wait for succession as Hal prepares to make his first public judgement as Henry V.' },
       { href: '/books/henry-v/', title: 'Henry V', author: 'William Shakespeare', year: 'c.1599', image: '/Henry%20V%20Main%20Cover.jpg', copy: 'The Chorus and the king build a picture of national unity around the French campaign, and soldiers and French civilians show what it costs.' },
       { href: '/books/henry-vi-part-1/', title: 'Henry VI, Part 1', author: 'William Shakespeare and collaborators', year: 'c.1591–92', image: '/Henry%20VI%2C%20Part%201%20%28Main%20cover%29.jpg', copy: 'Henry V’s funeral opens a fractured realm: France is lost while rivalry at home begins to divide the English claim.' },
-      { href: '/books/henry-vi-part-2/', title: 'Henry VI, Part 2', author: 'William Shakespeare', year: 'c.1590–91', image: '/Henry%20VI%2C%20Part%202.png', copy: 'Faction, popular rebellion and York’s concealed claim move political disagreement towards open civil war.' },
+      { href: '/books/henry-vi-part-2/', title: 'Henry VI, Part 2', author: 'William Shakespeare', year: 'c.1590–91', image: '/Henry%20VI%2C%20Part%202.png', copy: 'Court factions bring down Duke Humphrey, Jack Cade leads a rising, and York prepares to claim the throne.' },
       { href: '/books/henry-vi-part-3/', title: 'Henry VI, Part 3', author: 'William Shakespeare', year: 'c.1590–91', image: '/Henry%20VI%2C%20Part%203.png', copy: 'The crown changes hands in the Wars of the Roses, and in one scene a son finds he has killed his father and a father his son.' },
       { href: '/books/richard-iii/', title: 'Richard III', author: 'William Shakespeare', year: 'c.1592–94', image: '/Richard%20III.png', copy: 'Richard performs villainy and entitlement before an audience while the dead of the earlier plays challenge his version of history.' },
       { href: '/books/henry-viii/', title: 'Henry VIII', author: 'William Shakespeare, probably with John Fletcher', year: 'c.1613', image: '/Henry%20VIII%20Main%20Cover.jpg', copy: 'Trials, falls and a royal marriage lead up to Elizabeth’s christening, in a late play that makes a happy ending look carefully arranged.' },
-      { href: '/books/macbeth/', title: 'Macbeth', author: 'William Shakespeare', year: 'c.1606 · chronicle tragedy', image: '/FB3AE04E-B2F3-4AB6-96D5-49BF6CF4C298.png', copy: 'Holinshed’s Scottish history becomes a tragedy of regicide, prophecy and a succession that violence cannot securely command.' },
+      { href: '/books/macbeth/', title: 'Macbeth', author: 'William Shakespeare', year: 'c.1606 · chronicle tragedy', image: '/FB3AE04E-B2F3-4AB6-96D5-49BF6CF4C298.png', copy: 'Shakespeare turns Holinshed’s Scottish chronicle into the story of a king-killer who cannot make his throne secure.' },
       { href: '/books/king-lear/', title: 'King Lear', author: 'William Shakespeare', year: 'c.1605–06 · chronicle tragedy', image: '/King%20Lear.png', copy: 'A legendary British king divides his kingdom by a test of love, and his family’s quarrel ruins the country.' }
     ],
     reading: {
@@ -220,17 +220,17 @@ module.exports = [
     ],
     books: [
       { href: '/books/doctor-faustus/', title: 'Doctor Faustus', author: 'Christopher Marlowe', year: 'c.1592–93', image: '/Doctor%20Faustus%20Cover.png', copy: 'A scholar trades his soul for twenty-four years of service, then discovers how quickly boundless ambition can narrow into delay and fear.' },
-      { href: '/books/romeo-and-juliet/', title: 'Romeo and Juliet', author: 'William Shakespeare', year: 'c.1595', image: '/Romeo%20and%20Juliet.png', copy: 'Love, family violence, public time and the fatal speed of interpretation.' },
-      { href: '/books/hamlet/', title: 'Hamlet', author: 'William Shakespeare', year: 'c.1600–01', image: '/Hamlet.png', copy: 'Revenge, performance, and the difficulty of acting on uncertain knowledge.' },
-      { href: '/books/troilus-and-cressida/', title: 'Troilus and Cressida', author: 'William Shakespeare', year: 'c.1601–02', image: '/Troilus%20and%20Cressida%20Main.png', copy: 'Love and heroic reputation are tested inside a war that has forgotten how to end.' },
-      { href: '/books/othello/', title: 'Othello', author: 'William Shakespeare', year: 'c.1603–04', image: '/Othello.png', copy: 'A marriage destroyed by insinuation, manufactured proof and the demand for certainty.' },
-      { href: '/books/king-lear/', title: 'King Lear', author: 'William Shakespeare', year: 'c.1605–06', image: '/King%20Lear.png', copy: 'A divided kingdom, failed recognition and the stripping away of political protection.' },
-      { href: '/books/timon-of-athens/', title: 'Timon of Athens', author: 'William Shakespeare', year: 'c.1604–06', image: '/Timon%20of%20Athens%20Main.png', copy: 'A patron’s limitless giving reverses into misanthropy when praise proves to have a price.' },
-      { href: '/books/macbeth/', title: 'Macbeth', author: 'William Shakespeare', year: 'c.1606', image: '/FB3AE04E-B2F3-4AB6-96D5-49BF6CF4C298.png', copy: 'Ambition, prophecy and the attempt to secure power through further violence.' },
-      { href: '/books/antony-and-cleopatra/', title: 'Antony and Cleopatra', author: 'William Shakespeare', year: 'c.1606–07', image: '/Antony%20and%20Cleopatra.png', copy: 'Love, empire and the struggle to control how political defeat will be remembered.' },
-      { href: '/books/coriolanus/', title: 'Coriolanus', author: 'William Shakespeare', year: 'c.1608', image: '/Coriolanus.png', copy: 'Military honour, class conflict and a public role one soldier cannot perform.' },
+      { href: '/books/romeo-and-juliet/', title: 'Romeo and Juliet', author: 'William Shakespeare', year: 'c.1595', image: '/Romeo%20and%20Juliet.png', copy: 'Two young lovers from feuding families marry in secret, and a letter that never arrives leaves both of them dead.' },
+      { href: '/books/hamlet/', title: 'Hamlet', author: 'William Shakespeare', year: 'c.1600–01', image: '/Hamlet.png', copy: 'Told by his father’s ghost to avenge a murder, Hamlet delays, tests the story with a play, and brings down the whole court.' },
+      { href: '/books/troilus-and-cressida/', title: 'Troilus and Cressida', author: 'William Shakespeare', year: 'c.1601–02', image: '/Troilus%20and%20Cressida%20Main.png', copy: 'Seven years into the siege of Troy, Cressida is handed over to the Greeks, and Troilus watches her take up with Diomedes.' },
+      { href: '/books/othello/', title: 'Othello', author: 'William Shakespeare', year: 'c.1603–04', image: '/Othello.png', copy: 'Iago convinces Othello that his wife is unfaithful, with hints and a planted handkerchief.' },
+      { href: '/books/king-lear/', title: 'King Lear', author: 'William Shakespeare', year: 'c.1605–06', image: '/King%20Lear.png', copy: 'Lear divides his kingdom between the daughters who flatter him, and is turned out into the storm.' },
+      { href: '/books/timon-of-athens/', title: 'Timon of Athens', author: 'William Shakespeare', year: 'c.1604–06', image: '/Timon%20of%20Athens%20Main.png', copy: 'Timon gives his fortune away to flatterers, and when none of them will help him he leaves Athens hating mankind.' },
+      { href: '/books/macbeth/', title: 'Macbeth', author: 'William Shakespeare', year: 'c.1606', image: '/FB3AE04E-B2F3-4AB6-96D5-49BF6CF4C298.png', copy: 'Prompted by witches and his wife, Macbeth murders King Duncan and has to go on killing to keep the crown.' },
+      { href: '/books/antony-and-cleopatra/', title: 'Antony and Cleopatra', author: 'William Shakespeare', year: 'c.1606–07', image: '/Antony%20and%20Cleopatra.png', copy: 'Antony is torn between Rome and Cleopatra, loses the war to Octavius, and both lovers choose to die.' },
+      { href: '/books/coriolanus/', title: 'Coriolanus', author: 'William Shakespeare', year: 'c.1608', image: '/Coriolanus.png', copy: 'Rome’s greatest soldier cannot humble himself before the people, is banished, and leads an enemy army against the city.' },
       { href: '/books/the-duchess-of-malfi/', title: 'The Duchess of Malfi', author: 'John Webster', year: 'c.1612–14', image: '/Duchess%20of%20Malfi%20Cover.png', copy: 'A widow’s secret marriage meets surveillance, imprisonment and murder in a court that treats her freedom as disobedience.' },
-      { href: '/books/titus-andronicus/', title: 'Titus Andronicus', author: 'William Shakespeare', year: 'c.1590s', image: '/Titus%20Andronicus.png', copy: 'Revenge multiplies injury until ritual, family and political order become indistinguishable from violence.' }
+      { href: '/books/titus-andronicus/', title: 'Titus Andronicus', author: 'William Shakespeare', year: 'c.1590s', image: '/Titus%20Andronicus.png', copy: 'Titus sacrifices Tamora’s son, and her revenge on his family brings on his own.' }
     ],
     reading: {
       heading: 'Read the scene before judging the character.',
@@ -287,9 +287,9 @@ module.exports = [
       { label: 'The verdict', title: 'Explanation is a form of power', copy: 'To solve a case is to decide which story becomes public. Holmes sometimes protects a client, lets an offender leave or withholds a name. The stories test Holmes’s judgement as well as his deductions.' }
     ],
     books: [
-      { href: '/books/the-moonstone/', title: 'The Moonstone', author: 'Wilkie Collins', year: '1868', image: '/The%20Moonstone%20Main%20Cover.png', copy: 'A stolen diamond is investigated through connected testimonies that make voice, empire and possession part of the case.' },
-      { href: '/books/sign-of-four/', title: 'The Sign of Four', author: 'Arthur Conan Doyle', year: '1890', image: '/The%20SIgn%20Of%20Four.png', copy: 'A novel-length case in which a missing treasure opens questions of empire, possession and testimony.' },
-      { href: '/books/adventures-of-sherlock-holmes/', title: 'The Adventures of Sherlock Holmes', author: 'Arthur Conan Doyle', year: '1892', image: '/Adventures%20of%20Sherlock%20Holmes.png', copy: 'Twelve stories that make the client, the clue, Watson’s delay and Holmes’s explanation endlessly adaptable.' },
+      { href: '/books/the-moonstone/', title: 'The Moonstone', author: 'Wilkie Collins', year: '1868', image: '/The%20Moonstone%20Main%20Cover.png', copy: 'A diamond looted in India vanishes from a Yorkshire country house, and the case is told by a series of witnesses.' },
+      { href: '/books/sign-of-four/', title: 'The Sign of Four', author: 'Arthur Conan Doyle', year: '1890', image: '/The%20SIgn%20Of%20Four.png', copy: 'Mary Morstan brings Holmes the mystery of a pearl sent to her every year, which leads back to a treasure and a pact made in India.' },
+      { href: '/books/adventures-of-sherlock-holmes/', title: 'The Adventures of Sherlock Holmes', author: 'Arthur Conan Doyle', year: '1892', image: '/Adventures%20of%20Sherlock%20Holmes.png', copy: 'Twelve cases, most of them opening with a client at Baker Street and ending with Holmes’s explanation.' },
       { href: '/books/jekyll-and-hyde/', title: 'Jekyll and Hyde', author: 'Robert Louis Stevenson', year: '1886 · investigative Gothic', image: '/Jekyll%20and%20Hyde.png', copy: 'It is not a detective novel, yet a lawyer’s inquiry, witness statements and sealed documents decide how its secret comes out.' },
       { href: '/books/dracula/', title: 'Dracula', author: 'Bram Stoker', year: '1897 · documentary Gothic', image: '/0194_1_like-the-one-attached-match-background-c_8YvDNXceV1S2geaPKOSiFg_oMVpLDveSW6UbY4s9hlomg_cover.png', copy: 'It is not detective fiction, yet it is built as an archive of partial witnesses who investigate together.' }
     ],
@@ -341,11 +341,11 @@ module.exports = [
       { label: 'Scale', title: 'The ordinary and cosmic share a line', copy: 'A meal, a wound, a garment or a door gets the same attention as the gods and the history of a nation. Epic keeps hold of such details and raises their stakes, until an object can carry memory across generations.' }
     ],
     books: [
-      { href: '/books/the-iliad/', title: 'The Iliad', author: 'Homer, translated by Samuel Butler', year: 'Ancient Greek epic', image: '/The%20Iliad.png', copy: 'Anger, mortality and the costs of heroic honour during a concentrated movement of the Trojan War.' },
-      { href: '/books/the-odyssey/', title: 'The Odyssey', author: 'Homer, translated by Samuel Butler', year: 'Ancient Greek epic', image: '/The%20Odyssey.png', copy: 'Homecoming, storytelling, disguise and the difficult restoration of a household.' },
-      { href: '/books/the-aeneid/', title: 'The Aeneid', author: 'Virgil, translated by John Dryden', year: 'Roman epic', image: '/The%20Aeneid.png', copy: 'Refugee memory, duty, violence and the imagined foundations of Rome.' },
+      { href: '/books/the-iliad/', title: 'The Iliad', author: 'Homer, translated by Samuel Butler', year: 'Ancient Greek epic', image: '/The%20Iliad.png', copy: 'In a few weeks of the Trojan War, Achilles quarrels with Agamemnon, loses Patroclus and kills Hector.' },
+      { href: '/books/the-odyssey/', title: 'The Odyssey', author: 'Homer, translated by Samuel Butler', year: 'Ancient Greek epic', image: '/The%20Odyssey.png', copy: 'Odysseus takes ten years to get home from Troy, then comes back in disguise to a house full of suitors.' },
+      { href: '/books/the-aeneid/', title: 'The Aeneid', author: 'Virgil, translated by John Dryden', year: 'Roman epic', image: '/The%20Aeneid.png', copy: 'Aeneas escapes burning Troy, leaves Dido in Carthage and fights his way into Italy, where Rome will be founded.' },
       { href: '/books/paradise-lost/', title: 'Paradise Lost', author: 'John Milton', year: '1667 / 1674 · English epic', image: '/Paradise%20Lost%20Main%20Cover.png', copy: 'Rebellion, temptation and the loss of Eden are carried through twelve books of unrhymed heroic verse.' },
-      { href: '/books/moby-dick/', title: 'Moby-Dick', author: 'Herman Melville', year: '1851 · epic inheritance', image: '/Moby%20Dick.png', copy: 'A modern novel that borrows epic scale, catalogue and allusion for a voyage that resists mastery.' }
+      { href: '/books/moby-dick/', title: 'Moby-Dick', author: 'Herman Melville', year: '1851 · epic inheritance', image: '/Moby%20Dick.png', copy: 'Ishmael sails on the Pequod, whose captain is hunting the white whale that took his leg, in a novel built on the scale of an epic.' }
     ],
     reading: {
       heading: 'Read repetitions as a system of comparison.',
@@ -398,11 +398,11 @@ module.exports = [
       { label: 'Language', title: 'Power revises the dictionary', copy: 'Political writing pays close attention to names, maxims, laws and slogans. A phrase can compress thought until repetition replaces argument. The struggle over power is also a struggle over which words remain available.' }
     ],
     books: [
-      { href: '/books/the-prince/', title: 'The Prince', author: 'Niccolò Machiavelli', year: 'written 1513', image: '/The%20Prince.png', copy: 'A political treatise that studies how rulers gain, secure and lose power under unstable conditions.' },
-      { href: '/books/utopia/', title: 'Utopia', author: 'Thomas More', year: '1516', image: '/Utopia.png', copy: 'Dialogue, traveller’s report and imagined society held together without a final instruction about what to believe.' },
-      { href: '/books/gullivers-travels/', title: 'Gulliver’s Travels', author: 'Jonathan Swift', year: '1726', image: '/Gulliver%27s%20Travels%20Replacement.jpg', copy: 'Four voyages that keep changing the scale from which politics, knowledge and human pride are judged.' },
+      { href: '/books/the-prince/', title: 'The Prince', author: 'Niccolò Machiavelli', year: 'written 1513', image: '/The%20Prince.png', copy: 'Machiavelli’s advice to a new ruler on how to take a state and keep it, including when to be cruel.' },
+      { href: '/books/utopia/', title: 'Utopia', author: 'Thomas More', year: '1516', image: '/Utopia.png', copy: 'A traveller describes an island where property is held in common, and More leaves the reader to decide what to make of it.' },
+      { href: '/books/gullivers-travels/', title: 'Gulliver’s Travels', author: 'Jonathan Swift', year: '1726', image: '/Gulliver%27s%20Travels%20Replacement.jpg', copy: 'Gulliver is a giant in Lilliput, tiny in Brobdingnag, and at the end of his travels ashamed to be human.' },
       { href: '/books/the-man-who-was-thursday/', title: 'The Man Who Was Thursday', author: 'G. K. Chesterton', year: '1908', image: '/The%20Man%20Who%20Was%20Thursday.png', copy: 'Anarchists, policemen and disguises make a comic, metaphysical nightmare out of political certainty.' },
-      { href: '/books/animal-farm/', title: 'Animal Farm', author: 'George Orwell', year: '1945', image: '/Animal%20Farm.png', copy: 'A revolution becomes a regime through memory, force and the repeated alteration of public language.' }
+      { href: '/books/animal-farm/', title: 'Animal Farm', author: 'George Orwell', year: '1945', image: '/Animal%20Farm.png', copy: 'The animals drive out their farmer, and the pigs who lead them become new masters, rewriting the rules as they go.' }
     ],
     reading: {
       heading: 'Ask who is allowed to sound reasonable.',
@@ -453,12 +453,12 @@ module.exports = [
       { label: 'Record', title: 'Evidence has been selected', copy: 'A scar, letter, diary or remembered conversation does not explain itself. Notice who preserves it, who reads it and what disappears when several voices are edited into one account. An archive can strengthen knowledge while concealing the hand that assembled it.' }
     ],
     books: [
-      { href: '/books/pamela/', title: 'Pamela; or, Virtue Rewarded', author: 'Samuel Richardson', year: '1740', image: '/Pamela.png', copy: 'Letters written under pressure make narration part of Pamela’s struggle for privacy, safety and the right to define her own conduct.' },
-      { href: '/books/narrative-of-the-life-of-frederick-douglass/', title: 'Narrative of the Life of Frederick Douglass', author: 'Frederick Douglass', year: '1845', image: '/Frederick%20Douglass.png', copy: 'Autobiography becomes witness, abolitionist argument and a record of literacy used against the system that tried to forbid it.' },
+      { href: '/books/pamela/', title: 'Pamela; or, Virtue Rewarded', author: 'Samuel Richardson', year: '1740', image: '/Pamela.png', copy: 'Pamela writes home about her master’s advances, and her letters become her way of defending herself.' },
+      { href: '/books/narrative-of-the-life-of-frederick-douglass/', title: 'Narrative of the Life of Frederick Douglass', author: 'Frederick Douglass', year: '1845', image: '/Frederick%20Douglass.png', copy: 'Douglass tells his own life as evidence against slavery, including how he learned to read after his master forbade it.' },
       { href: '/books/wuthering-heights/', title: 'Wuthering Heights', author: 'Emily Brontë', year: '1847', image: '/Wuthering%20Heights.png', copy: 'Lockwood records Nelly Dean’s long recollection, with letters, inscriptions and reported speech nested inside their accounts.' },
       { href: '/books/the-scarlet-letter/', title: 'The Scarlet Letter', author: 'Nathaniel Hawthorne', year: '1850', image: '/The%20Scarlet%20Letter%20%28Main%20Cover%29%20.png', copy: 'A fictional editor claims to recover Hester Prynne’s history from papers and an embroidered letter, making the authority of the record part of the romance.' },
       { href: '/books/great-expectations/', title: 'Great Expectations', author: 'Charles Dickens', year: '1860–61', image: '/Great%20Expectations.png', copy: 'The older Pip revisits the desires and misreadings of his younger self without becoming a neutral judge of them.' },
-      { href: '/books/adventures-of-huckleberry-finn/', title: 'Adventures of Huckleberry Finn', author: 'Mark Twain', year: '1884–85', image: '/Huckleberry%20Finn.png', copy: 'Huck’s vernacular first-person voice reveals the assumptions of his world even when his moral language cannot yet escape them.' },
+      { href: '/books/adventures-of-huckleberry-finn/', title: 'Adventures of Huckleberry Finn', author: 'Mark Twain', year: '1884–85', image: '/Huckleberry%20Finn.png', copy: 'Huck tells the story in his own voice, which shows the assumptions of his world even where he cannot see past them.' },
       { href: '/books/dracula/', title: 'Dracula', author: 'Bram Stoker', year: '1897', image: '/0194_1_like-the-one-attached-match-background-c_8YvDNXceV1S2geaPKOSiFg_oMVpLDveSW6UbY4s9hlomg_cover.png', copy: 'A group types, copies and orders its documents in the hope that a collective archive can make an impossible enemy credible.' }
     ],
     reading: {
@@ -516,8 +516,8 @@ module.exports = [
     ],
     books: [
       { href: '/books/oroonoko/', title: 'Oroonoko', author: 'Aphra Behn', year: '1688 · Restoration narrative', image: '/Oroonoko%20Main%20Cover.png', copy: 'An African prince is betrayed into slavery in Surinam, where broken promises of freedom lead to revolt and catastrophic colonial violence.' },
-      { href: '/books/narrative-of-the-life-of-frederick-douglass/', title: 'Narrative of the Life of Frederick Douglass', author: 'Frederick Douglass', year: '1845 · autobiography', image: '/Frederick%20Douglass.png', copy: 'A first-person abolitionist testimony in which literacy, resistance and authorship become acts of freedom.' },
-      { href: '/books/uncle-toms-cabin/', title: 'Uncle Tom’s Cabin', author: 'Harriet Beecher Stowe', year: '1851–52 · abolitionist novel', image: '/Uncle%20Tom%27s%20Cabin.png', copy: 'Two journeys reveal slavery as a market, legal system and assault upon family life, while the novel’s method and afterlife demand critical reading.' },
+      { href: '/books/narrative-of-the-life-of-frederick-douglass/', title: 'Narrative of the Life of Frederick Douglass', author: 'Frederick Douglass', year: '1845 · autobiography', image: '/Frederick%20Douglass.png', copy: 'Douglass’s account of his enslavement in Maryland, of learning to read, and of fighting back.' },
+      { href: '/books/uncle-toms-cabin/', title: 'Uncle Tom’s Cabin', author: 'Harriet Beecher Stowe', year: '1851–52 · abolitionist novel', image: '/Uncle%20Tom%27s%20Cabin.png', copy: 'Eliza flees north with her son while Tom is sold south. The novel’s methods and its long afterlife both need careful reading.' },
       { href: '/books/adventures-of-huckleberry-finn/', title: 'Adventures of Huckleberry Finn', author: 'Mark Twain', year: '1884–85 · later novel set before the Civil War', image: '/Huckleberry%20Finn.png', copy: 'Huck’s vernacular account tests conscience against a society in which helping Jim is taught to him as wrongdoing.' }
     ],
     reading: {
@@ -581,15 +581,15 @@ function addSubjectBooks(slug, rows) {
 }
 
 addSubjectBooks('gothic-literature', [
-  ['the-turn-of-the-screw', '1898', 'A governess records appearances at Bly in a manuscript transmitted through a Christmas storytelling frame.'],
-  ['american-ghost-stories', '1878–1925 · anthology', 'Ten complete stories with documented copy-texts, magazine histories and contextual essays.'],
-  ['carnacki-the-ghost-finder', '1913 / 1947', 'Nine investigations distinguish the six-story first collection from the later complete contents.'],
+  ['the-turn-of-the-screw', '1898', 'A governess at Bly writes down the ghosts she sees, and her manuscript is read aloud at a Christmas gathering years later.'],
+  ['american-ghost-stories', '1878–1925 · anthology', 'Ten complete stories, with the source of each text, its magazine history and essays on the background.'],
+  ['carnacki-the-ghost-finder', '1913 / 1947', 'Nine investigations, the six of the 1913 collection and the three added in the 1947 edition.'],
   ['m-r-james-collected-ghost-stories', '1904–1936 · collected stories', 'Thirty-three completed stories, with individual publication histories and James’s writings on the ghost story.'],
   ['edgar-allan-poe-selected-tales', '1839–1849 · selected tales', 'Ten complete stories, including Gothic fiction and the two investigations of C. Auguste Dupin.'],
   ['the-house-on-the-borderland', '1908', 'Travellers find a manuscript describing an isolated Irish house, a siege and visions of astronomical time.'],
-  ['the-wendigo', '1910', 'A Canadian hunting expedition accompanies documentary material on the setting and windigo traditions.'],
-  ['the-willows', '1907', 'Two canoeists camp among the flooded islands of the Danube; contextual material examines the real journey.'],
-  ['the-rime-of-the-ancient-mariner', '1798 / 1834', 'A supernatural voyage is told to a wedding guest, with later revisions and the marginal gloss identified.'],
+  ['the-wendigo', '1910', 'On a moose hunt in the Canadian backwoods, the guide Défago hears his name called in the night. The edition adds notes on the setting and on windigo traditions.'],
+  ['the-willows', '1907', 'Two canoeists camp on a flooded island of the Danube among willows that seem alive. The edition also looks at Blackwood’s own journey.'],
+  ['the-rime-of-the-ancient-mariner', '1798 / 1834', 'An old sailor stops a wedding guest to tell of the albatross he shot and what followed. The edition marks Coleridge’s revisions and his marginal gloss.'],
   ['war-of-the-worlds', '1897–98', 'A survivor records a Martian invasion through Surrey and London, with historical and scientific context.']
 ]);
 addSubjectBooks('comedy', [
@@ -597,7 +597,7 @@ addSubjectBooks('comedy', [
   ['the-diary-of-a-nobody', '1888–89 / 1892', 'Charles Pooter records domestic life, work and social embarrassments in his suburban diary.'],
   ['three-men-in-a-boat', '1889', 'A Thames holiday becomes a sequence of packing, camping and boating difficulties.'],
   ['a-connecticut-yankee-in-king-arthurs-court', '1889', 'Hank Morgan introduces nineteenth-century technology into a fictional Arthurian Britain.'],
-  ['the-blue-castle', '1926', 'Valancy Stirling’s altered conduct disrupts the expectations of her Ontario family.']
+  ['the-blue-castle', '1926', 'Told she has a year to live, Valancy Stirling stops doing what her family expects.']
 ]);
 addSubjectBooks('tragedy', [
   ['julius-caesar', 'c.1599 / 1623', 'The assassination of Caesar leads to funeral speeches, civil conflict and the battles at Philippi.'],
@@ -606,29 +606,29 @@ addSubjectBooks('tragedy', [
 addSubjectBooks('detective-fiction', [
   ['carnacki-the-ghost-finder', '1913 / 1947', 'Carnacki investigates reported hauntings using witnesses, equipment and tests for fraud.'],
   ['edgar-allan-poe-selected-tales', '1839–1849 · selected tales', 'The selection includes The Murders in the Rue Morgue and The Purloined Letter.'],
-  ['puddnhead-wilson', '1894', 'A murder investigation and fingerprint evidence intersect with a history of exchanged identities and slavery.']
+  ['puddnhead-wilson', '1894', 'Pudd’nhead Wilson solves a murder with fingerprints, and the evidence shows that two babies were swapped in the cradle.']
 ]);
 addSubjectBooks('satire-political-writing', [
   ['a-connecticut-yankee-in-king-arthurs-court', '1889', 'Hank’s schools, factories and weapons are placed beside monarchy, slavery and inherited rank.'],
   ['puddnhead-wilson', '1894', 'Roxy switches her baby with her master’s, and Twain follows what the law makes of the two boys.'],
-  ['julius-caesar', 'c.1599 / 1623', 'Conspirators and opponents make competing public claims about liberty, power and Rome.'],
-  ['seven-pillars-of-wisdom', '1926 Subscribers’ text', 'Lawrence’s account of the Arab Revolt is accompanied by material examining its political and historical record.'],
-  ['the-chimes', '1844', 'Trotty Veck encounters statistical, punitive and paternal arguments about poverty before the bells show a possible future.']
+  ['julius-caesar', 'c.1599 / 1623', 'Brutus and Antony each speak to the Roman crowd over Caesar’s body, and Antony wins it.'],
+  ['seven-pillars-of-wisdom', '1926 Subscribers’ text', 'Lawrence’s account of the Arab Revolt, with material on its politics and history.'],
+  ['the-chimes', '1844', 'Trotty Veck hears a statistician, an alderman and a baronet lecture the poor, and the bells show him the future their views would make.']
 ]);
 addSubjectBooks('narration-testimony', [
   ['the-turn-of-the-screw', '1898', 'The governess’s retrospective manuscript reaches the reader through two framing narrators.'],
   ['the-diary-of-a-nobody', '1888–89 / 1892', 'Pooter’s diary records his own explanations of incidents that other characters understand differently.'],
-  ['seven-pillars-of-wisdom', '1926 Subscribers’ text', 'The edition places a participant’s retrospective war memoir beside sources, despatches and historical evidence.'],
-  ['the-house-on-the-borderland', '1908', 'A manuscript found in a ruined house supplies the account transmitted by a framing narrative.'],
-  ['edgar-allan-poe-selected-tales', '1839–1849 · selected tales', 'Criminal confession, an observer’s account and Dupin’s explanations offer distinct narrative positions.'],
-  ['the-awakening', '1899', 'The narrative follows Edna Pontellier’s thoughts, actions and changing responses to her surroundings.'],
+  ['seven-pillars-of-wisdom', '1926 Subscribers’ text', 'Lawrence’s memoir of his own war, set beside sources, despatches and other evidence.'],
+  ['the-house-on-the-borderland', '1908', 'Two travellers find a manuscript in a ruined Irish house, and most of the novel is that manuscript.'],
+  ['edgar-allan-poe-selected-tales', '1839–1849 · selected tales', 'Some tales are a murderer’s confession, and the Dupin stories are told by his friend, who watches him reason.'],
+  ['the-awakening', '1899', 'The narrator stays close to Edna Pontellier’s thoughts as she pulls away from her marriage.'],
   ['the-rape-of-lucrece-and-venus-and-adonis', '1593–94', 'Shakespeare’s narrative poems include argument, reported action and Lucrece’s testimony after Tarquin’s assault.'],
   ['red-badge-of-courage', '1895', 'The battle is followed through Henry Fleming’s limited knowledge and changing explanations of his conduct.']
 ]);
 addSubjectBooks('slavery-freedom-abolition', [
   ['a-connecticut-yankee-in-king-arthurs-court', '1889', 'Hank and Arthur encounter slavery during their journey, and are themselves sold as slaves.'],
-  ['puddnhead-wilson', '1894', 'The exchanged children’s legal identities reveal how slavery and inheritance depend on racial classification.'],
-  ['the-adventures-of-tom-sawyer', '1876', 'The edition places the fictional St Petersburg beside slavery and childhood in Twain’s Missouri.']
+  ['puddnhead-wilson', '1894', 'Two babies, one free and one enslaved, are swapped in the cradle, and only the law’s labels tell them apart.'],
+  ['the-adventures-of-tom-sawyer', '1876', 'The edition sets Tom’s St. Petersburg beside slavery in the Missouri of Twain’s own childhood.']
 ]);
 
 const comedySubject = module.exports.find(subject => subject.slug === 'comedy');
@@ -661,8 +661,8 @@ module.exports.push(
     ],
     books: [
       septemberSubjectBook('the-adventures-of-tom-sawyer', '1876', 'School, Sunday school, family discipline and the boys’ own rules in a Missouri town.'),
-      septemberSubjectBook('the-railway-children', '1906', 'Three children adapt to a changed household and establish relationships with railway workers.'),
-      { href: '/books/anne-of-green-gables/', title: 'Anne of Green Gables', author: 'L. M. Montgomery', year: '1908', image: '/Anne%20of%20Green%20Gables%20Main%20Cover.png', copy: 'Anne’s arrival at Green Gables is followed through family life, schooling and her place in Avonlea.' },
+      septemberSubjectBook('the-railway-children', '1906', 'When their father is taken away, three children move to the country and make friends at the railway station.'),
+      { href: '/books/anne-of-green-gables/', title: 'Anne of Green Gables', author: 'L. M. Montgomery', year: '1908', image: '/Anne%20of%20Green%20Gables%20Main%20Cover.png', copy: 'An orphan sent by mistake to a brother and sister who wanted a boy wins them over, and Avonlea too.' },
       { href: '/books/alices-adventures-in-wonderland/', title: 'Alice’s Adventures in Wonderland', author: 'Lewis Carroll', year: '1865', image: '/Alice%27s%20Adventures%20in%20Wonderland%20Main%20Cover.png', copy: 'Alice encounters lessons, recitations, games and rules that no longer behave as she expects.' },
       existingSubjectBooks.get('/books/adventures-of-huckleberry-finn/'),
       existingSubjectBooks.get('/books/great-expectations/')
@@ -706,15 +706,15 @@ module.exports.push(
       { label: 'Landscape', title: 'Then and now', copy: 'Rivers are engineered, borders move and towns empty. The Danube Blackwood knew has been changed by later works on the river, and the Klondike that London saw in 1897 was half deserted a few years later.' }
     ],
     books: [
-      septemberSubjectBook('three-men-in-a-boat', '1889', 'The Thames journey is accompanied by notes on places, prices, boating and camping.'),
+      septemberSubjectBook('three-men-in-a-boat', '1889', 'A trip up the Thames, with notes on the places, prices, boats and camping.'),
       septemberSubjectBook('seven-pillars-of-wisdom', '1926 Subscribers’ text', 'The Arab Revolt memoir includes accounts of movement, the Hejaz Railway, water and supplies.'),
       septemberSubjectBook('the-open-boat-and-other-stories', '1898 London collection', 'The seventeen-story collection includes sea travel, Western settings and New York street life.'),
       septemberSubjectBook('the-willows', '1907', 'The edition documents Blackwood’s Danube journey and subsequent changes to the river landscape.'),
-      septemberSubjectBook('the-wendigo', '1910', 'The Canadian hunting expedition is placed beside geographical and historical context.'),
+      septemberSubjectBook('the-wendigo', '1910', 'A hunting trip into the Canadian backwoods, with notes on the geography and history of the setting.'),
       septemberSubjectBook('white-fang', '1906', 'The wolfdog moves through northern camps and working life before arriving in California.'),
       septemberSubjectBook('call-of-the-wild', '1903', 'Buck’s movement from California to the North is shaped by the Klondike economy and sled work.'),
-      septemberSubjectBook('the-blue-castle', '1926', 'The Ontario setting accompanies historical material on Muskoka and the novel’s composition.'),
-      septemberSubjectBook('selected-poems-of-samuel-taylor-coleridge', '43-poem selection', 'Narrative and conversation poems provide different accounts of journeys, places and remembered landscapes.'),
+      septemberSubjectBook('the-blue-castle', '1926', 'Valancy’s escape to an island in Muskoka, with notes on the region and on how Montgomery wrote the novel.'),
+      septemberSubjectBook('selected-poems-of-samuel-taylor-coleridge', '43-poem selection', 'Narrative and conversation poems, from the Mariner’s voyage to the walk Coleridge imagines in ‘This Lime-Tree Bower My Prison’.'),
       septemberSubjectBook('the-rime-of-the-ancient-mariner', '1798 / 1834', 'A narrated sea voyage appears with the later gloss and a history of the poem’s revisions.'),
       existingSubjectBooks.get('/books/moby-dick/'),
       existingSubjectBooks.get('/books/the-odyssey/')
@@ -759,14 +759,14 @@ module.exports.push(
       { label: 'Custom', title: 'What the evidence shows', copy: 'A law records a measure, an advertisement what a seller offered, a reminiscence what someone remembered later. Each custom has its own dates.' }
     ],
     books: [
-      septemberSubjectBook('american-christmas-stories', '1823–1905 · anthology', 'Eight stories and one poem accompany researched chapters on American Christmas customs and publishing.'),
+      septemberSubjectBook('american-christmas-stories', '1823–1905 · anthology', 'Eight stories and a poem, with chapters on American Christmas customs and Christmas publishing.'),
       septemberSubjectBook('cricket-on-the-hearth', '1845', 'Dickens’s domestic Christmas book follows John and Dot Peerybingle through a misunderstanding.'),
       septemberSubjectBook('the-chimes', '1844', 'Four quarters organise Dickens’s New Year story of Trotty Veck and the bells.'),
       septemberSubjectBook('the-haunted-man-and-the-ghosts-bargain', '1848', 'Redlaw’s bargain to forget suffering becomes the subject of Dickens’s fifth Christmas book.'),
       { href: '/books/dickens-at-christmas/', title: 'Dickens at Christmas', author: 'Charles Dickens', year: '1843–1848 · four-book collection', image: '/Dickens%20at%20Christmas%20Main%20Cover.png', copy: 'Four complete Christmas books in one volume, with individual introductions and contextual material.' },
       existingSubjectBooks.get('/books/sleepy-hollow-and-other-stories/'),
-      { href: '/books/a-victorian-christmas/', title: 'A Victorian Christmas', author: 'Astor Library', year: 'Historical collection', image: '/A%20Victorian%20Christmas%20Main%20Cover.png', copy: 'Customs, objects, publication and labour in the history of the nineteenth-century Christmas.' },
-      { href: '/books/a-victorian-bonfire-night/', title: 'A Victorian Bonfire Night', author: 'James Orchard Halliwell, Douglas Jerrold and others', year: 'Historical collection', image: '/A%20Victorian%20Bonfire%20Night%20Main%20Cover.png', copy: 'Primary texts and researched history concerning the Fifth of November.' }
+      { href: '/books/a-victorian-christmas/', title: 'A Victorian Christmas', author: 'Astor Library', year: 'Historical collection', image: '/A%20Victorian%20Christmas%20Main%20Cover.png', copy: 'A history of the Victorian Christmas, from the first Christmas card and the royal tree to the labour that supplied them.' },
+      { href: '/books/a-victorian-bonfire-night/', title: 'A Victorian Bonfire Night', author: 'James Orchard Halliwell, Douglas Jerrold and others', year: 'Historical collection', image: '/A%20Victorian%20Bonfire%20Night%20Main%20Cover.png', copy: 'Writing about the Fifth of November, with a history of how it was kept.' }
     ],
     reading: { heading: 'Compare what was written with how it was later used.', paragraphs: [
       'A story’s place in the season now does not tell you why it was written. Start with where and when it first appeared, then follow how it was reprinted, performed and attached to a holiday.',
