@@ -8,20 +8,39 @@
   if (!search || !filters.length || !cards.length || !count) return;
 
   const toolkitFilter = document.querySelector('[data-toolkit-filter]');
+  const grid = cards[0].parentElement;
+  const fold = text => text.toLocaleLowerCase().replace(/[’‘]/g, "'");
+  const titleOf = card => fold(card.querySelector('h2, h3')?.textContent || '');
   let activeCollection = 'all';
   let toolkitOnly = false;
+  let reordered = false;
 
   function updateCatalogue() {
-    const query = search.value.trim().toLocaleLowerCase().replace(/[’‘]/g, "'");
+    // Each word must appear somewhere on the card, so "dickens christmas" finds
+    // A Christmas Carol and Dickens at Christmas.
+    const words = fold(search.value.trim()).split(/\s+/).filter(Boolean);
     let visible = 0;
 
     for (const card of cards) {
       const matchesCollection = activeCollection === 'all' || card.dataset.collection === activeCollection;
       const matchesToolkit = !toolkitOnly || card.dataset.toolkit === 'yes';
-      const searchableText = `${card.textContent} ${card.dataset.search || ''}`.toLocaleLowerCase().replace(/[’‘]/g, "'");
-      const matchesSearch = !query || searchableText.includes(query);
+      const searchableText = fold(`${card.textContent} ${card.dataset.search || ''}`);
+      const matchesSearch = words.every(word => searchableText.includes(word));
       card.hidden = !(matchesCollection && matchesSearch && matchesToolkit);
       if (!card.hidden) visible += 1;
+    }
+
+    // While searching, books with the words in their title come before books
+    // that only mention them; otherwise the shelf keeps its A to Z order.
+    if (words.length || reordered) {
+      const rank = card => {
+        const title = titleOf(card);
+        const inTitle = words.filter(word => title.includes(word)).length;
+        return inTitle === words.length ? 0 : inTitle ? 1 : 2;
+      };
+      const order = words.length ? cards.slice().sort((a, b) => rank(a) - rank(b)) : cards;
+      for (const card of order) grid.append(card);
+      reordered = words.length > 0;
     }
 
     count.textContent = `${visible} ${visible === 1 ? 'book' : 'books'}`;

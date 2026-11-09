@@ -62,6 +62,31 @@ test('failed index requests offer a working fallback and retry on reopening', as
   assert.equal(attempts, 2);
 });
 
+// "christmas" once filled the list with Scrooge, Marley and the Cratchits,
+// who match only because their book is A Christmas Carol.
+test('a word in an entry’s own name ranks above a word found only in its book', async () => {
+  const entries = [
+    { k: 'Character', t: 'Ebenezer Scrooge', n: 'A Christmas Carol', h: '/scrooge', s: 'ebenezer scrooge a christmas carol' },
+    { k: 'Theme', t: 'Memory and time in A Christmas Carol', n: 'A Christmas Carol', h: '/memory', s: 'memory and time in a christmas carol' },
+    { k: 'Book', t: 'A Christmas Carol', n: 'Charles Dickens', h: '/carol', s: 'a christmas carol charles dickens' },
+    { k: 'Seasonal', t: 'Christmas at Astor', n: '', h: '/christmas', s: 'christmas at astor' },
+    { k: 'Book', t: 'Dickens at Christmas', n: 'Charles Dickens', h: '/dickens-at-christmas', s: 'dickens at christmas charles dickens' },
+    { k: 'Writer', t: 'Charles Dickens', n: '', h: '/dickens', s: 'charles dickens' },
+    { k: 'Book', t: 'A Midsummer Night’s Dream', n: 'William Shakespeare', h: '/dream', s: 'a midsummer night’s dream william shakespeare' }
+  ];
+  const app = setup(async () => ({ ok: true, json: async () => ({ entries }) }));
+  await app.run('open()');
+  const results = query => { app.run('input.value = ' + JSON.stringify(query) + '; render()'); return app.run('list.children.map(item => item.children[0].attrs.href)'); };
+
+  const christmas = results('Christmas');
+  assert.deepEqual(christmas.slice(0, 3), ['/christmas', '/carol', '/dickens-at-christmas']);
+  assert.ok(christmas.indexOf('/scrooge') > 2 && christmas.indexOf('/memory') > 2);
+  // A writer is found by any of their names, ahead of a book that has the name in its title.
+  assert.equal(results('dickens')[0], '/dickens');
+  // A straight apostrophe finds a curly one.
+  assert.deepEqual(results("night's dream"), ['/dream']);
+});
+
 test('modified search clicks preserve native link behaviour', () => {
   const app = setup();
   let prevented = false;

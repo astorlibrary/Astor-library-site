@@ -117,23 +117,64 @@ function paintSelection(rows) {
   });
 }
 
+// Where a word is found decides the order. A match in an entry's own name
+// comes first (the start of the name, then a whole word, then the start of a
+// word, then the inside of one); then a match in the book or writer it belongs
+// to; then a match anywhere in its text. So "christmas" lists the Christmas
+// collection and the Christmas books before Scrooge, who matches only because
+// his book is A Christmas Carol. On an equal match, books, writers and pages
+// come before the characters, themes and quotations inside them.
+const WEIGHT = { Seasonal: 7, Writer: 7, Book: 6, 'Study guide': 5, Tool: 5, 'Study edition': 4, Subject: 3, Collection: 3, 'Free guide': 3, 'Close reading': 2, Character: 2, Theme: 2, Technique: 2, Quotation: 1 };
+const INSIDE = new Set(['Character', 'Theme', 'Technique', 'Quotation']);
+const fold = text => String(text || '').toLowerCase().replace(/[’‘]/g, "'");
+const isWordChar = c => !!c && /[\p{L}\p{N}]/u.test(c);
+
+// "Memory and time in A Christmas Carol": the book's title is not part of the
+// theme's own name. A title character keeps it ("Macbeth" in Macbeth).
+function ownName(entry) {
+  const name = fold(entry.t);
+  const book = (entry.k === 'Theme' || entry.k === 'Character') && fold(entry.n);
+  return book && name !== book ? name.replace(book, ' ') : name;
+}
+
+function inName(name, word, anyWord) {
+  const at = name.indexOf(word);
+  if (at < 0) return 0;
+  const starts = !isWordChar(name[at - 1]);
+  const ends = !isWordChar(name[at + word.length]);
+  if (starts && ends) return at === 0 || anyWord ? 6 : 5;
+  if (starts) return at === 0 ? 5 : 4;
+  return 3;
+}
+
+function wordScore(entry, word) {
+  if (entry.own === undefined) {
+    entry.own = ownName(entry);
+    entry.text = fold(entry.s);
+  }
+  // A writer is found by any of their names: "dickens" is Charles Dickens.
+  let found = inName(entry.own, word, entry.k === 'Writer');
+  // A quotation's title is a line of text, not a name.
+  if (found && INSIDE.has(entry.k)) found -= entry.k === 'Quotation' ? 2 : 1;
+  if (!found && fold(entry.n).includes(word) && entry.k !== 'Technique') found = 2;
+  if (!found && entry.text.includes(word)) found = 1;
+  return found || -1;
+}
+
 function score(entry, words) {
   let total = 0;
   for (const word of words) {
-    const at = entry.s.indexOf(word);
-    if (at < 0) return -1;
-    // A match at the start of the entry is worth more than one buried in it.
-    total += at === 0 ? 3 : at < 24 ? 2 : 1;
+    const found = wordScore(entry, word);
+    if (found < 0) return -1;
+    total += found;
   }
-  // Destinations a reader is more likely to want come first on an equal score.
-  const weight = { Book: 6, Tool: 5, Writer: 4, 'Study edition': 4, Subject: 3, Collection: 3, 'Free guide': 3, 'Close reading': 2, Character: 2, Theme: 2, Technique: 2, Seasonal: 2, Quotation: 1 }[entry.k] || 1;
-  return total * 10 + weight;
+  return total * 10 + (WEIGHT[entry.k] || 1);
 }
 
 function render() {
   clear(list);
   input.removeAttribute('aria-activedescendant');
-  const query = input.value.trim().toLowerCase();
+  const query = fold(input.value.trim());
 
   if (loadFailed) {
     list.append(el('li', {}, [el('p', { class: 'astor-palette-hint', text: 'Search could not load. You can still search the catalogue below, or close and retry.' })]));
