@@ -62,8 +62,7 @@ follows the system setting.
 themes, techniques, quotations with references, timeline, settings, critical
 positions and essay questions. One record feeds the study toolkit on the book
 page, the generated study page, the explorers under `/explore/`, all nine
-revision games, the flashcard decks, the daily puzzle and the teachers' area,
-so a correction reaches every one of them in the same build.
+revision games, the flashcard decks and the daily puzzle, so a correction reaches every one of them in the same build.
 
 `scripts/book-data.js` is the schema; `check-site.js` and the test suite both
 run it. Every quotation must carry a `reference` and a `source` naming the

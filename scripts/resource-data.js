@@ -202,7 +202,7 @@ const resources = [
     titleHtml: 'A Charles Dickens Christmas',
     description: 'How Dickens and A Christmas Carol reshaped the English Christmas: charity, family, and the trade that grew up around the book.',
     image: 'A Dickens Christmas.png',
-    url: 'https://charles-dickens-christma-no08my6.gamma.site/',
+    url: '/presentations/?presentation=charles-dickens-christmas',
     relatedBooks: ['/books/a-christmas-carol/', '/books/the-chimes/', '/books/cricket-on-the-hearth/', '/books/the-haunted-man-and-the-ghosts-bargain/', '/books/dickens-at-christmas/'],
     tags: ['Charles Dickens', 'Christmas']
   },
@@ -212,7 +212,7 @@ const resources = [
     titleHtml: 'Ghost Stories and Belief',
     description: 'What ghost stories reveal about the people telling them: burial, mourning, the returning dead, and the beliefs under the conventions.',
     image: 'Literature and Ghost Stories.png',
-    url: 'https://ghost-stories-a-window-i-5hwf1y6.gamma.site/',
+    url: '/presentations/?presentation=ghost-stories',
     // Renamed in October 2026; the address stays so saved links keep working.
     legacyRoute: '/resources/victorian/ghost-stories-in-literature-a-window-into-human-belief/',
     relatedBooks: ['/books/victorian-ghost-stories/', '/books/the-yellow-wallpaper-and-the-giant-wistaria/', '/books/sleepy-hollow-and-other-stories/', '/books/the-haunted-man-and-the-ghosts-bargain/', '/books/dracula/', '/books/frankenstein/'],
@@ -224,7 +224,7 @@ const resources = [
     titleHtml: 'Christmas Traditions',
     description: 'Where the Victorian Christmas came from: the customs, the household rituals, and the writing that fixed them in place.',
     image: 'A Victorian Christmas.png',
-    url: 'https://victorian-christmas-trad-ebopxnl.gamma.site/',
+    url: '/presentations/?presentation=victorian-christmas-traditions',
     relatedBooks: ['/books/a-victorian-christmas/', '/books/a-christmas-carol/', '/books/cricket-on-the-hearth/', '/books/dickens-at-christmas/'],
     tags: ['Victorian Christmas', 'Cultural history']
   },
@@ -234,7 +234,7 @@ const resources = [
     titleHtml: 'How Literature Shaped Halloween',
     description: 'Halloween’s route from Celtic ritual through ghost stories to the modern night, traced through the writing at each stage.',
     image: 'How Literature Shaped Halloween.png',
-    url: 'https://how-literature-shaped-ha-ai2opsd.gamma.site/',
+    url: '/presentations/?presentation=literature-shaped-halloween',
     relatedBooks: ['/books/sleepy-hollow-and-other-stories/', '/books/victorian-ghost-stories/', '/books/frankenstein/', '/books/dracula/', '/books/jekyll-and-hyde/', '/books/dorian-gray/'],
     tags: ['Halloween', 'Gothic literature']
   },
@@ -281,9 +281,9 @@ const resources = [
     category: 'modern',
     title: 'Wide Sargasso Sea & Post-Colonialism',
     titleHtml: '<em>Wide Sargasso Sea</em> &amp; Post-Colonialism',
-    description: 'Twenty-one slides on empire, emancipation and language in Rhys’s novel, and the identity Antoinette is not allowed to keep.',
+    description: 'Eight slides on Rhys’s answer to Jane Eyre: the years after emancipation, the sea between two worlds, and the fragmented voices that tell Antoinette’s story.',
     image: 'Wide-Sargasso-Sea-and-Post-Colonialism.png',
-    url: '/presentations/?presentation=wide-sargasso-sea-study-guide',
+    url: '/presentations/?presentation=wide-sargasso-sea-post-colonialism',
     tags: ['Wide Sargasso Sea', 'Post-colonialism']
   },
   {
@@ -291,9 +291,9 @@ const resources = [
     title: 'Wide Sargasso Sea — Part 2: Rochester, Antoinette, and the Unravelling of a Marriage',
     seoTitle: 'Wide Sargasso Sea Part Two: Marriage and Control',
     titleHtml: '<em>Wide Sargasso Sea</em> — Part 2',
-    description: 'Twenty-one slides on the second part alone: the narration changing hands, and the mistrust that takes the marriage apart.',
+    description: 'Thirteen slides on the second part alone: the narration changing hands, and the mistrust that takes the marriage apart.',
     image: 'Wide-Sargasso-Sea-Part-2-Rochester-Antoinette-and-the-Unraveling-of-a-Marriage.png',
-    url: '/presentations/?presentation=wide-sargasso-sea-study-guide',
+    url: '/presentations/?presentation=wide-sargasso-sea-part-2',
     tags: ['Wide Sargasso Sea', 'Part 2']
   },
   {
@@ -739,6 +739,412 @@ const resources = [
     ],
     "tags": [
       "Wilkie Collins",
+      "Text and publication"
+    ]
+  },
+  {
+    "category": "victorian",
+    "title": "Seringapatam, 1799, and the Diamond",
+    "titleHtml": "Seringapatam, 1799, and the Diamond",
+    "description": "The history behind the prologue of The Moonstone: Tipu Sultan’s Mysore, the storming of 1799, the objects taken from the palace and the real diamonds behind the story. Nine slides.",
+    "image": "seringapatam-1799-diamond-cover.png",
+    "url": "/presentations/?presentation=seringapatam-1799-diamond",
+    "legacyRoute": "/resources/victorian/seringapatam-1799-diamond/",
+    "relatedBooks": [
+      "/books/the-moonstone/"
+    ],
+    "tags": [
+      "The Moonstone",
+      "Historical context"
+    ]
+  },
+  {
+    "category": "ancient-epic",
+    "title": "Troy and the Homeric World",
+    "titleHtml": "Troy and the Homeric World",
+    "description": "The mound at Hisarlik, its excavators, the layers linked with Homer’s city, the Hittite records and the oral poetry behind the epics. Nine slides.",
+    "image": "troy-homeric-world-cover.png",
+    "url": "/presentations/?presentation=troy-homeric-world",
+    "legacyRoute": "/resources/ancient-epic/troy-homeric-world/",
+    "relatedBooks": [
+      "/books/the-iliad/",
+      "/books/the-odyssey/"
+    ],
+    "tags": [
+      "Homer",
+      "Archaeology"
+    ]
+  },
+  {
+    "category": "renaissance-early-modern",
+    "title": "Domestic Tragedy, 1592–1608",
+    "titleHtml": "Domestic Tragedy, 1592–1608",
+    "description": "Plays made from real English murders: the Faversham killing behind Arden of Faversham, the Calverley murders behind A Yorkshire Tragedy, and the law of petty treason. Nine slides.",
+    "image": "domestic-tragedy-1592-1608-cover.png",
+    "url": "/presentations/?presentation=domestic-tragedy-1592-1608",
+    "legacyRoute": "/resources/renaissance-early-modern/domestic-tragedy-1592-1608/",
+    "relatedBooks": [
+      "/books/arden-of-faversham/",
+      "/books/a-yorkshire-tragedy/"
+    ],
+    "tags": [
+      "Domestic tragedy",
+      "Genre"
+    ]
+  },
+  {
+    "category": "renaissance-early-modern",
+    "title": "Revenge Tragedy, 1587–1633",
+    "titleHtml": "Revenge Tragedy, 1587–1633",
+    "description": "From Seneca to the 1630s: the conventions of revenge tragedy, The Spanish Tragedy and The Duchess of Malfi, and what law and religion said about private revenge. Nine slides.",
+    "image": "revenge-tragedy-1587-1633-cover.png",
+    "url": "/presentations/?presentation=revenge-tragedy-1587-1633",
+    "legacyRoute": "/resources/renaissance-early-modern/revenge-tragedy-1587-1633/",
+    "relatedBooks": [
+      "/books/titus-andronicus/",
+      "/books/hamlet/",
+      "/books/the-duchess-of-malfi/"
+    ],
+    "tags": [
+      "Revenge tragedy",
+      "Genre"
+    ]
+  },
+  {
+    "category": "poetry",
+    "title": "The Augustan Age, 1688–1745",
+    "titleHtml": "The Augustan Age, 1688–1745",
+    "description": "A period guide for readers of Pope: the Glorious Revolution to 1745, Pope’s life, the Scriblerus Club, coffee-house London and the heroic couplet. Ten slides.",
+    "image": "augustan-age-1688-1745-cover.png",
+    "url": "/presentations/?presentation=augustan-age-1688-1745",
+    "legacyRoute": "/resources/poetry/augustan-age-1688-1745/",
+    "relatedBooks": [
+      "/books/the-rape-of-the-lock-and-an-essay-on-criticism/",
+      "/books/gullivers-travels/"
+    ],
+    "tags": [
+      "Alexander Pope",
+      "Period context"
+    ]
+  },
+  {
+    "category": "poetry",
+    "title": "Poets of the First World War, 1914–1918",
+    "titleHtml": "Poets of the First World War, 1914–1918",
+    "description": "The war’s dates, the poems of 1914, the poets from Brooke and McCrae to Sassoon and Graves, where their work first appeared and how it is remembered. Nine slides.",
+    "image": "first-world-war-poets-cover.png",
+    "url": "/presentations/?presentation=first-world-war-poets",
+    "legacyRoute": "/resources/poetry/first-world-war-poets/",
+    "relatedBooks": [
+      "/books/selected-war-poems-of-wilfred-owen/"
+    ],
+    "tags": [
+      "War poetry",
+      "Period context"
+    ]
+  },
+  {
+    "category": "shakespeare",
+    "title": "The First Folio, 1623",
+    "titleHtml": "The First Folio, 1623",
+    "description": "The book that preserved Shakespeare’s plays: who made it, what it contains and leaves out, its front matter, the surviving copies and the later folios. Ten slides.",
+    "image": "first-folio-1623-cover.png",
+    "url": "/presentations/?presentation=first-folio-1623",
+    "legacyRoute": "/resources/shakespeare/first-folio-1623/",
+    "relatedBooks": [
+      "/books/the-tempest/",
+      "/books/twelfth-night/",
+      "/books/macbeth/",
+      "/books/pericles-prince-of-tyre/",
+      "/books/the-two-noble-kinsmen/"
+    ],
+    "tags": [
+      "Shakespeare",
+      "Text and publication"
+    ]
+  },
+  {
+    "category": "renaissance-early-modern",
+    "title": "The London Playhouses, 1576–1642",
+    "titleHtml": "The London Playhouses, 1576–1642",
+    "description": "From the Theatre in Shoreditch to the closure of 1642: the Globe, the Blackfriars, the acting companies and how an open-air playhouse worked. Nine slides.",
+    "image": "london-playhouses-1576-1642-cover.png",
+    "url": "/presentations/?presentation=london-playhouses-1576-1642",
+    "legacyRoute": "/resources/renaissance-early-modern/london-playhouses-1576-1642/",
+    "relatedBooks": [
+      "/books/hamlet/",
+      "/books/the-tempest/",
+      "/books/the-duchess-of-malfi/"
+    ],
+    "tags": [
+      "Playhouses",
+      "Theatre history"
+    ]
+  },
+  {
+    "category": "american",
+    "title": "Fingerprints and the Law, 1823–1902",
+    "titleHtml": "Fingerprints and the Law, 1823–1902",
+    "description": "A context guide for Pudd’nhead Wilson: Purkyně and Herschel, Galton’s Finger Prints, the first criminal cases and Twain’s sources. Eight slides.",
+    "image": "fingerprints-and-the-law-cover.png",
+    "url": "/presentations/?presentation=fingerprints-and-the-law",
+    "legacyRoute": "/resources/american/fingerprints-and-the-law/",
+    "relatedBooks": [
+      "/books/puddnhead-wilson/"
+    ],
+    "tags": [
+      "Pudd’nhead Wilson",
+      "Historical context"
+    ]
+  },
+  {
+    "category": "modern",
+    "title": "Weird Fiction and Algernon Blackwood",
+    "titleHtml": "Weird Fiction and Algernon Blackwood",
+    "description": "A guide for readers of “The Willows”: what weird fiction is, Lovecraft’s definition, Blackwood’s life, the Danube setting, “The Wendigo” and Weird Tales. Ten slides.",
+    "image": "weird-fiction-blackwood-cover.png",
+    "url": "/presentations/?presentation=weird-fiction-blackwood",
+    "legacyRoute": "/resources/modern/weird-fiction-blackwood/",
+    "relatedBooks": [
+      "/books/the-willows/",
+      "/books/the-wendigo/"
+    ],
+    "tags": [
+      "Algernon Blackwood",
+      "Genre"
+    ]
+  },
+  {
+    "category": "ancient-epic",
+    "title": "The Epic Tradition: Homer to Milton",
+    "titleHtml": "The Epic Tradition: Homer to Milton",
+    "description": "What makes a poem an epic: the conventions, the metres and the major epics in order from Gilgamesh to Paradise Lost, with a note on mock-epic. Eleven slides.",
+    "image": "epic-tradition-homer-milton-cover.png",
+    "url": "/presentations/?presentation=epic-tradition-homer-milton",
+    "legacyRoute": "/resources/ancient-epic/epic-tradition-homer-milton/",
+    "relatedBooks": [
+      "/books/the-iliad/",
+      "/books/the-odyssey/",
+      "/books/the-aeneid/",
+      "/books/paradise-lost/"
+    ],
+    "tags": [
+      "Epic",
+      "Genre"
+    ]
+  },
+  {
+    "category": "victorian",
+    "title": "The Vampire Before Dracula, 1725–1897",
+    "titleHtml": "The Vampire Before <em>Dracula</em>, 1725–1897",
+    "description": "The folk and literary background of Stoker’s novel: the Serbian vampire cases, the German poems, Polidori’s Vampyre, Varney, Carmilla and Dracula itself. Ten slides.",
+    "image": "vampire-before-dracula-cover.png",
+    "url": "/presentations/?presentation=vampire-before-dracula",
+    "legacyRoute": "/resources/victorian/vampire-before-dracula/",
+    "relatedBooks": [
+      "/books/dracula/",
+      "/books/carmilla/"
+    ],
+    "tags": [
+      "Dracula",
+      "Literary history"
+    ]
+  },
+  {
+    "category": "victorian",
+    "title": "Gogol’s St Petersburg",
+    "titleHtml": "Gogol’s St Petersburg",
+    "description": "A period guide for readers of “The Overcoat” and the Petersburg stories: the city, Russia under Nicholas I, the Table of Ranks and Gogol’s years in the capital. Nine slides.",
+    "image": "gogol-st-petersburg-cover.png",
+    "url": "/presentations/?presentation=gogol-st-petersburg",
+    "legacyRoute": "/resources/victorian/gogol-st-petersburg/",
+    "relatedBooks": [
+      "/books/the-overcoat/"
+    ],
+    "tags": [
+      "Gogol",
+      "Period context"
+    ]
+  },
+  {
+    "category": "american",
+    "title": "Two American Ghost Stories by Women",
+    "titleHtml": "Two American Ghost Stories by Women",
+    "description": "Madeline Yale Wynne’s “The Little Room” and Olivia Howard Dunbar’s “The Shell of Sense”: the stories, their authors, the magazines and Dunbar’s essay on the ghost story. Nine slides.",
+    "image": "american-ghost-stories-women-cover.png",
+    "url": "/presentations/?presentation=american-ghost-stories-women",
+    "legacyRoute": "/resources/american/american-ghost-stories-women/",
+    "relatedBooks": [
+      "/books/american-ghost-stories/"
+    ],
+    "tags": [
+      "Ghost stories",
+      "American literature"
+    ]
+  },
+  {
+    "category": "american",
+    "title": "American Whaling, 1820–1860",
+    "titleHtml": "American Whaling, 1820–1860",
+    "description": "A period guide for Moby-Dick: the fleet at its height, the ports and the whales, the lay, the Essex, Melville’s own voyage and the industry’s decline. Twelve slides.",
+    "image": "american-whaling-1820-1860-cover.png",
+    "url": "/presentations/?presentation=american-whaling-1820-1860",
+    "legacyRoute": "/resources/american/american-whaling-1820-1860/",
+    "relatedBooks": [
+      "/books/moby-dick/"
+    ],
+    "tags": [
+      "Moby-Dick",
+      "Period context"
+    ]
+  },
+  {
+    "category": "victorian",
+    "title": "The Sensation Novel, 1860–1880",
+    "titleHtml": "The Sensation Novel, 1860–1880",
+    "description": "The genre of The Woman in White, Lady Audley’s Secret and The Moonstone: its ancestors, its writers, the law and detectives behind its plots and its critics. Eleven slides.",
+    "image": "sensation-novel-1860-1880-cover.png",
+    "url": "/presentations/?presentation=sensation-novel-1860-1880",
+    "legacyRoute": "/resources/victorian/sensation-novel-1860-1880/",
+    "relatedBooks": [
+      "/books/the-woman-in-white/",
+      "/books/the-moonstone/"
+    ],
+    "tags": [
+      "Sensation fiction",
+      "Genre"
+    ]
+  },
+  {
+    "category": "regency",
+    "title": "The Romantic Poets, 1789–1834",
+    "titleHtml": "The Romantic Poets, 1789–1834",
+    "description": "A period guide for readers of Coleridge and Keats: two generations of poets, the events from the Bastille to the Reform Act, Lyrical Ballads, the reviewers, the places and the forms. Eleven slides.",
+    "image": "romantic-poets-1789-1834-cover.png",
+    "url": "/presentations/?presentation=romantic-poets-1789-1834",
+    "legacyRoute": "/resources/regency/romantic-poets-1789-1834/",
+    "relatedBooks": [
+      "/books/lyrical-ballads/",
+      "/books/the-rime-of-the-ancient-mariner/",
+      "/books/selected-poems-of-samuel-taylor-coleridge/",
+      "/books/selected-poems-of-john-keats/",
+      "/books/songs-of-innocence-and-of-experience/"
+    ],
+    "tags": [
+      "Romantic poetry",
+      "Period context"
+    ]
+  },
+  {
+    "category": "american",
+    "title": "The Klondike Gold Rush, 1896–1899",
+    "titleHtml": "The Klondike Gold Rush, 1896–1899",
+    "description": "A period guide for readers of Jack London: the strike on Rabbit Creek, the stampede over the passes, Dawson City, London’s own winter in the Yukon and the fiction he wrote from it. Thirteen slides.",
+    "image": "klondike-gold-rush-1896-1899-cover.png",
+    "url": "/presentations/?presentation=klondike-gold-rush-1896-1899",
+    "legacyRoute": "/resources/american/klondike-gold-rush-1896-1899/",
+    "relatedBooks": [
+      "/books/call-of-the-wild/",
+      "/books/white-fang/"
+    ],
+    "tags": [
+      "Jack London",
+      "Period context"
+    ]
+  },
+  {
+    "category": "shakespeare",
+    "title": "“By W.S.”: Locrine and The Puritan",
+    "titleHtml": "“By W.S.”: <em>Locrine</em> and <em>The Puritan</em>",
+    "description": "Two plays printed with the initials W.S. and added to Shakespeare’s works in 1664: their texts, stories, companies and authorship. Sixteen slides.",
+    "image": "locrine-and-the-puritan-cover.png",
+    "url": "/presentations/?presentation=locrine-and-the-puritan",
+    "legacyRoute": "/resources/shakespeare/locrine-and-the-puritan/",
+    "relatedBooks": [
+      "/books/locrine/",
+      "/books/the-puritan/"
+    ],
+    "tags": [
+      "Shakespeare Apocrypha",
+      "Attribution"
+    ]
+  },
+  {
+    "category": "american",
+    "title": "Old New York, 1840–1880",
+    "titleHtml": "Old New York, 1840–1880",
+    "description": "The city of Melville’s “Bartleby” and Wharton’s The Age of Innocence: Wall Street, the Court of Chancery, the Tombs, the Astors, riots, building and society. Thirteen slides.",
+    "image": "old-new-york-1840-1880-cover.png",
+    "url": "/presentations/?presentation=old-new-york-1840-1880",
+    "legacyRoute": "/resources/american/old-new-york-1840-1880/",
+    "relatedBooks": [
+      "/books/bartleby-the-scrivener/"
+    ],
+    "tags": [
+      "New York",
+      "Period context"
+    ]
+  },
+  {
+    "category": "american",
+    "title": "Edith Wharton: The Age of Innocence",
+    "titleHtml": "Edith Wharton: <em>The Age of Innocence</em>",
+    "description": "A reader’s guide to the 1920 novel and its New York: publication, the Pulitzer Prize, the setting, the story and characters, the title, Wharton’s life and the adaptations. Twelve slides.",
+    "image": "age-of-innocence-cover.png",
+    "url": "/presentations/?presentation=age-of-innocence",
+    "legacyRoute": "/resources/american/age-of-innocence/",
+    "relatedBooks": [],
+    "tags": [
+      "Edith Wharton",
+      "Introduction"
+    ]
+  },
+  {
+    "category": "american",
+    "title": "Herman Melville: Bartleby, the Scrivener",
+    "titleHtml": "Herman Melville: “Bartleby, the Scrivener”",
+    "description": "Melville’s Wall Street story: its publication in 1853 and 1856, a likely source, the people in the office, scriveners and copying, the story’s references and its afterlife. Fourteen slides.",
+    "image": "bartleby-the-scrivener-cover.png",
+    "url": "/presentations/?presentation=bartleby-the-scrivener",
+    "legacyRoute": "/resources/american/bartleby-the-scrivener/",
+    "relatedBooks": [
+      "/books/bartleby-the-scrivener/",
+      "/books/moby-dick/"
+    ],
+    "tags": [
+      "Herman Melville",
+      "Text and publication"
+    ]
+  },
+  {
+    "category": "poetry",
+    "title": "John Keats: The 1820 Volume",
+    "titleHtml": "John Keats: The 1820 Volume",
+    "description": "A reader’s guide to Lamia, Isabella, The Eve of St. Agnes, and Other Poems: its publication, contents, dates of writing, sources, reception and afterlife. Thirteen slides.",
+    "image": "keats-1820-volume-cover.png",
+    "url": "/presentations/?presentation=keats-1820-volume",
+    "legacyRoute": "/resources/poetry/keats-1820-volume/",
+    "relatedBooks": [
+      "/books/selected-poems-of-john-keats/"
+    ],
+    "tags": [
+      "John Keats",
+      "Text and publication"
+    ]
+  },
+  {
+    "category": "poetry",
+    "title": "Wilfred Owen: The War Poems",
+    "titleHtml": "Wilfred Owen: The War Poems",
+    "description": "The poet, the poems and the first collected volume of 1920: the Preface, the five poems printed in Owen’s lifetime, Craiglockhart and Sassoon, pararhyme and later editions. Fourteen slides.",
+    "image": "wilfred-owen-war-poems-cover.png",
+    "url": "/presentations/?presentation=wilfred-owen-war-poems",
+    "legacyRoute": "/resources/poetry/wilfred-owen-war-poems/",
+    "relatedBooks": [
+      "/books/selected-war-poems-of-wilfred-owen/"
+    ],
+    "tags": [
+      "Wilfred Owen",
       "Text and publication"
     ]
   }

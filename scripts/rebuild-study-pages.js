@@ -415,25 +415,9 @@ function buildPages() {
     links: [{ href: '/play/', label: 'Revise' }, { href: '/today/', label: 'Today' }]
   }));
 
-  // --- for teachers ---
-  written.push(page({
-    dir: 'for-teachers',
-    title: 'For teachers | Astor Library',
-    description: 'Lesson starters, printable worksheets, discussion questions and a projector mode, free to use in class.',
-    kicker: 'For teachers',
-    heading: 'Worksheets and lesson starters.',
-    deck: 'Choose a book, then print a worksheet or show its quotations and questions in projector mode.',
-    breadcrumb: '<a href="/">Astor Library</a><span aria-hidden="true">/</span><span aria-current="page">For teachers</span>',
-    module: 'teachers.mjs',
-    intro: '  <div class="astor-chooser" id="astor-teacher-chooser"></div>',
-    mount: `  <div class="button-row" id="astor-teacher-actions"></div>
-  <div id="astor-teacher-output"></div>
-  <div class="astor-projector" id="astor-projector" hidden></div>`,
-    fallback: 'The worksheets need JavaScript. Every book page has its questions and quotations ready to print.',
-    tail: `  <p class="astor-inline-note">Worksheets print straight from your browser. Free to use in class.</p>
-  <p class="astor-inline-note">Projector mode: open it from the buttons above, then use the arrow keys. Escape closes it.</p>`,
-    links: [{ href: '/resources/', label: 'Free resources' }, { href: '/study/', label: 'Study editions' }]
-  }));
+  // The teachers' page (/for-teachers/) was retired in November 2026; its
+  // address redirects to the free guides (see _redirects).
+  fs.rmSync(path.join(root, 'for-teachers'), { recursive: true, force: true });
 
   return written;
 }

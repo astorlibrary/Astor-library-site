@@ -3,12 +3,12 @@
     "books": 161,
     "authors": 111,
     "subjects": 12,
-    "resources": 62,
+    "resources": 86,
     "studyEditions": 41,
     "collections": 12,
     "passages": 90,
     "seasons": 9,
-    "entries": 498
+    "entries": 522
   },
   "books": [
     {
@@ -6288,6 +6288,54 @@
     {
       "type": "resource",
       "typeLabel": "Free guide",
+      "title": "Troy and the Homeric World",
+      "description": "The mound at Hisarlik, its excavators, the layers linked with Homer’s city, the Hittite records and the oral poetry behind the epics. Nine slides.",
+      "tags": [
+        "Homer",
+        "Archaeology",
+        "Reading the text and its history.",
+        "Which Troy?",
+        "Compare the names",
+        "Listen for the formulas"
+      ],
+      "href": "/resources/ancient-epic/troy-homeric-world/",
+      "externalUrl": "/presentations/?presentation=troy-homeric-world",
+      "image": "/troy-homeric-world-cover.png",
+      "imageAlt": "Troy and the Homeric World cover",
+      "relatedBooks": [
+        "/books/the-iliad/",
+        "/books/the-odyssey/"
+      ],
+      "search": "Troy and the Homeric World The mound at Hisarlik, its excavators, the layers linked with Homer’s city, the Hittite records and the oral poetry behind the epics. Nine slides. Homer Archaeology Reading the text and its history. Which Troy? Compare the names Listen for the formulas"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "The Epic Tradition: Homer to Milton",
+      "description": "What makes a poem an epic: the conventions, the metres and the major epics in order from Gilgamesh to Paradise Lost, with a note on mock-epic. Eleven slides.",
+      "tags": [
+        "Epic",
+        "Genre",
+        "Reading the text and its history.",
+        "Find the conventions",
+        "Compare the English Homers",
+        "Read the mock-epic"
+      ],
+      "href": "/resources/ancient-epic/epic-tradition-homer-milton/",
+      "externalUrl": "/presentations/?presentation=epic-tradition-homer-milton",
+      "image": "/epic-tradition-homer-milton-cover.png",
+      "imageAlt": "The Epic Tradition: Homer to Milton cover",
+      "relatedBooks": [
+        "/books/the-iliad/",
+        "/books/the-odyssey/",
+        "/books/the-aeneid/",
+        "/books/paradise-lost/"
+      ],
+      "search": "The Epic Tradition: Homer to Milton What makes a poem an epic: the conventions, the metres and the major epics in order from Gilgamesh to Paradise Lost, with a note on mock-epic. Eleven slides. Epic Genre Reading the text and its history. Find the conventions Compare the English Homers Read the mock-epic"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
       "title": "Arden of Faversham (1592)",
       "description": "A real killing and the play made from it: Holinshed’s account, petty treason, and Alice Arden’s hired men. Fifteen slides.",
       "tags": [
@@ -6350,6 +6398,77 @@
         "/books/sir-thomas-more/"
       ],
       "search": "Sir Thomas More: The Censored Manuscript Thirteen slides on the manuscript as an object: the different hands, the censor’s marks, and the evidence for Hand D. Sir Thomas More Text and publication Reading the text and its history. Look at the hands Read the objections Keep the limits visible"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "Domestic Tragedy, 1592–1608",
+      "description": "Plays made from real English murders: the Faversham killing behind Arden of Faversham, the Calverley murders behind A Yorkshire Tragedy, and the law of petty treason. Nine slides.",
+      "tags": [
+        "Domestic tragedy",
+        "Genre",
+        "Reading the text and its history.",
+        "Compare the crime and the play",
+        "Weigh the title pages",
+        "Read the law into the plot"
+      ],
+      "href": "/resources/renaissance-early-modern/domestic-tragedy-1592-1608/",
+      "externalUrl": "/presentations/?presentation=domestic-tragedy-1592-1608",
+      "image": "/domestic-tragedy-1592-1608-cover.png",
+      "imageAlt": "Domestic Tragedy, 1592–1608 cover",
+      "relatedBooks": [
+        "/books/arden-of-faversham/",
+        "/books/a-yorkshire-tragedy/"
+      ],
+      "search": "Domestic Tragedy, 1592–1608 Plays made from real English murders: the Faversham killing behind Arden of Faversham, the Calverley murders behind A Yorkshire Tragedy, and the law of petty treason. Nine slides. Domestic tragedy Genre Reading the text and its history. Compare the crime and the play Weigh the title pages Read the law into the plot"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "Revenge Tragedy, 1587–1633",
+      "description": "From Seneca to the 1630s: the conventions of revenge tragedy, The Spanish Tragedy and The Duchess of Malfi, and what law and religion said about private revenge. Nine slides.",
+      "tags": [
+        "Revenge tragedy",
+        "Genre",
+        "Reading the text and its history.",
+        "Check the list against a play",
+        "Compare the Duchess with her source",
+        "Read the revenger against the law"
+      ],
+      "href": "/resources/renaissance-early-modern/revenge-tragedy-1587-1633/",
+      "externalUrl": "/presentations/?presentation=revenge-tragedy-1587-1633",
+      "image": "/revenge-tragedy-1587-1633-cover.png",
+      "imageAlt": "Revenge Tragedy, 1587–1633 cover",
+      "relatedBooks": [
+        "/books/titus-andronicus/",
+        "/books/hamlet/",
+        "/books/the-duchess-of-malfi/"
+      ],
+      "search": "Revenge Tragedy, 1587–1633 From Seneca to the 1630s: the conventions of revenge tragedy, The Spanish Tragedy and The Duchess of Malfi, and what law and religion said about private revenge. Nine slides. Revenge tragedy Genre Reading the text and its history. Check the list against a play Compare the Duchess with her source Read the revenger against the law"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "The London Playhouses, 1576–1642",
+      "description": "From the Theatre in Shoreditch to the closure of 1642: the Globe, the Blackfriars, the acting companies and how an open-air playhouse worked. Nine slides.",
+      "tags": [
+        "Playhouses",
+        "Theatre history",
+        "Reading the text and its history.",
+        "Stage the scene",
+        "Follow the company",
+        "Read the closures"
+      ],
+      "href": "/resources/renaissance-early-modern/london-playhouses-1576-1642/",
+      "externalUrl": "/presentations/?presentation=london-playhouses-1576-1642",
+      "image": "/london-playhouses-1576-1642-cover.png",
+      "imageAlt": "The London Playhouses, 1576–1642 cover",
+      "relatedBooks": [
+        "/books/hamlet/",
+        "/books/the-tempest/",
+        "/books/the-duchess-of-malfi/"
+      ],
+      "search": "The London Playhouses, 1576–1642 From the Theatre in Shoreditch to the closure of 1642: the Globe, the Blackfriars, the acting companies and how an open-air playhouse worked. Nine slides. Playhouses Theatre history Reading the text and its history. Stage the scene Follow the company Read the closures"
     },
     {
       "type": "resource",
@@ -6660,6 +6779,55 @@
     {
       "type": "resource",
       "typeLabel": "Free guide",
+      "title": "The First Folio, 1623",
+      "description": "The book that preserved Shakespeare’s plays: who made it, what it contains and leaves out, its front matter, the surviving copies and the later folios. Ten slides.",
+      "tags": [
+        "Shakespeare",
+        "Text and publication",
+        "Reading the text and its history.",
+        "Check what the Folio saved",
+        "Read the prefaces",
+        "Compare quarto and folio"
+      ],
+      "href": "/resources/shakespeare/first-folio-1623/",
+      "externalUrl": "/presentations/?presentation=first-folio-1623",
+      "image": "/first-folio-1623-cover.png",
+      "imageAlt": "The First Folio, 1623 cover",
+      "relatedBooks": [
+        "/books/the-tempest/",
+        "/books/twelfth-night/",
+        "/books/macbeth/",
+        "/books/pericles-prince-of-tyre/",
+        "/books/the-two-noble-kinsmen/"
+      ],
+      "search": "The First Folio, 1623 The book that preserved Shakespeare’s plays: who made it, what it contains and leaves out, its front matter, the surviving copies and the later folios. Ten slides. Shakespeare Text and publication Reading the text and its history. Check what the Folio saved Read the prefaces Compare quarto and folio"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "“By W.S.”: Locrine and The Puritan",
+      "description": "Two plays printed with the initials W.S. and added to Shakespeare’s works in 1664: their texts, stories, companies and authorship. Sixteen slides.",
+      "tags": [
+        "Shakespeare Apocrypha",
+        "Attribution",
+        "Reading the text and its history.",
+        "Weigh the initials",
+        "Compare Locrine with Geoffrey",
+        "Read the Puritans"
+      ],
+      "href": "/resources/shakespeare/locrine-and-the-puritan/",
+      "externalUrl": "/presentations/?presentation=locrine-and-the-puritan",
+      "image": "/locrine-and-the-puritan-cover.png",
+      "imageAlt": "“By W.S.”: Locrine and The Puritan cover",
+      "relatedBooks": [
+        "/books/locrine/",
+        "/books/the-puritan/"
+      ],
+      "search": "“By W.S.”: Locrine and The Puritan Two plays printed with the initials W.S. and added to Shakespeare’s works in 1664: their texts, stories, companies and authorship. Sixteen slides. Shakespeare Apocrypha Attribution Reading the text and its history. Weigh the initials Compare Locrine with Geoffrey Read the Puritans"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
       "title": "Policing and Community in Linton Kwesi Johnson’s Poetry",
       "description": "Sixteen slides on Johnson’s dub poetry: Jamaican Creole on the page, rhythm written for performance, and the policing his first audience knew at first hand.",
       "tags": [
@@ -6744,6 +6912,95 @@
     {
       "type": "resource",
       "typeLabel": "Free guide",
+      "title": "The Augustan Age, 1688–1745",
+      "description": "A period guide for readers of Pope: the Glorious Revolution to 1745, Pope’s life, the Scriblerus Club, coffee-house London and the heroic couplet. Ten slides.",
+      "tags": [
+        "Alexander Pope",
+        "Period context",
+        "Reading the text and its history.",
+        "Place the poem in its year",
+        "Read the Scriblerians together",
+        "Scan a couplet"
+      ],
+      "href": "/resources/poetry/augustan-age-1688-1745/",
+      "externalUrl": "/presentations/?presentation=augustan-age-1688-1745",
+      "image": "/augustan-age-1688-1745-cover.png",
+      "imageAlt": "The Augustan Age, 1688–1745 cover",
+      "relatedBooks": [
+        "/books/the-rape-of-the-lock-and-an-essay-on-criticism/",
+        "/books/gullivers-travels/"
+      ],
+      "search": "The Augustan Age, 1688–1745 A period guide for readers of Pope: the Glorious Revolution to 1745, Pope’s life, the Scriblerus Club, coffee-house London and the heroic couplet. Ten slides. Alexander Pope Period context Reading the text and its history. Place the poem in its year Read the Scriblerians together Scan a couplet"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "Poets of the First World War, 1914–1918",
+      "description": "The war’s dates, the poems of 1914, the poets from Brooke and McCrae to Sassoon and Graves, where their work first appeared and how it is remembered. Nine slides.",
+      "tags": [
+        "War poetry",
+        "Period context",
+        "Reading the text and its history.",
+        "Date the poem",
+        "Find where it appeared",
+        "Read the memorial"
+      ],
+      "href": "/resources/poetry/first-world-war-poets/",
+      "externalUrl": "/presentations/?presentation=first-world-war-poets",
+      "image": "/first-world-war-poets-cover.png",
+      "imageAlt": "Poets of the First World War, 1914–1918 cover",
+      "relatedBooks": [
+        "/books/selected-war-poems-of-wilfred-owen/"
+      ],
+      "search": "Poets of the First World War, 1914–1918 The war’s dates, the poems of 1914, the poets from Brooke and McCrae to Sassoon and Graves, where their work first appeared and how it is remembered. Nine slides. War poetry Period context Reading the text and its history. Date the poem Find where it appeared Read the memorial"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "John Keats: The 1820 Volume",
+      "description": "A reader’s guide to Lamia, Isabella, The Eve of St. Agnes, and Other Poems: its publication, contents, dates of writing, sources, reception and afterlife. Thirteen slides.",
+      "tags": [
+        "John Keats",
+        "Text and publication",
+        "Reading the text and its history.",
+        "Read the book as printed",
+        "Date the odes",
+        "Compare Isabella and Boccaccio"
+      ],
+      "href": "/resources/poetry/keats-1820-volume/",
+      "externalUrl": "/presentations/?presentation=keats-1820-volume",
+      "image": "/keats-1820-volume-cover.png",
+      "imageAlt": "John Keats: The 1820 Volume cover",
+      "relatedBooks": [
+        "/books/selected-poems-of-john-keats/"
+      ],
+      "search": "John Keats: The 1820 Volume A reader’s guide to Lamia, Isabella, The Eve of St. Agnes, and Other Poems: its publication, contents, dates of writing, sources, reception and afterlife. Thirteen slides. John Keats Text and publication Reading the text and its history. Read the book as printed Date the odes Compare Isabella and Boccaccio"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "Wilfred Owen: The War Poems",
+      "description": "The poet, the poems and the first collected volume of 1920: the Preface, the five poems printed in Owen’s lifetime, Craiglockhart and Sassoon, pararhyme and later editions. Fourteen slides.",
+      "tags": [
+        "Wilfred Owen",
+        "Text and publication",
+        "Reading the text and its history.",
+        "Read the Preface first",
+        "Find the allusions",
+        "Hear the pararhyme"
+      ],
+      "href": "/resources/poetry/wilfred-owen-war-poems/",
+      "externalUrl": "/presentations/?presentation=wilfred-owen-war-poems",
+      "image": "/wilfred-owen-war-poems-cover.png",
+      "imageAlt": "Wilfred Owen: The War Poems cover",
+      "relatedBooks": [
+        "/books/selected-war-poems-of-wilfred-owen/"
+      ],
+      "search": "Wilfred Owen: The War Poems The poet, the poems and the first collected volume of 1920: the Preface, the five poems printed in Owen’s lifetime, Craiglockhart and Sassoon, pararhyme and later editions. Fourteen slides. Wilfred Owen Text and publication Reading the text and its history. Read the Preface first Find the allusions Hear the pararhyme"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
       "title": "Pamela’s Psyche",
       "description": "Pamela’s letters read as a record of a mind changing: her fear, her resistance, and the power Mr B holds over both. Twenty slides.",
       "tags": [
@@ -6782,6 +7039,32 @@
         "/books/pride-and-prejudice/"
       ],
       "search": "Pride & Prejudice: Key Quotes Revision Quotations worth learning, each with a short route into character, class or judgement. Ten slides. Pride and Prejudice Key quotations Check the language and form How does Austen use the gap between speech and narration to direct our judgement of her characters?"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "The Romantic Poets, 1789–1834",
+      "description": "A period guide for readers of Coleridge and Keats: two generations of poets, the events from the Bastille to the Reform Act, Lyrical Ballads, the reviewers, the places and the forms. Eleven slides.",
+      "tags": [
+        "Romantic poetry",
+        "Period context",
+        "Reading the text and its history.",
+        "Place the poet",
+        "Read the attacks",
+        "Name the form"
+      ],
+      "href": "/resources/regency/romantic-poets-1789-1834/",
+      "externalUrl": "/presentations/?presentation=romantic-poets-1789-1834",
+      "image": "/romantic-poets-1789-1834-cover.png",
+      "imageAlt": "The Romantic Poets, 1789–1834 cover",
+      "relatedBooks": [
+        "/books/lyrical-ballads/",
+        "/books/the-rime-of-the-ancient-mariner/",
+        "/books/selected-poems-of-samuel-taylor-coleridge/",
+        "/books/selected-poems-of-john-keats/",
+        "/books/songs-of-innocence-and-of-experience/"
+      ],
+      "search": "The Romantic Poets, 1789–1834 A period guide for readers of Coleridge and Keats: two generations of poets, the events from the Bastille to the Reform Act, Lyrical Ballads, the reviewers, the places and the forms. Eleven slides. Romantic poetry Period context Reading the text and its history. Place the poet Read the attacks Name the form"
     },
     {
       "type": "resource",
@@ -6893,12 +7176,11 @@
       "tags": [
         "Charles Dickens",
         "Christmas",
-        "Continue on the linked site.",
         "Check the books and the customs",
         "How far was the Victorian Christmas Dickens’s invention?"
       ],
       "href": "/resources/victorian/a-charles-dickens-christmas/",
-      "externalUrl": "https://charles-dickens-christma-no08my6.gamma.site/",
+      "externalUrl": "/presentations/?presentation=charles-dickens-christmas",
       "image": "/A%20Dickens%20Christmas.png",
       "imageAlt": "A Charles Dickens Christmas cover",
       "relatedBooks": [
@@ -6908,7 +7190,7 @@
         "/books/the-haunted-man-and-the-ghosts-bargain/",
         "/books/dickens-at-christmas/"
       ],
-      "search": "A Charles Dickens Christmas How Dickens and A Christmas Carol reshaped the English Christmas: charity, family, and the trade that grew up around the book. Charles Dickens Christmas Continue on the linked site. Check the books and the customs How far was the Victorian Christmas Dickens’s invention?"
+      "search": "A Charles Dickens Christmas How Dickens and A Christmas Carol reshaped the English Christmas: charity, family, and the trade that grew up around the book. Charles Dickens Christmas Check the books and the customs How far was the Victorian Christmas Dickens’s invention?"
     },
     {
       "type": "resource",
@@ -6918,12 +7200,11 @@
       "tags": [
         "Ghost stories",
         "Supernatural belief",
-        "Continue on the linked site.",
         "Check the tales and their tellers",
         "Do ghost stories depend on their audiences believing in ghosts?"
       ],
       "href": "/resources/victorian/ghost-stories-in-literature-a-window-into-human-belief/",
-      "externalUrl": "https://ghost-stories-a-window-i-5hwf1y6.gamma.site/",
+      "externalUrl": "/presentations/?presentation=ghost-stories",
       "image": "/Literature%20and%20Ghost%20Stories.png",
       "imageAlt": "Ghost Stories and Belief cover",
       "relatedBooks": [
@@ -6934,7 +7215,7 @@
         "/books/dracula/",
         "/books/frankenstein/"
       ],
-      "search": "Ghost Stories and Belief What ghost stories reveal about the people telling them: burial, mourning, the returning dead, and the beliefs under the conventions. Ghost stories Supernatural belief Continue on the linked site. Check the tales and their tellers Do ghost stories depend on their audiences believing in ghosts?"
+      "search": "Ghost Stories and Belief What ghost stories reveal about the people telling them: burial, mourning, the returning dead, and the beliefs under the conventions. Ghost stories Supernatural belief Check the tales and their tellers Do ghost stories depend on their audiences believing in ghosts?"
     },
     {
       "type": "resource",
@@ -6944,12 +7225,11 @@
       "tags": [
         "Victorian Christmas",
         "Cultural history",
-        "Continue on the linked site.",
         "Check the dated evidence",
         "Which parts of the modern Christmas really are Victorian inventions?"
       ],
       "href": "/resources/victorian/christmas-traditions/",
-      "externalUrl": "https://victorian-christmas-trad-ebopxnl.gamma.site/",
+      "externalUrl": "/presentations/?presentation=victorian-christmas-traditions",
       "image": "/A%20Victorian%20Christmas.png",
       "imageAlt": "Christmas Traditions cover",
       "relatedBooks": [
@@ -6958,7 +7238,7 @@
         "/books/cricket-on-the-hearth/",
         "/books/dickens-at-christmas/"
       ],
-      "search": "Christmas Traditions Where the Victorian Christmas came from: the customs, the household rituals, and the writing that fixed them in place. Victorian Christmas Cultural history Continue on the linked site. Check the dated evidence Which parts of the modern Christmas really are Victorian inventions?"
+      "search": "Christmas Traditions Where the Victorian Christmas came from: the customs, the household rituals, and the writing that fixed them in place. Victorian Christmas Cultural history Check the dated evidence Which parts of the modern Christmas really are Victorian inventions?"
     },
     {
       "type": "resource",
@@ -6968,12 +7248,11 @@
       "tags": [
         "Halloween",
         "Gothic literature",
-        "Continue on the linked site.",
         "Check the festival’s sources",
         "How much of the modern Halloween did literature invent?"
       ],
       "href": "/resources/victorian/how-literature-shaped-halloween/",
-      "externalUrl": "https://how-literature-shaped-ha-ai2opsd.gamma.site/",
+      "externalUrl": "/presentations/?presentation=literature-shaped-halloween",
       "image": "/How%20Literature%20Shaped%20Halloween.png",
       "imageAlt": "How Literature Shaped Halloween cover",
       "relatedBooks": [
@@ -6984,7 +7263,7 @@
         "/books/jekyll-and-hyde/",
         "/books/dorian-gray/"
       ],
-      "search": "How Literature Shaped Halloween Halloween’s route from Celtic ritual through ghost stories to the modern night, traced through the writing at each stage. Halloween Gothic literature Continue on the linked site. Check the festival’s sources How much of the modern Halloween did literature invent?"
+      "search": "How Literature Shaped Halloween Halloween’s route from Celtic ritual through ghost stories to the modern night, traced through the writing at each stage. Halloween Gothic literature Check the festival’s sources How much of the modern Halloween did literature invent?"
     },
     {
       "type": "resource",
@@ -7049,6 +7328,96 @@
         "/books/the-moonstone/"
       ],
       "search": "Wilkie Collins: The Moonstone (1868) How the novel is built: the narrators, the historical prologue, Sergeant Cuff and the Shivering Sand. Fourteen slides. Wilkie Collins Text and publication Reading the text and its history. Compare the accounts Read the prologue Follow Cuff’s reading"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "Seringapatam, 1799, and the Diamond",
+      "description": "The history behind the prologue of The Moonstone: Tipu Sultan’s Mysore, the storming of 1799, the objects taken from the palace and the real diamonds behind the story. Nine slides.",
+      "tags": [
+        "The Moonstone",
+        "Historical context",
+        "Reading the text and its history.",
+        "Read the prologue as a document",
+        "Follow the plunder",
+        "Separate fact and invention"
+      ],
+      "href": "/resources/victorian/seringapatam-1799-diamond/",
+      "externalUrl": "/presentations/?presentation=seringapatam-1799-diamond",
+      "image": "/seringapatam-1799-diamond-cover.png",
+      "imageAlt": "Seringapatam, 1799, and the Diamond cover",
+      "relatedBooks": [
+        "/books/the-moonstone/"
+      ],
+      "search": "Seringapatam, 1799, and the Diamond The history behind the prologue of The Moonstone: Tipu Sultan’s Mysore, the storming of 1799, the objects taken from the palace and the real diamonds behind the story. Nine slides. The Moonstone Historical context Reading the text and its history. Read the prologue as a document Follow the plunder Separate fact and invention"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "The Vampire Before Dracula, 1725–1897",
+      "description": "The folk and literary background of Stoker’s novel: the Serbian vampire cases, the German poems, Polidori’s Vampyre, Varney, Carmilla and Dracula itself. Ten slides.",
+      "tags": [
+        "Dracula",
+        "Literary history",
+        "Reading the text and its history.",
+        "Read the case reports",
+        "Trace the aristocrat",
+        "Compare the formats"
+      ],
+      "href": "/resources/victorian/vampire-before-dracula/",
+      "externalUrl": "/presentations/?presentation=vampire-before-dracula",
+      "image": "/vampire-before-dracula-cover.png",
+      "imageAlt": "The Vampire Before Dracula, 1725–1897 cover",
+      "relatedBooks": [
+        "/books/dracula/",
+        "/books/carmilla/"
+      ],
+      "search": "The Vampire Before Dracula, 1725–1897 The folk and literary background of Stoker’s novel: the Serbian vampire cases, the German poems, Polidori’s Vampyre, Varney, Carmilla and Dracula itself. Ten slides. Dracula Literary history Reading the text and its history. Read the case reports Trace the aristocrat Compare the formats"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "Gogol’s St Petersburg",
+      "description": "A period guide for readers of “The Overcoat” and the Petersburg stories: the city, Russia under Nicholas I, the Table of Ranks and Gogol’s years in the capital. Nine slides.",
+      "tags": [
+        "Gogol",
+        "Period context",
+        "Reading the text and its history.",
+        "Place Akaky in the Table",
+        "Walk Nevsky Prospect",
+        "Date the stories"
+      ],
+      "href": "/resources/victorian/gogol-st-petersburg/",
+      "externalUrl": "/presentations/?presentation=gogol-st-petersburg",
+      "image": "/gogol-st-petersburg-cover.png",
+      "imageAlt": "Gogol’s St Petersburg cover",
+      "relatedBooks": [
+        "/books/the-overcoat/"
+      ],
+      "search": "Gogol’s St Petersburg A period guide for readers of “The Overcoat” and the Petersburg stories: the city, Russia under Nicholas I, the Table of Ranks and Gogol’s years in the capital. Nine slides. Gogol Period context Reading the text and its history. Place Akaky in the Table Walk Nevsky Prospect Date the stories"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "The Sensation Novel, 1860–1880",
+      "description": "The genre of The Woman in White, Lady Audley’s Secret and The Moonstone: its ancestors, its writers, the law and detectives behind its plots and its critics. Eleven slides.",
+      "tags": [
+        "Sensation fiction",
+        "Genre",
+        "Reading the text and its history.",
+        "Find the law in the plot",
+        "Compare Whicher and Cuff",
+        "Answer the critics"
+      ],
+      "href": "/resources/victorian/sensation-novel-1860-1880/",
+      "externalUrl": "/presentations/?presentation=sensation-novel-1860-1880",
+      "image": "/sensation-novel-1860-1880-cover.png",
+      "imageAlt": "The Sensation Novel, 1860–1880 cover",
+      "relatedBooks": [
+        "/books/the-woman-in-white/",
+        "/books/the-moonstone/"
+      ],
+      "search": "The Sensation Novel, 1860–1880 The genre of The Woman in White, Lady Audley’s Secret and The Moonstone: its ancestors, its writers, the law and detectives behind its plots and its critics. Eleven slides. Sensation fiction Genre Reading the text and its history. Find the law in the plot Compare Whicher and Cuff Answer the critics"
     },
     {
       "type": "resource",
@@ -7126,7 +7495,7 @@
       "type": "resource",
       "typeLabel": "Free guide",
       "title": "Wide Sargasso Sea & Post-Colonialism",
-      "description": "Twenty-one slides on empire, emancipation and language in Rhys’s novel, and the identity Antoinette is not allowed to keep.",
+      "description": "Eight slides on Rhys’s answer to Jane Eyre: the years after emancipation, the sea between two worlds, and the fragmented voices that tell Antoinette’s story.",
       "tags": [
         "Wide Sargasso Sea",
         "Post-colonialism",
@@ -7134,17 +7503,17 @@
         "How does Rhys use divided narration to contest whose version of Antoinette’s story we believe?"
       ],
       "href": "/resources/modern/wide-sargasso-sea-post-colonialism/",
-      "externalUrl": "/presentations/?presentation=wide-sargasso-sea-study-guide",
+      "externalUrl": "/presentations/?presentation=wide-sargasso-sea-post-colonialism",
       "image": "/Wide-Sargasso-Sea-and-Post-Colonialism.png",
       "imageAlt": "Wide Sargasso Sea & Post-Colonialism cover",
       "relatedBooks": [],
-      "search": "Wide Sargasso Sea & Post-Colonialism Twenty-one slides on empire, emancipation and language in Rhys’s novel, and the identity Antoinette is not allowed to keep. Wide Sargasso Sea Post-colonialism Check the language and form How does Rhys use divided narration to contest whose version of Antoinette’s story we believe?"
+      "search": "Wide Sargasso Sea & Post-Colonialism Eight slides on Rhys’s answer to Jane Eyre: the years after emancipation, the sea between two worlds, and the fragmented voices that tell Antoinette’s story. Wide Sargasso Sea Post-colonialism Check the language and form How does Rhys use divided narration to contest whose version of Antoinette’s story we believe?"
     },
     {
       "type": "resource",
       "typeLabel": "Free guide",
       "title": "Wide Sargasso Sea — Part 2",
-      "description": "Twenty-one slides on the second part alone: the narration changing hands, and the mistrust that takes the marriage apart.",
+      "description": "Thirteen slides on the second part alone: the narration changing hands, and the mistrust that takes the marriage apart.",
       "tags": [
         "Wide Sargasso Sea",
         "Part 2",
@@ -7152,11 +7521,11 @@
         "How far is the husband responsible for the collapse of the marriage in Part 2 of Wide Sargasso Sea?"
       ],
       "href": "/resources/modern/wide-sargasso-sea-part-2-rochester-antoinette-and-the-unravelling-of-a-marriage/",
-      "externalUrl": "/presentations/?presentation=wide-sargasso-sea-study-guide",
+      "externalUrl": "/presentations/?presentation=wide-sargasso-sea-part-2",
       "image": "/Wide-Sargasso-Sea-Part-2-Rochester-Antoinette-and-the-Unraveling-of-a-Marriage.png",
       "imageAlt": "Wide Sargasso Sea — Part 2: Rochester, Antoinette, and the Unravelling of a Marriage cover",
       "relatedBooks": [],
-      "search": "Wide Sargasso Sea — Part 2 Twenty-one slides on the second part alone: the narration changing hands, and the mistrust that takes the marriage apart. Wide Sargasso Sea Part 2 Check the language and form How far is the husband responsible for the collapse of the marriage in Part 2 of Wide Sargasso Sea?"
+      "search": "Wide Sargasso Sea — Part 2 Thirteen slides on the second part alone: the narration changing hands, and the mistrust that takes the marriage apart. Wide Sargasso Sea Part 2 Check the language and form How far is the husband responsible for the collapse of the marriage in Part 2 of Wide Sargasso Sea?"
     },
     {
       "type": "resource",
@@ -7195,6 +7564,29 @@
       "imageAlt": "Algernon Blackwood: The Willows (1907) cover",
       "relatedBooks": [],
       "search": "Algernon Blackwood: The Willows (1907) The Danube setting, the story’s narrative method, and Blackwood’s place in weird fiction. Eleven slides. Algernon Blackwood Text and publication Reading the text and its history. Attend to the surroundings Measure the uncertainty Consider the weird"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "Weird Fiction and Algernon Blackwood",
+      "description": "A guide for readers of “The Willows”: what weird fiction is, Lovecraft’s definition, Blackwood’s life, the Danube setting, “The Wendigo” and Weird Tales. Ten slides.",
+      "tags": [
+        "Algernon Blackwood",
+        "Genre",
+        "Reading the text and its history.",
+        "Apply the definition",
+        "Map the river",
+        "Read the two stories together"
+      ],
+      "href": "/resources/modern/weird-fiction-blackwood/",
+      "externalUrl": "/presentations/?presentation=weird-fiction-blackwood",
+      "image": "/weird-fiction-blackwood-cover.png",
+      "imageAlt": "Weird Fiction and Algernon Blackwood cover",
+      "relatedBooks": [
+        "/books/the-willows/",
+        "/books/the-wendigo/"
+      ],
+      "search": "Weird Fiction and Algernon Blackwood A guide for readers of “The Willows”: what weird fiction is, Lovecraft’s definition, Blackwood’s life, the Danube setting, “The Wendigo” and Weird Tales. Ten slides. Algernon Blackwood Genre Reading the text and its history. Apply the definition Map the river Read the two stories together"
     },
     {
       "type": "resource",
@@ -7553,6 +7945,160 @@
       "imageAlt": "Mark Twain: Pudd’nhead Wilson (1894) cover",
       "relatedBooks": [],
       "search": "Mark Twain: Pudd’nhead Wilson (1894) The novel’s origins, Roxy and the arithmetic of racial fractions, and the fingerprints that settle the case. Thirteen slides. Mark Twain Text and publication Reading the text and its history. Follow the separation Attend to the fractions Question the verdict"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "Fingerprints and the Law, 1823–1902",
+      "description": "A context guide for Pudd’nhead Wilson: Purkyně and Herschel, Galton’s Finger Prints, the first criminal cases and Twain’s sources. Eight slides.",
+      "tags": [
+        "Pudd’nhead Wilson",
+        "Historical context",
+        "Reading the text and its history.",
+        "Date Wilson’s method",
+        "Trace the thumbprint",
+        "Find the twins"
+      ],
+      "href": "/resources/american/fingerprints-and-the-law/",
+      "externalUrl": "/presentations/?presentation=fingerprints-and-the-law",
+      "image": "/fingerprints-and-the-law-cover.png",
+      "imageAlt": "Fingerprints and the Law, 1823–1902 cover",
+      "relatedBooks": [
+        "/books/puddnhead-wilson/"
+      ],
+      "search": "Fingerprints and the Law, 1823–1902 A context guide for Pudd’nhead Wilson: Purkyně and Herschel, Galton’s Finger Prints, the first criminal cases and Twain’s sources. Eight slides. Pudd’nhead Wilson Historical context Reading the text and its history. Date Wilson’s method Trace the thumbprint Find the twins"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "Two American Ghost Stories by Women",
+      "description": "Madeline Yale Wynne’s “The Little Room” and Olivia Howard Dunbar’s “The Shell of Sense”: the stories, their authors, the magazines and Dunbar’s essay on the ghost story. Nine slides.",
+      "tags": [
+        "Ghost stories",
+        "American literature",
+        "Reading the text and its history.",
+        "Who is telling it?",
+        "Read the magazine context",
+        "Set the essay beside the story"
+      ],
+      "href": "/resources/american/american-ghost-stories-women/",
+      "externalUrl": "/presentations/?presentation=american-ghost-stories-women",
+      "image": "/american-ghost-stories-women-cover.png",
+      "imageAlt": "Two American Ghost Stories by Women cover",
+      "relatedBooks": [
+        "/books/american-ghost-stories/"
+      ],
+      "search": "Two American Ghost Stories by Women Madeline Yale Wynne’s “The Little Room” and Olivia Howard Dunbar’s “The Shell of Sense”: the stories, their authors, the magazines and Dunbar’s essay on the ghost story. Nine slides. Ghost stories American literature Reading the text and its history. Who is telling it? Read the magazine context Set the essay beside the story"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "American Whaling, 1820–1860",
+      "description": "A period guide for Moby-Dick: the fleet at its height, the ports and the whales, the lay, the Essex, Melville’s own voyage and the industry’s decline. Twelve slides.",
+      "tags": [
+        "Moby-Dick",
+        "Period context",
+        "Reading the text and its history.",
+        "Work out the lay",
+        "Read the Essex beside the ending",
+        "Learn the trade’s words"
+      ],
+      "href": "/resources/american/american-whaling-1820-1860/",
+      "externalUrl": "/presentations/?presentation=american-whaling-1820-1860",
+      "image": "/american-whaling-1820-1860-cover.png",
+      "imageAlt": "American Whaling, 1820–1860 cover",
+      "relatedBooks": [
+        "/books/moby-dick/"
+      ],
+      "search": "American Whaling, 1820–1860 A period guide for Moby-Dick: the fleet at its height, the ports and the whales, the lay, the Essex, Melville’s own voyage and the industry’s decline. Twelve slides. Moby-Dick Period context Reading the text and its history. Work out the lay Read the Essex beside the ending Learn the trade’s words"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "The Klondike Gold Rush, 1896–1899",
+      "description": "A period guide for readers of Jack London: the strike on Rabbit Creek, the stampede over the passes, Dawson City, London’s own winter in the Yukon and the fiction he wrote from it. Thirteen slides.",
+      "tags": [
+        "Jack London",
+        "Period context",
+        "Reading the text and its history.",
+        "Follow London’s route",
+        "Read the figures",
+        "Learn the trail’s words"
+      ],
+      "href": "/resources/american/klondike-gold-rush-1896-1899/",
+      "externalUrl": "/presentations/?presentation=klondike-gold-rush-1896-1899",
+      "image": "/klondike-gold-rush-1896-1899-cover.png",
+      "imageAlt": "The Klondike Gold Rush, 1896–1899 cover",
+      "relatedBooks": [
+        "/books/call-of-the-wild/",
+        "/books/white-fang/"
+      ],
+      "search": "The Klondike Gold Rush, 1896–1899 A period guide for readers of Jack London: the strike on Rabbit Creek, the stampede over the passes, Dawson City, London’s own winter in the Yukon and the fiction he wrote from it. Thirteen slides. Jack London Period context Reading the text and its history. Follow London’s route Read the figures Learn the trail’s words"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "Old New York, 1840–1880",
+      "description": "The city of Melville’s “Bartleby” and Wharton’s The Age of Innocence: Wall Street, the Court of Chancery, the Tombs, the Astors, riots, building and society. Thirteen slides.",
+      "tags": [
+        "New York",
+        "Period context",
+        "Reading the text and its history.",
+        "Map the two stories",
+        "Read the law and the prison",
+        "Old families and new money"
+      ],
+      "href": "/resources/american/old-new-york-1840-1880/",
+      "externalUrl": "/presentations/?presentation=old-new-york-1840-1880",
+      "image": "/old-new-york-1840-1880-cover.png",
+      "imageAlt": "Old New York, 1840–1880 cover",
+      "relatedBooks": [
+        "/books/bartleby-the-scrivener/"
+      ],
+      "search": "Old New York, 1840–1880 The city of Melville’s “Bartleby” and Wharton’s The Age of Innocence: Wall Street, the Court of Chancery, the Tombs, the Astors, riots, building and society. Thirteen slides. New York Period context Reading the text and its history. Map the two stories Read the law and the prison Old families and new money"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "Edith Wharton: The Age of Innocence",
+      "description": "A reader’s guide to the 1920 novel and its New York: publication, the Pulitzer Prize, the setting, the story and characters, the title, Wharton’s life and the adaptations. Twelve slides.",
+      "tags": [
+        "Edith Wharton",
+        "Introduction",
+        "Reading the text and its history.",
+        "Read the opening night",
+        "Follow Archer’s choice",
+        "Read across fifty years"
+      ],
+      "href": "/resources/american/age-of-innocence/",
+      "externalUrl": "/presentations/?presentation=age-of-innocence",
+      "image": "/age-of-innocence-cover.png",
+      "imageAlt": "Edith Wharton: The Age of Innocence cover",
+      "relatedBooks": [],
+      "search": "Edith Wharton: The Age of Innocence A reader’s guide to the 1920 novel and its New York: publication, the Pulitzer Prize, the setting, the story and characters, the title, Wharton’s life and the adaptations. Twelve slides. Edith Wharton Introduction Reading the text and its history. Read the opening night Follow Archer’s choice Read across fifty years"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "Herman Melville: “Bartleby, the Scrivener”",
+      "description": "Melville’s Wall Street story: its publication in 1853 and 1856, a likely source, the people in the office, scriveners and copying, the story’s references and its afterlife. Fourteen slides.",
+      "tags": [
+        "Herman Melville",
+        "Text and publication",
+        "Reading the text and its history.",
+        "Find the first refusal",
+        "Read the lawyer",
+        "Follow the references"
+      ],
+      "href": "/resources/american/bartleby-the-scrivener/",
+      "externalUrl": "/presentations/?presentation=bartleby-the-scrivener",
+      "image": "/bartleby-the-scrivener-cover.png",
+      "imageAlt": "Herman Melville: Bartleby, the Scrivener cover",
+      "relatedBooks": [
+        "/books/bartleby-the-scrivener/",
+        "/books/moby-dick/"
+      ],
+      "search": "Herman Melville: “Bartleby, the Scrivener” Melville’s Wall Street story: its publication in 1853 and 1856, a likely source, the people in the office, scriveners and copying, the story’s references and its afterlife. Fourteen slides. Herman Melville Text and publication Reading the text and its history. Find the first refusal Read the lawyer Follow the references"
     }
   ],
   "studyEditions": [

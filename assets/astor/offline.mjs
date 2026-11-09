@@ -22,7 +22,7 @@ async function listKept(mount) {
       const cache = await window.caches.open(key);
       for (const request of await cache.keys()) {
         const url = new URL(request.url);
-        if (/^\/(books|study|play|explore|today|my-library|for-teachers)\//.test(url.pathname) && url.pathname.endsWith('/')) {
+        if (/^\/(books|study|play|explore|today|my-library)\//.test(url.pathname) && url.pathname.endsWith('/')) {
           pages.push(url.pathname);
         }
       }

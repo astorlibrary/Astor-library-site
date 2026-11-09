@@ -956,46 +956,6 @@ html[data-theme] #astor-timeline-controls:empty { min-height: 114px; }
 .astor-shared-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 0; padding: 0; }
 .astor-shared-list li { list-style: none; }
 
-/* ---------------------------------------------------------------- teachers */
-
-.astor-worksheet { border: 1px solid var(--astor-line); background: var(--surface,#fffdfa); padding: 26px; margin: 24px 0; }
-.astor-worksheet h3,
-.astor-worksheet .astor-worksheet-title { margin: 0 0 6px; font-size: 24px; }
-.astor-worksheet .astor-worksheet-meta { font-family: var(--astor-sans); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--wine-text,var(--burgundy)); margin: 0 0 18px; }
-.astor-worksheet ol { font-family: var(--astor-sans); font-size: 15px; line-height: 1.7; color: var(--text-soft,#423b36); padding-left: 22px; }
-.astor-worksheet .astor-rule { border-bottom: 1px solid var(--astor-line-strong); height: 26px; margin: 8px 0; }
-
-.astor-projector {
-  position: fixed;
-  inset: 0;
-  z-index: 70;
-  background: #10263b;
-  color: #fff8ef;
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  text-align: center;
-  padding: 6vh 6vw;
-  gap: 24px;
-}
-
-.astor-projector[hidden] { display: none; }
-.astor-projector blockquote { margin: 0; font-size: clamp(30px, 6vw, 72px); line-height: 1.2; max-width: 22ch; }
-.astor-projector .astor-projector-meta { font-family: var(--astor-sans); font-size: clamp(13px, 1.6vw, 18px); letter-spacing: .14em; text-transform: uppercase; opacity: .78; }
-.astor-projector .astor-projector-controls { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
-.astor-projector button {
-  appearance: none;
-  border: 1px solid rgba(255, 248, 239, .5);
-  background: transparent;
-  color: #fff8ef;
-  font-family: var(--astor-sans);
-  font-size: 14px;
-  font-weight: 700;
-  min-height: 44px;
-  padding: 0 18px;
-  cursor: pointer;
-}
-
 /* -------------------------------------------------------------- utilities */
 
 .astor-inline-note {
@@ -1059,20 +1019,14 @@ html[data-theme] #astor-timeline-controls:empty { min-height: 114px; }
   .astor-read-toggle,
   .astor-game-actions,
   .astor-palette,
-  .astor-projector,
   .astor-chooser { display: none !important; }
 
   .astor-toolkit,
-  .astor-worksheet,
   .astor-quote-card,
   .astor-character-card { border-color: #000; background: #fff; break-inside: avoid; }
 
   .astor-panel[hidden] { display: block !important; }
-  .astor-worksheet .astor-rule { border-bottom: 1px solid #000; }
-  .astor-print-only { display: block !important; }
 }
-
-.astor-print-only { display: none; }
 
 .astor-timeline-event[data-kind="mixed"] { background: var(--ink); color: #fff8ef; }
 .astor-timeline-detail .astor-note { border-top-width: 1px; margin-top: 14px; }

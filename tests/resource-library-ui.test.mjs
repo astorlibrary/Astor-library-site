@@ -2,10 +2,12 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import test from 'node:test';
+import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
 import { presentations } from '../assets/presentation-data.js';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const resourceData = createRequire(import.meta.url)('../scripts/resource-data.js');
 
 function read(relative) {
   return fs.readFileSync(path.join(root, relative), 'utf8');
@@ -19,6 +21,23 @@ function walkHtml(directory, output = []) {
   }
   return output;
 }
+
+test('every free guide opens its slides in the Astor viewer', () => {
+  for (const resource of resourceData) {
+    const viewer = new URL(resource.url, 'https://astorlibrary.test');
+    assert.equal(viewer.origin, 'https://astorlibrary.test', `${resource.title} sends readers away from Astor Library`);
+    assert.equal(viewer.pathname, '/presentations/', `${resource.title} must open the slide viewer`);
+    const id = viewer.searchParams.get('presentation');
+    const deck = presentations[id];
+    assert.ok(deck, `${resource.title} names an unknown presentation: ${id}`);
+    const folder = path.join(root, deck.folder.replace(/^\//, ''));
+    const files = new Set(fs.readdirSync(folder));
+    for (let number = 1; number <= deck.slideCount; number += 1) {
+      assert.ok(files.has(`${number}.png`) || files.has(`${number}.png.part-001`), `${resource.title} is missing slide ${number}`);
+    }
+    assert.ok(!files.has(`${deck.slideCount + 1}.png`) && !files.has(`${deck.slideCount + 1}.png.part-001`), `${resource.title} has more slides than its slideCount`);
+  }
+});
 
 test('the compact dashboard catalogue covers every presentation with valid local targets', () => {
   const payload = JSON.parse(read('assets/resource-library-data.json'));
@@ -50,7 +69,10 @@ test('all generated resource pages expose the appropriate library or external ac
   assert.match(read('assets/styles.css'), /\[hidden\]\s*\{\s*display:\s*none\s*!important;?\s*\}/i);
   const pages = walkHtml(path.join(root, 'resources'))
     .filter(file => read(path.relative(root, file)).includes('data-resource-library'));
-  assert.equal(pages.length, Object.keys(presentations).length);
+  // One landing page for every listed guide, and each guide opens its own
+  // slides: two guides sharing a deck means one of them shows the wrong one.
+  assert.equal(pages.length, resourceData.length);
+  const deckOwners = new Map();
 
   for (const file of pages) {
     const relative = path.relative(root, file);
@@ -63,6 +85,8 @@ test('all generated resource pages expose the appropriate library or external ac
     }
     const resourceId = html.match(/data-resource-id="([a-z0-9-]+)"/)?.[1];
     assert.ok(resourceId && presentations[resourceId], `${relative} needs a catalogue resource ID`);
+    assert.ok(!deckOwners.has(resourceId), `${relative} opens the same slides as ${deckOwners.get(resourceId)}`);
+    deckOwners.set(resourceId, relative);
     assert.match(html, /<button[^>]*data-resource-save[^>]*aria-pressed="false"/i, relative);
     assert.match(html, /data-resource-account/i, relative);
     assert.match(html, /data-resource-access-status/i, relative);

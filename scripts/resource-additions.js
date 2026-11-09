@@ -811,5 +811,725 @@ module.exports = [
       }
     ],
     "note": "The novel first ran weekly in All the Year Round in 1868. Notice where an instalment might have ended, and how often a narrative stops just short of what it knows."
+  },
+  {
+    "url": "/presentations/?presentation=seringapatam-1799-diamond",
+    "deck": "The siege that opens <em>The Moonstone</em>, set beside the documented history of Mysore, the East India Company and the diamonds Collins drew on.",
+    "includes": [
+      "The prologue of <em>The Moonstone</em> and John Herncastle’s theft of the diamond.",
+      "Tipu Sultan’s Mysore and the storming of Seringapatam on 4 May 1799.",
+      "Objects taken from the palace, including Tipu’s Tiger, and the real diamonds behind the story, among them the Koh-i-Noor.",
+      "The novel’s serial and book dates, its terms and further reading."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 9 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "History",
+        "title": "Read the prologue as a document",
+        "copy": "Compare the cousin’s account of the storming with the guide’s dates and names. What does he know at first hand, and what is he guessing?"
+      },
+      {
+        "label": "Objects",
+        "title": "Follow the plunder",
+        "copy": "Set the guide’s account of what left Seringapatam beside Herncastle’s diamond. How does the novel connect one stolen object with an English country house?"
+      },
+      {
+        "label": "Sources",
+        "title": "Separate fact and invention",
+        "copy": "Use the slide on real diamonds to decide which details Collins borrowed and which he invented for the Moonstone."
+      }
+    ],
+    "note": "The prologue is the only part of the novel set in India. Reread it after the guide, and again when the three Indians reappear in Yorkshire."
+  },
+  {
+    "url": "/presentations/?presentation=troy-homeric-world",
+    "deck": "What archaeology and the Hittite archives can say about Troy, and how Homer’s poems came out of a tradition of oral composition.",
+    "includes": [
+      "The site at Hisarlik and the excavations of Frank Calvert and Heinrich Schliemann.",
+      "Troy VI and Troy VIIa, the layers most often linked with the <em>Iliad</em>.",
+      "Wilusa in the Hittite records, and the Mycenaean Greeks.",
+      "Milman Parry, Albert Lord and the formulas of oral poetry."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 9 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Archaeology",
+        "title": "Which Troy?",
+        "copy": "Read the guide’s account of the settlement layers, then decide what an excavation can and cannot confirm about the city in the Iliad."
+      },
+      {
+        "label": "Records",
+        "title": "Compare the names",
+        "copy": "Set Wilusa and Alaksandu beside Ilios and Alexandros, and weigh how much a shared name can prove."
+      },
+      {
+        "label": "Composition",
+        "title": "Listen for the formulas",
+        "copy": "Find repeated epithets in a book of the Iliad and set them beside Parry’s account of how oral poets composed in performance."
+      }
+    ],
+    "note": "Schliemann’s “Mask of Agamemnon” came from shaft graves older than any likely date for a Trojan War. Keep the names his finds were given apart from what they are."
+  },
+  {
+    "url": "/presentations/?presentation=domestic-tragedy-1592-1608",
+    "deck": "The Elizabethan and Jacobean plays that put the murders of ordinary households on the stage, with the crimes and the printed texts behind two of them.",
+    "includes": [
+      "What domestic tragedy is, and the plays from 1592 to 1608.",
+      "The murder of Thomas Arden in 1551 and the 1592 quarto of <em>Arden of Faversham</em>.",
+      "Walter Calverley’s crimes in 1605 and the 1608 quarto of <em>A Yorkshire Tragedy</em>.",
+      "Petty treason, pressing to death and further reading."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 9 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Sources",
+        "title": "Compare the crime and the play",
+        "copy": "Read the guide’s account of the Faversham murder beside the play’s plotting scenes. What did the dramatist add to the chronicle?"
+      },
+      {
+        "label": "Attribution",
+        "title": "Weigh the title pages",
+        "copy": "Arden appeared with no author named; A Yorkshire Tragedy was printed as Shakespeare’s. Use the guide to ask what a title page proves."
+      },
+      {
+        "label": "Law",
+        "title": "Read the law into the plot",
+        "copy": "Apply the terms slide to Alice Arden and to Calverley. How does the law of the period shape what the audience expects to see punished?"
+      }
+    ],
+    "note": "Both plays were sold as true stories. Keep the guide’s record of each crime in view as you read, and notice where each play departs from it."
+  },
+  {
+    "url": "/presentations/?presentation=revenge-tragedy-1587-1633",
+    "deck": "The genre that runs from Kyd to the 1630s: its Senecan model, its conventions, two of its plays, and the law and theology of revenge.",
+    "includes": [
+      "Seneca’s tragedies, and the English plays from <em>The Spanish Tragedy</em> to 1633.",
+      "The conventions: the ghost, the delay, madness and the play within the play.",
+      "<em>The Spanish Tragedy</em> and <em>The Duchess of Malfi</em>.",
+      "Revenge in law and religion, terms and further reading."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 9 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Conventions",
+        "title": "Check the list against a play",
+        "copy": "Take the guide’s conventions one by one and find each in Hamlet or Titus Andronicus. Which does the play use, and which does it alter?"
+      },
+      {
+        "label": "Sources",
+        "title": "Compare the Duchess with her source",
+        "copy": "Read the guide’s note on Painter and Bandello, then consider what Webster changed in the story of Giovanna d’Aragona."
+      },
+      {
+        "label": "Ethics",
+        "title": "Read the revenger against the law",
+        "copy": "Set Romans 12:19 and Bacon’s essay beside a revenger’s speech. How far does the play invite sympathy for an act its audience was taught to condemn?"
+      }
+    ],
+    "note": "The Spanish Tragedy was enlarged with additional passages in 1602. Check which text your edition prints before quoting it."
+  },
+  {
+    "url": "/presentations/?presentation=augustan-age-1688-1745",
+    "deck": "The politics, people and places of English writing from 1688 to 1745, arranged around the life and work of Alexander Pope.",
+    "includes": [
+      "Why the period was called Augustan, and its events from 1688.",
+      "A chronology of Pope’s life, from his Catholic childhood to Twickenham.",
+      "Dryden, Swift, Addison and Steele, and the Scriblerus Club.",
+      "Coffee houses, Grub Street, the heroic couplet and mock-epic."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 10 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Context",
+        "title": "Place the poem in its year",
+        "copy": "Find The Rape of the Lock or An Essay on Criticism in the chronology, and note what was happening in politics and in Pope’s life that year."
+      },
+      {
+        "label": "Circle",
+        "title": "Read the Scriblerians together",
+        "copy": "Use the slide on the Scriblerus Club to connect Pope with Swift and Gay. What targets do their satires share?"
+      },
+      {
+        "label": "Form",
+        "title": "Scan a couplet",
+        "copy": "Take two lines of Pope and mark the rhyme, the pentameter and the pause. How does the couplet sharpen a judgement?"
+      }
+    ],
+    "note": "As a Catholic, Pope was barred from the universities and from public office, and was educated largely at home. Read his early career in the chronology with that in mind."
+  },
+  {
+    "url": "/presentations/?presentation=first-world-war-poets",
+    "deck": "The poets of 1914 to 1918 set against the war’s chronology, the newspapers and anthologies that printed them, and their memorials.",
+    "includes": [
+      "The war from August 1914, the Somme and Passchendaele.",
+      "The poems of 1914: Binyon’s “For the Fallen” and Brooke’s sonnets.",
+      "The poets, from Brooke, McCrae and Edward Thomas to Sassoon and Graves.",
+      "<em>Georgian Poetry</em>, the newspapers, the memorial in Poets’ Corner, and terms."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 9 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Chronology",
+        "title": "Date the poem",
+        "copy": "Place a poem in the guide’s timeline. Was it written before or after the Somme, and does the date change how you read it?"
+      },
+      {
+        "label": "Publication",
+        "title": "Find where it appeared",
+        "copy": "Use the slide on newspapers and anthologies to ask who first read the poem, and what that audience already believed about the war."
+      },
+      {
+        "label": "Memory",
+        "title": "Read the memorial",
+        "copy": "Compare Binyon’s “For the Fallen” with the words from Owen chosen for Poets’ Corner in 1985. What has changed in how the war is remembered?"
+      }
+    ],
+    "note": "Several of these poems were printed in newspapers and magazines within weeks of being written. Check the date of first publication as well as the date of composition."
+  },
+  {
+    "url": "/presentations/?presentation=first-folio-1623",
+    "deck": "How Heminges, Condell and a syndicate of publishers gathered thirty-six plays into one book in 1623, and what survives of it.",
+    "includes": [
+      "The title, the compilers and the publishing syndicate.",
+      "Thirty-six plays, eighteen of them printed for the first time, and the works left out.",
+      "The Droeshout portrait, Jonson’s poem and the epistle to readers.",
+      "The surviving copies, the later folios, and the difference between quarto and folio."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 10 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Contents",
+        "title": "Check what the Folio saved",
+        "copy": "Find your play in the guide’s list. If it was first printed in 1623, the Folio is its only early text."
+      },
+      {
+        "label": "Front matter",
+        "title": "Read the prefaces",
+        "copy": "Read Jonson’s poem and the epistle to readers with the guide. What do they claim about the copies the plays were printed from?"
+      },
+      {
+        "label": "Format",
+        "title": "Compare quarto and folio",
+        "copy": "Use the slide on formats to ask why a single play was sold as a quarto while the collected plays appeared as an expensive folio."
+      }
+    ],
+    "note": "The Folio leaves out Pericles and The Two Noble Kinsmen, which modern collected editions include. Check which plays your edition contains and where its text comes from."
+  },
+  {
+    "url": "/presentations/?presentation=london-playhouses-1576-1642",
+    "deck": "The open-air and indoor playhouses of London, the companies that played in them, and the licensing, plague and Parliament that closed them.",
+    "includes": [
+      "The Theatre, the Curtain and the Rose.",
+      "The Globe of 1599 and the indoor Blackfriars.",
+      "The Lord Chamberlain’s Men, the King’s Men and the Admiral’s Men.",
+      "Inside an open-air playhouse, the Master of the Revels, the plague closures and 1642."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 9 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Stage",
+        "title": "Stage the scene",
+        "copy": "Use the slide on the open-air playhouse to place a scene: where the actors enter, where the audience stands and sits, and what each part of the house could see."
+      },
+      {
+        "label": "Companies",
+        "title": "Follow the company",
+        "copy": "Find which company first played your play, and where. How might a move from the Globe to the Blackfriars have changed a performance?"
+      },
+      {
+        "label": "Control",
+        "title": "Read the closures",
+        "copy": "Set the guide’s plague dates and the order of 1642 beside a play’s date. What did a closed playhouse mean for the people who worked there?"
+      }
+    ],
+    "note": "Standing room in the yard cost a penny, and seats in the galleries cost more. Think about who stood where when a speech turns to address the audience."
+  },
+  {
+    "url": "/presentations/?presentation=fingerprints-and-the-law",
+    "deck": "How fingerprints became evidence between 1823 and 1902, and where Mark Twain found the thumbprints and twins of <em>Pudd’nhead Wilson</em>.",
+    "includes": [
+      "Purkyně’s patterns of 1823 and Herschel’s prints of 1858.",
+      "Galton’s <em>Finger Prints</em> of 1892 and his calculation of the odds.",
+      "The first criminal cases, beginning with the Rojas case in Argentina.",
+      "Twain’s thumbprint stories, the Tocci twins, terms and further reading."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 8 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Evidence",
+        "title": "Date Wilson’s method",
+        "copy": "The trial in Pudd’nhead Wilson takes place decades before any court accepted fingerprint evidence. Use the timeline to judge how far ahead of his time Twain places Wilson."
+      },
+      {
+        "label": "Sources",
+        "title": "Trace the thumbprint",
+        "copy": "Compare the murder solved by a thumbprint in Life on the Mississippi with the courtroom scene in Pudd’nhead Wilson."
+      },
+      {
+        "label": "Composition",
+        "title": "Find the twins",
+        "copy": "Read the slide on the Capello twins and Those Extraordinary Twins. What survives in the novel of the comic story Twain began with?"
+      }
+    ],
+    "note": "Galton’s book appeared in 1892, the year before the novel began its serial run in The Century Magazine. Read Wilson’s courtroom demonstration with those dates in mind."
+  },
+  {
+    "url": "/presentations/?presentation=weird-fiction-blackwood",
+    "deck": "The genre Blackwood is read in, from Poe and Le Fanu to Lovecraft’s essay and the pulp magazine that used its name.",
+    "includes": [
+      "What weird fiction is, and Lovecraft’s definition in “Supernatural Horror in Literature”.",
+      "The writers of the tradition, from Poe and Le Fanu onwards.",
+      "Blackwood’s life, “The Willows” and the Danube marshes.",
+      "“The Wendigo”, <em>Weird Tales</em> and further reading."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 10 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Genre",
+        "title": "Apply the definition",
+        "copy": "Read Lovecraft’s definition in the guide, then decide which moments in “The Willows” meet it."
+      },
+      {
+        "label": "Setting",
+        "title": "Map the river",
+        "copy": "Use the slide on the Danube below Vienna to follow the canoe journey. How do the flood and the shifting islands affect what the two men can trust?"
+      },
+      {
+        "label": "Comparison",
+        "title": "Read the two stories together",
+        "copy": "Compare “The Willows” with “The Wendigo”. What do the river and the Canadian forest have in common as places of fear?"
+      }
+    ],
+    "note": "Lovecraft’s essay appeared twenty years after “The Willows”. Treat his definition as one later reading of Blackwood’s story."
+  },
+  {
+    "url": "/presentations/?presentation=epic-tradition-homer-milton",
+    "deck": "A survey of heroic narrative poetry from antiquity to Milton: definitions, conventions, metres, the major poems and how Homer reached English.",
+    "includes": [
+      "Aristotle’s account of epic, and the conventions from the invocation to <em>in medias res</em>.",
+      "Dactylic hexameter, alliterative verse and the metres of English epic.",
+      "The epics in order, from <em>Gilgamesh</em> to Milton.",
+      "The <em>Iliad</em>, Homer in English, <em>Paradise Lost</em> and mock-epic."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 11 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Conventions",
+        "title": "Find the conventions",
+        "copy": "Open the first book of the Iliad, the Aeneid or Paradise Lost and look for the statement of theme, the invocation and the opening in the middle of things."
+      },
+      {
+        "label": "Translation",
+        "title": "Compare the English Homers",
+        "copy": "Use the slide on Chapman, Pope and Butler to compare two translations of the same passage. What does each translator keep?"
+      },
+      {
+        "label": "Form",
+        "title": "Read the mock-epic",
+        "copy": "Set The Rape of the Lock beside the conventions slide. Which epic devices does Pope apply to a stolen lock of hair?"
+      }
+    ],
+    "note": "Milton opens Paradise Lost with the statement of theme and the invocation Homer and Virgil used. Read his first twenty-six lines with the guide’s list of conventions beside you."
+  },
+  {
+    "url": "/presentations/?presentation=vampire-before-dracula",
+    "deck": "How the vampire travelled from the Habsburg borderlands of the 1720s through poetry, magazines and penny dreadfuls to Stoker’s novel and the cinema.",
+    "includes": [
+      "The vampire reports from Serbia in the 1720s and 1730s.",
+      "The vampire in German poetry, and the summer of 1816 at the Villa Diodati.",
+      "Polidori’s <em>The Vampyre</em>, <em>Varney the Vampire</em> and Le Fanu’s <em>Carmilla</em>.",
+      "<em>Dracula</em> in 1897 and its afterlife on stage and screen."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 10 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Folklore",
+        "title": "Read the case reports",
+        "copy": "Compare the Serbian cases of the 1720s with the folklore Van Helsing gives in Dracula. Which details did Stoker keep?"
+      },
+      {
+        "label": "Sources",
+        "title": "Trace the aristocrat",
+        "copy": "Follow the vampire from Polidori’s Lord Ruthven to Carmilla and the Count. When did the vampire become a nobleman?"
+      },
+      {
+        "label": "Form",
+        "title": "Compare the formats",
+        "copy": "Use the guide to compare a magazine story, a penny serial and a novel told in documents. How does each format pace its horror?"
+      }
+    ],
+    "note": "Carmilla appeared twenty-five years before Dracula and is short enough to read in an evening. Read it before Stoker’s novel and compare the two vampires."
+  },
+  {
+    "url": "/presentations/?presentation=gogol-st-petersburg",
+    "deck": "The capital of Nicholas I as Gogol knew it: its avenues, its civil service and its fourteen ranks, with the stories he set there.",
+    "includes": [
+      "St Petersburg from its founding in 1703, and Nevsky Prospect.",
+      "Russia under Nicholas I and the Decembrist revolt of 1825.",
+      "The Table of Ranks, and a chronology of Gogol in Petersburg.",
+      "The Petersburg stories, terms and further reading."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 9 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Rank",
+        "title": "Place Akaky in the Table",
+        "copy": "Use the guide’s account of the fourteen classes to place Akaky Akakievich, and then the Person of Consequence."
+      },
+      {
+        "label": "City",
+        "title": "Walk Nevsky Prospect",
+        "copy": "Read “Nevsky Prospect” with the slide on the city. What does the avenue offer the painter and the officer who follow women along it?"
+      },
+      {
+        "label": "Chronology",
+        "title": "Date the stories",
+        "copy": "Find each Petersburg story in the chronology. Which were written before The Government Inspector, and which after?"
+      }
+    ],
+    "note": "Gogol arrived in St Petersburg in 1828, aged nineteen. Read the stories with the chronology to see how long he had known the city when he wrote each one."
+  },
+  {
+    "url": "/presentations/?presentation=american-ghost-stories-women",
+    "deck": "Two supernatural stories by American women of the 1890s and 1900s, with the lives of their authors and the magazines that published them.",
+    "includes": [
+      "“The Little Room” (1895) and Madeline Yale Wynne.",
+      "Wynne’s other writing, from <em>The House Beautiful</em> to comic country verse.",
+      "“The Shell of Sense” (1908), narrated by a dead woman, and Olivia Howard Dunbar.",
+      "Dunbar’s essay “The Decay of the Ghost in Fiction”, the magazines and later anthologies."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 9 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Narration",
+        "title": "Who is telling it?",
+        "copy": "“The Shell of Sense” is narrated by a dead woman watching her husband. Use the guide to ask what that point of view lets Dunbar show."
+      },
+      {
+        "label": "Publication",
+        "title": "Read the magazine context",
+        "copy": "“The Little Room” first appeared in Harper’s New Monthly Magazine in 1895. Use the slide on the magazines to picture the readers it reached."
+      },
+      {
+        "label": "Criticism",
+        "title": "Set the essay beside the story",
+        "copy": "Read Dunbar’s 1905 essay on the decay of the ghost in fiction, then ask whether her own story answers it."
+      }
+    ],
+    "note": "Both stories are short. Read each in one sitting before turning to the guide, and notice what each leaves unexplained."
+  },
+  {
+    "url": "/presentations/?presentation=american-whaling-1820-1860",
+    "deck": "The industry Melville joined in 1841: its ships, ports, prey, products and pay, the sinking of the <em>Essex</em>, and the oil well that helped to end it.",
+    "includes": [
+      "The fleet at its height, the ports of New Bedford and Nantucket, and the whales hunted.",
+      "Whale oil, spermaceti and the long Pacific voyages.",
+      "The lay, the sinking of the <em>Essex</em> in 1820 and Melville’s voyage on the <em>Acushnet</em>.",
+      "Terms from the trade, the decline after 1859 and further reading."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 12 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Economics",
+        "title": "Work out the lay",
+        "copy": "Use the guide’s account of the lay to read Ishmael’s bargaining with Bildad and Peleg in chapter 16, “The Ship”."
+      },
+      {
+        "label": "Sources",
+        "title": "Read the Essex beside the ending",
+        "copy": "Compare the guide’s account of the Essex with the final chapters of Moby-Dick. What did Melville take from the real sinking?"
+      },
+      {
+        "label": "Language",
+        "title": "Learn the trade’s words",
+        "copy": "Find the gam, the try-works and cutting-in in the novel, and use the terms slide to read each scene as working practice."
+      }
+    ],
+    "note": "Melville sailed on the Acushnet in January 1841 and deserted at Nuku Hiva in July 1842. Moby-Dick draws on that voyage and on other men’s accounts."
+  },
+  {
+    "url": "/presentations/?presentation=sensation-novel-1860-1880",
+    "deck": "The fiction of crime and secrets that flourished from about 1860, the novels that defined it, and the divorce law, detective police and reviewers around it.",
+    "includes": [
+      "What a sensation novel was, and the three novels that defined the genre.",
+      "Its ancestors, from the Gothic novel to the Newgate novel and stage melodrama.",
+      "Wilkie Collins, Mary Elizabeth Braddon, Mrs Henry Wood and other writers.",
+      "The Matrimonial Causes Act, Inspector Whicher, Mansel’s review and the stage adaptations."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 11 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Law",
+        "title": "Find the law in the plot",
+        "copy": "Use the slide on the Matrimonial Causes Act to read a sensation heroine’s position. What could she do, and what could she not?"
+      },
+      {
+        "label": "Detection",
+        "title": "Compare Whicher and Cuff",
+        "copy": "Read the guide’s account of Inspector Whicher and the Road Hill House case, then compare Sergeant Cuff in The Moonstone."
+      },
+      {
+        "label": "Reception",
+        "title": "Answer the critics",
+        "copy": "Read Mansel’s complaint of 1863 with a chapter of Lady Audley’s Secret or The Woman in White. What alarmed the reviewers?"
+      }
+    ],
+    "note": "The Woman in White ran weekly in All the Year Round from November 1859 to August 1860. Read a few chapters as its first readers did, one instalment at a time."
+  },
+  {
+    "url": "/presentations/?presentation=romantic-poets-1789-1834",
+    "deck": "English Romantic poetry from the French Revolution to the death of Coleridge: its two generations, its events, its books, its critics and its forms.",
+    "includes": [
+      "The span of the period and its two generations of poets.",
+      "Events in Britain and Europe, from the Bastille to Peterloo and the Reform Act.",
+      "<em>Lyrical Ballads</em> and the key publications from 1789 to 1850.",
+      "The reviewers, the places, the forms the poets used, and terms such as the sublime."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 11 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Generations",
+        "title": "Place the poet",
+        "copy": "Find your poet in the two generations. What had already happened in France and in English poetry by the time they began to publish?"
+      },
+      {
+        "label": "Reviews",
+        "title": "Read the attacks",
+        "copy": "Use the slide on Blackwood’s and the Quarterly Review to read the “Cockney School” attacks. What did the reviewers object to?"
+      },
+      {
+        "label": "Form",
+        "title": "Name the form",
+        "copy": "Identify the form of a poem you are studying from the guide’s list, from the ballad to ottava rima, and ask why the poet chose it."
+      }
+    ],
+    "note": "Lyrical Ballads was published anonymously in 1798, and a second edition with Wordsworth’s Preface followed in 1800. Check which edition your text follows."
+  },
+  {
+    "url": "/presentations/?presentation=klondike-gold-rush-1896-1899",
+    "deck": "The gold rush Jack London joined in 1897: the strike, the routes and the rules, the boom town, and the stories and novels he wrote from it.",
+    "includes": [
+      "The strike of August 1896, the news of July 1897 and the numbers who set out.",
+      "The Chilkoot and White passes, and the year’s supplies each stampeder carried.",
+      "Dawson City, the end of the rush and London’s winter near the Stewart River.",
+      "London’s Klondike fiction, the words of the trail and other writers of the North."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 13 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Experience",
+        "title": "Follow London’s route",
+        "copy": "Trace London from San Francisco over the Chilkoot Pass to the Stewart River. Which parts of the journey reappear in The Call of the Wild?"
+      },
+      {
+        "label": "Numbers",
+        "title": "Read the figures",
+        "copy": "Use the table of numbers to compare those who set out with those who found gold. How does London’s fiction treat the many who failed?"
+      },
+      {
+        "label": "Language",
+        "title": "Learn the trail’s words",
+        "copy": "Find cheechako, sourdough and the Outside in London’s stories, and use the guide to read each as the miners used it."
+      }
+    ],
+    "note": "London found no gold, lost four front teeth to scurvy and left the Yukon in 1898. His Klondike fiction came afterwards, from what he had seen and heard."
+  },
+  {
+    "url": "/presentations/?presentation=locrine-and-the-puritan",
+    "deck": "<em>Locrine</em> and <em>The Puritan</em>, two plays once credited to Shakespeare, from their first quartos to the Third Folio and modern questions of authorship.",
+    "includes": [
+      "The Shakespeare Apocrypha, and the Third Folio’s second impression of 1664.",
+      "<em>Locrine</em>: the text, the story from Geoffrey of Monmouth, the dumb shows and the authorship.",
+      "Sabren and the Severn after <em>Locrine</em>, from Spenser to Milton.",
+      "<em>The Puritan</em>: the 1607 quarto, the Children of Paul’s, the story and its authorship."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 16 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Attribution",
+        "title": "Weigh the initials",
+        "copy": "Both title pages carry the initials W.S. Use the guide to ask what the initials could mean, and who else has been proposed."
+      },
+      {
+        "label": "Sources",
+        "title": "Compare Locrine with Geoffrey",
+        "copy": "Read the guide’s summary of the legend, then see what the play does with Brutus’s sons and with Estrild."
+      },
+      {
+        "label": "Satire",
+        "title": "Read the Puritans",
+        "copy": "Use the slide on names and places to read the widow’s Puritan servants. Why did a Puritan preacher attack the play in 1608?"
+      }
+    ],
+    "note": "The Puritan was written for the Children of Paul’s, a company of boy actors. Read its comedy as something performed by boys."
+  },
+  {
+    "url": "/presentations/?presentation=old-new-york-1840-1880",
+    "deck": "Manhattan between Bartleby’s Wall Street of the 1840s and Newland Archer’s Fifth Avenue of the 1870s.",
+    "includes": [
+      "Two New Yorks thirty years apart, and Wall Street in the 1840s.",
+      "The Court of Chancery, the Tombs and the Astors.",
+      "The Astor Place Riot, the Draft Riots, and the water, railways and bridges that remade the city.",
+      "Central Park, the opera, old families and new money, and the population figures."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 13 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Places",
+        "title": "Map the two stories",
+        "copy": "Locate Bartleby’s chambers and Archer’s New York on the guide. How far north had the fashionable city moved between them?"
+      },
+      {
+        "label": "Institutions",
+        "title": "Read the law and the prison",
+        "copy": "Use the slides on Chancery and the Tombs to read the end of “Bartleby”. What did those institutions mean to a New Yorker of 1853?"
+      },
+      {
+        "label": "Society",
+        "title": "Old families and new money",
+        "copy": "Set the guide’s account of the Academy of Music and the Metropolitan Opera beside the opening scene of The Age of Innocence."
+      }
+    ],
+    "note": "Before typewriters and carbon paper, every legal document was copied by hand. Read Bartleby’s refusals with that in mind."
+  },
+  {
+    "url": "/presentations/?presentation=age-of-innocence",
+    "deck": "Wharton’s novel of 1870s New York, written in 1920: how it was published and honoured, what happens, who is who, and the society it describes.",
+    "includes": [
+      "Serialisation in the <em>Pictorial Review</em>, the book of October 1920 and the 1921 Pulitzer Prize.",
+      "The setting, the story in outline and the characters.",
+      "Old New York’s places and terms, families and customs.",
+      "The title, a chronology of Wharton’s life and the adaptations."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 12 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Setting",
+        "title": "Read the opening night",
+        "copy": "The novel opens at a performance of Faust at the Academy of Music. Use the guide to identify who is in the boxes and what their places mean."
+      },
+      {
+        "label": "Characters",
+        "title": "Follow Archer’s choice",
+        "copy": "Use the character slide to follow Newland Archer between May Welland and Ellen Olenska. What does each woman stand for in his mind?"
+      },
+      {
+        "label": "Distance",
+        "title": "Read across fifty years",
+        "copy": "Wharton wrote in 1920 about the 1870s. Use the chronology to ask how that distance shapes the narrator’s judgements."
+      }
+    ],
+    "note": "The novel was serialised in the Pictorial Review, a New York women’s magazine, before it appeared as a book in October 1920."
+  },
+  {
+    "url": "/presentations/?presentation=bartleby-the-scrivener",
+    "deck": "“Bartleby” in its first printings and its New York: the lawyer’s office, the work of copying, the references the narrator makes, and the readers it found later.",
+    "includes": [
+      "Publication in <em>Putnam’s Monthly Magazine</em> in 1853 and in <em>The Piazza Tales</em> in 1856.",
+      "Where Melville was in 1853, and <em>The Lawyer’s Story</em> as a likely source.",
+      "The story in brief, the people in the office and the work of a scrivener.",
+      "The story’s references to law, money, places, books and scripture, and its afterlife in film and philosophy."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 14 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Work",
+        "title": "Find the first refusal",
+        "copy": "Bartleby first refuses to help examine copies. Use the slide on copying to explain what he was asked to do and why it mattered in a law office."
+      },
+      {
+        "label": "Narrator",
+        "title": "Read the lawyer",
+        "copy": "Use the slides on Chancery and John Jacob Astor to read the narrator’s account of himself. What does he want the reader to think of him?"
+      },
+      {
+        "label": "Allusion",
+        "title": "Follow the references",
+        "copy": "Find Edwards and Priestley, Petra and the verse from Job in the story. What does each add to the narrator’s attempt to explain Bartleby?"
+      }
+    ],
+    "note": "“Bartleby” first appeared anonymously, in two instalments. Notice where the first instalment might have ended."
+  },
+  {
+    "url": "/presentations/?presentation=keats-1820-volume",
+    "deck": "Keats’s third and last book, published in July 1820: what it contains, when and where the poems were written, what he drew on, and how it was received.",
+    "includes": [
+      "The book, its publishers and its thirteen pieces in the order printed.",
+      "When and where each poem was written, and the two odes printed before 1820.",
+      "Keats’s sources, and his objection to the publishers’ Advertisement about <em>Hyperion</em>.",
+      "Words and names in the poems, Keats’s life, the reviews and the poems’ afterlife."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 13 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Order",
+        "title": "Read the book as printed",
+        "copy": "Read the thirteen pieces in the guide’s order, from “Lamia” to “Hyperion”. Where do the odes fall, and what surrounds them?"
+      },
+      {
+        "label": "Composition",
+        "title": "Date the odes",
+        "copy": "Use the table of dates to place the odes of spring 1819 and “To Autumn” in Keats’s year. What had happened to him by each?"
+      },
+      {
+        "label": "Sources",
+        "title": "Compare Isabella and Boccaccio",
+        "copy": "Read the guide’s note on the Decameron, then compare what Keats did with the story of the pot of basil."
+      }
+    ],
+    "note": "Keats objected to the publishers’ note on Hyperion and marked a presentation copy to say so. Read the fragment with the guide’s account of that objection."
+  },
+  {
+    "url": "/presentations/?presentation=wilfred-owen-war-poems",
+    "deck": "Owen’s poems from Craiglockhart to the first collected edition of 1920, with his life, his sources, his rhymes and his later editors.",
+    "includes": [
+      "The 1920 volume, its contents and the unfinished Preface.",
+      "The five poems printed in Owen’s lifetime, and his life from 1893 to 1918.",
+      "Craiglockhart, Sassoon, and the sources and allusions in the poems.",
+      "Pararhyme, words from the trenches, later editions and the poems’ afterlife."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 14 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Preface",
+        "title": "Read the Preface first",
+        "copy": "Read “My subject is War, and the pity of War” with the guide, then ask how far a single poem bears it out."
+      },
+      {
+        "label": "Sources",
+        "title": "Find the allusions",
+        "copy": "Use the slide on sources to read Horace in “Dulce et Decorum Est” and Genesis in “Parable of the Old Men and the Young”."
+      },
+      {
+        "label": "Sound",
+        "title": "Hear the pararhyme",
+        "copy": "Find pararhymes such as escaped and scooped in “Strange Meeting”, and describe what the changed vowel does to each pair."
+      }
+    ],
+    "note": "Only five of Owen’s poems were printed while he was alive. Most reached readers after his death, in the edition Edith Sitwell and Siegfried Sassoon prepared in 1920."
   }
 ];
