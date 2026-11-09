@@ -344,8 +344,10 @@ function guidesHome(books, discovery) {
   });
   const sections = names.map(name => {
     const entries = byCollection.get(name).sort((a, b) => shortTitle(a.book).localeCompare(shortTitle(b.book)));
+    // Under the Shakespeare heading his name would repeat on every line.
+    const byline = book => name === 'Shakespeare' && book.author === 'William Shakespeare' ? '' : '<span class="guides-author">' + escapeHtml(book.author) + '</span>';
     return '<section class="guides-group"><h2>' + escapeHtml(name) + '</h2><ul class="guides-list">' +
-      entries.map(({ book }) => '<li><a href="' + guideHref(book.slug) + '"><span class="guides-title">' + escapeHtml(shortTitle(book)) + '</span><span class="guides-author">' + escapeHtml(book.author) + '</span></a></li>').join('') +
+      entries.map(({ book }) => '<li><a href="' + guideHref(book.slug) + '"><span class="guides-title">' + escapeHtml(shortTitle(book)) + '</span>' + byline(book) + '</a></li>').join('') +
       '</ul></section>';
   }).join('');
   const body = `<main class="page-wrap guides-home">
