@@ -205,13 +205,13 @@ module.exports = [
         title: "Katherine and Anne",
         paragraphs: [
           "Katherine’s marriage is discussed as a problem because it has produced no surviving son, though the play gives her the clearest moral authority at court. She speaks for taxpayers, questions witnesses and insists upon the history of her marriage. The state treats her body as a failed route to succession while the drama gives her words an afterlife stronger than the judgement against her.",
-          "Anne’s relative silence is therefore significant. She is pitied, promoted, crowned and delivered of a daughter within a public story largely spoken by others. At the baptism, Cranmer converts the baby’s unexpected sex into providential promise. The prophecy honours Elizabeth, but it also reveals how retrospect changes value: the daughter who disappoints immediate hopes becomes the reason this whole sequence can be presented as national destiny.",
+          "Anne, by contrast, says little. She is pitied, promoted, crowned and delivered of a daughter within a public story largely spoken by others. At the baptism, Cranmer converts the baby’s unexpected sex into providential promise. The prophecy honours Elizabeth, and the daughter who disappointed hopes for a son becomes the reason the whole story can be told as national destiny.",
         ],
       },
     ],
     contexts: [
       { label: "Collaboration", title: "Shakespeare and Fletcher", body: "Since James Spedding’s essay of 1850, editors have identified changes in metre, vocabulary and dramatic habit across the play that point to John Fletcher’s hand. Exact scene divisions remain open to argument, but collaborative authorship with John Fletcher is now the prevailing view. The First Folio’s inclusion of the work among Shakespeare’s histories and its collaborative making are compatible facts." },
-      { label: "Playhouse", title: "The Globe fire", body: "During a performance on 29 June 1613, wadding from a cannon used for Henry’s entrance lodged in the thatch. The Globe burned to the ground in roughly an hour. Contemporary accounts stress both the production’s extraordinary pomp and the absence of serious injury, giving the play an unusually vivid first-performance history." },
+      { label: "Playhouse", title: "The Globe fire", body: "During a performance on 29 June 1613, wadding from a cannon used for Henry’s entrance lodged in the thatch. The Globe burned to the ground in roughly an hour. Contemporary accounts describe the production’s pomp and note that no one was seriously hurt." },
       { label: "Memory", title: "Tudor history and Stuart politics", body: "The writers drew chiefly on Holinshed, with material also associated with John Stow and John Speed. By 1613, Elizabeth had been dead for a decade and James I occupied the throne. So Cranmer’s prophecy looks back to Elizabeth’s reign and forward to James, and presents a disputed marriage and the birth of a girl as a smooth national story." },
     ],
     characters: [
