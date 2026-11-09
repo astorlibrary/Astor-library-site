@@ -251,7 +251,7 @@ function sourceNote(book) {
   const label = book.sourceText?.label || '';
   if (!label) return '';
   const named = /^(Project Gutenberg|Standard Ebooks|Globe\/Moby) /.test(label) ? 'the ' + label : label;
-  return '<p class="guide-small guide-source">Quotations are from ' + escapeHtml(named) + (book.referenceStyle ? '. References give ' + escapeHtml(book.referenceStyle.replace(/^./, c => c.toLowerCase())) : '') + '.</p>';
+  return '<p class="guide-small guide-source">Quotations are from ' + escapeHtml(named) + (book.referenceStyle ? '. References give the ' + escapeHtml(book.referenceStyle) : '') + '.</p>';
 }
 
 function writtenLine(book) {
