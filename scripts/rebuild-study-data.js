@@ -256,7 +256,20 @@ for (const tool of [
   ['Tool', 'Literary terms', '/explore/techniques/', 'Literary terms, with examples from the books', 'technique glossary terms devices'],
   ['Tool', 'Map of settings', '/explore/map/', 'Where the books take place', 'map places settings geography'],
   ['Tool', 'Compare two texts', '/explore/compare/', 'Shared themes and techniques, side by side', 'compare comparative essay two texts'],
-  ['Tool', 'My library', '/my-library/', 'Saved books, reading progress, scores and kept quotations', 'my library saved progress commonplace']
+  ['Tool', 'My library', '/my-library/', 'Saved books, reading progress, scores and kept quotations', 'my library saved progress commonplace'],
+  // The Revise games, so "who said it" or "flashcards" opens the game itself.
+  // They come after the tools above, which the empty search box suggests.
+  ['Tool', 'Who said it?', '/play/who-said-it/', 'Name the speaker of a line', 'quiz revise speaker'],
+  ['Tool', 'Fill the line', '/play/fill-the-line/', 'Put the missing words back into a speech', 'quiz revise gap missing words'],
+  ['Tool', 'Which book?', '/play/which-book/', 'One line, the whole library', 'quiz revise'],
+  ['Tool', 'Who is this?', '/play/character-identification/', 'A character described without being named', 'quiz revise character'],
+  ['Tool', 'Theme match', '/play/theme-match/', 'Decide which theme a quotation carries', 'quiz revise themes'],
+  ['Tool', 'Technique spotter', '/play/technique-spotter/', 'Name the device doing the work', 'quiz revise techniques devices'],
+  ['Tool', 'Order the plot', '/play/order-the-plot/', 'Put acts, chapters and scenes back in sequence', 'quiz revise plot sequence'],
+  ['Tool', 'Which year?', '/play/context-sprint/', 'Place an event in the right year', 'quiz revise dates context'],
+  ['Tool', 'Opening lines', '/play/opening-lines/', 'Name the book from its first sentence', 'quiz revise first lines'],
+  ['Tool', 'Ten questions', '/play/mixed-round/', 'Ten questions on one book', 'quiz revise mixed round'],
+  ['Tool', 'Flashcards', '/play/flashcards/', 'Spaced repetition over a title’s quotations', 'flashcards revise spaced repetition']
 ]) addEntry(tool[0], tool[1], tool[2], tool[3], tool[4]);
 
 fs.writeFileSync(searchFile, JSON.stringify({ entries: searchEntries }, null, 0) + '\n');
