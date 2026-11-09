@@ -2236,7 +2236,6 @@ main.explore-page .explore-tools {
   padding: 20px 0 24px;
   border: 0;
   border-top: 1px solid var(--line, var(--ed-rule));
-  border-bottom: 1px solid var(--line, var(--ed-rule));
   border-radius: 0;
   background: none;
   box-shadow: none;
@@ -3962,4 +3961,11 @@ main[data-hub="classic"] .hub-links li {
    light ink rather than the dark ink of the page's other headings. */
 main.passage-room-page .passage-next h2 {
   color: #fffaf4;
+}
+
+/* A list whose first row draws its own rule (a writer's dates, the Shakespeare
+   shelves) sits straight under the page introduction; the introduction leaves
+   the line to it, rather than drawing a second one a few pixels above. */
+main .page-intro:has(+ :is(.hub-dates, .shakespeare-collection-routes)) {
+  border-bottom: 0;
 }
