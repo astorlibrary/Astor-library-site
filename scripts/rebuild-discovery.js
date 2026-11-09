@@ -259,11 +259,8 @@ const authors = Array.from(books.reduce(function (groups, book) {
     ? titles[0]
     : titles.slice(0, -1).join(', ') + ' and ' + titles[titles.length - 1];
   // A catalogue line, not a pitch: what the library holds by this writer.
-  const counts = ['', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'];
-  const howMany = counts[authorBooks.length] || String(authorBooks.length);
-  const description = authorDescriptions[name] || (authorBooks.length === 1
-    ? 'One book in the catalogue: ' + titleList + '.'
-    : howMany + ' books in the catalogue: ' + titleList + '.');
+  // The card's kicker already gives the count, so the line is the titles.
+  const description = authorDescriptions[name] || titleList + '.';
 
   authorBooks.forEach(function (book) {
     const names = authorProfileData.authorNamesForBook(book);
