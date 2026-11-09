@@ -182,6 +182,20 @@ module.exports.bookContributors = {
   '/books/sleepy-hollow-and-other-stories/': ['Washington Irving', 'Nathaniel Hawthorne', 'Edgar Allan Poe', 'Ambrose Bierce', 'Charlotte Perkins Gilman', 'Mary E. Wilkins Freeman', 'H. P. Lovecraft'],
   '/books/victorian-ghost-stories/': ['Elizabeth Gaskell', 'Edward Bulwer-Lytton', 'Mary Elizabeth Braddon', 'Amelia B. Edwards', 'Charles Dickens', 'Margaret Oliphant', 'E. Nesbit', 'Bram Stoker', 'Thomas Hood', 'Dante Gabriel Rossetti', 'Christina Rossetti']
 };
+// Bylines that also name a translator, collaborators or an attribution keep
+// that wording on the book's own page; the writers list files the book under
+// the writer it is by, so Homer, Kafka and Shakespeare appear once each.
+Object.assign(module.exports.bookContributors, {
+  '/books/the-iliad/': ['Homer'],
+  '/books/the-odyssey/': ['Homer'],
+  '/books/the-metamorphosis/': ['Franz Kafka'],
+  '/books/edward-iii/': ['William Shakespeare'],
+  '/books/henry-vi-part-1/': ['William Shakespeare'],
+  '/books/sir-thomas-more/': ['Anthony Munday'],
+  '/books/charles-i-selected-writings/': ['Charles I'],
+  '/books/locrine/': ['Anonymous'],
+  '/books/arden-of-faversham/': ['Anonymous']
+});
 module.exports.contributorNotes = {
   '/books/american-christmas-stories/': { 'Clement Clarke Moore': 'Includes A Visit from St. Nicholas, attributed to Clement Clarke Moore.' }
 };
