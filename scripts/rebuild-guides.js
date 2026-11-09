@@ -149,9 +149,16 @@ function characters(book) {
   return entries + map;
 }
 
+// A quotation that serves several themes is printed under the first of them,
+// so the page does not show the same lines twice. A theme whose quotations
+// have all appeared above it still keeps one.
 function themes(book) {
+  const shown = new Set();
   return book.themes.map(theme => {
-    const examples = book.quotations.filter(quotation => (quotation.themes || []).includes(theme.id)).slice(0, 2);
+    const tagged = book.quotations.filter(quotation => (quotation.themes || []).includes(theme.id));
+    const fresh = tagged.filter(quotation => !shown.has(quotation));
+    const examples = fresh.length ? fresh.slice(0, 2) : tagged.slice(0, 1);
+    examples.forEach(example => shown.add(example));
     return '<section class="guide-entry" id="astor-theme-' + escapeHtml(theme.id) + '">' +
       '<h2>' + escapeHtml(theme.name) + '</h2>' +
       '<p>' + escapeHtml(theme.summary) + '</p>' +
@@ -185,8 +192,11 @@ function quotations(book) {
 
 function formAndLanguage(book) {
   if (!book.techniques.length) return '<p>There is no separate note on form and language for this book yet.</p>';
+  const shown = new Set();
   return book.techniques.map(technique => {
-    const example = book.quotations.find(quotation => (quotation.techniques || []).includes(technique.id));
+    const tagged = book.quotations.filter(quotation => (quotation.techniques || []).includes(technique.id));
+    const example = tagged.find(quotation => !shown.has(quotation)) || tagged[0];
+    if (example) shown.add(example);
     return '<section class="guide-entry" id="astor-technique-' + escapeHtml(technique.id) + '">' +
       '<h2>' + escapeHtml(technique.name) + '</h2>' +
       '<p class="guide-definition">' + escapeHtml(technique.definition) + '</p>' +
