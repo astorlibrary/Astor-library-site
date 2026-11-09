@@ -1134,7 +1134,6 @@ function addGlobalNavigation(html, source) {
   const searchCurrent = href === '/explore/' || href.startsWith('/explore/');
   const playCurrent = inRoute('/play/') || href === '/today/';
   const myLibraryCurrent = href === '/my-library/';
-  const teachersCurrent = href === '/for-teachers/';
   const exploreToolsCurrent = [
     '/explore/quotations/', '/explore/timeline/', '/explore/characters/', '/explore/themes/',
     '/explore/techniques/', '/explore/map/', '/explore/compare/'
@@ -1143,14 +1142,14 @@ function addGlobalNavigation(html, source) {
   const seasonsCurrent = inRoute('/seasons/');
   const aboutCurrent = href === '/about/' || href === '/editorial/';
   const booksSection = booksCurrent || seasonsCurrent || hardbacksCurrent || shakespeareCurrent || periodsCurrent || authorsCurrent || subjectsCurrent;
-  const studySection = studyCurrent || resourcesCurrent || passageCurrent || playCurrent || teachersCurrent;
+  const studySection = studyCurrent || resourcesCurrent || passageCurrent || playCurrent;
   const exploreSection = searchCurrent || exploreToolsCurrent || readingRoutesCurrent;
 
   const guidesCurrent = inRoute('/guides/');
   const reviseCurrent = inRoute('/play/');
   const todayCurrent = href === '/today/';
   const booksMenuCurrent = booksSection || studyCurrent;
-  const exploreMenuCurrent = exploreSection || resourcesCurrent || passageCurrent || teachersCurrent;
+  const exploreMenuCurrent = exploreSection || resourcesCurrent || passageCurrent;
 
   const header = `<header class="site-header astor-global-header">
   <div class="astor-header-identity">
@@ -1198,7 +1197,6 @@ function addGlobalNavigation(html, source) {
             <a href="/passage-room/"${current(passageCurrent, href === '/passage-room/')}>Close readings</a>
             <a href="/resources/"${current(resourcesCurrent, href === '/resources/')}>Illustrated guides</a>
             <a href="/reading-routes/"${current(readingRoutesCurrent, href === '/reading-routes/')}>Reading routes</a>
-            <a href="/for-teachers/"${current(teachersCurrent)}>For teachers</a>
           </div>
           <div class="astor-menu-col">
             <h2>Across the library</h2>
@@ -1226,7 +1224,7 @@ function addGlobalNavigation(html, source) {
   const footer = `<footer class="site-footer astor-global-footer">
   <div class="astor-footer-signature"><p class="footer-brand">Astor Library</p><p>Annotated editions of classic literature, with free study guides.</p></div>
   <div class="astor-footer-group"><h2>Books</h2><a href="/library/">All books</a><a href="/shakespeare/">Shakespeare</a><a href="/study/">Study Editions</a><a href="/hardbacks/">Hardbacks</a><a href="/seasons/">The seasonal library</a><a href="/authors/">Writers</a><a href="/subjects/">Subjects</a></div>
-  <div class="astor-footer-group"><h2>Study</h2><a href="/guides/">Study guides</a><a href="/play/">Revise</a><a href="/today/">Today</a><a href="/passage-room/">Close readings</a><a href="/resources/">Illustrated guides</a><a href="/explore/quotations/">Quotations</a><a href="/for-teachers/">For teachers</a><a href="/my-library/">My library</a></div>
+  <div class="astor-footer-group"><h2>Study</h2><a href="/guides/">Study guides</a><a href="/play/">Revise</a><a href="/today/">Today</a><a href="/passage-room/">Close readings</a><a href="/resources/">Illustrated guides</a><a href="/explore/quotations/">Quotations</a><a href="/my-library/">My library</a></div>
   <div class="astor-footer-group"><h2>Astor</h2><a href="/about/">About</a><a href="/editorial/">Editorial standards</a><a href="/privacy/">Privacy</a><a href="mailto:support@astorlibrary.com">Contact</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a><a href="/site-index/">Site index</a></div>
 </footer>`;
 

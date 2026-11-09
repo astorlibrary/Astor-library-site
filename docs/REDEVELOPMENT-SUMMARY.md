@@ -83,7 +83,6 @@ Primary navigation keeps its five destinations and gains a sixth.
 /explore/map/                       where the books happen
 /explore/compare/                   two titles side by side, with paired quotations
 /my-library/                        saved, recent, progress, streak, scores, commonplace book
-/for-teachers/                      lesson starters, six worksheet generators, projector mode
 ```
 
 Plus a study toolkit injected into every `/books/<slug>/` and `/study/<slug>/`
@@ -166,7 +165,7 @@ one heading as the library grows.
 
 | File | Built by | Read by |
 | --- | --- | --- |
-| `assets/study-index.json` | `rebuild-study-data.js` | every explorer, the library-wide games, the daily puzzle, the teachers' page |
+| `assets/study-index.json` | `rebuild-study-data.js` | every explorer, the library-wide games, the daily puzzle |
 | `assets/search-index.json` | `rebuild-study-data.js` | the search palette only, and only once it is opened |
 
 The study index is the whole library's study material in one request, so a
@@ -383,15 +382,11 @@ writers, subjects, collections, guides, study editions, close readings,
 seasons, characters, themes, techniques, quotations and the tools — so
 "Fleance", "equivocation" and "who said it" all reach a page.
 
-### For teachers
+### For teachers (retired November 2026)
 
-Six generators, all producing printable output from the chosen title: lesson
-starters, a quotation worksheet with ruled space, a character worksheet, a
-sequencing worksheet, a discussion sheet built from the discussion questions
-and critical positions, and a knowledge check with answers. `astor-study.css`
-carries a print block that drops every control and opens every tab panel.
-Projector mode puts one quotation on the wall at `clamp(30px, 6vw, 72px)`,
-driven by the arrow keys, Escape to close.
+The `/for-teachers/` page, its worksheet generators and projector mode were
+removed in November 2026. The address now redirects to `/resources/`, and
+`check-site.js` fails if the page comes back.
 
 ### The Revise redesign (October 2026)
 

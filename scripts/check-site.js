@@ -1637,9 +1637,9 @@ const generatedPages = [
   'play/which-book', 'play/context-sprint', 'play/opening-lines',
   'play/flashcards',
   'today', 'explore/quotations', 'explore/timeline', 'explore/characters', 'explore/themes',
-  'explore/techniques', 'explore/map', 'explore/compare', 'my-library', 'for-teachers'
+  'explore/techniques', 'explore/map', 'explore/compare', 'my-library'
 ];
-for (const page of ['play/essay-forge', 'play/defend-the-reading']) {
+for (const page of ['play/essay-forge', 'play/defend-the-reading', 'for-teachers']) {
   if (fs.existsSync(path.join(root, page, 'index.html'))) failures.push('The retired page /' + page + '/ has come back');
 }
 for (const page of generatedPages) {

@@ -1065,7 +1065,6 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '<a href="/explore/map/"><span>Map of settings</span><p>Where the books are set, from Inverness to Transylvania.</p></a>' +
   '<a href="/explore/compare/"><span>Compare two texts</span><p>Two books side by side, with paired quotations.</p></a>' +
   '<a href="/play/"><span>Revise</span><p>Quizzes and flashcards on each book.</p></a>' +
-  '<a href="/for-teachers/"><span>For teachers</span><p>Lesson starters, printable worksheets and a projector mode.</p></a>' +
   '</section>' +
   '<section class="explore-results" aria-label="Search results">' + entryCards + '</section>' +
   '<button class="explore-more" id="explore-more" type="button">Show 24 more</button>' +
@@ -1188,8 +1187,7 @@ const siteIndexHtml = '<!doctype html><html lang="en"><head>' +
     ['/explore/techniques/', 'Literary terms', 'Literary terms, with examples'],
     ['/explore/map/', 'Map of settings', 'Where the books are set'],
     ['/explore/compare/', 'Compare two texts', 'Shared themes and techniques side by side'],
-    ['/my-library/', 'My library', 'Saved books, reading progress, scores and kept quotations'],
-    ['/for-teachers/', 'For teachers', 'Lesson starters, worksheets and projector mode']
+    ['/my-library/', 'My library', 'Saved books, reading progress, scores and kept quotations']
   ].map(tool => '<a href="' + tool[0] + '"><span>' + tool[1] + '</span><small>' + tool[2] + '</small></a>').join('') + '</div></section>' +
   '<section class="index-group" id="seasons"><h2><a href="/seasons/">The seasonal library</a></h2><div class="index-links">' + seasons.map(season => '<a href="' + season.href + '"><span>' + escapeHtml(season.title) + '</span><small>Books and resources · open all year</small></a>').join('') + '</div></section>' +
   '<section class="index-group" id="passages"><h2><a href="/passage-room/">The Passage Room</a></h2><div class="index-links">' + passageLinks + '</div></section>' +

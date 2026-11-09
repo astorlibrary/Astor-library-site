@@ -284,6 +284,162 @@ const presentationRecords = {
     folder: '/assets/presentations/moonstone-1868/',
     backdrop: '/assets/presentation-backdrops/dorian-gray.webp',
     slideCount: 14
+  },
+  'seringapatam-1799-diamond': {
+    title: 'Seringapatam, 1799, and the Diamond',
+    folder: '/assets/presentations/seringapatam-1799-diamond/',
+    backdrop: '/assets/presentation-backdrops/dorian-gray.webp',
+    slideCount: 9
+  },
+  'troy-homeric-world': {
+    title: 'Troy and the Homeric World',
+    folder: '/assets/presentations/troy-homeric-world/',
+    backdrop: '/assets/presentation-backdrops/odyssey-homer-vs-nolan.webp',
+    slideCount: 9
+  },
+  'domestic-tragedy-1592-1608': {
+    title: 'Domestic Tragedy, 1592–1608',
+    folder: '/assets/presentations/domestic-tragedy-1592-1608/',
+    backdrop: '/assets/presentation-backdrops/shakespeares-tragedies.webp',
+    slideCount: 9
+  },
+  'revenge-tragedy-1587-1633': {
+    title: 'Revenge Tragedy, 1587–1633',
+    folder: '/assets/presentations/revenge-tragedy-1587-1633/',
+    backdrop: '/assets/presentation-backdrops/macbeth-summary-analysis.webp',
+    slideCount: 9
+  },
+  'augustan-age-1688-1745': {
+    title: 'The Augustan Age, 1688–1745',
+    folder: '/assets/presentations/augustan-age-1688-1745/',
+    backdrop: '/assets/presentation-backdrops/pamelas-psyche.webp',
+    slideCount: 10
+  },
+  'first-world-war-poets': {
+    title: 'Poets of the First World War, 1914–1918',
+    folder: '/assets/presentations/first-world-war-poets/',
+    backdrop: '/assets/presentation-backdrops/macbeth-quick-guide.webp',
+    slideCount: 9
+  },
+  'first-folio-1623': {
+    title: 'The First Folio, 1623',
+    folder: '/assets/presentations/first-folio-1623/',
+    backdrop: '/assets/presentation-backdrops/richard-ii.webp',
+    slideCount: 10
+  },
+  'london-playhouses-1576-1642': {
+    title: 'The London Playhouses, 1576–1642',
+    folder: '/assets/presentations/london-playhouses-1576-1642/',
+    backdrop: '/assets/presentation-backdrops/shakespeares-tragedies.webp',
+    slideCount: 9
+  },
+  'fingerprints-and-the-law': {
+    title: 'Fingerprints and the Law, 1823–1902',
+    folder: '/assets/presentations/fingerprints-and-the-law/',
+    backdrop: '/assets/presentation-backdrops/harper-lee-mockingbird.jpg',
+    slideCount: 8
+  },
+  'weird-fiction-blackwood': {
+    title: 'Weird Fiction and Algernon Blackwood',
+    folder: '/assets/presentations/weird-fiction-blackwood/',
+    backdrop: '/assets/presentation-backdrops/midsummer-nights-dream.webp',
+    slideCount: 10
+  },
+  'epic-tradition-homer-milton': {
+    title: 'The Epic Tradition: Homer to Milton',
+    folder: '/assets/presentations/epic-tradition-homer-milton/',
+    backdrop: '/assets/presentation-backdrops/odyssey-homer-vs-nolan.webp',
+    slideCount: 11
+  },
+  'vampire-before-dracula': {
+    title: 'The Vampire Before Dracula, 1725–1897',
+    folder: '/assets/presentations/vampire-before-dracula/',
+    backdrop: '/assets/presentation-backdrops/dracula-overview.webp',
+    slideCount: 10
+  },
+  'gogol-st-petersburg': {
+    title: 'Gogol’s St Petersburg',
+    folder: '/assets/presentations/gogol-st-petersburg/',
+    backdrop: '/assets/presentation-backdrops/ghost-stories.webp',
+    slideCount: 9
+  },
+  'american-ghost-stories-women': {
+    title: 'Two American Ghost Stories by Women',
+    folder: '/assets/presentations/american-ghost-stories-women/',
+    backdrop: '/assets/presentation-backdrops/literature-shaped-halloween.webp',
+    slideCount: 9
+  },
+  'american-whaling-1820-1860': {
+    title: 'American Whaling, 1820–1860',
+    folder: '/assets/presentations/american-whaling-1820-1860/',
+    backdrop: '/assets/presentation-backdrops/moby-dick.webp',
+    slideCount: 12
+  },
+  'sensation-novel-1860-1880': {
+    title: 'The Sensation Novel, 1860–1880',
+    folder: '/assets/presentations/sensation-novel-1860-1880/',
+    backdrop: '/assets/presentation-backdrops/dracula-gender.jpg',
+    slideCount: 11
+  },
+  'romantic-poets-1789-1834': {
+    title: 'The Romantic Poets, 1789–1834',
+    folder: '/assets/presentations/romantic-poets-1789-1834/',
+    backdrop: '/assets/presentation-backdrops/king-lear.jpg',
+    slideCount: 11
+  },
+  'klondike-gold-rush-1896-1899': {
+    title: 'The Klondike Gold Rush, 1896–1899',
+    folder: '/assets/presentations/klondike-gold-rush-1896-1899/',
+    backdrop: '/assets/presentation-backdrops/frankenstein.webp',
+    slideCount: 13
+  },
+  'locrine-and-the-puritan': {
+    title: '“By W.S.”: Locrine and The Puritan',
+    folder: '/assets/presentations/locrine-and-the-puritan/',
+    backdrop: '/assets/presentation-backdrops/richard-ii.webp',
+    slideCount: 16
+  },
+  'old-new-york-1840-1880': {
+    title: 'Old New York, 1840–1880',
+    folder: '/assets/presentations/old-new-york-1840-1880/',
+    backdrop: '/assets/presentation-backdrops/fitzgerald-gatsby.jpg',
+    slideCount: 13
+  },
+  'age-of-innocence': {
+    title: 'Edith Wharton: The Age of Innocence',
+    folder: '/assets/presentations/age-of-innocence/',
+    backdrop: '/assets/presentation-backdrops/pride-prejudice.jpg',
+    slideCount: 12
+  },
+  'bartleby-the-scrivener': {
+    title: 'Herman Melville: Bartleby, the Scrivener',
+    folder: '/assets/presentations/bartleby-the-scrivener/',
+    backdrop: '/assets/presentation-backdrops/fitzgerald-gatsby.jpg',
+    slideCount: 14
+  },
+  'keats-1820-volume': {
+    title: 'John Keats: The 1820 Volume',
+    folder: '/assets/presentations/keats-1820-volume/',
+    backdrop: '/assets/presentation-backdrops/winters-tale.webp',
+    slideCount: 13
+  },
+  'wilfred-owen-war-poems': {
+    title: 'Wilfred Owen: The War Poems',
+    folder: '/assets/presentations/wilfred-owen-war-poems/',
+    backdrop: '/assets/presentation-backdrops/great-expectations.webp',
+    slideCount: 14
+  },
+  'wide-sargasso-sea-post-colonialism': {
+    title: 'Wide Sargasso Sea & Post-Colonialism',
+    folder: '/assets/presentations/wide-sargasso-sea-post-colonialism/',
+    backdrop: '/assets/presentation-backdrops/wide-sargasso-sea.jpg',
+    slideCount: 8
+  },
+  'wide-sargasso-sea-part-2': {
+    title: 'Wide Sargasso Sea — Part 2: Rochester, Antoinette, and the Unravelling of a Marriage',
+    folder: '/assets/presentations/wide-sargasso-sea-part-2/',
+    backdrop: '/assets/presentation-backdrops/wide-sargasso-sea.jpg',
+    slideCount: 13
   }
 };
 

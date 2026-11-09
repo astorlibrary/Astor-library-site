@@ -256,8 +256,7 @@ for (const tool of [
   ['Tool', 'Literary terms', '/explore/techniques/', 'Literary terms, with examples from the books', 'technique glossary terms devices'],
   ['Tool', 'Map of settings', '/explore/map/', 'Where the books take place', 'map places settings geography'],
   ['Tool', 'Compare two texts', '/explore/compare/', 'Shared themes and techniques, side by side', 'compare comparative essay two texts'],
-  ['Tool', 'My library', '/my-library/', 'Saved books, reading progress, scores and kept quotations', 'my library saved progress commonplace'],
-  ['Tool', 'For teachers', '/for-teachers/', 'Lesson starters, worksheets and projector mode', 'teachers lesson worksheet classroom printable']
+  ['Tool', 'My library', '/my-library/', 'Saved books, reading progress, scores and kept quotations', 'my library saved progress commonplace']
 ]) addEntry(tool[0], tool[1], tool[2], tool[3], tool[4]);
 
 fs.writeFileSync(searchFile, JSON.stringify({ entries: searchEntries }, null, 0) + '\n');
