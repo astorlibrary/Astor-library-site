@@ -187,6 +187,21 @@ test('verse quotations in a play guide are set as lines', () => {
   assert.match(themes, /<blockquote class="guide-example"><p>[^<]{10,}/, 'theme examples show their words');
 });
 
+// "He carried his own low temperature always about with him" was once printed
+// under Business and again under Isolation on the same Themes page.
+test('a Themes page repeats a quotation only for a theme with nothing else to show', () => {
+  for (const book of books) {
+    const html = fs.readFileSync(path.join(root, 'guides', book.slug, 'themes', 'index.html'), 'utf8');
+    const seen = new Set();
+    for (const [section] of html.matchAll(/<section class="guide-entry"[\s\S]*?<\/section>/g)) {
+      const quotes = [...section.matchAll(/<blockquote class="guide-example">([\s\S]*?)<\/blockquote>/g)].map(match => match[1]);
+      const repeats = quotes.filter(quote => seen.has(quote));
+      assert.ok(!repeats.length || quotes.length === 1, book.slug + ' prints a quotation twice on its Themes page');
+      quotes.forEach(quote => seen.add(quote));
+    }
+  }
+});
+
 test('critical views name a critic, a work and a year', () => {
   for (const book of books) {
     for (const view of book.criticalViews || []) {
