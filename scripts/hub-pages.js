@@ -384,7 +384,7 @@ function classicPage(html, discovery) {
     body = body.replace(/<section class="classic-reading">[\s\S]*?<\/section>/,
       '<section class="classic-reading hub-section"><h2>The editions</h2><p>Every Astor edition prints the complete text. The prose editions add chapter summaries, explanatory notes and historical context; the Shakespeare editions add scene summaries, line numbers and notes on the same page. Study Editions, printed for students, add closer analysis, key quotations and context. Some books are also published in hardback or for Kindle.</p></section>');
     body = body.replace(/<section class="section-title">[\s\S]*?<\/section>\s*<section class="classic-ways">[\s\S]*?<\/section>/,
-      '<section class="classic-ways hub-section"><h2>Other ways in</h2><ul class="hub-links">' +
+      '<section class="classic-ways hub-section"><h2>More ways to browse</h2><ul class="hub-links">' +
       '<li><a href="/library/">All books</a>, searchable by title, writer, period or subject</li>' +
       '<li><a href="/reading-routes/">Reading lists</a> that group books from different periods around a question</li>' +
       '<li><a href="/subjects/">Subject guides</a> to forms such as tragedy, comedy and Gothic fiction</li>' +

@@ -207,7 +207,7 @@ module.exports = {
         label: 'Detection and medicine',
         title: 'Detection and opium',
         body: [
-          'T. S. Eliot called it “the first, the longest, and the best of modern English detective novels”, though Poe’s Dupin stories and Dickens’s Inspector Bucket came before it. It brings together a professional detective, written testimony, physical clues, wrong conclusions and a final reconstruction.',
+          'T. S. Eliot called it “the first, the longest, and the best of modern English detective novels”, though Poe’s Dupin stories and Dickens’s Inspector Bucket came before it. It has a professional detective, written testimony, physical clues, wrong conclusions and a final reconstruction.',
           'Collins was taking large doses of laudanum for gout while he wrote the book, and the solution turns on an experiment with opium, devised by Ezra Jennings, a doctor’s assistant who takes the drug himself for an incurable illness.'
         ]
       }

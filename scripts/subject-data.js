@@ -117,7 +117,7 @@ module.exports = [
     ],
     resources: [
       { href: '/resources/midsummer-nights-dream/study-guide/', label: 'A Midsummer Night’s Dream study guide', copy: 'Follow court, forest, performance and the play’s three comic worlds.' },
-      { href: '/resources/shakespeare/gender-power-omkara-maqbool/', label: 'Gender and power in Shakespeare', copy: 'A route into performance, authority and adaptation across genres.' },
+      { href: '/resources/shakespeare/gender-power-omkara-maqbool/', label: 'Gender and power in Shakespeare', copy: 'Performance, authority and adaptation across Shakespeare’s genres.' },
       { href: '/books/as-you-like-it/', label: 'As You Like It reading page', copy: 'Read disguise, pastoral work, four courtships and the epilogue in depth.' }
     ],
     sources: [
@@ -251,7 +251,7 @@ module.exports = [
       { href: '/resources/macbeth/quick-guide/', label: 'Macbeth quick study guide', copy: 'Prophecy, equivocation, guilt and James I.' },
       { href: '/resources/antony-and-cleopatra/themes-critical-contexts/', label: 'Antony and Cleopatra: themes and contexts', copy: 'Rome, Egypt, gender, empire and Plutarch.' },
       { href: '/resources/shakespeare/gender-power-omkara-maqbool/', label: 'Gender, power and Shakespeare', copy: 'Othello and Macbeth remade in film.' },
-      { href: '/resources/king-lear/summary-guide/', label: 'King Lear summary guide', copy: 'A route through the divided kingdom.' }
+      { href: '/resources/king-lear/summary-guide/', label: 'King Lear summary guide', copy: 'A summary of the play.' }
     ],
     sources: [
       { href: 'https://emed.folger.edu/drfaust', label: 'Folger: Doctor Faustus in early print and performance' },
@@ -338,7 +338,7 @@ module.exports = [
     methods: [
       { label: 'Beginning', title: 'The story opens in the middle', copy: 'Epic often begins after decisive events have already occurred. The missing past returns through song, memory and report. This makes storytelling part of survival: a hero must understand and narrate what has happened in order to move forward.' },
       { label: 'Repetition', title: 'A repeated scene always changes something', copy: 'Feasts, arrivals, councils, recognitions and acts of hospitality recur with variations. The pattern teaches a reader what to expect; the difference reveals whether a household or ruler honours the obligations of the world.' },
-      { label: 'Scale', title: 'The ordinary and cosmic share a line', copy: 'A meal, wound, garment or door may stand beside divine action and national history. Epic keeps hold of such details and raises their stakes, until an object can carry memory across generations.' }
+      { label: 'Scale', title: 'The ordinary and cosmic share a line', copy: 'A meal, a wound, a garment or a door gets the same attention as the gods and the history of a nation. Epic keeps hold of such details and raises their stakes, until an object can carry memory across generations.' }
     ],
     books: [
       { href: '/books/the-iliad/', title: 'The Iliad', author: 'Homer, translated by Samuel Butler', year: 'Ancient Greek epic', image: '/The%20Iliad.png', copy: 'Anger, mortality and the costs of heroic honour during a concentrated movement of the Trojan War.' },
@@ -534,7 +534,7 @@ module.exports = [
       { term: 'Sentimentalism', copy: 'A literary method that uses feeling, family bonds and scenes of suffering to direct moral judgement and public sympathy.' }
     ],
     resources: [
-      { href: '/authors/frederick-douglass/', label: 'Frederick Douglass: writer page', copy: 'Life, public authorship, the three autobiographies and a route into the 1845 Narrative.' },
+      { href: '/authors/frederick-douglass/', label: 'Frederick Douglass: writer page', copy: 'His life, his public career, the three autobiographies and the 1845 Narrative.' },
       { href: '/books/narrative-of-the-life-of-frederick-douglass/', label: 'Read the Douglass page', copy: 'Follow literacy, violence, resistance, religion and the book’s framing documents.' },
       { href: '/books/uncle-toms-cabin/', label: 'Read the Stowe page', copy: 'Keep the two journeys, abolitionist argument and difficult stage afterlife together.' },
       { href: '/reading-routes/#freedom', label: 'Reading route: what does freedom require?', copy: 'Move from escape towards voice, home, law and self-command across several periods.' }
