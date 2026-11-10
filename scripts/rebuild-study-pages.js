@@ -266,7 +266,7 @@ function buildPages() {
     <div id="astor-quote-results"></div>
   </div>`,
     fallback: 'This needs JavaScript. Every quotation is also on its own book page.',
-    links: [{ href: '/explore/techniques/', label: 'Technique glossary' }, { href: '/play/', label: 'Revise' }]
+    links: [{ href: '/explore/techniques/', label: 'Literary terms' }, { href: '/play/', label: 'Revise' }]
   }));
 
   // --- explore: timeline ---
@@ -323,12 +323,12 @@ function buildPages() {
   // --- explore: techniques ---
   written.push(page({
     dir: 'explore/techniques',
-    title: 'Technique glossary | Astor Library',
+    title: 'Literary terms | Astor Library',
     description: 'A glossary of literary techniques, each explained and shown at work in a line from a book.',
     kicker: 'Explore',
-    heading: 'Technique glossary.',
+    heading: 'Literary terms.',
     deck: 'What each term means, with a line from a book using it.',
-    breadcrumb: '<a href="/explore/">Explore</a><span aria-hidden="true">/</span><span aria-current="page">Technique glossary</span>',
+    breadcrumb: '<a href="/explore/">Explore</a><span aria-hidden="true">/</span><span aria-current="page">Literary terms</span>',
     module: 'techniques.mjs',
     mount: `  <div class="astor-chooser" id="astor-technique-search"></div>
   <div id="astor-technique-list"></div>`,
