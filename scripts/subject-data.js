@@ -20,9 +20,9 @@ module.exports = [
       ]
     },
     methods: [
-      { label: 'Space', title: 'A building remembers', copy: 'In a Gothic house the building takes part in the plot. Doors, windows, laboratories, attics and thresholds control who may know what. A place becomes a record of inheritance, exclusion or private conduct, often revealing what its occupants have tried to make unspeakable.' },
-      { label: 'Knowledge', title: 'Explanation creates new fear', copy: 'These books are full of educated people: doctors, lawyers, scientists, collectors and readers of evidence. Knowing more rarely makes the terror go away straight away. It can produce the danger, misname it or arrive too late, leaving reason to confront the limits of its own methods.' },
-      { label: 'The self', title: 'The monster is not safely outside', copy: 'The creature, double, portrait and vampire all trouble the boundary between threat and victim. Gothic writing is interested in who gets called a monster, whose desire is hidden, and what a respectable society has to disown in order to call itself orderly.' }
+      { label: 'Space', title: 'In a Gothic house the building takes part in the plot', copy: 'Doors, windows, laboratories, attics and thresholds control who may know what. A house also keeps a record of who inherited it, who was shut out and what was done there in private, and it often gives away what its occupants have tried to hide.' },
+      { label: 'Knowledge', title: 'Knowing more rarely ends the fear', copy: 'These books are full of educated people: doctors, lawyers, scientists, collectors and readers of evidence. Their knowledge can cause the danger, give it the wrong name or arrive too late.' },
+      { label: 'The self', title: 'The monster is rarely a simple outsider', copy: 'With the creature, the double, the portrait and the vampire it is hard to say where the threat ends and the victim begins. Ask who gets called a monster, whose desire is hidden, and what a respectable society has to disown in order to call itself orderly.' }
     ],
     books: [
       { href: '/books/frankenstein/', title: 'Frankenstein', author: 'Mary Shelley', year: '1818', image: '/Frankenstein.png', copy: 'Victor Frankenstein makes a living creature and runs from it, and the creature tells its own story of abandonment.' },
@@ -44,8 +44,8 @@ module.exports = [
     terms: [
       { term: 'The uncanny', copy: 'Something frightens us because it is strange and also uncomfortably familiar.' },
       { term: 'The double', copy: 'A second figure carries the desires, guilt or violence that the first will not admit to.' },
-      { term: 'Frame narrative', copy: 'One account encloses another, making the route by which a story reaches us part of its meaning.' },
-      { term: 'The sublime', copy: 'Vastness, danger or power produces awe that exceeds comfortable control.' }
+      { term: 'Frame narrative', copy: 'A story told inside another story, so that it reaches the reader through somebody else’s account.' },
+      { term: 'The sublime', copy: 'The awe, close to fear, that vast, dangerous or powerful things produce: mountains, storms, the sea.' }
     ],
     resources: [
       { href: '/resources/frankenstein/study-guide/', label: 'Frankenstein study guide', copy: 'Creation, responsibility and narrative form.' },
@@ -80,9 +80,9 @@ module.exports = [
       ]
     },
     methods: [
-      { label: 'Error', title: 'Mistake reveals a working rule', copy: 'A misidentified twin or misread letter creates more than confusion. It shows what characters expect a husband, servant, woman or gentleman to look and sound like. Watch the assumption that makes each error plausible before the correction arrives.' },
-      { label: 'Performance', title: 'Disguise gives thought a body', copy: 'Rosalind uses her disguise as Ganymede to steer the conversation and test Orlando. Comic performance can release speech that a character’s ordinary position forbids, while creating desires and obligations that cannot be dismissed as make-believe.' },
-      { label: 'Settlement', title: 'The last scene distributes belonging', copy: 'Marriage, recognition and pardon decide who may join the dance, household or restored state. Count the people included, but also notice refusals, forced choices and sudden conversions. An ending can be formally happy while leaving a moral question open.' }
+      { label: 'Error', title: 'A mistake shows what people expect', copy: 'A misidentified twin or misread letter creates more than confusion. It shows what a husband, servant, woman or gentleman is supposed to look and sound like. Before the correction arrives, look for the assumption that made the error believable.' },
+      { label: 'Performance', title: 'Disguise lets a character say more', copy: 'Rosalind uses her disguise as Ganymede to steer the conversation and test Orlando. A disguise frees a character to say what her ordinary position forbids, but the feelings and promises that follow are real and have to be dealt with afterwards.' },
+      { label: 'Settlement', title: 'The last scene decides who belongs', copy: 'Marriage, recognition and pardon decide who may join the dance, the household or the restored state. Count the people included, but also notice refusals, forced choices and sudden conversions. An ending can be formally happy while leaving a moral question open.' }
     ],
     books: [
       { href: '/books/comedy-of-errors/', title: 'The Comedy of Errors', author: 'William Shakespeare', year: 'c.1590s', image: '/Comedy%20of%20Errors%20%28Main%20Page%29.png', copy: 'Separated twins, mistaken identity and a farce whose first scene begins under a sentence of death.' },
@@ -105,15 +105,15 @@ module.exports = [
     reading: {
       heading: 'Follow who controls the scene, and when that control changes hands.',
       paragraphs: [
-        'Begin with the obstruction. A father controls a marriage, an older brother blocks an inheritance, jealousy governs a household or a law threatens an outsider. Comedy needs a pressure strong enough to make another space, name or performance necessary. The forest, disguise and practical joke are responses to a social arrangement.',
-        'Then read the ending backwards. Which earlier mistake must be retold? Who produces proof, recognises a face or accepts a new account? A final embrace may depend on an improbable arrival, but stage action makes that improbability visible and communal. The audience watches knowledge being shared, even when one character does not accept the terms.'
+        'Begin with the obstruction. A father controls a marriage, an older brother blocks an inheritance, jealousy governs a household or a law threatens an outsider. Something has to be bad enough to send people into the forest, into disguise or into a practical joke.',
+        'Then read the ending backwards. Which earlier mistake must be retold? Who produces proof, recognises a face or accepts a new account? A final embrace may depend on an improbable arrival, but it happens in front of everyone on stage, and the audience watches each person learn the truth, even when one character will not accept it.'
       ]
     },
     terms: [
-      { term: 'Comic error', copy: 'A mistake in identity, intention or interpretation that exposes the assumptions by which a social world operates.' },
-      { term: 'Disguise', copy: 'A performed identity that redistributes knowledge and changes what a character may say, desire or arrange.' },
-      { term: 'Recognition', copy: 'The moment when a person, relationship or history becomes newly known and the action can move towards settlement.' },
-      { term: 'Festive comedy', copy: 'A comic pattern in which ordinary restraint loosens for a holiday, forest or night before a changed social order returns.' }
+      { term: 'Comic error', copy: 'A mistake about who someone is or what they mean, which the plot keeps going until it is cleared up.' },
+      { term: 'Disguise', copy: 'A character taking on another identity, so that some people in the story know more than others.' },
+      { term: 'Recognition', copy: 'The moment a character’s real identity or history becomes known, which lets the play move to its ending.' },
+      { term: 'Festive comedy', copy: 'Comedy in which the usual rules are relaxed for a holiday, a night or a stay in the forest, and then return, a little changed.' }
     ],
     resources: [
       { href: '/resources/midsummer-nights-dream/study-guide/', label: 'A Midsummer Night’s Dream study guide', copy: 'Follow court, forest, performance and the play’s three comic worlds.' },
@@ -149,7 +149,7 @@ module.exports = [
     },
     methods: [
       { label: 'Chronicle', title: 'Using the chronicles', copy: 'Holinshed and other chroniclers had already selected causes, repeated traditions and arranged rulers into meaningful sequences. Shakespeare selects again. Compare what the play keeps, moves or invents, and ask whose claim is strengthened or weakened by each change. Source study should reveal a dramatic argument; catching errors is the least of it.' },
-      { label: 'Performance', title: 'A king must be recognised in public', copy: 'The crown does not make authority self-executing. Oaths, processions, titles, costumes and speeches persuade other people to behave as though a claim is settled. Watch who stands near the king, who answers and whether a public role survives private doubt. Kingship is repeatedly shown as an office that bodies and audiences must perform together.' },
+      { label: 'Performance', title: 'A king must be recognised in public', copy: 'A crown does not make people obey. Oaths, processions, titles, costumes and speeches persuade other people to behave as though a claim is settled. Watch who stands near the king, who answers him, and whether he can keep up the public role when he doubts in private.' },
       { label: 'Sequence', title: 'One reign leaves the next play unfinished business', copy: 'A deposition, pardon, rebellion or conquest returns as another generation’s inheritance. Read endings with the next opening in view. Henry V’s triumph is followed by a child king and lost territory; Richard III’s ascent gathers violence begun long before his first soliloquy. Read in order, the plays show one generation paying for what the last one did.' }
     ],
     books: [
@@ -174,10 +174,10 @@ module.exports = [
       ]
     },
     terms: [
-      { term: 'Chronicle history', copy: 'A prose account that arranges rulers and events over time; it supplies source material but is itself a constructed interpretation of the past.' },
+      { term: 'Chronicle history', copy: 'A prose account of rulers and events in order of time. Shakespeare used the chronicles as sources, and they too are one writer’s version of the past.' },
       { term: 'Tetralogy', copy: 'A sequence of four plays: Henry VI Parts 1–3 and Richard III form the earlier-written first tetralogy; Richard II, Henry IV Parts 1–2 and Henry V form the second.' },
-      { term: 'Succession', copy: 'The transfer of royal authority from one ruler to another, including the hereditary rules, competing claims and acts of recognition that make a title effective.' },
-      { term: 'Deposition', copy: 'The removal of a reigning monarch, a political act that raises questions about who may judge a king and how obedience can be transferred.' }
+      { term: 'Succession', copy: 'The passing of the crown from one ruler to the next, and the rules, rival claims and public acceptance that decide who gets it.' },
+      { term: 'Deposition', copy: 'The removal of a reigning monarch. It raises the question of who has the right to judge a king.' }
     ],
     resources: [
       { href: '/resources/richard-ii/study-guide/', label: 'Richard II study guide', copy: 'Deposition, divine kingship, succession and the rival performances of Richard and Bolingbroke.' },
@@ -203,7 +203,7 @@ module.exports = [
     facts: [
       { value: 'c.335 BCE', label: 'Aristotle’s Poetics gives an influential early account of tragic action' },
       { value: '1590s', label: 'Doctor Faustus, Titus Andronicus and Romeo and Juliet test different early tragic forms' },
-      { value: '1600–06', label: 'Hamlet, Othello, King Lear and Macbeth transform the mature form' },
+      { value: '1600–06', label: 'Shakespeare writes Hamlet, Othello, King Lear and Macbeth' },
       { value: 'c.1612–14', label: 'The Duchess of Malfi makes a woman’s private choice into a tragedy of court power' }
     ],
     introduction: {
@@ -214,9 +214,9 @@ module.exports = [
       ]
     },
     methods: [
-      { label: 'Action', title: 'A choice changes the field', copy: 'Tragic characters interpret, decide and act inside pressures they did not create. A decision alters what everyone else can do, so private error becomes political, familial or military consequence.' },
-      { label: 'Knowledge', title: 'The audience sees an unequal world', copy: 'Dramatic irony gives spectators knowledge that a character lacks, but never perfect control. We may know that Iago lies or that Macbeth’s confidence is false while remaining unable to stop the scene. In tragedy the audience often understands what is happening and can do nothing to stop it.' },
-      { label: 'Language', title: 'Speech can reveal and conceal in the same breath', copy: 'Soliloquies do not provide a simple key to a stable inner self. A speaker may persuade, evade, rehearse or discover a thought while speaking it. The language is itself an event in the play.' }
+      { label: 'Action', title: 'One decision changes what everyone else can do', copy: 'Tragic characters interpret, decide and act under pressures they did not create. One person’s private mistake then becomes a matter for the family, the state or the army.' },
+      { label: 'Knowledge', title: 'The audience knows more than the characters', copy: 'Dramatic irony gives spectators knowledge that a character lacks. We may know that Iago lies or that Macbeth’s confidence is false, and we still cannot stop the scene.' },
+      { label: 'Language', title: 'Speech can reveal and conceal in the same breath', copy: 'A soliloquy is not a plain statement of what a character really thinks. A speaker may persuade, evade, rehearse or discover a thought while speaking it.' }
     ],
     books: [
       { href: '/books/doctor-faustus/', title: 'Doctor Faustus', author: 'Christopher Marlowe', year: 'c.1592–93', image: '/Doctor%20Faustus%20Cover.png', copy: 'A scholar trades his soul for twenty-four years of service, then discovers how quickly boundless ambition can narrow into delay and fear.' },
@@ -240,10 +240,10 @@ module.exports = [
       ]
     },
     terms: [
-      { term: 'Reversal', copy: 'An action or discovery turns the direction of a life, plot or public position.' },
+      { term: 'Reversal', copy: 'A sudden change of fortune, usually from good to bad, brought about by an action or a discovery.' },
       { term: 'Recognition', copy: 'A character comes to understand an identity, relationship or truth that changes the action.' },
-      { term: 'Dramatic irony', copy: 'The audience understands more than one or more characters inside the scene.' },
-      { term: 'Catastrophe', copy: 'The final movement in which accumulated choices and conflicts become irreversible.' }
+      { term: 'Dramatic irony', copy: 'The audience knows something a character on stage does not.' },
+      { term: 'Catastrophe', copy: 'The last part of a tragedy, in which the deaths or the ruin the play has been heading towards take place.' }
     ],
     resources: [
       { href: '/resources/shakespeare/tragedies-overview/', label: 'Shakespeare’s tragedies overview', copy: 'A free guide to the genre across several plays.' },
@@ -282,9 +282,9 @@ module.exports = [
       ]
     },
     methods: [
-      { label: 'The clue', title: 'Visible does not mean understood', copy: 'A good clue usually appears before it is explained. The reader sees an object or hears a statement but assigns it the wrong weight. Detection depends on arrangement: which detail is ordinary, which is planted and which has been dismissed too quickly.' },
+      { label: 'The clue', title: 'A clue can be seen without being understood', copy: 'A good clue usually appears before it is explained. The reader sees an object or hears a statement but assigns it the wrong weight. Detection depends on arrangement: which detail is ordinary, which is planted and which has been dismissed too quickly.' },
       { label: 'The record', title: 'Narration is part of the evidence', copy: 'Watson writes after the case, chooses what to withhold and converts reasoning into drama. His honesty does not make the record neutral. Detective fiction wants us to trust an account while we watch how that trust is earned.' },
-      { label: 'The verdict', title: 'Explanation is a form of power', copy: 'To solve a case is to decide which story becomes public. Holmes sometimes protects a client, lets an offender leave or withholds a name. The stories test Holmes’s judgement as well as his deductions.' }
+      { label: 'The verdict', title: 'The detective decides what is made public', copy: 'Holmes sometimes protects a client, lets an offender leave or withholds a name. The stories test his judgement as well as his deductions.' }
     ],
     books: [
       { href: '/books/the-moonstone/', title: 'The Moonstone', author: 'Wilkie Collins', year: '1868', image: '/The%20Moonstone%20Main%20Cover.png', copy: 'A diamond looted in India vanishes from a Yorkshire country house, and the case is told by a series of witnesses.' },
@@ -301,10 +301,10 @@ module.exports = [
       ]
     },
     terms: [
-      { term: 'Clue', copy: 'A material or verbal detail whose significance exceeds its first appearance.' },
-      { term: 'Red herring', copy: 'A detail or line of suspicion that directs attention away from the eventual explanation.' },
+      { term: 'Clue', copy: 'An object or a remark that turns out to matter more than it first seemed to.' },
+      { term: 'Red herring', copy: 'A detail or a suspect that draws attention away from the real explanation.' },
       { term: 'Fair play', copy: 'The principle that a reader should receive the evidence needed to understand the solution.' },
-      { term: 'Case narrative', copy: 'The shaped account through which an investigation is preserved and presented.' }
+      { term: 'Case narrative', copy: 'The written account of an investigation, as Watson’s are of Holmes’s cases.' }
     ],
     resources: [
       { href: '/resources/dracula/complete-overview/', label: 'Dracula: complete overview', copy: 'See how the novel builds a case from separate documents.' },
@@ -325,7 +325,7 @@ module.exports = [
     facts: [
       { value: '24 books', label: 'The Odyssey is conventionally divided into twenty-four books' },
       { value: '12 books', label: 'The Aeneid reshapes Homeric journeys and war across twelve books' },
-      { value: 'Oral form', label: 'Repeated phrases and scenes carry the memory of performance traditions' },
+      { value: 'Oral form', label: 'Repeated phrases and scenes survive from poems made to be performed aloud' },
       { value: '1667 / 1674', label: 'Paradise Lost moves from ten books in its first edition to twelve in its revised form' }
     ],
     introduction: {
@@ -336,9 +336,9 @@ module.exports = [
       ]
     },
     methods: [
-      { label: 'Beginning', title: 'The story opens in the middle', copy: 'Epic often begins after decisive events have already occurred. The missing past returns through song, memory and report. This makes storytelling part of survival: a hero must understand and narrate what has happened in order to move forward.' },
-      { label: 'Repetition', title: 'A repeated scene always changes something', copy: 'Feasts, arrivals, councils, recognitions and acts of hospitality recur with variations. The pattern teaches a reader what to expect; the difference reveals whether a household or ruler honours the obligations of the world.' },
-      { label: 'Scale', title: 'The ordinary and cosmic share a line', copy: 'A meal, a wound, a garment or a door gets the same attention as the gods and the history of a nation. Epic keeps hold of such details and raises their stakes, until an object can carry memory across generations.' }
+      { label: 'Beginning', title: 'The story opens in the middle', copy: 'Epic often begins after decisive events have already occurred. The missing past returns through song, memory and report, and often the hero has to tell it himself, as Odysseus does to the Phaeacians and Aeneas to Dido.' },
+      { label: 'Repetition', title: 'A repeated scene always changes something', copy: 'Feasts, arrivals, councils, recognitions and acts of hospitality recur with variations. The pattern teaches a reader what to expect, and the difference shows whether this household or this ruler treats a guest as custom requires.' },
+      { label: 'Scale', title: 'Small things are described as carefully as gods', copy: 'A meal, a wound, a garment or a door gets the same attention as the gods and the history of a nation. Epic holds on to such details, and an object handed down can carry a family’s memory with it.' }
     ],
     books: [
       { href: '/books/the-iliad/', title: 'The Iliad', author: 'Homer, translated by Samuel Butler', year: 'Ancient Greek epic', image: '/The%20Iliad.png', copy: 'In a few weeks of the Trojan War, Achilles quarrels with Agamemnon, loses Patroclus and kills Hector.' },
@@ -348,17 +348,17 @@ module.exports = [
       { href: '/books/moby-dick/', title: 'Moby-Dick', author: 'Herman Melville', year: '1851 · epic inheritance', image: '/Moby%20Dick.png', copy: 'Ishmael sails on the Pequod, whose captain is hunting the white whale that took his leg, in a novel built on the scale of an epic.' }
     ],
     reading: {
-      heading: 'Read repetitions as a system of comparison.',
+      heading: 'Compare each repeated scene with the one before.',
       paragraphs: [
-        'When a feast, arrival or act of storytelling recurs, place it beside the earlier version. Who welcomes the stranger? Who asks for a name too soon? What is offered, withheld or violated? Epic builds moral and political distinctions through scenes that appear structurally familiar.',
-        'In translation, listen for register as well as plot. No English version of Homer or Virgil is neutral: each makes choices about pace, dignity and names. With Milton, listen instead for the long pressure of unrhymed sentences across line endings. In every case, epic scale is made in syntax and sound as well as story.'
+        'When a feast, arrival or act of storytelling recurs, place it beside the earlier version. Who welcomes the stranger? Who asks for a name too soon? What is offered, withheld or violated? Epic uses such familiar scenes to tell a good host from a bad one and a just ruler from an unjust one.',
+        'In translation, listen for register as well as plot. No English version of Homer or Virgil is neutral: each makes choices about pace, dignity and names. With Milton, listen for the long unrhymed sentences that run on across the line endings.'
       ]
     },
     terms: [
-      { term: 'Invocation', copy: 'An opening appeal to the Muse that presents the poem as inspired song and asks for its subject.' },
+      { term: 'Invocation', copy: 'An opening address to a muse or god, asking for the song and announcing its subject.' },
       { term: 'In medias res', copy: 'Beginning in the middle of the action, with earlier events supplied later.' },
-      { term: 'Epic simile', copy: 'An extended comparison that pauses action and opens another field of life or experience.' },
-      { term: 'Nostos', copy: 'Homecoming: both a journey and the recovery of place, identity and relationship.' }
+      { term: 'Epic simile', copy: 'A long comparison that leaves the story for several lines, often to describe a scene from ordinary life.' },
+      { term: 'Nostos', copy: 'The Greek word for homecoming: the journey home, and the recovery of one’s household and place there.' }
     ],
     resources: [
       { href: '/reading-routes/#home', label: 'Reading route: what makes a home?', copy: 'Place Homer and Virgil beside Shakespearean exile and return.' },
@@ -381,9 +381,9 @@ module.exports = [
     search: 'satire political writing allegory fable utopia dystopia irony parody Swift Orwell More Machiavelli Chesterton revolution power language propaganda',
     facts: [
       { value: '1513', label: 'Machiavelli drafts The Prince after the collapse of the Florentine republic' },
-      { value: '1516', label: 'Utopia gives an imagined island a name that still shapes political argument' },
+      { value: '1516', label: 'Utopia gives an imagined island a name that is still used in political argument' },
       { value: '1726', label: 'Gulliver’s Travels uses the voyage narrative for satire from beginning to end' },
-      { value: '1945', label: 'Animal Farm publishes political history as a compressed animal fable' }
+      { value: '1945', label: 'Animal Farm retells recent political history as an animal fable' }
     ],
     introduction: {
       heading: 'A made-up world can make ordinary language look newly strange.',
@@ -393,9 +393,9 @@ module.exports = [
       ]
     },
     methods: [
-      { label: 'Voice', title: 'The speaker may be part of the joke', copy: 'A satirical narrator can be confident, precise and badly wrong. Literal reading is not enough. Notice what the speaker treats as normal, which human suffering drops out of the vocabulary, and where the text sounds fluent and judges badly.' },
-      { label: 'Scale', title: 'A distorted world clarifies a real one', copy: 'Giants, tiny rulers, talking horses and farm animals alter proportion. The distance lets institutions and habits be seen as made by people, and keeps the reader from settling on any one easy comparison.' },
-      { label: 'Language', title: 'Power revises the dictionary', copy: 'Political writing pays close attention to names, maxims, laws and slogans. A phrase can compress thought until repetition replaces argument. The struggle over power is also a struggle over which words remain available.' }
+      { label: 'Voice', title: 'The speaker may be part of the joke', copy: 'A satirical narrator can be confident, precise and badly wrong. Literal reading is not enough. Notice what the speaker treats as normal, whose suffering goes unmentioned, and where the text sounds fluent and judges badly.' },
+      { label: 'Scale', title: 'A change of scale shows the real world more clearly', copy: 'Giants, tiny rulers, talking horses and farm animals put familiar things at a distance. Seen from there, institutions and habits look like things people made, not facts of nature.' },
+      { label: 'Language', title: 'Those in power change what words mean', copy: 'Political writing pays close attention to names, maxims, laws and slogans. A slogan repeated often enough takes the place of an argument, as ‘Four legs good, two legs bad’ does in Animal Farm.' }
     ],
     books: [
       { href: '/books/the-prince/', title: 'The Prince', author: 'Niccolò Machiavelli', year: 'written 1513', image: '/The%20Prince.png', copy: 'Machiavelli’s advice to a new ruler on how to take a state and keep it, including when to be cruel.' },
@@ -407,15 +407,15 @@ module.exports = [
     reading: {
       heading: 'Ask who is allowed to sound reasonable.',
       paragraphs: [
-        'Begin with the form the passage imitates: law, travel account, political advice, scientific argument, commandment or song. What authority normally belongs to that form? Then identify the detail that puts pressure on it: a disproportion, contradiction, bodily fact or excluded person the formal language cannot comfortably contain.',
+        'Begin with the form the passage imitates: law, travel account, political advice, scientific argument, commandment or song. What authority normally belongs to that form? Then find the detail that does not fit: something out of proportion, a contradiction, a bodily fact or a person the formal language leaves out.',
         'Allegory is not a one-for-one code. Animal Farm follows Soviet history closely, and Napoleon is plainly Stalin, but the fable also works for a reader who knows none of that, because appetite, fear, labour, schooling and memory work on the animals as they would on anyone. A good essay uses both: the history behind the story and the mechanism it shows.'
       ]
     },
     terms: [
       { term: 'Satire', copy: 'Writing that exposes vice, folly or abuse through irony, ridicule, distortion or imitation.' },
-      { term: 'Allegory', copy: 'A narrative whose figures and actions sustain a further field of political, moral or historical meaning.' },
+      { term: 'Allegory', copy: 'A story in which the characters and events also stand for real people, events or ideas.' },
       { term: 'Utopia', copy: 'An imagined society used to examine how real societies organise property, work, law and belief.' },
-      { term: 'Fable', copy: 'A compressed tale, often using animals, that makes conduct and power visible through a simplified world.' }
+      { term: 'Fable', copy: 'A short tale, often about animals, that shows how people behave.' }
     ],
     resources: [
       { href: '/reading-routes/#power', label: 'Reading route: why must power be performed?', copy: 'Move from political prose into Shakespeare’s public stages.' },
@@ -464,15 +464,15 @@ module.exports = [
     reading: {
       heading: 'Read the joins as closely as the voice.',
       paragraphs: [
-        'Mark every change of speaker, medium or time. Who introduces the next account? Has a letter been copied, a conversation remembered or a document translated? Those joins show how authority moves. They can also reveal what no single voice can supply without another person’s testimony.',
+        'Mark every change of speaker, medium or time. Who introduces the next account? Has a letter been copied, a conversation remembered or a document translated? Those joins show who is vouching for whom, and what one voice cannot tell you without another.',
         'Then compare statement with scene. A narrator may call an action generous, shameful, ordinary or inevitable while the details produce a more difficult judgement. Catching a speaker out is the least of it: watch how vocabulary, position and later knowledge shape what you are being asked to believe.'
       ]
     },
     terms: [
       { term: 'First-person narration', copy: 'A speaker tells the account as “I”, limiting knowledge to what that voice experiences, remembers, learns or chooses to report.' },
-      { term: 'Frame narrative', copy: 'One act of telling encloses another, so the route by which an account reaches the reader becomes part of the work.' },
+      { term: 'Frame narrative', copy: 'A story told inside another story, so that it reaches the reader through somebody else’s account.' },
       { term: 'Epistolary form', copy: 'A narrative made wholly or partly from letters and other documents written by its characters.' },
-      { term: 'Retrospective narration', copy: 'A later self recounts earlier experience with knowledge, language and judgement unavailable at the time.' }
+      { term: 'Retrospective narration', copy: 'A narrator tells of events that are already over, knowing things he or she did not know at the time.' }
     ],
     resources: [
       { href: '/reading-routes/#story', label: 'Reading route: who gets to tell the story?', copy: 'Compare four narrators whose right to speak is also part of the action.' },
@@ -511,8 +511,8 @@ module.exports = [
     },
     methods: [
       { label: 'Voice', title: 'Ask who can make a public record', copy: 'Douglass’s authorship is itself part of his argument. Stowe creates and directs several fictional voices. Twain gives Huck a limited first-person account whose ordinary words expose what his society has taught him. The form changes whose knowledge the reader receives and how it must be judged.' },
-      { label: 'Law', title: 'Follow what the law calls property', copy: 'Bills of sale, inheritance, pursuit and the Fugitive Slave Law make human relationships into claims a court can enforce. Keep legal language beside the bodily and domestic consequences it produces. The gap between lawful conduct and justice is one of the shelf’s central pressures.' },
-      { label: 'Freedom', title: 'Movement is only the beginning', copy: 'Crossing a river or reaching a free state may change immediate danger without repairing every loss. Literacy, chosen names, reunited families, paid work and control over one’s story give freedom social and intellectual dimensions as well as geographical ones.' }
+      { label: 'Law', title: 'Follow what the law calls property', copy: 'Bills of sale, inheritance, pursuit and the Fugitive Slave Law turn people into claims a court can enforce. Set the legal language beside what it does to bodies and families. In these books an act can be perfectly lawful and plainly unjust.' },
+      { label: 'Freedom', title: 'Escape is only the beginning', copy: 'Crossing a river or reaching a free state removes the immediate danger without repairing every loss. Freedom in these books also means reading, a chosen name, a reunited family, paid work and the right to tell one’s own story.' }
     ],
     books: [
       { href: '/books/oroonoko/', title: 'Oroonoko', author: 'Aphra Behn', year: '1688 · Restoration narrative', image: '/Oroonoko%20Main%20Cover.png', copy: 'An African prince is betrayed into slavery in Surinam, where broken promises of freedom lead to revolt and catastrophic colonial violence.' },
@@ -524,7 +524,7 @@ module.exports = [
       heading: 'Keep publication date, setting and form on separate lines.',
       paragraphs: [
         'Begin each book by writing down who speaks, when the book was published and when its action occurs. Douglass records an enslaved childhood from the position of a fugitive abolitionist in 1845. Stowe publishes during the immediate argument over the 1850 Fugitive Slave Act. Twain publishes two decades after the Thirteenth Amendment while setting the novel before the Civil War. Historical distance changes what each book can know and what its first readers were being asked to confront.',
-        'Then mark every change in the language of ownership. A person may be described as debt, inheritance, labour, evidence, family or fellow human being. The most revealing passages often make two vocabularies collide. Ask who benefits from the official term, whose experience it excludes and whether the narrative provides another name for the relationship.'
+        'Then mark every change in the language of ownership. A person may be described as debt, inheritance, labour, evidence, family or fellow human being. The most revealing passages often use two of these words for the same person. Ask who benefits from the official term, whose experience it excludes and whether the narrative provides another name for the relationship.'
       ]
     },
     terms: [
