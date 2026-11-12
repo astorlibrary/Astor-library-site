@@ -11,7 +11,9 @@ test('catalogue excerpts preserve initials, titles and the complete first senten
     ['A Visit from St. Nicholas opens the collection. Other stories follow.', 'A Visit from St. Nicholas opens the collection.'],
     ['Includes the original A. Frederics illustrations. Further context follows.', 'Includes the original A. Frederics illustrations.'],
     ['A sentence without final punctuation', 'A sentence without final punctuation'],
-    ['What happened? Read the account.', 'What happened?']
+    ['What happened? Read the account.', 'What happened?'],
+    ['“I am a sick man.... I am a spiteful man.” A retired official writes.', '“I am a sick man.... I am a spiteful man.”'],
+    ['He said “Stop.” Then he left.', 'He said “Stop.”']
   ]) assert.equal(excerpts.firstSentence(input), expected);
 });
 

@@ -9,7 +9,7 @@ module.exports = [
     title: 'Antony and Cleopatra',
     image: 'Antony and Cleopatra Study.png',
     url: 'https://astorlibrary.com/go/antony-and-cleopatra-study',
-    description: 'Rome against Egypt, a battle Antony loses twice, Cleopatra staging her own death, and Plutarch underneath it all.'
+    description: 'Rome against Egypt, the two sea battles Antony loses, Cleopatra staging her own death, and Plutarch underneath it all.'
   },
   {
     title: 'As You Like It',
@@ -90,7 +90,7 @@ module.exports = [
     image: 'The Taming of the Shrew Study Cover.png',
     url: 'https://astorlibrary.com/go/the-taming-of-the-shrew-study',
     pageHref: '/study/the-taming-of-the-shrew/',
-    description: 'The induction most productions cut, Petruchio’s method, Katherina’s last speech, and the argument that will not settle.'
+    description: 'Christopher Sly’s induction, Petruchio’s method, Katherina’s last speech, and the argument that will not settle.'
   },
   {
     title: 'Titus Andronicus',
