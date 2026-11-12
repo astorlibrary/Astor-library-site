@@ -4,10 +4,19 @@ function isAbbreviation(prefix) {
   return /^[A-Z]$/.test(token) || /^(?:Mr|Mrs|Ms|Dr|Prof|Rev|St|Jr|Sr|c|e|g|i)$/i.test(token);
 }
 
+// A sentence may end with a closing quotation mark, but not while a quotation
+// is still open: “I am a sick man.... I am a spiteful man.” is one sentence.
+const sentenceEnd = /[.!?]”?(?=\s|$)/g;
+function insideQuotation(text) {
+  return (text.match(/“/g) || []).length > (text.match(/”/g) || []).length;
+}
+
 function firstSentence(value) {
-  for (const match of value.matchAll(/[.!?](?=\s|$)/g)) {
+  for (const match of value.matchAll(sentenceEnd)) {
+    const end = match.index + match[0].length;
     if (match[0] === '.' && isAbbreviation(value.slice(0, match.index))) continue;
-    return value.slice(0, match.index + 1);
+    if (insideQuotation(value.slice(0, end))) continue;
+    return value.slice(0, end);
   }
   return value;
 }
@@ -15,10 +24,12 @@ function firstSentence(value) {
 function sentences(value) {
   const found = [];
   let start = 0;
-  for (const match of value.matchAll(/[.!?](?=\s|$)/g)) {
+  for (const match of value.matchAll(sentenceEnd)) {
+    const end = match.index + match[0].length;
     if (match[0] === '.' && isAbbreviation(value.slice(start, match.index))) continue;
-    found.push(value.slice(start, match.index + 1).trim());
-    start = match.index + 1;
+    if (insideQuotation(value.slice(start, end))) continue;
+    found.push(value.slice(start, end).trim());
+    start = end;
   }
   const rest = value.slice(start).trim();
   if (rest) found.push(rest);

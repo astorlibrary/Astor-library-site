@@ -264,7 +264,7 @@ const books = [
     image: 'Dickens at Christmas Main Cover.png',
     purchaseUrl: 'https://astorlibrary.com/go/dickens-at-christmas',
     label: 'Four Christmas books · 1843–48',
-    deck: 'Dickens wrote five Christmas books between 1843 and 1848. Four are here: A Christmas Carol, The Chimes, The Cricket on the Hearth and The Haunted Man. The fifth, The Battle of Life (1846), is the only one without a supernatural visitor, and it is not included.',
+    deck: 'Dickens wrote five Christmas books between 1843 and 1848, and four of them are here: A Christmas Carol, The Chimes, The Cricket on the Hearth and The Haunted Man. The fifth, The Battle of Life (1846), is the only one without a supernatural visitor, and it is not included.',
     editionIncludes: [
       'Four complete and unabridged Dickens Christmas books',
       'An original introduction and individual book headnotes',
