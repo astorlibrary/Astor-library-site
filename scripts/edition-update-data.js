@@ -396,7 +396,7 @@ const editionUpdateBooks = [
     ],
     editorial: [
       'The introduction covers Shakespeare’s life, the 1609 quarto, Thomas Thorpe’s dedication to Mr W. H., the probable dating of the poems, the development of the English sonnet and Shakespeare’s formal choices.',
-      'Each sonnet is printed whole on the page, with line numbers and a note beside it, and there is an index of first lines.'
+      'Each sonnet is printed whole on the page, with line numbers and its notes, and there is an index of first lines.'
     ],
     topics: [
       { title: 'Sequence and change', body: 'The meaning of a single sonnet shifts when it is read beside the arguments, absences and betrayals surrounding it.' },

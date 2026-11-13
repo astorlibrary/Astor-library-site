@@ -19,7 +19,7 @@ const collectionOrder = [
 const collectionIntroductions = {
   'Ancient & Epic': 'Homer&rsquo;s <em>Iliad</em> and <em>Odyssey</em> in Samuel Butler&rsquo;s prose, and Virgil&rsquo;s <em>Aeneid</em> in John Dryden&rsquo;s verse.',
   'Renaissance & Early Modern': 'Milton&rsquo;s <em>Paradise Lost</em>, in the twelve books of 1674.',
-  Shakespeare: 'All 154 sonnets in the 1609 order, with a note beside every poem.',
+  Shakespeare: 'All 154 sonnets in the 1609 order, each with its own notes.',
   'Romantic & Regency': 'Mary Shelley&rsquo;s <em>Frankenstein</em> and Coleridge&rsquo;s <em>Rime of the Ancient Mariner</em>.',
   Victorian: '<em>Dracula</em>, <em>The Moonstone</em> and <em>Dorian Gray</em>; <em>Dickens at Christmas</em> and three seasonal anthologies.',
   'American Classics': '<em>Moby-Dick</em>, <em>The Great Gatsby</em>, <em>The Red Badge of Courage</em>, selected tales by Edgar Allan Poe and collections of American Christmas, ghost and Halloween stories.'
