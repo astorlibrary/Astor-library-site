@@ -701,7 +701,7 @@ const passages = [
     relatedBooks: ['/books/red-badge-of-courage/'], search: 'Red Badge of Courage Stephen Crane red sun wafer Jim Conklin death naturalism indifferent universe close reading'
   },
   {
-    type: 'passage', typeLabel: 'Close reading', title: '“the ecstasy that marks the summit of life”',
+    type: 'passage', typeLabel: 'Close reading', title: '“There is an ecstasy that marks the summit of life”',
     description: 'Buck running down the rabbit: London stops the chase to describe the ecstasy of being fully alive.',
     href: '/passage-room/call-of-the-wild-ecstasy/', image: '/Call%20of%20the%20Wild.png', imageAlt: 'Astor Library The Call of the Wild cover',
     relatedBooks: ['/books/call-of-the-wild/'], search: 'Call of the Wild Jack London Buck ecstasy summit of life hunt atavism womb of Time naturalism close reading'
@@ -851,7 +851,7 @@ const passages = [
     relatedBooks: ['/books/king-john/'], search: 'King John Shakespeare Constance grief fills the room up absent child Arthur Act 3 Scene 4 mourning close reading'
   },
   {
-    type: 'passage', typeLabel: 'Close reading', title: '“Which is it to-day, morphine or cocaine?”',
+    type: 'passage', typeLabel: 'Close reading', title: '“Morphine or cocaine?”',
     description: 'The opening of The Sign of Four: Holmes’s cocaine, Watson’s medical protest and a detective who takes drugs against the dull routine of existence.',
     href: '/passage-room/sign-of-four-seven-per-cent/', image: '/The%20SIgn%20Of%20Four.png', imageAlt: 'Astor Library The Sign of Four cover',
     relatedBooks: ['/books/sign-of-four/'], search: 'Sign of Four Sign of the Four Conan Doyle Holmes cocaine seven per cent solution Watson opening Chapter 1 detective close reading'
