@@ -1038,6 +1038,16 @@ main.book-page .book-format-note {
   font: 400 15px/1.5 var(--serif);
 }
 
+main.book-page .book-format-details {
+  margin-top: 3px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 13px/1.5 var(--sans);
+}
+
+main.book-page .book-format-details span {
+  white-space: nowrap;
+}
+
 main.book-page .book-format-more {
   display: inline-block;
   margin-top: 4px;

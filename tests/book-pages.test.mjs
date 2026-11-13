@@ -27,6 +27,36 @@ test('every format on a book page has its own buy link', { skip: !haveDist && 'r
   }
 });
 
+test('recorded edition details are well formed', () => {
+  const formats = JSON.parse(fs.readFileSync('scripts/book-formats.json', 'utf8'));
+  const checkDigit = isbn => (10 - [...isbn.slice(0, 12)].reduce((sum, digit, i) => sum + Number(digit) * (i % 2 ? 3 : 1), 0) % 10) % 10;
+  for (const [slug, list] of Object.entries(formats)) {
+    for (const format of list) {
+      if (!('pages' in format || 'published' in format || 'isbn' in format)) continue;
+      const name = slug + ' ' + format.format;
+      assert.ok(Number.isInteger(format.pages) && format.pages > 0, name + ' pages');
+      assert.match(format.published, /^\d{1,2} (January|February|March|April|May|June|July|August|September|October|November|December) 20\d\d$/, name + ' date');
+      if (/kindle/i.test(format.format)) assert.equal(format.isbn, undefined, name + ' has an ISBN');
+      else {
+        assert.match(format.isbn, /^97[89]\d{10}$/, name + ' ISBN');
+        assert.equal(Number(format.isbn[12]), checkDigit(format.isbn), name + ' ISBN check digit');
+      }
+    }
+  }
+});
+
+test('a printed edition shows its pages, date and ISBN', { skip: !haveDist && 'run npm run build first' }, () => {
+  const formats = JSON.parse(fs.readFileSync('scripts/book-formats.json', 'utf8'));
+  for (const [slug, list] of Object.entries(formats)) {
+    if (!fs.existsSync('dist/books/' + slug + '/index.html')) continue;
+    const page = main(built(slug));
+    for (const format of list.filter(format => format.isbn)) {
+      // Either in the edition's row or in the page's own table of details.
+      assert.ok(page.includes(format.isbn) && page.includes(format.published), slug + ' does not show ' + format.isbn);
+    }
+  }
+});
+
 test('Macbeth links to its study guide, Revise and the Expanded Scholarly Edition', { skip: !haveDist && 'run npm run build first' }, () => {
   const page = main(built('macbeth'));
   assert.ok(page.includes('href="/guides/macbeth/"'));
