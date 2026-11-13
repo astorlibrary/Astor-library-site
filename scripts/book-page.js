@@ -207,8 +207,14 @@ function repeatsList(note, listHtml) {
   return note.split(/\s+·\s+/).every(item => listed.includes(item.trim().toLowerCase()));
 }
 
-// A paperback note such as "174 pages · Published 9 October 2026 · ISBN …"
-// is left out when the page's own table of details already gives those figures.
+// An edition's line of details, "174 pages · Published 9 October 2026 ·
+// ISBN …" (a Kindle edition has no ISBN), is left out when the page's own
+// table of details already gives those figures.
+function formatDetails(format) {
+  if (!format.pages || !format.published) return [];
+  return [format.pages + ' pages', 'Published ' + format.published].concat(format.isbn ? ['ISBN ' + format.isbn] : []);
+}
+
 function repeatsDetails(note, detailsHtml) {
   if (!note || !detailsHtml) return false;
   const numbers = note.match(/\d+/g) || [];
@@ -232,6 +238,11 @@ function formatRows(formats, mainImage, listHtml, bookTitle, detailsHtml) {
     const named = editionName ? ' <span class="book-format-edition">' + escapeHtml(editionName) + '</span>' : '';
     const noteText = (repeatsList(format.note, listHtml) || repeatsDetails(format.note, detailsHtml) ? '' : format.note) || studyNote(edition);
     const note = noteText ? '<p class="book-format-note">' + escapeHtml(noteText) + '</p>' : '';
+    // Each item stays on one line, so a narrow screen breaks between them.
+    const detailItems = formatDetails(format);
+    const details = detailItems.length && !repeatsDetails(detailItems.join(' · '), detailsHtml)
+      ? '<p class="book-format-details">' + detailItems.map(item => '<span>' + escapeHtml(item) + '</span>').join('&nbsp;· ') + '</p>'
+      : '';
     const thumb = format.image && format.image !== mainImage
       ? '<img class="book-format-cover" src="' + escapeHtml(format.image) + '" alt="" width="48" height="72" loading="lazy" decoding="async">'
       : '';
@@ -239,7 +250,7 @@ function formatRows(formats, mainImage, listHtml, bookTitle, detailsHtml) {
     const unavailable = format.unavailableIn ? ' data-unavailable-in="' + escapeHtml(format.unavailableIn.join(' ')) + '"' : '';
     const anchor = format === firstHardback ? ' id="hardback-edition"' : '';
     return '<li class="book-format astor-buy-item' + (thumb ? ' has-cover' : '') + '"' + anchor + unavailable + '>' + thumb +
-      '<div class="book-format-text"><p class="book-format-name">' + escapeHtml(label) + named + '</p>' + note + more + '</div>' +
+      '<div class="book-format-text"><p class="book-format-name">' + escapeHtml(label) + named + '</p>' + note + details + more + '</div>' +
       '<p class="astor-buy-actions"><a class="book-format-buy astor-buy-button" href="' + escapeHtml(format.url) + '" rel="noopener">Buy on Amazon</a></p></li>';
   }).join('');
 }
