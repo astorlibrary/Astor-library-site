@@ -3470,6 +3470,9 @@ html[data-edition] .rx-hub-row:is(:hover, :focus-visible) .rx-hub-name { color: 
    ============================================================================= */
 
 .today-head { max-width: 680px; margin: 8px auto 0; }
+/* The breadcrumb and the closing links line up with the question column. */
+main:has(> .today-head) > .book-breadcrumb,
+main:has(> .today-head) > .book-end-nav { max-width: 680px; margin-left: auto; margin-right: auto; }
 .today-head .today-title { margin: 0; }
 .today-date { margin: 10px 0 0; color: var(--rx-muted); font: italic 400 20px/1.3 var(--serif, Georgia, serif); }
 .today-deck { margin: 10px 0 0; color: var(--rx-soft); font: 400 18px/1.55 var(--serif, Georgia, serif); }
