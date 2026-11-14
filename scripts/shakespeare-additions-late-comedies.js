@@ -120,7 +120,7 @@ module.exports = [
       },
       {
         name: "Theseus",
-        body: "Duke of Athens, conqueror of Thebes and organiser of the tournament. His judgements shift quickly, yet his authority determines which forms of grief, love and violence receive public recognition."
+        body: "Duke of Athens, conqueror of Thebes and organiser of the tournament. His judgements change quickly, yet he decides which griefs, loves and quarrels are publicly honoured."
       },
       {
         name: "Hippolyta",
@@ -416,7 +416,7 @@ module.exports = [
       {
         label: "Performance",
         title: "Gender on the early modern stage",
-        body: "In Shakespeare’s theatre, Viola would have been played by a boy actor who then performed a young woman disguised as a male page. Olivia’s love and Orsino’s intimacy therefore unfolded through visible theatrical layering. Modern productions inherit the same questions even when casting practices differ: identity is made legible through performance, but it is never exhausted by costume alone."
+        body: "In Shakespeare’s theatre, Viola would have been played by a boy actor who then performed a young woman disguised as a male page. So when Olivia fell in love with Cesario and Orsino grew close to him, the audience was watching a boy playing a woman playing a man. Modern productions face the same questions, however they cast the play."
       },
       {
         label: "Record",
