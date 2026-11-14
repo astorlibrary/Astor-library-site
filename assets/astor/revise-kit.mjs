@@ -151,6 +151,14 @@ export function applyEdition(meta) {
   for (const button of document.querySelectorAll('.rx-mode-toggle')) paintModeToggle(button, mode);
 }
 
+// The site's Dark mode switch in the header changes data-theme on <html>.
+// When it does, the book's colours are worked out again, so the page does
+// not stay light under a dark header (a colour chosen for this book still wins).
+if (typeof document !== 'undefined' && typeof MutationObserver !== 'undefined') {
+  new MutationObserver(() => { if (currentMeta?.edition) applyEdition(currentMeta); })
+    .observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+}
+
 // One of the book's own drawings, as a mask the stylesheet tints. `index`
 // wraps round however many the cover gave; with none, it draws nothing.
 export function motif(index = 0, className = '') {
