@@ -75,7 +75,7 @@ module.exports = [
     introduction: {
       heading: 'A comic ending does not make every problem disappear.',
       paragraphs: [
-        'Shakespearean comedy often begins by making ordinary identity unstable. Twins arrive in the wrong city, a woman takes a man’s name, lovers change partners overnight, or a whole household plays a trick on a jealous husband. Confusion is entertaining, but it also exposes how readily rank, gender and reputation depend on performance and recognition.',
+        'Shakespeare’s comedies often begin by making people unsure who is who. Twins arrive in the wrong city, a woman takes a man’s name, lovers change partners overnight, or a whole household plays a trick on a jealous husband. The confusion is funny, but it also shows how much rank, sex and reputation depend on how people behave and whether others recognise them.',
         'The endings usually gather people into marriages, pardons and restored families. Those settlements matter, yet they do not erase everything that came before. Malvolio is not reconciled in Twelfth Night; Jaques leaves the dance in As You Like It; Helena wins Bertram under conditions audiences still argue about. The comedies keep asking what a community can repair, what it chooses to forgive and who is left awkwardly outside the final picture.'
       ]
     },
@@ -143,14 +143,14 @@ module.exports = [
     introduction: {
       heading: 'History reaches the stage after somebody has already shaped the record.',
       paragraphs: [
-        'The ten plays printed as histories in the 1623 First Folio move from King John to Henry VIII, with their greatest concentration on the troubled succession between Richard II and Richard III. They draw upon chronicles, earlier plays, genealogies and public memory, but they are not transcripts of the past. Years contract into a scene, several people may be combined into one dramatic role, and a private encounter can be invented to make political pressure visible. A more useful question than whether Shakespeare is accurate is what a particular change allows an audience to see about authority, inheritance and national story.',
+        'The ten plays printed as histories in the 1623 First Folio move from King John to Henry VIII, with their greatest concentration on the troubled succession between Richard II and Richard III. They draw upon chronicles, earlier plays, genealogies and public memory, but they are not transcripts of the past. Years contract into a scene, several people may be combined into one dramatic role, and a private encounter can be invented to make political pressure visible. A better question than whether Shakespeare is accurate is what each change lets the audience see about power, inheritance and the nation’s story.',
         'Writing order complicates historical order. The early Henry VI plays and Richard III begin after Henry V’s death and follow the realm into the Wars of the Roses; the later Richard II, two Henry IV plays and Henry V go back to the deposition and inheritance that precede that collapse. Read one sequence and victory can look like an ending. Continue into the other and it becomes a fragile legacy. Macbeth and King Lear sit at the edge of this shelf as chronicle tragedies: neither belongs to the Folio’s history section, but each turns an inherited account of British kingship and succession into tragic action.'
       ]
     },
     methods: [
       { label: 'Chronicle', title: 'Using the chronicles', copy: 'Holinshed and other chroniclers had already selected causes, repeated traditions and arranged rulers into meaningful sequences. Shakespeare selects again. Compare what the play keeps, moves or invents, and ask whose claim is strengthened or weakened by each change. Source study should reveal a dramatic argument; catching errors is the least of it.' },
       { label: 'Performance', title: 'A king must be recognised in public', copy: 'A crown does not make people obey. Oaths, processions, titles, costumes and speeches persuade other people to behave as though a claim is settled. Watch who stands near the king, who answers him, and whether he can keep up the public role when he doubts in private.' },
-      { label: 'Sequence', title: 'One reign leaves the next play unfinished business', copy: 'A deposition, pardon, rebellion or conquest returns as another generation’s inheritance. Read endings with the next opening in view. Henry V’s triumph is followed by a child king and lost territory; Richard III’s ascent gathers violence begun long before his first soliloquy. Read in order, the plays show one generation paying for what the last one did.' }
+      { label: 'Sequence', title: 'One reign leaves the next play unfinished business', copy: 'A deposition, a pardon, a rebellion or a conquest is something the next generation inherits. Read endings with the next opening in view. Henry V’s triumph is followed by a child king and lost territory; Richard III’s ascent gathers violence begun long before his first soliloquy. Read in order, the plays show one generation paying for what the last one did.' }
     ],
     books: [
       { href: '/books/king-john/', title: 'King John', author: 'William Shakespeare', year: 'c.1594–96', image: '/King%20John%20Main%20Cover.jpg', copy: 'A disputed succession pulls inheritance, papal authority, France and the fate of Arthur into a war whose claimants all speak law.' },
@@ -277,7 +277,7 @@ module.exports = [
     introduction: {
       heading: 'A case is solved twice: by the detective and by the storyteller.',
       paragraphs: [
-        'A detective story is told twice. Someone inside the story gathers traces and constructs an explanation; the narrative decides when the reader may see those traces and what they appear to mean. A solution can be logically sound and still owe its force to delay, selection and performance.',
+        'A detective story is told twice. Someone inside the story gathers traces and constructs an explanation; the narrative decides when the reader may see those traces and what they appear to mean. A solution can be logically sound and still depend for its effect on what the detective holds back, what he chooses to mention and how he reveals it.',
         'The Moonstone distributes its evidence among witnesses whose voices reveal character as well as fact. Conan Doyle’s most important formal decision is Watson. Holmes notices a cuff, a footprint or a timetable, but it is Watson who writes the case up, with weather, rooms, clients, doubt and a final account. Both forms make the record of an investigation part of the mystery.'
       ]
     },
@@ -351,7 +351,7 @@ module.exports = [
       heading: 'Compare each repeated scene with the one before.',
       paragraphs: [
         'When a feast, arrival or act of storytelling recurs, place it beside the earlier version. Who welcomes the stranger? Who asks for a name too soon? What is offered, withheld or violated? Epic uses such familiar scenes to tell a good host from a bad one and a just ruler from an unjust one.',
-        'In translation, listen for register as well as plot. No English version of Homer or Virgil is neutral: each makes choices about pace, dignity and names. With Milton, listen for the long unrhymed sentences that run on across the line endings.'
+        'In a translation, listen to how the language sounds, not only to what happens. No English version of Homer or Virgil is neutral: each makes choices about pace, dignity and names. With Milton, listen for the long unrhymed sentences that run on across the line endings.'
       ]
     },
     terms: [
@@ -444,7 +444,7 @@ module.exports = [
       heading: 'A narrator is not a clear window between the reader and the world.',
       paragraphs: [
         'Every account begins from a position. A speaker knows some events directly, learns others by report and understands the past through present needs. Asking whether a narrator is reliable gets you less far than asking what this person can know, what they cannot see and what telling the story now allows them to do.',
-        'The difference is especially important when testimony carries real historical risk. Pamela writes while resisting an employer who can intercept her words, and Douglass writes to expose slavery while details may identify people and places. Hawthorne’s Custom-House narrator claims to edit a recovered manuscript before The Scarlet Letter moves into romance. Pip, Nelly, Lockwood, Huck and Dracula’s document-makers each produce a different relation between experience, evidence and judgement.'
+        'The difference is especially important when testimony carries real historical risk. Pamela writes while resisting an employer who can intercept her words, and Douglass writes to expose slavery while details may identify people and places. Hawthorne’s Custom-House narrator claims to edit a recovered manuscript before The Scarlet Letter moves into romance. Pip, Nelly, Lockwood, Huck and the writers of Dracula’s journals and letters each stand at a different distance from what happened, and each judges it differently.'
       ]
     },
     methods: [
@@ -505,7 +505,7 @@ module.exports = [
     introduction: {
       heading: 'The books share a history. They do not speak from the same position.',
       paragraphs: [
-        'Aphra Behn’s Oroonoko represents an enslaved African prince and a colonial revolt through an English narrator; it is neither testimony by an enslaved writer nor a straightforward abolitionist tract. Frederick Douglass writes as a man who survived enslavement and claimed public authority over the account of his own life. Harriet Beecher Stowe writes an abolitionist novel for a mass reading public, using invented families, Christian argument and domestic feeling. Mark Twain looks back after the Civil War through the voice of a white boy whose moral vocabulary has been formed by a slaveholding society. Those differences of genre, date and authority must remain visible.',
+        'Aphra Behn’s Oroonoko represents an enslaved African prince and a colonial revolt through an English narrator; it is neither testimony by an enslaved writer nor a straightforward abolitionist tract. Frederick Douglass writes as a man who survived slavery and insisted on telling his own story in public. Harriet Beecher Stowe writes an abolitionist novel for a mass reading public, using invented families, Christian argument and domestic feeling. Mark Twain looks back after the Civil War through the voice of a white boy whose moral vocabulary has been formed by a slaveholding society. Keep in mind which book is testimony and which is fiction, and when each was written.',
         'These books show slavery working as a system. Atlantic trade and colonial plantation rule organise Behn’s Surinam; sale breaks families; law follows people across state lines; literacy is controlled; churches provide both resistance and excuse; apparently kind households retain the power to own and sell. Escape is where freedom starts in these books. The rest is the recovery of name, family, legal standing, speech and the power to tell one’s own history.'
       ]
     },
