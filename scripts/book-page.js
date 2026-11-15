@@ -208,11 +208,15 @@ function repeatsList(note, listHtml) {
 }
 
 // An edition's line of details, "174 pages · Published 9 October 2026 ·
-// ISBN …" (a Kindle edition has no ISBN), is left out when the page's own
-// table of details already gives those figures.
+// ISBN …", shows whichever of the three are recorded (a Kindle edition has
+// no ISBN). It is left out when the page's own table of details already
+// gives those figures.
 function formatDetails(format) {
-  if (!format.pages || !format.published) return [];
-  return [format.pages + ' pages', 'Published ' + format.published].concat(format.isbn ? ['ISBN ' + format.isbn] : []);
+  return [
+    format.pages ? format.pages + ' pages' : '',
+    format.published ? 'Published ' + format.published : '',
+    format.isbn ? 'ISBN ' + format.isbn : ''
+  ].filter(Boolean);
 }
 
 function repeatsDetails(note, detailsHtml) {
