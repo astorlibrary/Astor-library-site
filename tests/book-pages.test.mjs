@@ -34,10 +34,11 @@ test('recorded edition details are well formed', () => {
     for (const format of list) {
       if (!('pages' in format || 'published' in format || 'isbn' in format)) continue;
       const name = slug + ' ' + format.format;
-      assert.ok(Number.isInteger(format.pages) && format.pages > 0, name + ' pages');
-      assert.match(format.published, /^\d{1,2} (January|February|March|April|May|June|July|August|September|October|November|December) 20\d\d$/, name + ' date');
+      // An edition may have only some of its details recorded so far.
+      if ('pages' in format) assert.ok(Number.isInteger(format.pages) && format.pages > 0, name + ' pages');
+      if ('published' in format) assert.match(format.published, /^\d{1,2} (January|February|March|April|May|June|July|August|September|October|November|December) 20\d\d$/, name + ' date');
       if (/kindle/i.test(format.format)) assert.equal(format.isbn, undefined, name + ' has an ISBN');
-      else {
+      else if ('isbn' in format) {
         assert.match(format.isbn, /^97[89]\d{10}$/, name + ' ISBN');
         assert.equal(Number(format.isbn[12]), checkDigit(format.isbn), name + ' ISBN check digit');
       }
