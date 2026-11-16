@@ -1,11 +1,10 @@
 // The Revise page, served at /play/.
 //
-// It opens on what a reader came for: which book, how to change it, and one
-// button that starts ten questions. The cover sits beside the title, and the
-// book's colour and drawings run behind as a narrow band, so the page still
-// belongs to the book without the book filling the screen. Below that are the
-// other activities in a quieter list, with the reader's best score beside
-// each, today's five questions, and the quizzes that range across the library.
+// It opens on one book, dressed in that book's cover: its colour, its
+// drawings and its title. Below that is one way to start (ten mixed
+// questions), the activities in three short groups with the reader's best
+// score beside each, one line on how many of the book's key lines are known,
+// and the quizzes that range across the whole library.
 
 import { el, clear } from './util.mjs';
 import { snapshot, today, recentlyViewed, dailyResult, isRemembering } from './store.mjs';
@@ -72,36 +71,34 @@ async function show(meta) {
 function drawHero(meta, book) {
   if (!titleMount) return;
   clear(titleMount);
-  titleMount.className = 'rv-start';
+  titleMount.className = 'rx-hero rx-hub-hero';
   titleMount.classList.toggle('is-cover', Boolean(meta.edition?.motifs));
-  const cover = el('a', { class: 'rv-start-cover', href: book.href, 'aria-label': 'The Astor edition of ' + book.title }, [
-    coverImage(meta, { width: 120, eager: true })
+  const cover = el('a', { class: 'rx-hero-cover', href: book.href, 'aria-label': 'The Astor edition of ' + book.title }, [
+    coverImage(meta, { width: 160, eager: true })
   ]);
-  const words = el('div', { class: 'rv-start-words' }, [
-    el('p', { class: 'rv-start-kicker', text: 'Revise' }),
-    el('h1', { class: 'rv-start-title', text: shortTitle(book) }),
-    el('p', { class: 'rv-start-author', text: book.author })
-  ]);
-  const tools = el('p', { class: 'rv-start-tools' }, [
-    changeBookButton({ books: shelf.books, current: meta, onChoose: choice => show(choice), className: 'rv-start-change' }),
-    modeToggle('rv-start-mode rx-mode-toggle')
-  ]);
-  const go = el('div', { class: 'rv-start-go' }, [
-    el('a', { class: 'rv-start-button', href: activityHref('mixed-round', book.slug) }, [
-      el('span', { text: 'Start ten questions' }),
-      el('span', { class: 'rv-start-arrow', 'aria-hidden': 'true', text: '→' })
+  const words = el('div', { class: 'rx-hero-words' }, [
+    el('p', { class: 'rx-hero-kicker', text: 'Revise' }),
+    el('h1', { class: 'rx-hero-title', text: shortTitle(book) }),
+    el('p', { class: 'rx-hero-author', text: book.author }),
+    el('a', { class: 'rx-hero-start', href: activityHref('mixed-round', book.slug) }, [
+      el('b', { text: 'Ten questions' }),
+      el('span', { text: 'A mix of every kind, starting with the lines you need most.' })
     ]),
-    el('p', { class: 'rv-start-note', text: 'A mix of every kind, starting with the lines you need most.' })
+    el('p', { class: 'rx-hero-links' }, [
+      changeBookButton({ books: shelf.books, current: meta, onChoose: choice => show(choice), className: 'rx-hero-link is-button' }),
+      modeToggle('rx-hero-link is-icon rx-mode-toggle')
+    ])
   ]);
-  titleMount.append(
-    el('span', { class: 'rv-start-art', 'aria-hidden': 'true' }),
-    el('div', { class: 'rv-start-inner' }, [cover, words, tools, go])
-  );
+  titleMount.append(el('span', { class: 'rx-hero-art', 'aria-hidden': 'true' }), el('div', { class: 'rx-hero-inner' }, [cover, words]));
 }
 
 // --- the activities --------------------------------------------------------------
 
-const ORDER = ['flashcards', 'who-said-it', 'fill-the-line', 'theme-match', 'technique-spotter', 'character-identification', 'order-the-plot'];
+const GROUPS = [
+  { title: 'Quotations', ids: ['who-said-it', 'fill-the-line', 'flashcards'] },
+  { title: 'Ideas', ids: ['theme-match', 'technique-spotter'] },
+  { title: 'Characters and plot', ids: ['character-identification', 'order-the-plot'] }
+];
 
 const DESCRIPTIONS = {
   'who-said-it': ['Who said it?', 'Name the speaker of a line.'],
@@ -116,13 +113,17 @@ const DESCRIPTIONS = {
 function drawActivities(book, meta, state, counts) {
   const available = new Set(availableQuizzes(book).map(quiz => quiz.id));
   if (book.quotations.length >= 5) available.add('flashcards');
-  const ids = ORDER.filter(id => available.has(id));
-  const section = el('section', { class: 'rx-hub-list rx-hub-more', 'aria-labelledby': 'rx-acts-title' });
-  if (!ids.length) return section;
-  section.append(el('div', { class: 'rx-hub-group' }, [
-    el('h2', { id: 'rx-acts-title', text: 'One thing at a time' }),
-    el('ul', {}, ids.map(id => el('li', {}, [activityRow(id, book, state, counts)])))
-  ]));
+
+  const section = el('section', { class: 'rx-hub-list', 'aria-labelledby': 'rx-acts-title' });
+  section.append(el('h2', { class: 'rx-visually-hidden', id: 'rx-acts-title', text: 'Activities' }));
+  for (const group of GROUPS) {
+    const ids = group.ids.filter(id => available.has(id));
+    if (!ids.length) continue;
+    section.append(el('div', { class: 'rx-hub-group' }, [
+      el('h3', { text: group.title }),
+      el('ul', {}, ids.map(id => el('li', {}, [activityRow(id, book, state, counts)])))
+    ]));
+  }
   return section;
 }
 
@@ -162,15 +163,13 @@ function drawProgress(book, counts) {
 
 function drawLibrary(day) {
   const done = dailyResult(day);
-  const date = new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
-  const todayBlock = el('a', { class: 'rx-hub-today', href: '/today/' }, [
-    el('span', { class: 'rx-hub-today-date', text: date }),
-    el('span', { class: 'rx-hub-today-name', text: 'Today’s five questions' }),
-    el('span', { class: 'rx-hub-today-note', text: done
-      ? 'Done today: ' + done.score + ' of ' + (done.total || 5) + '. Five new ones tomorrow.'
-      : 'The same five for everyone, on books, plays and poems from across the library.' })
-  ]);
-  const rows = [];
+  const rows = [
+    el('li', {}, [el('a', { class: 'rx-hub-row', href: '/today/' }, [
+      el('span', { class: 'rx-hub-name', text: 'Today' }),
+      el('span', { class: 'rx-hub-note', text: 'Five questions a day on books, plays and poems.' }),
+      done ? el('span', { class: 'rx-hub-status', text: 'Done today, ' + done.score + ' of ' + (done.total || 5) }) : null
+    ])])
+  ];
   for (const quiz of LIBRARY_QUIZZES) {
     const result = snapshot().scores?.[quiz.id];
     rows.push(el('li', {}, [el('a', { class: 'rx-hub-row', href: '/play/' + quiz.id + '/' }, [
@@ -180,7 +179,6 @@ function drawLibrary(day) {
     ])]));
   }
   return el('section', { class: 'rx-hub-list rx-hub-library', 'aria-labelledby': 'rx-library-title' }, [
-    todayBlock,
     el('div', { class: 'rx-hub-group' }, [
       el('h2', { id: 'rx-library-title', text: 'Across the library' }),
       el('ul', {}, rows)

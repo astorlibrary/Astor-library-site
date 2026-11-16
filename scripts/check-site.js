@@ -242,13 +242,7 @@ for (const file of htmlFiles) {
 
     const targetResult = localTarget(file, value.slice(0, hashAt));
     if (!targetResult || targetResult.error || !fs.existsSync(targetResult.target)) continue;
-    // "The Astor edition" on a book page (#buy) is written by the build, which
-    // gives every book page the same opening; a link to it is checked against
-    // the built page.
-    const relativeTarget = path.relative(root, targetResult.target);
-    const builtTarget = fragment === 'buy' && /^books\/[^/]+\/index\.html$/.test(relativeTarget)
-      ? path.join(root, 'dist', relativeTarget) : '';
-    const targetHtml = fs.readFileSync(builtTarget && fs.existsSync(builtTarget) ? builtTarget : targetResult.target, 'utf8');
+    const targetHtml = fs.readFileSync(targetResult.target, 'utf8');
     const escaped = fragment.replace(/[.*+?^$()|[\]\\{}]/g, '\\$&');
     if (!new RegExp('\\b(?:id|name)="' + escaped + '"', 'i').test(targetHtml)) {
       failures.push(fileName + ' links to a missing section ' + value);
@@ -289,7 +283,7 @@ if (!homepage.includes('/assets/home.css')) failures.push('The homepage is missi
 if (!homepage.includes('/assets/navigation.css')) failures.push('The homepage is missing the shared navigation stylesheet');
 if (!homepage.includes('class="site-header astor-global-header')) failures.push('The homepage is missing the shared header');
 if (!/<footer\b[^>]*class="[^"]*\bastor-global-footer\b/i.test(homepage)) failures.push('The homepage is missing the grouped footer');
-for (const className of ['home-intro-covers', 'home-feature-notes']) {
+for (const className of ['home-intro-covers', 'home-free-list']) {
   if (!homepageMain.includes('class="' + className + '"')) failures.push('The homepage is missing its ' + className + ' section');
 }
 // No screenshots of inside pages and no promotional statistics: the covers
@@ -367,43 +361,7 @@ if (/class="seasonal-feature"|class="academic-feature"/i.test(homepageMain)) fai
 }
 if (!/^\.astor-season-ribbon,\s*\.astor-season-badge \{\s*display: none;/m.test(fs.readFileSync(path.join(root, 'assets', 'seasonal-theme.css'), 'utf8'))) failures.push('The seasonal ribbon and badges must be hidden out of season');
 const homepageSections = Array.from(homepageMain.matchAll(/^  <section class="([^"]+)"/gm), match => match[1]);
-if (homepageSections.length !== 3 || homepageSections[0] !== 'home-intro' || !homepageSections[1]?.startsWith('home-season ') || homepageSections[2] !== 'home-feature') failures.push('The homepage must contain three top-level sections: the introduction, the season and the close reading of the week');
-// The close reading under the seasonal hero: a passage with its marked phrases,
-// a note for each, and the ways on to the whole reading and to study the book.
-{
-  const { astorHomeFeature } = require('./home-feature-rules');
-  const featurePlan = JSON.parse(fs.readFileSync(path.join(root, 'scripts', 'home-features.json'), 'utf8'));
-  const checkFeature = (html, where) => {
-    const marks = countMatches(html, /<mark>/g);
-    const notes = countMatches(html, /<span class="home-feature-number"/g);
-    if (marks !== 2) failures.push(where + ' must mark two phrases in its passage');
-    if (notes !== marks) failures.push(where + ' must print one note for each marked phrase');
-    if (!/<a class="home-button" href="\/passage-room\/[a-z0-9-]+\/">/.test(html)) failures.push(where + ' must lead to the whole close reading');
-    if (!/href="\/(?:guides|books)\//.test(html)) failures.push(where + ' must lead on to the book or its study guide');
-    for (const href of html.match(/href="(\/[^"#?]*)"/g) || []) {
-      const target = href.slice(6, -1);
-      if (!fs.existsSync(path.join(root, target.replace(/^\//, ''), target.endsWith('/') ? 'index.html' : ''))) failures.push(where + ' links to a missing page: ' + target);
-    }
-  };
-  const homeFeature = homepageMain.match(/<section class="home-feature"[\s\S]*?<\/section>/)?.[0] || '';
-  if (!homeFeature) failures.push('The homepage is missing its close reading of the week');
-  else checkFeature(homeFeature, 'The homepage close reading');
-  if (!/<\/section>\s*<script data-home-feature-calendar>/.test(homepageMain)) failures.push('The homepage close reading must be followed by the script that changes it each week');
-  const planned = new Set(featurePlan.order || []);
-  for (const window of featurePlan.windows) for (const slug of window.slugs || []) planned.add(slug);
-  for (const slug of planned) {
-    const file = path.join(root, 'assets', 'home-features', slug + '.json');
-    if (!fs.existsSync(file)) { failures.push('The homepage plan names a close reading with no fragment: ' + slug); continue; }
-    const fragment = JSON.parse(fs.readFileSync(file, 'utf8'));
-    if (!fragment.html.startsWith('<section class="home-feature"') || !fragment.html.includes('data-home-feature="' + slug + '"')) failures.push('The homepage fragment for ' + slug + ' is not a close-reading section');
-    checkFeature(fragment.html, 'The homepage close reading ' + slug);
-  }
-  // Every day of a leap year has a reading.
-  for (let day = 0; day < 366; day++) {
-    const date = new Date(2028, 0, 1 + day);
-    if (!planned.has(astorHomeFeature(date, featurePlan))) { failures.push('The homepage has no close reading for ' + date.toDateString()); break; }
-  }
-}
+if (homepageSections.length !== 3 || homepageSections[0] !== 'home-intro' || !homepageSections[1]?.startsWith('home-season ') || homepageSections[2] !== 'home-wrap home-free') failures.push('The homepage must contain three top-level sections: the introduction, the season and the free material');
 if (!homepage.includes('mailto:support@astorlibrary.com')) failures.push('The homepage is missing the support email');
 for (const href of ['/library/', '/shakespeare/', '/resources/', '/study/', '/passage-room/', '/authors/', '/subjects/', '/reading-routes/', '/account/', '/privacy/']) {
   if (!homepage.includes('href="' + href + '"')) failures.push('The homepage is missing ' + href);
