@@ -1,10 +1,16 @@
-// Compare two texts.
+// Two books side by side.
 //
-// Comparative essays go wrong in a predictable way: two separate accounts
-// stapled together, with the comparison left to the reader. This tool starts
-// from the shared ground instead — the themes and techniques both books use —
-// and pairs the quotations that carry them, because that is where a
-// comparative paragraph actually begins.
+// What this page can say reliably is what each book's record holds: when and
+// how it was written, where it is set, how it is built, and the themes its
+// study guide covers. It sets those next to each other. Where the two guides
+// treat a theme under the same heading, it pairs a line from each.
+//
+// It does not say that two books share nothing. Each guide names a book's
+// themes in that book's own terms (ambition and guilt in Macbeth, the divided
+// self and respectability in Jekyll and Hyde), so two guides with no heading
+// in common are still very often about the same things, and a comparison of
+// them is the reader's to make. Where Astor prints the pair in one volume,
+// the page says so and points to the book.
 
 import { el, clear } from './util.mjs';
 import { loadIndex } from './data.mjs';
@@ -30,6 +36,8 @@ async function start() {
     return;
   }
 
+  let paired = [];
+  try { paired = JSON.parse(chooser?.dataset.paired || '[]'); } catch { /* the page works without them */ }
   const params = new URLSearchParams(window.location.search);
   let left = books.find(book => book.slug === params.get('a')) || books[0];
   let right = books.find(book => book.slug === params.get('b')) || books.find(book => book.slug !== left.slug);
@@ -59,7 +67,7 @@ async function start() {
     url.searchParams.set('a', left.slug);
     url.searchParams.set('b', right.slug);
     window.history.replaceState(null, '', url);
-    render(left, right);
+    render(left, right, paired.find(edition => edition.slugs.includes(left.slug) && edition.slugs.includes(right.slug)));
   }
 
   update();
@@ -82,14 +90,22 @@ function row(heading, leftContent, rightContent) {
   ]);
 }
 
+// "Written 1843", but a note that carries its own verb stands as it is
+// ("Drafted 1796–97 as First Impressions; revised 1811–12").
+function writtenLine(written) {
+  const text = String(written || '').trim();
+  if (!text) return '';
+  return /^(c\. ?)?\d/.test(text) ? 'Written ' + text : text;
+}
+
 function facts(book) {
   return [
     el('p', { class: 'astor-analysis', text: book.summary }),
     el('ul', { class: 'astor-question-list' }, [
       el('li', { text: 'Form: ' + (book.genre || book.form) }),
       el('li', { text: 'Period: ' + book.period }),
-      book.written ? el('li', { text: 'Written: ' + book.written }) : null,
-      book.firstPublished ? el('li', { text: (book.firstPublished < 1700 ? 'First printed: ' : 'First published: ') + book.firstPublished }) : null,
+      book.written ? el('li', { text: writtenLine(book.written) }) : null,
+      book.firstPublished ? el('li', { text: (book.firstPublished < 1700 ? 'First printed ' : 'First published ') + book.firstPublished }) : null,
       book.setting ? el('li', { text: 'Setting: ' + book.setting }) : null,
       el('li', { text: 'Structure: ' + book.structure.length + ' ' + (book.form === 'play' ? 'acts' : 'sections') })
     ].filter(Boolean))
@@ -101,7 +117,15 @@ function shared(left, right, key) {
   return left[key].filter(item => rightIds.has(item.id));
 }
 
-function render(left, right) {
+function themeList(book) {
+  return el('ul', { class: 'astor-question-list' }, book.themes.map(theme =>
+    el('li', {}, [
+      el('a', { href: '/guides/' + book.slug + '/themes/#astor-theme-' + theme.id, text: theme.name }),
+      ' — ' + theme.summary
+    ])));
+}
+
+function render(left, right, edition) {
   clear(mount);
 
   const sharedThemes = shared(left, right, 'themes');
@@ -112,20 +136,22 @@ function render(left, right) {
     el('div', {}, [
       el('p', { class: 'kicker', text: 'Side by side' }),
       el('h2', { text: left.title + ' and ' + right.title }),
-      el('p', {
-        text: sharedThemes.length || sharedTechniques.length
-          ? 'They share ' + sharedThemes.length + ' ' + (sharedThemes.length === 1 ? 'theme' : 'themes') +
-            ' and ' + sharedTechniques.length + ' ' + (sharedTechniques.length === 1 ? 'technique' : 'techniques') +
-            '.'
-          : 'These two have no themes or techniques in common.'
-      })
+      edition ? el('p', {}, [
+        'Astor prints these two in one volume: ',
+        el('a', { href: edition.href, text: edition.title + ', Paired Study Edition' }),
+        '.'
+      ]) : null,
+      sharedThemes.length ? el('p', {
+        text: 'The two study guides treat ' + (sharedThemes.length === 1 ? 'one theme' : sharedThemes.length + ' themes') +
+          ' under the same heading: ' + sharedThemes.map(theme => theme.name.toLowerCase()).join(', ') + '.'
+      }) : null
     ])
   ]));
 
   panel.append(row('The books', facts(left), facts(right)));
 
   if (sharedThemes.length) {
-    panel.append(el('p', { class: 'astor-compare-heading', text: 'Shared themes' }));
+    panel.append(el('p', { class: 'astor-compare-heading', text: 'Under the same heading in both guides' }));
     for (const theme of sharedThemes) {
       const leftTheme = left.themes.find(item => item.id === theme.id);
       const rightTheme = right.themes.find(item => item.id === theme.id);
@@ -141,24 +167,19 @@ function render(left, right) {
     }
   }
 
+  // Every theme of each book, in that book's own words, so the reader can see
+  // where the two meet even where the guides name things differently.
+  panel.append(row(sharedThemes.length ? 'All the themes of each book' : 'The themes of each book', [themeList(left)], [themeList(right)]));
+
   if (sharedTechniques.length) {
-    panel.append(row('Shared techniques',
+    panel.append(row('Techniques both guides name',
       [el('ul', { class: 'astor-shared-list' }, sharedTechniques.map(technique =>
         el('li', {}, [el('a', { class: 'astor-tag', href: '/explore/techniques/#' + technique.id, text: technique.name })])))],
-      [el('p', { class: 'astor-analysis', text: 'See the glossary for how each book uses them.' })]
+      [el('p', { class: 'astor-analysis', text: 'The glossary shows how each book uses them.' })]
     ));
   }
 
-  const onlyLeft = left.themes.filter(theme => !right.themes.some(other => other.id === theme.id));
-  const onlyRight = right.themes.filter(theme => !left.themes.some(other => other.id === theme.id));
-  if (onlyLeft.length || onlyRight.length) {
-    panel.append(row('Themes not shared',
-      [el('ul', { class: 'astor-question-list' }, onlyLeft.map(theme => el('li', { text: theme.name + ' — ' + theme.summary })))],
-      [el('ul', { class: 'astor-question-list' }, onlyRight.map(theme => el('li', { text: theme.name + ' — ' + theme.summary })))]
-    ));
-  }
-
-  panel.append(row('What next',
+  panel.append(row('Read on',
     [el('div', { class: 'button-row' }, [
       el('a', { class: 'button secondary', href: '/guides/' + left.slug + '/', text: 'Study guide to ' + left.title })
     ])],

@@ -3729,3 +3729,5 @@ html[data-edition] .rx-after a:is(:hover, :focus-visible) { color: var(--ed-acce
 .today-book-title a:hover { color: var(--wine-text, var(--burgundy, #6e1f2b)); }
 .today-book-links { margin: 10px 0 0; display: flex; flex-wrap: wrap; gap: 6px 24px; font: 400 16px/1.5 var(--astor-sans, system-ui, sans-serif); }
 .today-book-links a { color: var(--wine-text, var(--burgundy, #6e1f2b)); text-underline-offset: 4px; }
+
+.today-book { border-bottom: 0; padding-bottom: 4px; }

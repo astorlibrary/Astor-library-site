@@ -120,9 +120,9 @@ function play(questions, day, round) {
         el('p', { class: 'today-verdict' }, right
           ? [el('b', { text: 'Right.' })]
           : [el('b', { text: 'Not quite.' }), ' The answer is ', ...rich(question.options[question.answer]), '.']),
-        el('p', { class: 'today-explanation' }, rich(question.explanation)),
-        question.link ? el('p', { class: 'today-more' }, [el('a', { href: question.link.href, text: plain(question.link.label) })]) : null
+        el('p', { class: 'today-explanation' }, rich(question.explanation))
       );
+      if (question.link) feedback.append(el('p', { class: 'today-more' }, [el('a', { href: question.link.href, text: plain(question.link.label) })]));
       const next = el('button', { type: 'button', class: 'today-next', text: index + 1 < questions.length ? 'Next question' : 'See how you did' });
       next.addEventListener('click', () => { index += 1; show(); });
       feedback.append(next);

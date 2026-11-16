@@ -1545,6 +1545,99 @@ main.book-page .book-links a {
   text-underline-offset: 3px;
 }
 
+/* The free study guide and revision for this book, each with what it is. */
+main.book-page .book-study {
+  margin: 26px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 32px;
+  list-style: none;
+  border-top: 1px solid var(--line, var(--ed-rule));
+}
+
+main.book-page .book-study li {
+  padding: 14px 0;
+}
+
+main.book-page .book-study a {
+  color: var(--wine-text, var(--ed-wine));
+  font: 400 22px/1.2 var(--serif);
+  text-decoration: none;
+}
+
+main.book-page .book-study a:hover,
+main.book-page .book-study a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+main.book-page .book-study span {
+  display: block;
+  margin-top: 4px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.5 var(--sans);
+}
+
+/* The place for Astor Pro: the complete text on screen, with its notes. */
+main.book-page .book-pro {
+  margin: 6px 0 0;
+  padding: 16px 0 0;
+  border-top: 1px solid var(--line, var(--ed-rule));
+}
+
+main.book-page .book-pro-head {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 14px;
+}
+
+main.book-page .book-pro-name {
+  color: var(--text, var(--ed-ink));
+  font: 400 22px/1.2 var(--serif);
+}
+
+main.book-page .book-pro-status {
+  color: var(--text-muted, var(--ed-muted));
+  font: 600 12px/1.4 var(--sans);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+main.book-page .book-pro-note {
+  max-width: 34rem;
+  margin: 4px 0 0;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.5 var(--sans);
+}
+
+main.book-page .book-pro-note cite {
+  font-style: italic;
+}
+
+main.book-page .book-pro-action {
+  margin: 10px 0 0;
+  font: 500 16px/1.4 var(--sans);
+}
+
+main.book-page .book-pro-action a {
+  color: var(--wine-text, var(--ed-wine));
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 620px) {
+  main.book-page .book-study {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  main.book-page .book-study li + li {
+    border-top: 1px solid var(--line, rgba(31, 27, 24, 0.08));
+  }
+}
+
 main.book-page .study-edition-links .book-format-buy {
   color: var(--surface-paper, #fff);
   text-decoration: none;

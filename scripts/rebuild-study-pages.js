@@ -162,6 +162,23 @@ const GAMES = [
   }
 ];
 
+// The four pairs Astor prints in one volume, each with the study guides of
+// its two texts, for "Two books side by side". Titles and addresses come from
+// scripts/study-editions.json.
+const PAIRED_SLUGS = {
+  'Macbeth and Jekyll and Hyde': ['macbeth', 'jekyll-and-hyde'],
+  'Macbeth and A Christmas Carol': ['macbeth', 'a-christmas-carol'],
+  'Romeo and Juliet and Jekyll and Hyde': ['romeo-and-juliet', 'jekyll-and-hyde'],
+  'Romeo and Juliet and A Christmas Carol': ['romeo-and-juliet', 'a-christmas-carol']
+};
+const PAIRED_EDITIONS = require('./study-editions.json').list
+  .filter(edition => edition.paired)
+  .map(edition => {
+    const slugs = PAIRED_SLUGS[edition.title];
+    if (!slugs) throw new Error('A paired Study Edition has no study guides named for it: ' + edition.title);
+    return { slugs, title: edition.title, href: edition.book + '#buy' };
+  });
+
 // Once a round is under way the question has the page; the other activities
 // for the same book are listed here, under it (revise-kit.mjs fills this in).
 const OTHER_ACTIVITIES = '  <nav class="rx-after" id="rv-after" aria-label="Other ways to revise this book" hidden></nav>';
@@ -321,7 +338,7 @@ function buildPages() {
     mount: `  <div class="astor-chooser" id="astor-theme-search"></div>
   <div id="astor-theme-list"></div>`,
     fallback: 'This needs JavaScript. Each book page covers its own themes.',
-    links: [{ href: '/explore/quotations/', label: 'Quotation explorer' }, { href: '/explore/compare/', label: 'Compare two texts' }]
+    links: [{ href: '/explore/quotations/', label: 'Quotation explorer' }, { href: '/guides/', label: 'Study guides' }]
   }));
 
   // --- explore: techniques ---
@@ -361,14 +378,15 @@ function buildPages() {
   // --- explore: compare ---
   written.push(page({
     dir: 'explore/compare',
-    title: 'Compare two texts | Astor Library',
-    description: 'Put two Astor Library titles side by side: shared themes and techniques, and paired quotations.',
+    title: 'Two books side by side | Astor Library',
+    description: 'Put two Astor Library titles side by side: when and how each was written, where it is set, and the themes its study guide covers.',
     kicker: 'Explore',
-    heading: 'Compare two books.',
-    deck: 'Choose two books to see the themes and techniques they share, with a quotation from each book for every shared theme.',
-    breadcrumb: '<a href="/explore/">Explore</a><span aria-hidden="true">/</span><span aria-current="page">Compare</span>',
+    heading: 'Two books side by side.',
+    deck: 'Choose two books to set their dates, settings and themes next to each other. Where the study guides treat a theme under the same heading in both books, a line from each is paired.',
+    breadcrumb: '<a href="/explore/">Search</a><span aria-hidden="true">/</span><span aria-current="page">Two books side by side</span>',
     module: 'compare.mjs',
-    intro: '  <div class="astor-chooser" id="astor-compare-chooser"></div>',
+    // The pairs Astor prints in one volume, so the page can point to the book.
+    intro: '  <div class="astor-chooser" id="astor-compare-chooser" data-paired="' + escapeHtml(JSON.stringify(PAIRED_EDITIONS)) + '"></div>',
     mount: '  <div id="astor-compare"></div>',
     fallback: 'This needs JavaScript. Each book page lists its own themes and techniques.',
     links: [{ href: '/reading-routes/', label: 'Reading routes' }, { href: '/explore/quotations/', label: 'Quotation explorer' }]
