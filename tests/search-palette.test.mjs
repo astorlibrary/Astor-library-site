@@ -25,8 +25,9 @@ function setup(fetch) {
   const document = { body: new Element('body'), activeElement: trigger, createElement: tag => new Element(tag), addEventListener() {}, querySelectorAll: () => [trigger] };
   const context = vm.createContext({ document, fetch, encodeURIComponent });
   const util = fs.readFileSync(new URL('../assets/astor/util.mjs', import.meta.url), 'utf8').replaceAll('export ', '');
+  const search = fs.readFileSync(new URL('../assets/astor/search.mjs', import.meta.url), 'utf8').replaceAll('export ', '');
   const source = fs.readFileSync(new URL('../assets/astor/palette.mjs', import.meta.url), 'utf8').replace(/^import .*;$/gm, '');
-  vm.runInContext(util + '\n' + source, context);
+  vm.runInContext(util + '\n' + search + '\n' + source, context);
   return { run: code => vm.runInContext(code, context), clicked: () => clicked, trigger };
 }
 

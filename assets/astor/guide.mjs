@@ -26,6 +26,8 @@ function enhance(root) {
   setUpSave(root, book, live);
   setUpProgress(root, book, live);
   setUpKeep(root, book, live);
+  setUpFind(root);
+  showCurrentPart(root);
   embedCharacterMap(root);
   embedPlaces(root);
 }
@@ -77,7 +79,7 @@ function setUpKeep(root, book, live) {
     if (!caption) continue;
     const id = book.slug + ':' + figure.dataset.quoteId;
     const text = figure.querySelector('blockquote p')?.textContent || '';
-    const reference = caption.textContent || '';
+    const reference = figure.dataset.reference || caption.textContent || '';
     const button = el('button', { class: 'guide-keep', type: 'button' });
     const paint = () => {
       const kept = inCommonplace(id);
@@ -91,8 +93,76 @@ function setUpKeep(root, book, live) {
       announce(live, inCommonplace(id) ? 'Kept in your commonplace book.' : 'Removed from your commonplace book.');
     });
     paint();
-    caption.append(' ', button);
+    caption.append(button);
   }
+}
+
+// Key quotations: a box that narrows the page to the lines containing a
+// word, a speaker or a reference, and a way to show one theme's lines
+// (/guides/macbeth/quotations/?theme=guilt, linked from the Themes page).
+// A function declaration, so it exists when enhance() runs at the top of the module.
+function foldText(text) {
+  return String(text || '').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/[’‘']/g, '').replace(/[^\p{L}\p{N}.]+/gu, ' ').trim();
+}
+
+function setUpFind(root) {
+  const box = root.querySelector('[data-guide-find]');
+  if (!box) return;
+  const input = box.querySelector('input');
+  const status = box.querySelector('[data-guide-find-status]');
+  const figures = [...root.querySelectorAll('.guide-quote[data-quote-id]')];
+  const groups = [...root.querySelectorAll('.guide-quote-group')];
+  const extras = [...root.querySelectorAll('.guide-jump, .guide-line-index')];
+  let themeNames = {};
+  try { themeNames = JSON.parse(box.dataset.themes || '{}'); } catch { /* no theme names */ }
+  const text = new Map(figures.map(figure => [figure, foldText(
+    (figure.querySelector('blockquote')?.textContent || '') + ' ' + (figure.dataset.reference || '')
+  )]));
+  const params = new URLSearchParams(window.location.search);
+  let theme = themeNames[params.get('theme')] ? params.get('theme') : '';
+  box.hidden = false;
+
+  function apply() {
+    const words = foldText(input.value).split(' ').filter(Boolean);
+    let shown = 0;
+    for (const figure of figures) {
+      const inTheme = !theme || (figure.dataset.themes || '').split(' ').includes(theme);
+      const match = inTheme && words.every(word => text.get(figure).includes(word));
+      figure.hidden = !match;
+      if (match) shown += 1;
+    }
+    for (const group of groups) group.hidden = !group.querySelector('.guide-quote:not([hidden])');
+    const narrowed = Boolean(words.length || theme);
+    for (const extra of extras) extra.hidden = narrowed;
+    status.textContent = '';
+    if (!narrowed) return;
+    const what = theme ? (shown === 1 ? ' line on ' : ' lines on ') + themeNames[theme] : (shown === 1 ? ' line' : ' lines');
+    status.append(shown ? shown + what + (words.length ? ' matching “' + input.value.trim() + '”' : '') + '. ' : 'No key line matches. ');
+    const all = el('button', { type: 'button', text: 'Show all ' + figures.length });
+    all.addEventListener('click', () => {
+      input.value = '';
+      theme = '';
+      const url = new URL(window.location.href);
+      url.searchParams.delete('theme');
+      window.history.replaceState(null, '', url);
+      apply();
+      input.focus();
+    });
+    status.append(all);
+  }
+
+  input.addEventListener('input', apply);
+  if (theme) apply();
+}
+
+// On a phone the guide's parts run in one line that scrolls sideways; bring
+// the part being read into view without moving the page.
+function showCurrentPart(root) {
+  const list = root.querySelector('.guide-toc ol');
+  const current = list?.querySelector('[aria-current="page"]');
+  if (!list || !current || list.scrollWidth <= list.clientWidth) return;
+  const item = current.closest('li');
+  list.scrollLeft = Math.max(0, item.offsetLeft - list.offsetLeft - (list.clientWidth - item.offsetWidth) / 2);
 }
 
 function embedCharacterMap(root) {

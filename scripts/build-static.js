@@ -36,7 +36,7 @@ function versionOf(assetPath) {
 const VERSIONED_ASSETS = [
   '/assets/styles.css', '/assets/astor-study.css', '/assets/home.css', '/assets/seasons.css',
   '/assets/account.css', '/assets/presentation-viewer.css', '/assets/site.js', '/assets/catalogue.js',
-  '/assets/explore.js', '/assets/resources.js', '/assets/resource-library.js', '/assets/seasonal-theme.css',
+  '/assets/resources.js', '/assets/resource-library.js', '/assets/seasonal-theme.css',
   '/assets/theme.css', '/assets/editorial.css'
 ];
 
@@ -1149,7 +1149,7 @@ function addGlobalNavigation(html, source) {
   const reviseCurrent = inRoute('/play/');
   const todayCurrent = href === '/today/';
   const booksMenuCurrent = booksSection || studyCurrent;
-  const exploreMenuCurrent = exploreSection || resourcesCurrent || passageCurrent;
+  const exploreMenuCurrent = exploreSection || resourcesCurrent || todayCurrent;
 
   const header = `<header class="site-header astor-global-header">
   <div class="astor-header-identity">
@@ -1187,26 +1187,23 @@ function addGlobalNavigation(html, source) {
         </div>
       </details>
       <a class="nav-link" href="/guides/"${current(guidesCurrent, href === '/guides/')}>Study guides</a>
-      <a class="nav-link" href="/play/"${current(reviseCurrent, href === '/play/')}>Revise</a>
-      <a class="nav-link" href="/today/"${current(todayCurrent)}>Today</a>
+      <a class="nav-link" href="/play/"${current(reviseCurrent || todayCurrent, href === '/play/')}>Revise</a>
+      <a class="nav-link" href="/passage-room/"${current(passageCurrent, href === '/passage-room/')}>Close readings</a>
       <details class="astor-browse-menu astor-menu${exploreMenuCurrent ? ' is-current-section' : ''}">
         <summary aria-controls="astor-menu-explore"><span>Explore</span></summary>
         <div class="astor-browse-panel astor-menu-panel is-two" id="astor-menu-explore">
           <div class="astor-menu-col">
-            <h2>Reading</h2>
-            <a href="/passage-room/"${current(passageCurrent, href === '/passage-room/')}>Close readings</a>
-            <a href="/resources/"${current(resourcesCurrent, href === '/resources/')}>Illustrated guides</a>
+            <h2>More to read</h2>
+            <a href="/resources/"${current(resourcesCurrent, href === '/resources/')}>Slide guides</a>
             <a href="/reading-routes/"${current(readingRoutesCurrent, href === '/reading-routes/')}>Reading routes</a>
+            <a href="/today/"${current(todayCurrent)}>Today’s five questions</a>
           </div>
           <div class="astor-menu-col">
-            <h2>Across the library</h2>
+            <h2>Reference</h2>
             <a href="/explore/quotations/"${current(href === '/explore/quotations/')}>Quotations</a>
-            <a href="/explore/timeline/"${current(href === '/explore/timeline/')}>Timeline</a>
-            <a href="/explore/characters/"${current(href === '/explore/characters/')}>Character maps</a>
-            <a href="/explore/themes/"${current(href === '/explore/themes/')}>Themes</a>
             <a href="/explore/techniques/"${current(href === '/explore/techniques/')}>Literary terms</a>
-            <a href="/explore/map/"${current(href === '/explore/map/')}>Map of settings</a>
-            <a href="/explore/compare/"${current(href === '/explore/compare/')}>Compare two books</a>
+            <a href="/explore/timeline/"${current(href === '/explore/timeline/')}>Timeline</a>
+            <a href="/explore/"${current(href === '/explore/')}>Everything on the site</a>
           </div>
         </div>
       </details>
@@ -1224,7 +1221,7 @@ function addGlobalNavigation(html, source) {
   const footer = `<footer class="site-footer astor-global-footer">
   <div class="astor-footer-signature"><p class="footer-brand">Astor Library</p><p>Annotated editions of classic literature, with free study guides.</p></div>
   <div class="astor-footer-group"><h2>Books</h2><a href="/library/">All books</a><a href="/shakespeare/">Shakespeare</a><a href="/study/">Study Editions</a><a href="/hardbacks/">Hardbacks</a><a href="/seasons/">The seasonal library</a><a href="/authors/">Writers</a><a href="/subjects/">Subjects</a></div>
-  <div class="astor-footer-group"><h2>Study</h2><a href="/guides/">Study guides</a><a href="/play/">Revise</a><a href="/today/">Today</a><a href="/passage-room/">Close readings</a><a href="/resources/">Illustrated guides</a><a href="/explore/quotations/">Quotations</a><a href="/my-library/">My library</a></div>
+  <div class="astor-footer-group"><h2>Study</h2><a href="/guides/">Study guides</a><a href="/play/">Revise</a><a href="/today/">Today’s five questions</a><a href="/passage-room/">Close readings</a><a href="/resources/">Slide guides</a><a href="/explore/quotations/">Quotations</a><a href="/my-library/">My library</a></div>
   <div class="astor-footer-group"><h2>Astor</h2><a href="/about/">About</a><a href="/editorial/">Editorial standards</a><a href="/privacy/">Privacy</a><a href="mailto:support@astorlibrary.com">Contact</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a><a href="/site-index/">Site index</a></div>
 </footer>`;
 

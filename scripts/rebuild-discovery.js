@@ -317,7 +317,7 @@ for (const match of resourcesHtml.matchAll(resourcePattern)) {
   const description = textOnly(descriptionHtml);
   resources.push({
     type: 'resource',
-    typeLabel: 'Free guide',
+    typeLabel: 'Slide guide',
     title: title,
     description: description,
     tags: unique(tags),
@@ -986,86 +986,74 @@ const index = {
 
 fs.writeFileSync(path.join(root, 'assets/content-index.json'), JSON.stringify(index, null, 2) + '\n');
 
-const typeCtas = {
-  season: 'Explore the seasonal collection',
-  author: 'Read the writer page',
-  book: 'Open the book',
-  collection: 'Browse the collection',
-  passage: 'Read with the notes',
-  resource: 'Read the guide',
-  study: 'View the edition',
-  subject: 'Open the subject guide'
+// --- the Search page ---------------------------------------------------------
+//
+// /explore/ is the full-page version of the search that opens over every
+// page: one box, the same index and ranking (assets/astor/search.mjs), and
+// results under headings that say what each kind of thing is. Until somebody
+// types, it shows the few ways in that most visits want, then the rest in a
+// quieter list. Every page is also listed by name at the foot, folded away,
+// so the page works without its script and every address stays linked.
+
+function browseList(title, items, label) {
+  if (!items.length) return '';
+  return '<details class="search-browse-group"><summary>' + escapeHtml(title) + ' <span>' + items.length + '</span></summary><ul>' +
+    items.map(function (item) {
+      const note = label ? label(item) : '';
+      return '<li><a href="' + escapeHtml(item.href) + '">' + escapeHtml(item.title) + '</a>' + (note ? ' <span>' + escapeHtml(note) + '</span>' : '') + '</li>';
+    }).join('') + '</ul></details>';
+}
+
+const byTitle = function (list) {
+  return list.slice().sort(function (a, b) { return a.title.localeCompare(b.title, 'en', { sensitivity: 'base' }); });
 };
+const guideRecords = require('./book-data').loadBooks();
+const guideLinks = byTitle(guideRecords.map(function (book) {
+  return { title: String(book.title).split(';')[0].trim(), href: '/guides/' + book.slug + '/', author: book.author };
+}));
 
-const entryCards = entries.map(function (entry) {
-  const detail = entry.author ? entry.author + ' · ' + entry.collection : entry.type === 'author' ? entry.bookCount + (entry.bookCount === 1 ? ' book' : ' books') : entry.typeLabel;
-  const search = [entry.search, entry.typeLabel].join(' ').toLocaleLowerCase();
-  const image = entry.image
-    ? '<img src="' + escapeHtml(entry.image) + '" alt="' + escapeHtml(entry.imageAlt || '') + '" width="240" height="360" loading="lazy">'
-    : '<span class="explore-card-no-image" aria-hidden="true">A</span>';
-
-  // A result that leaves the site (a study edition with no on-site page yet)
-  // must say so; an internal-looking label in front of a retailer link
-  // misleads the reader.
-  const external = /^https?:\/\//i.test(entry.href);
-  const cta = external ? 'Buy / view on Amazon <span aria-hidden="true">&nearr;</span>' : typeCtas[entry.type] + ' <span aria-hidden="true">&rarr;</span>';
-  return '<article class="explore-card explore-card-' + entry.type + '" data-type="' + entry.type + '" data-search="' + escapeHtml(search) + '">' +
-    '<a href="' + escapeHtml(entry.href) + '"' + (external ? ' target="_blank" rel="noopener noreferrer"' : '') + '>' +
-    '<div class="explore-card-image">' + image + '</div>' +
-    '<div class="explore-card-copy">' +
-    '<p class="explore-kind">' + escapeHtml(detail) + '</p>' +
-    '<h2>' + escapeHtml(entry.title) + '</h2>' +
-    '<p>' + escapeHtml(entry.description) + '</p>' +
-    '<span class="home-text-link">' + cta + '</span>' +
-    '</div></a></article>';
-}).join('');
-
-const exploreHtml = '<!doctype html><html lang="en"><head>' +
+const exploreHtml = '<!doctype html><html lang="en-GB"><head>' +
   '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +
-  '<title>Search the Catalogue | Astor Library</title>' +
-  '<meta name="description" content="Search Astor Library books, close readings, writers, subject guides, free literature guides and study editions.">' +
-  '<link rel="stylesheet" href="/assets/styles.css"><style>.explore-paths{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:1050px){.explore-paths{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.explore-paths{grid-template-columns:1fr}}</style><script src="/assets/explore.js" defer></script>' +
+  '<title>Search | Astor Library</title>' +
+  '<meta name="description" content="Search Astor Library: books, free study guides, key quotations with analysis, close readings, slide guides and printed Study Editions.">' +
+  '<link rel="stylesheet" href="/assets/styles.css"><script type="module" src="/assets/astor/explore-search.mjs"></script>' +
   '</head><body>' + siteHeader() +
-  '<main class="page-wrap explore-page">' +
-  '<section class="explore-hero"><div><p class="kicker">Books, passages, guides and editions</p><h1>Search the catalogue.</h1>' +
-  '<p class="deck">Search ' + books.length + ' books, ' + passages.length + ' close readings, ' + subjects.length + ' subject guides, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions by title, writer, period, subject or resource type. Press the slash key anywhere on the site to search without leaving the page.</p></div>' +
-  '<aside class="explore-hero-note"><p>Use the search field for a title or subject. Use the filters to limit results to books, guides, study editions, authors, passages or collections.</p></aside></section>' +
-  '<section class="explore-tools" aria-label="Search everything">' +
-  '<label for="explore-search">What are you looking for?</label>' +
-  '<div class="explore-search-row"><input id="explore-search" type="search" autocomplete="off" placeholder="Try Austen, tragedy, quotation or Gothic"><p id="explore-count" aria-live="polite"></p></div>' +
-  '<div class="explore-filters">' +
-  '<button type="button" class="explore-filter is-active" data-filter="all" aria-pressed="true">Everything</button>' +
-  '<button type="button" class="explore-filter" data-filter="book" aria-pressed="false">Books</button>' +
-  '<button type="button" class="explore-filter" data-filter="passage" aria-pressed="false">Close readings</button>' +
-  '<button type="button" class="explore-filter" data-filter="subject" aria-pressed="false">Subjects</button>' +
-  '<button type="button" class="explore-filter" data-filter="author" aria-pressed="false">Writers</button>' +
-  '<button type="button" class="explore-filter" data-filter="resource" aria-pressed="false">Free guides</button>' +
-  '<button type="button" class="explore-filter" data-filter="study" aria-pressed="false">Study editions</button>' +
-  '<button type="button" class="explore-filter" data-filter="season" aria-pressed="false">Seasons</button>' +
-  '<button type="button" class="explore-filter" data-filter="collection" aria-pressed="false">Collections</button>' +
-  '</div></section>' +
-  '<section class="explore-paths" aria-label="Ways into Astor Library">' +
-  '<a href="/seasons/"><span>The seasonal library</span><p>Books and resources for Halloween, Christmas, Bonfire Night and the changing seasons.</p></a>' +
-  '<a href="/passage-room/"><span>Annotated passages</span><p>Short extracts with notes on language, structure and context.</p></a>' +
-  '<a href="/library/"><span>Main editions</span><p>Every book in the catalogue, with what each edition includes.</p></a>' +
-  '<a href="/subjects/"><span>Subject guides</span><p>Guides to comedy, Gothic, tragedy, detective fiction, epic, satire, narration, slavery and freedom.</p></a>' +
-  '<a href="/authors/"><span>Author pages</span><p>A life, the publication history, and every Astor edition by that writer.</p></a>' +
-  '<a href="/guides/"><span>Study guides</span><p>Free guides to the plot, characters, themes, quotations, language and context of each book.</p></a>' +
-  '<a href="/study/"><span>Study Editions</span><p>Printed editions with the complete text and closer analysis for coursework and exams.</p></a>' +
-  '<a href="/resources/"><span>Illustrated guides</span><p>Slide guides to individual texts, passages, themes and historical contexts.</p></a>' +
-  '<a href="/reading-routes/"><span>Cross-period reading lists</span><p>Book lists organised around home, freedom, fear, power, evidence, voice and knowledge.</p></a>' +
-  '<a href="/explore/quotations/"><span>Quotation explorer</span><p>Every checked quotation. Search by word, or narrow by book, character, theme or technique.</p></a>' +
-  '<a href="/explore/timeline/"><span>Literature timeline</span><p>Every book in order of first publication, with its own dates and what else was happening.</p></a>' +
-  '<a href="/explore/characters/"><span>Character maps</span><p>How the characters in each book are linked, act by act or section by section.</p></a>' +
-  '<a href="/explore/themes/"><span>Themes across the library</span><p>Themes the books share, set out book by book.</p></a>' +
-  '<a href="/explore/techniques/"><span>Literary terms</span><p>What each term means, with a line from a book using it.</p></a>' +
-  '<a href="/explore/map/"><span>Map of settings</span><p>Where the books are set, from Inverness to Transylvania.</p></a>' +
-  '<a href="/explore/compare/"><span>Compare two texts</span><p>Two books side by side, with paired quotations.</p></a>' +
-  '<a href="/play/"><span>Revise</span><p>Quizzes and flashcards on each book.</p></a>' +
+  '<main class="page-wrap search-page">' +
+  '<header class="search-head"><h1>Search</h1>' +
+  '<form class="search-form" role="search" action="/explore/" method="get">' +
+  '<label for="explore-search">A title, a writer, a character, or a few words of a line</label>' +
+  '<div class="search-form-row"><input id="explore-search" name="q" type="search" autocomplete="off" spellcheck="false" placeholder="Macbeth quotes, Scrooge, Out, damned spot">' +
+  '<button type="submit">Search</button></div></form>' +
+  '<p class="search-count" id="explore-count" role="status"></p></header>' +
+  '<div class="search-results" id="explore-results" hidden></div>' +
+  '<section class="search-start" id="explore-start" aria-label="Where to start">' +
+  '<ul class="search-lead">' +
+  '<li><a href="/guides/"><b>Study guides</b><span>What happens, the characters, the themes and the key quotations of ' + guideRecords.length + ' books. Free to read on the web, no account.</span></a></li>' +
+  '<li><a href="/play/"><b>Revise</b><span>Ten questions on the book you are studying, then quizzes and flashcards on its key lines.</span></a></li>' +
+  '<li><a href="/library/"><b>Books</b><span>' + books.length + ' Astor editions in print: the complete text with summaries, notes and the history of the book.</span></a></li>' +
+  '</ul>' +
+  '<div class="search-also"><h2>Also on the site</h2><ul>' +
+  '<li><a href="/passage-room/">Close readings</a><span>' + passages.length + ' famous passages with notes on the exact words. Free on the web.</span></li>' +
+  '<li><a href="/explore/quotations/">Quotations</a><span>Every key line in the guides, by book, theme and technique.</span></li>' +
+  '<li><a href="/resources/">Slide guides</a><span>' + resources.length + ' illustrated guides. The first three slides of each are open; a free account opens the rest.</span></li>' +
+  '<li><a href="/study/">Study Editions</a><span>Printed books with the text and its study material in one volume.</span></li>' +
+  '<li><a href="/authors/">Writers</a><span>' + authors.length + ' lives, with every Astor edition by each.</span></li>' +
+  '<li><a href="/subjects/">Subjects</a><span>Gothic, tragedy, detective fiction, satire and eight more.</span></li>' +
+  '<li><a href="/seasons/">The seasonal library</a><span>Reading for Halloween, Bonfire Night, Christmas and the rest of the year.</span></li>' +
+  '<li><a href="/reading-routes/">Reading routes</a><span>Book lists that cross the periods.</span></li>' +
+  '</ul></div>' +
+  '<p class="search-reference"><span>Reference</span> <a href="/explore/techniques/">Literary terms</a> <a href="/explore/timeline/">Timeline</a> <a href="/explore/characters/">Character maps</a> <a href="/explore/themes/">Themes across the library</a> <a href="/explore/map/">Map of settings</a> <a href="/explore/compare/">Two books side by side</a></p>' +
   '</section>' +
-  '<section class="explore-results" aria-label="Search results">' + entryCards + '</section>' +
-  '<button class="explore-more" id="explore-more" type="button">Show 24 more</button>' +
-  '<p class="explore-empty" id="explore-empty" hidden>No results match that search. Try a title, author, period or broader term.</p>' +
+  '<section class="search-browse" aria-labelledby="search-browse-title"><h2 id="search-browse-title">Everything, by name</h2>' +
+  browseList('Books', byTitle(books), function (item) { return item.author; }) +
+  browseList('Study guides', guideLinks, function (item) { return item.author; }) +
+  browseList('Close readings', passages) +
+  browseList('Slide guides', byTitle(resources)) +
+  browseList('Study Editions', byTitle(studyEditions.filter(function (item) { return String(item.href).startsWith('/'); }))) +
+  browseList('Writers', byTitle(authors)) +
+  browseList('Subjects', subjects) +
+  browseList('Seasons', entries.filter(function (entry) { return entry.type === 'season'; })) +
+  '</section>' +
   '</main>' +
   '<footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Complete classic texts, study editions and free literature resources.</p></div>' +
   '<div class="footer-links"><a href="/about/">About</a><a href="/passage-room/">Passage Room</a><a href="/subjects/">Subjects</a><a href="/authors/">Writers</a><a href="/reading-routes/">Reading routes</a><a href="/library/">All books</a><a href="/study/">Study editions</a><a href="/resources/">Free resources</a></div></footer>' +
@@ -1127,7 +1115,7 @@ const collectionSections = collections.map(function (collection) {
 const resourceLinks = resources
   .slice()
   .sort(function (a, b) { return a.title.localeCompare(b.title, 'en'); })
-  .map(function (resource) { return '<a href="' + escapeHtml(resource.href) + '"><span>' + escapeHtml(resource.title) + '</span><small>Free guide</small></a>'; })
+  .map(function (resource) { return '<a href="' + escapeHtml(resource.href) + '"><span>' + escapeHtml(resource.title) + '</span><small>Slide guide</small></a>'; })
   .join('');
 
 const studyLinks = studyEditions
@@ -1191,7 +1179,7 @@ const siteIndexHtml = '<!doctype html><html lang="en"><head>' +
   '<section class="index-group" id="subjects"><h2><a href="/subjects/">Subject guides</a></h2><div class="index-links">' + subjectLinks + '</div></section>' +
   '<section class="index-group" id="writers"><h2><a href="/authors/">Writers</a></h2><div class="index-links">' + authorLinks + '</div></section>' +
   '<div id="books">' + collectionSections + '</div>' +
-  '<section class="index-group" id="free-guides"><h2><a href="/resources/">Free literature guides</a></h2><div class="index-links">' + resourceLinks + '</div></section>' +
+  '<section class="index-group" id="free-guides"><h2><a href="/resources/">Slide guides</a></h2><div class="index-links">' + resourceLinks + '</div></section>' +
   '<section class="index-group" id="study-editions"><h2><a href="/study/">Study editions</a></h2><div class="index-links">' + studyLinks + '</div></section>' +
   '</main><footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Complete classic texts, study editions and free literature resources.</p></div><div class="footer-links"><a href="/">Home</a><a href="/passage-room/">Passage Room</a><a href="/subjects/">Subjects</a><a href="/authors/">Writers</a><a href="/explore/">Explore</a><a href="/reading-routes/">Reading routes</a><a href="/resources/">Free resources</a></div></footer></body></html>';
 

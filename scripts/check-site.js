@@ -242,7 +242,13 @@ for (const file of htmlFiles) {
 
     const targetResult = localTarget(file, value.slice(0, hashAt));
     if (!targetResult || targetResult.error || !fs.existsSync(targetResult.target)) continue;
-    const targetHtml = fs.readFileSync(targetResult.target, 'utf8');
+    // "The Astor edition" on a book page (#buy) is written by the build, which
+    // gives every book page the same opening; a link to it is checked against
+    // the built page.
+    const relativeTarget = path.relative(root, targetResult.target);
+    const builtTarget = fragment === 'buy' && /^books\/[^/]+\/index\.html$/.test(relativeTarget)
+      ? path.join(root, 'dist', relativeTarget) : '';
+    const targetHtml = fs.readFileSync(builtTarget && fs.existsSync(builtTarget) ? builtTarget : targetResult.target, 'utf8');
     const escaped = fragment.replace(/[.*+?^$()|[\]\\{}]/g, '\\$&');
     if (!new RegExp('\\b(?:id|name)="' + escaped + '"', 'i').test(targetHtml)) {
       failures.push(fileName + ' links to a missing section ' + value);
