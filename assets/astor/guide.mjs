@@ -28,6 +28,7 @@ function enhance(root) {
   setUpKeep(root, book, live);
   setUpFind(root);
   showCurrentPart(root);
+  keepTarget();
   embedCharacterMap(root);
   embedPlaces(root);
 }
@@ -153,6 +154,18 @@ function setUpFind(root) {
 
   input.addEventListener('input', apply);
   if (theme) apply();
+}
+
+// A reader sent to one line (…/quotations/#astor-quote-out-damned-spot) should
+// arrive at it. The buttons and the finder added above change the height of
+// what comes before the line, so once they are in, go to it again.
+function keepTarget() {
+  const id = decodeURIComponent(window.location.hash.slice(1));
+  const target = id && document.getElementById(id);
+  if (!target) return;
+  requestAnimationFrame(() => {
+    try { target.scrollIntoView({ block: 'start', behavior: 'instant' }); } catch { target.scrollIntoView(); }
+  });
 }
 
 // On a phone the guide's parts run in one line that scrolls sideways; bring
