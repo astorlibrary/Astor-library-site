@@ -295,7 +295,7 @@ export function techniqueSpotter(book, random = Math.random) {
       const used = new Set(quotation.techniques.map(id => byId.get(id)?.name).filter(Boolean));
       return makeChoice({
         id: 'technique:' + book.slug + ':' + quotation.id,
-        stem: 'Which technique is doing the work here?',
+        stem: 'Which technique is this line using?',
         quote: quotation.text,
         correct: technique.name,
         distractors: names.filter(name => !used.has(name)),

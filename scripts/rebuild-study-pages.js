@@ -108,7 +108,7 @@ const GAMES = [
     slug: 'technique-spotter',
     name: 'Technique spotter',
     scope: 'book',
-    blurb: 'Name the device doing the work in a line.',
+    blurb: 'Name the technique a line is using.',
     deck: 'Name the technique at work in the line.',
     why: 'Naming a device earns nothing on its own. Every answer here pairs the term with the job it is doing in that line, so the habit you build is the useful one.'
   },
@@ -162,6 +162,10 @@ const GAMES = [
   }
 ];
 
+// Once a round is under way the question has the page; the other activities
+// for the same book are listed here, under it (revise-kit.mjs fills this in).
+const OTHER_ACTIVITIES = '  <nav class="rx-after" id="rv-after" aria-label="Other ways to revise this book" hidden></nav>';
+
 // --------------------------------------------------------------- the pages
 
 function buildPages() {
@@ -178,8 +182,8 @@ function buildPages() {
     breadcrumb: '<a href="/">Astor Library</a><span aria-hidden="true">/</span><span aria-current="page">Revise</span>',
     module: 'revise-hub.mjs',
     bare: true,
-    intro: `  <section class="rx-hero rx-hub-hero" id="rv-title" aria-label="The book you are revising">
-    <div class="rx-hero-inner"><div class="rx-hero-words"><p class="rx-hero-kicker">Revise</p><h1 class="rx-hero-title">Revise a book</h1><p class="rx-hero-author">Quizzes and flashcards on any book with a study guide.</p></div></div>
+    intro: `  <section class="rv-start" id="rv-title" aria-label="The book you are revising">
+    <div class="rv-start-inner"><div class="rv-start-words"><p class="rv-start-kicker">Revise</p><h1 class="rv-start-title">Revise a book</h1><p class="rv-start-author">Ten questions, quizzes and flashcards on any book with a study guide.</p></div></div>
   </section>`,
     mount: `  <div class="rv-hub" id="rv-hub"><p class="rv-loading">Finding your book…</p></div>`,
     fallback: 'The quizzes need JavaScript. The key quotations are in each <a href="/guides/">study guide</a>.',
@@ -205,7 +209,7 @@ function buildPages() {
   </header>`,
       mount: `  <div class="rv-quiz" id="astor-game" data-game="${escapeHtml(game.slug)}" data-scope="${game.scope}"></div>`,
       fallback: 'This quiz needs JavaScript. The quotations are on the book pages: <a href="/library/">browse the catalogue</a>.',
-      tail: '',
+      tail: game.scope === 'book' ? OTHER_ACTIVITIES : '',
       links: [{ href: '/play/', label: 'Revise' }, { href: '/today/', label: 'Today' }]
     }));
   }
@@ -228,7 +232,7 @@ function buildPages() {
   </header>`,
     mount: '  <div class="rv-quiz" id="astor-flashcards"></div>',
     fallback: 'The flashcards need JavaScript. The same quotations are on each book page.',
-    tail: '',
+    tail: OTHER_ACTIVITIES,
     links: [{ href: '/play/', label: 'Revise' }, { href: '/my-library/', label: 'My library' }]
   }));
 

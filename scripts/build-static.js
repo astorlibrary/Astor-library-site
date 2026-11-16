@@ -14,6 +14,7 @@ const { restructureBookPage } = require('./book-page');
 const { plainHubPage } = require('./hub-pages');
 const { searchDescription } = require('./text-excerpt');
 const { astorHomeCalendar } = require('./home-calendar-rules');
+const { astorHomeFeature } = require('./home-feature-rules');
 
 const root = process.cwd();
 const seasonalStylesVersion = require('crypto').createHash('sha256').update(fs.readFileSync(path.join(root, 'assets/seasons.css'))).digest('hex').slice(0, 10);
@@ -1439,6 +1440,25 @@ function currentSeasonHero(html, source) {
   return html.slice(0, from + marker.length) + '\n  ' + hero + '\n  ' + html.slice(to);
 }
 
+// The homepage's close reading of the week, as the seasonal hero above it: the
+// committed page carries one reading, and the build puts in the one for the
+// day it runs. ASTOR_HOME_FEATURE=<slug> forces a reading.
+function currentHomeFeature(html, source) {
+  if (path.relative(root, source) !== 'index.html') return html;
+  const committed = (html.match(/data-home-feature="([a-z0-9-]+)"/) || [])[1];
+  if (!committed) return html;
+  const plan = JSON.parse(fs.readFileSync(path.join(__dirname, 'home-features.json'), 'utf8'));
+  const date = process.env.ASTOR_HOME_DATE ? new Date(process.env.ASTOR_HOME_DATE + 'T12:00:00') : new Date();
+  const today = process.env.ASTOR_HOME_FEATURE || astorHomeFeature(date, plan);
+  const fragment = path.join(root, 'assets', 'home-features', today + '.json');
+  if (!today || today === committed || !fs.existsSync(fragment)) return html;
+  const marker = '<!-- home-feature:start -->';
+  const from = html.indexOf(marker);
+  const to = html.indexOf('<script data-home-feature-calendar>', from);
+  if (from === -1 || to === -1) return html;
+  return html.slice(0, from + marker.length) + '\n  ' + JSON.parse(fs.readFileSync(fragment, 'utf8')).html + '\n  ' + html.slice(to);
+}
+
 // The house style sets a curly apostrophe, but titles and older pages carry
 // the straight one, so a list could show "A Midsummer Night's Dream" beside
 // "Love’s Labour’s Lost". In the text a reader sees (not in scripts, code,
@@ -1450,6 +1470,7 @@ function curlApostrophes(html) {
 
 function prepareHtml(html, source) {
   html = currentSeasonHero(html, source);
+  html = currentHomeFeature(html, source);
   html = html.replace(/(<span data-count="books">)\d+(<\/span>)/g, '$1' + catalogueBookCount + '$2');
   // The site publishes British English and stamps en-GB metadata everywhere;
   // normalise the bare lang="en" used by older source pages to match.

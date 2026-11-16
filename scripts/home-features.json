@@ -1,0 +1,18 @@
+{
+  "note": "The close reading featured on the homepage, a week at a time. Any slug under /passage-room/ can be added to a window or to the order; run node scripts/rebuild-library.js afterwards. When windows overlap, the shorter one is used. The order is the fallback for any day no window covers.",
+  "windows": [
+    { "name": "New Year", "from": "12-27", "to": "01-06", "slugs": ["great-gatsby-boats-against-the-current", "tempest-our-revels"] },
+    { "name": "Winter", "from": "01-07", "to": "02-29", "slugs": ["winters-tale-she-is-warm", "great-expectations-marsh-country", "king-lear-blow-winds", "ethan-frome-bit-by-bit", "wuthering-heights-i-am-heathcliff", "frankenstein-adam", "jane-eyre-i-am-no-bird", "hamlet-to-be"] },
+    { "name": "Valentine’s week", "from": "02-08", "to": "02-14", "slugs": ["romeo-and-juliet-light", "sonnet-130-false-compare"] },
+    { "name": "Spring", "from": "03-01", "to": "05-31", "slugs": ["tintern-abbey-sense-sublime", "pride-prejudice-self-knowledge", "wind-in-the-willows-piper", "as-you-like-it-seven-ages", "anne-of-green-gables-naming", "sense-and-sensibility-annuity", "twelfth-night-food-of-love", "werther-wonderful-serenity", "paradise-lost-mind-its-own-place", "venus-and-adonis-purple-coloured-face", "ancient-mariner-water-water", "loves-labours-lost-womens-eyes", "much-ado-this-can-be-no-trick"] },
+    { "name": "Shakespeare’s week", "from": "04-18", "to": "04-25", "slugs": ["hamlet-to-be", "richard-ii-sceptred-isle"] },
+    { "name": "Summer", "from": "06-01", "to": "08-31", "slugs": ["midsummer-nights-dream-imagination", "mrs-dalloway-flowers-herself", "odyssey-olive-bed", "antony-and-cleopatra-the-barge", "huckleberry-finn-apology", "moby-dick-call-me-ishmael", "alice-in-wonderland-who-are-you", "robinson-crusoe-footprint", "great-gatsby-boats-against-the-current", "call-of-the-wild-ecstasy", "iliad-hectors-helmet", "gullivers-travels-odious-vermin", "tempest-our-revels"] },
+    { "name": "Independence Day", "from": "07-01", "to": "07-07", "slugs": ["douglass-pathway-freedom", "scarlet-letter-rose-bush"] },
+    { "name": "Autumn", "from": "09-01", "to": "11-28", "slugs": ["macbeth-is-this-a-dagger", "othello-trifles-proof", "tess-president-of-the-immortals", "sherlock-holmes-scandal", "richard-iii-winter-of-our-discontent", "moonstone-robinson-crusoe", "woman-in-white-midnight-touch", "sign-of-four-seven-per-cent", "king-lear-blow-winds"] },
+    { "name": "Halloween", "from": "10-01", "to": "10-31", "slugs": ["dracula-children-of-the-night", "sleepy-hollow-ichabod-crane", "frankenstein-adam", "yellow-wallpaper-got-out-at-last", "doctor-faustus-thousand-ships"] },
+    { "name": "Bonfire Night", "from": "11-01", "to": "11-06", "slugs": ["macbeth-unsex-me-here"] },
+    { "name": "Remembrance", "from": "11-07", "to": "11-14", "slugs": ["henry-v-band-of-brothers", "the-fly-he-could-not-remember", "red-badge-sun-like-a-wafer"] },
+    { "name": "Christmas", "from": "11-29", "to": "12-26", "slugs": ["haunted-man-memory-green", "cricket-on-the-hearth-the-kettle-began-it", "christmas-carol-prisons", "winters-tale-she-is-warm"] }
+  ],
+  "order": ["macbeth-is-this-a-dagger", "pride-prejudice-self-knowledge", "christmas-carol-prisons", "hamlet-to-be", "jekyll-duality", "romeo-and-juliet-light", "frankenstein-adam", "great-gatsby-boats-against-the-current"]
+}

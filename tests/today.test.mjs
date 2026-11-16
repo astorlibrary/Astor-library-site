@@ -3,9 +3,10 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 
-import { questionsFor, dayNumber, shareGrid, PER_DAY } from '../assets/astor/today-pick.mjs';
+import { questionsFor, roundFor, cycleLength, dayNumber, shareGrid, PER_DAY } from '../assets/astor/today-pick.mjs';
 
-const bank = JSON.parse(fs.readFileSync('assets/today-questions.json', 'utf8')).questions;
+const data = JSON.parse(fs.readFileSync('assets/today-questions.json', 'utf8'));
+const bank = data.questions;
 
 test('every Today question has four different options, a hint and an explanation', () => {
   const ids = new Set();
@@ -45,8 +46,11 @@ test('titles in Today questions are marked in pairs', () => {
 
 test('every Today link points at a page on the site', () => {
   for (const question of bank.filter(item => item.link)) {
-    const file = path.join(question.link.href.replace(/^\//, ''), 'index.html');
+    // A link may point at one line of a guide: /guides/macbeth/quotations/#astor-quote-out-damned-spot.
+    const [address, fragment] = question.link.href.split('#');
+    const file = path.join(address.replace(/^\//, ''), 'index.html');
     assert.ok(fs.existsSync(file), question.id + ' links to a missing page ' + question.link.href);
+    if (fragment) assert.ok(fs.readFileSync(file, 'utf8').includes('id="' + fragment + '"'), question.id + ' links to a line that is not on the page: ' + question.link.href);
   }
 });
 
@@ -55,7 +59,9 @@ test('the same five questions all day, different ones tomorrow, none repeated wi
   assert.equal(today.length, PER_DAY);
   assert.deepEqual(today.map(q => q.id), questionsFor(bank, '2026-10-23').map(q => q.id));
   assert.notDeepEqual(today.map(q => q.id), questionsFor(bank, '2026-10-24').map(q => q.id));
-  const cycle = Math.floor(bank.length / PER_DAY);
+  // Dated questions are asked on their own days and kept out of the deal.
+  const cycle = cycleLength(bank);
+  assert.equal(cycle, Math.floor(bank.filter(question => !question.on).length / PER_DAY));
   const seen = new Set();
   for (let day = 0; day < cycle; day += 1) {
     const date = new Date(Date.UTC(2026, 0, 1 + day)).toISOString().slice(0, 10);
@@ -79,4 +85,55 @@ test('the day count and the shareable marks', () => {
   assert.equal(dayNumber('2026-01-01'), 0);
   assert.equal(dayNumber('2026-01-02'), 1);
   assert.equal(shareGrid([true, false, true]), '■□■');
+});
+
+test('every Today question says what it is about, and a dated one says why today', () => {
+  for (const question of bank) {
+    assert.ok(['text', 'book', 'world'].includes(question.kind), question.id + ' has no kind');
+    if (question.book) {
+      const work = data.books[question.book];
+      assert.ok(work && work.title, question.id + ' names a book the bank does not list: ' + question.book);
+      assert.ok(fs.existsSync(path.join(work.href.replace(/^\//, ''), 'index.html')), question.book + ' points at a missing page ' + work.href);
+      assert.equal(work.revise, fs.existsSync(path.join('data', 'books', question.book + '.json')), question.book + ' is wrong about having revision questions');
+    }
+    if (question.on !== undefined) {
+      assert.match(question.on, /^(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/, question.id + ' has a malformed date');
+      assert.ok(question.occasion && question.occasion.length > 10, question.id + ' is dated but does not say why');
+      // The line that introduces the question must not answer it.
+      assert.ok(!question.occasion.toLowerCase().includes(question.options[0].replace(/\*/g, '').toLowerCase()), question.id + ' gives the answer away in its occasion');
+    }
+  }
+  const dates = bank.filter(question => question.on).map(question => question.on);
+  assert.equal(new Set(dates).size, dates.length, 'two questions claim the same day');
+});
+
+// No question asks for a number or a year for its own sake.
+test('no Today question asks the reader to pick a figure out of four', () => {
+  const figure = text => /^(?:c\. )?\d{3,4}$|^(?:one|two|three|four|five|six|seven|eight|nine|ten|twelve|twenty-four)(?: (?:years?|nights?|books?|days?))?$/i.test(text.replace(/\*/g, '').trim());
+  for (const question of bank) {
+    assert.ok(!question.options.every(figure), question.id + ' offers four bare figures: ' + question.options.join(' | '));
+  }
+});
+
+test('a day opens and closes on one book, with three other books between', () => {
+  for (let offset = 0; offset < cycleLength(bank); offset += 1) {
+    const date = new Date(Date.UTC(2026, 1, 1 + offset)).toISOString().slice(0, 10);
+    const round = roundFor(bank, date);
+    assert.equal(round.questions.length, PER_DAY, date);
+    if (round.occasion) continue;
+    assert.ok(round.book, date + ' has no book of the day');
+    assert.equal(round.questions[0].book, round.book, date);
+    assert.equal(round.questions[PER_DAY - 1].book, round.book, date);
+    const middle = round.questions.slice(1, -1).map(question => question.book || question.id);
+    assert.equal(new Set(middle).size, middle.length, date + ' asks about one book twice in the middle');
+    assert.ok(!middle.includes(round.book), date + ' asks about the day’s book in the middle');
+  }
+});
+
+test('a dated question is asked first on its day and introduced', () => {
+  const globe = roundFor(bank, '2027-06-29');
+  assert.equal(globe.questions[0].id, 'globe-fire');
+  assert.match(globe.occasion, /burned down on this day in 1613/);
+  assert.equal(globe.questions.length, PER_DAY);
+  assert.equal(roundFor(bank, '2027-06-30').occasion, '');
 });
