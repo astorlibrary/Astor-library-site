@@ -121,9 +121,30 @@ function setUpFind(root) {
   )]));
   const params = new URLSearchParams(window.location.search);
   let theme = themeNames[params.get('theme')] ? params.get('theme') : '';
+  const themeLinks = [...box.querySelectorAll('[data-theme]')];
   box.hidden = false;
 
+  // A theme link narrows the page in place; the address follows, so the
+  // narrowed page can be shared. A second tap on the same theme lets go.
+  function chooseTheme(next) {
+    theme = next === theme ? '' : next;
+    const url = new URL(window.location.href);
+    if (theme) url.searchParams.set('theme', theme); else url.searchParams.delete('theme');
+    url.hash = '';
+    window.history.replaceState(null, '', url);
+    apply();
+  }
+  for (const link of themeLinks) {
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      chooseTheme(link.dataset.theme);
+    });
+  }
+
   function apply() {
+    for (const link of themeLinks) {
+      if (link.dataset.theme === theme) link.setAttribute('aria-current', 'true'); else link.removeAttribute('aria-current');
+    }
     const words = foldText(input.value).split(' ').filter(Boolean);
     let shown = 0;
     for (const figure of figures) {

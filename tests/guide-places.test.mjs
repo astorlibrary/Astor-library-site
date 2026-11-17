@@ -48,6 +48,16 @@ test('the list of study guides has a find box that falls back to the Search page
   assert.match(page, /src="\/assets\/astor\/guides-find\.mjs"/);
   const entries = [...page.matchAll(/<li data-find="([^"]+)"><a href="\/guides\/([^/]+)\/">/g)];
   assert.equal(entries.length, loadBooks().length);
+  // The set texts come first, each with its key quotations and themes, and
+  // are left out of the find box's list so a book is found once.
+  const set = page.match(/<section class="guides-group guides-set"[\s\S]*?<\/section>/)[0];
+  assert.equal(page.indexOf(set) < page.indexOf('<section class="guides-group"><h2>'), true);
+  const setBooks = [...set.matchAll(/<li><a href="\/guides\/([^/]+)\/">/g)].map(match => match[1]);
+  assert.equal(setBooks.length, 13);
+  for (const slug of setBooks) {
+    assert.match(set, new RegExp('href="/guides/' + slug + '/quotations/">Key quotations</a><a href="/guides/' + slug + '/themes/">Themes</a>'));
+  }
+  assert.doesNotMatch(set, /data-find=/);
   const jekyll = entries.find(entry => entry[2] === 'jekyll-and-hyde');
   assert.match(jekyll[1], /Jekyll/);
   assert.match(jekyll[1], /Stevenson/);
@@ -62,11 +72,34 @@ test('the not-found page searches for the words in the address', () => {
   assert.match(script, /shortlist\(entries, words/);
 });
 
-test('the paired Study Edition texts have hand-chosen evidence for every theme', () => {
+test('the paired Study Edition texts and the other GCSE set texts have hand-chosen evidence for every theme', () => {
   const books = new Map(loadBooks().map(book => [book.slug, book]));
-  for (const slug of ['macbeth', 'a-christmas-carol', 'pride-and-prejudice', 'jekyll-and-hyde', 'romeo-and-juliet']) {
-    for (const theme of books.get(slug).themes) {
+  const chosen = [
+    // The five texts in Astor's paired Study Editions.
+    'macbeth', 'a-christmas-carol', 'pride-and-prejudice', 'jekyll-and-hyde', 'romeo-and-juliet',
+    // The other nineteenth-century novels and Shakespeare plays set for GCSE English Literature.
+    'frankenstein', 'great-expectations', 'jane-eyre', 'sign-of-four',
+    'the-tempest', 'the-merchant-of-venice', 'much-ado-about-nothing', 'julius-caesar'
+  ];
+  for (const slug of chosen) {
+    const book = books.get(slug);
+    for (const theme of book.themes) {
+      // A theme with no key quotation filed under it has nothing to choose from.
+      if (!book.quotations.some(quotation => (quotation.themes || []).includes(theme.id))) continue;
       assert.ok(Array.isArray(theme.evidence) && theme.evidence.length, slug + ': ' + theme.id);
     }
   }
+});
+
+test('key quotations can be narrowed to one theme with a tap, at an address that can be shared', () => {
+  for (const book of loadBooks()) {
+    const page = read('guides/' + book.slug + '/quotations/index.html');
+    const filed = book.themes.filter(theme => book.quotations.some(quotation => (quotation.themes || []).includes(theme.id)));
+    const row = (page.match(/<p class="guide-find-themes">[\s\S]*?<\/p>/) || [''])[0];
+    if (filed.length < 2) { assert.equal(row, '', book.slug); continue; }
+    const links = [...row.matchAll(/<a href="\?theme=([^"]+)" data-theme="\1">/g)].map(match => match[1]);
+    assert.deepEqual(links, filed.map(theme => theme.id), book.slug);
+  }
+  const script = read('assets/astor/guide.mjs');
+  assert.match(script, /searchParams\.set\('theme', theme\)/);
 });

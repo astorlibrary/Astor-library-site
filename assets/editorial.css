@@ -702,6 +702,39 @@ html body :is(h2, h3):not(.home *, .season-page *, .rx-hero *, .rx-results *) {
   outline-offset: 2px;
 }
 
+/* One tap to the lines on a theme. */
+.guide-find-themes {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 8px;
+}
+
+.guide-find-themes .guide-label {
+  margin: 0 4px 0 0;
+}
+
+.guide-find-themes a {
+  padding: 5px 10px;
+  border: 1px solid var(--line, var(--ed-rule-strong));
+  color: var(--text, var(--ed-ink));
+  font: 400 14px/1.3 var(--sans);
+  text-decoration: none;
+}
+
+.guide-find-themes a:hover,
+.guide-find-themes a:focus-visible {
+  border-color: var(--wine-text, var(--ed-wine));
+  color: var(--wine-text, var(--ed-wine));
+}
+
+.guide-find-themes a[aria-current="true"] {
+  border-color: var(--wine-text, var(--ed-wine));
+  background: var(--wine-text, var(--ed-wine));
+  color: var(--surface, #fffdf9);
+}
+
 .guide-body .guide-find-status {
   margin: 8px 0 0;
   min-height: 1.5em;
@@ -1063,6 +1096,34 @@ html body :is(h2, h3):not(.home *, .season-page *, .rx-hero *, .rx-results *) {
   min-height: 1.5em;
   color: var(--text-muted, var(--ed-muted));
   font: 400 15px/1.5 var(--sans);
+}
+
+/* The set texts, first on the list of guides. */
+.guides-set .guides-set-note {
+  max-width: 40rem;
+  margin: -4px 0 14px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.5 var(--sans);
+}
+
+.guides-set-list li {
+  padding: 0 0 8px;
+}
+
+.guides-set-list .guides-set-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 18px;
+  margin-top: -6px;
+  font: 400 14px/1.5 var(--sans);
+}
+
+.guides-set-list .guides-set-links a {
+  padding: 6px 0;
+  display: inline;
+  color: var(--wine-text, var(--ed-wine));
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .guides-group[hidden],
