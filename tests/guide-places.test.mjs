@@ -103,3 +103,15 @@ test('key quotations can be narrowed to one theme with a tap, at an address that
   const script = read('assets/astor/guide.mjs');
   assert.match(script, /searchParams\.set\('theme', theme\)/);
 });
+
+test('Revise offers the GCSE set texts as a row when choosing a book, from the same list as Study guides', () => {
+  const { SET_TEXTS } = require('../scripts/book-data.js');
+  const shelf = JSON.parse(read('assets/revise-index.json'));
+  const marked = shelf.books.filter(book => book.set).sort((a, b) => a.set - b.set).map(book => book.slug);
+  assert.deepEqual(marked, SET_TEXTS);
+  const guides = read('guides/index.html').match(/<section class="guides-group guides-set"[\s\S]*?<\/section>/)[0];
+  assert.deepEqual([...guides.matchAll(/<li><a href="\/guides\/([^/]+)\/">/g)].map(match => match[1]), SET_TEXTS);
+  const kit = read('assets/astor/revise-kit.mjs');
+  assert.match(kit, /text: 'Set for GCSE'/);
+  assert.match(kit, /setBlock\.hidden = Boolean\(words\.length \|\| period\)/);
+});

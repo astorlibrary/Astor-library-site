@@ -3731,3 +3731,21 @@ html[data-edition] .rx-after a:is(:hover, :focus-visible) { color: var(--ed-acce
 .today-book-links a { color: var(--wine-text, var(--burgundy, #6e1f2b)); text-underline-offset: 4px; }
 
 .today-book { border-bottom: 0; padding-bottom: 4px; }
+
+/* The GCSE set texts in "Choose a book": a grid on a wide screen, and on a
+   phone one row that scrolls sideways, so the full list stays near the top. */
+@media (max-width: 720px) {
+  .rx-shelf-grid.is-strip {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    scroll-snap-type: x proximity;
+    overscroll-behavior-x: contain;
+  }
+
+  .rx-shelf-grid.is-strip > li {
+    flex: 0 0 96px;
+    scroll-snap-align: start;
+  }
+}
