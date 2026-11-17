@@ -171,12 +171,6 @@ function setUpFind(root) {
       input.focus();
     });
     status.append(all);
-    // A narrowed page is a revision sheet: print it as it stands.
-    if (shown) {
-      const print = el('button', { type: 'button', class: 'guide-print', text: shown === 1 ? 'Print this line' : 'Print these ' + shown });
-      print.addEventListener('click', () => window.print());
-      status.append(' ', print);
-    }
   }
 
   input.addEventListener('input', apply);
