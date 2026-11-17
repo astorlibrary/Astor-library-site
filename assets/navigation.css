@@ -804,3 +804,93 @@ body:has(.astor-palette[open]) { overflow: hidden; }
   }
 }
 
+/* Search beside the dark-mode button where the navigation bar is folded away,
+   so a phone reaches it in one tap from any page. It opens the same search
+   box as the Search link in the full bar, and is a link to the Search page
+   when scripts do not run. */
+.astor-search-compact {
+  display: none;
+}
+
+.astor-search-icon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  display: block;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+}
+
+.astor-search-icon::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  bottom: -3px;
+  width: 7px;
+  height: 2px;
+  background: currentColor;
+  transform: rotate(45deg);
+  transform-origin: right center;
+}
+
+@media (max-width: 1040px) {
+  .astor-global-header.site-header .astor-header-identity .astor-search-compact {
+    width: 46px;
+    height: 46px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text, var(--astor-nav-ink));
+    text-decoration: none;
+    touch-action: manipulation;
+  }
+
+  .astor-global-header.site-header .astor-header-identity {
+    grid-template-columns: minmax(0, 1fr) auto auto auto;
+  }
+}
+
+/* On a phone the wordmark, Search, Dark mode and Menu share one line; the
+   wordmark tightens a little so nothing overlaps, and on the narrowest
+   screens Menu shows its mark alone (the word stays for screen readers). */
+@media (max-width: 420px) {
+  .astor-global-header.site-header .astor-header-identity {
+    gap: 2px;
+  }
+
+  .astor-global-header.site-header .brand {
+    gap: 7px;
+  }
+
+  .astor-global-header.site-header .brand .word {
+    font-size: 12px;
+    letter-spacing: 0.14em;
+  }
+
+  .astor-global-header.site-header .astor-header-identity .astor-search-compact,
+  .astor-global-header.site-header .astor-header-identity .astor-theme-toggle-compact {
+    width: 42px;
+  }
+}
+
+@media (max-width: 359px) {
+  .astor-global-header.site-header.site-nav-ready .site-nav-toggle {
+    min-width: 44px;
+    justify-content: center;
+  }
+
+  .astor-global-header.site-header.site-nav-ready .site-nav-toggle > span:first-child {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+}
+
+@media print {
+  .astor-search-compact {
+    display: none !important;
+  }
+}

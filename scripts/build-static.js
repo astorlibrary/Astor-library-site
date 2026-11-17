@@ -1167,6 +1167,7 @@ function addGlobalNavigation(html, source) {
   <div class="astor-header-identity">
     <a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-header-mark.png" alt="" width="24" height="54"><span class="word">LIBRARY</span></a>
     <p class="astor-header-strap">Annotated editions of classic literature</p>
+    <a class="astor-search-compact" href="/explore/" data-astor-palette aria-label="Search"><span class="astor-search-icon" aria-hidden="true"></span></a>
     <button class="astor-theme-toggle-compact" type="button" data-theme-toggle aria-pressed="false" aria-label="Dark mode"><span class="astor-theme-icon" aria-hidden="true"></span></button>
     <button class="site-nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span>Menu</span><span class="site-nav-mark" aria-hidden="true"></span></button>
   </div>
