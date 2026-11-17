@@ -214,6 +214,16 @@ function sceneLines(book, quotations) {
   return '<span class="guide-scene-lines"><span class="guide-label">' + (links.length === 1 ? 'Key line' : 'Key lines') + '</span> ' + links.join('<span aria-hidden="true"> · </span>') + '</span>';
 }
 
+// One tap to the lines on a theme: each link carries ?theme=, which the find
+// box reads, so the narrowed page has an address that can be shared. Themes
+// with no key line filed under them are left out.
+function themeRow(book) {
+  const themes = book.themes.filter(theme => book.quotations.some(quotation => (quotation.themes || []).includes(theme.id)));
+  if (themes.length < 2) return '';
+  return '<p class="guide-find-themes"><span class="guide-label">By theme</span> ' +
+    themes.map(theme => '<a href="?theme=' + escapeHtml(theme.id) + '" data-theme="' + escapeHtml(theme.id) + '">' + escapeHtml(theme.name) + '</a>').join('') + '</p>';
+}
+
 function whatHappens(book) {
   const anchors = sceneAnchors(book);
   const sceneId = (stage, scene) => anchors.get(scene);
@@ -364,6 +374,7 @@ function quotations(book) {
   const find = '<div class="guide-find" data-guide-find data-themes="' + escapeHtml(themeNames) + '" hidden>' +
     '<label for="guide-find-input">Find a line</label>' +
     '<input id="guide-find-input" type="search" autocomplete="off" spellcheck="false" placeholder="A word, a speaker or a reference">' +
+    themeRow(book) +
     '<p class="guide-find-status" data-guide-find-status role="status"></p></div>';
   const jump = single ? '' : jumpNav(groups.map(group => ({ id: groupId(group), label: group.label, count: group.items.length })));
   const index = '<details class="guide-line-index"><summary>All ' + book.quotations.length + ' lines in order</summary><ol>' +

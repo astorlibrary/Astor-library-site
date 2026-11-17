@@ -90,3 +90,16 @@ test('the paired Study Edition texts and the other GCSE set texts have hand-chos
     }
   }
 });
+
+test('key quotations can be narrowed to one theme with a tap, at an address that can be shared', () => {
+  for (const book of loadBooks()) {
+    const page = read('guides/' + book.slug + '/quotations/index.html');
+    const filed = book.themes.filter(theme => book.quotations.some(quotation => (quotation.themes || []).includes(theme.id)));
+    const row = (page.match(/<p class="guide-find-themes">[\s\S]*?<\/p>/) || [''])[0];
+    if (filed.length < 2) { assert.equal(row, '', book.slug); continue; }
+    const links = [...row.matchAll(/<a href="\?theme=([^"]+)" data-theme="\1">/g)].map(match => match[1]);
+    assert.deepEqual(links, filed.map(theme => theme.id), book.slug);
+  }
+  const script = read('assets/astor/guide.mjs');
+  assert.match(script, /searchParams\.set\('theme', theme\)/);
+});
