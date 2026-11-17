@@ -127,20 +127,3 @@ test('a narrowed list of key quotations prints as a revision sheet', () => {
   for (const hidden of ['.guide-find input', '.guide-find-themes', '.guide-find-status button', '.guide-line-index']) assert.ok(print.includes(hidden), hidden);
   assert.match(print, /\.guide-quote \{\s*break-inside: avoid;/);
 });
-
-test('each character lists their key lines, and Key quotations can show one character’s lines', () => {
-  const page = read('guides/macbeth/characters/index.html');
-  const lady = page.match(/<section class="guide-entry" id="astor-character-lady-macbeth">[\s\S]*?<\/section>/)[0];
-  const shown = [...lady.matchAll(/<a href="\/guides\/macbeth\/quotations\/#astor-quote-([^"]+)">/g)].map(match => match[1]);
-  assert.equal(shown.length, 3);
-  assert.match(lady, /<a class="guide-entry-all" href="\/guides\/macbeth\/quotations\/\?character=lady-macbeth">All 7 lines<\/a>/);
-  // Macbeth's own lines come first, in the order of the play: 1.4 before 1.7.
-  const macbeth = page.match(/<section class="guide-entry" id="astor-character-macbeth">[\s\S]*?<\/section>/)[0];
-  assert.match(macbeth, /#astor-quote-stars-hide-your-fires">[^<]*<\/a>/);
-  assert.ok(macbeth.indexOf('stars-hide-your-fires') < macbeth.indexOf('vaulting-ambition'));
-  const quotations = read('guides/macbeth/quotations/index.html');
-  assert.match(quotations, /data-characters="\{[^"]*lady-macbeth[^"]*\}"/);
-  assert.equal((quotations.match(/data-characters="[^"{]*\blady-macbeth\b[^"]*"/g) || []).length, 7);
-  const script = read('assets/astor/guide.mjs');
-  assert.match(script, /params\.get\('character'\)/);
-});

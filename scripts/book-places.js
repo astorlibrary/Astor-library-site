@@ -73,11 +73,7 @@ function quoteOpening(text) {
     if (end < 0 || end > 9) end = 7;
     cut = words.slice(0, end + 1).join(' ');
     // A sentence that ends there needs no dots after it.
-    if (!/[.!?][”’"]?$/.test(cut)) {
-      cut = cut.replace(/[,;:—–-]+([”’"]?)$/, '$1');
-      // The dots go inside a closing speech mark: “in life…”, not “in life”…
-      cut = /[”"]$/.test(cut) ? cut.slice(0, -1) + '…' + cut.slice(-1) : cut + '…';
-    }
+    if (!/[.!?][”’"]?$/.test(cut)) cut = cut.replace(/[,;:—–-]+([”’"]?)$/, '$1') + '…';
   } else {
     cut = line.replace(/[,;:]$/, '');
   }

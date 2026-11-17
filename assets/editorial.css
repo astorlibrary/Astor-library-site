@@ -370,30 +370,6 @@ html body :is(h2, h3):not(.home *, .season-page *, .rx-hero *, .rx-results *) {
   font-variant-numeric: tabular-nums;
 }
 
-.guide-entry .guide-entry-lines {
-  margin: 10px 0 0;
-  color: var(--text-muted, var(--ed-muted));
-  font: 400 15px/1.6 var(--sans);
-}
-
-.guide-entry .guide-entry-lines .guide-label {
-  display: inline;
-  margin: 0 6px 0 0;
-}
-
-.guide-entry .guide-entry-lines a {
-  color: var(--wine-text, var(--ed-wine));
-  font-family: var(--serif);
-  font-size: 16px;
-  text-underline-offset: 3px;
-}
-
-.guide-entry .guide-entry-lines .guide-entry-all {
-  margin-left: 10px;
-  font-family: var(--sans);
-  font-size: 15px;
-}
-
 .guide-scenes .guide-scene-lines {
   display: block;
   margin: 6px 0 0;

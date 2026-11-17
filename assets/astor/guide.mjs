@@ -116,15 +116,11 @@ function setUpFind(root) {
   const extras = [...root.querySelectorAll('.guide-jump, .guide-line-index')];
   let themeNames = {};
   try { themeNames = JSON.parse(box.dataset.themes || '{}'); } catch { /* no theme names */ }
-  let characterNames = {};
-  try { characterNames = JSON.parse(box.dataset.characters || '{}'); } catch { /* no character names */ }
   const text = new Map(figures.map(figure => [figure, foldText(
     (figure.querySelector('blockquote')?.textContent || '') + ' ' + (figure.dataset.reference || '')
   )]));
   const params = new URLSearchParams(window.location.search);
   let theme = themeNames[params.get('theme')] ? params.get('theme') : '';
-  // A link from a character on the Characters page: their lines only.
-  let character = characterNames[params.get('character')] ? params.get('character') : '';
   const themeLinks = [...box.querySelectorAll('[data-theme]')];
   box.hidden = false;
 
@@ -132,10 +128,8 @@ function setUpFind(root) {
   // narrowed page can be shared. A second tap on the same theme lets go.
   function chooseTheme(next) {
     theme = next === theme ? '' : next;
-    character = '';
     const url = new URL(window.location.href);
     if (theme) url.searchParams.set('theme', theme); else url.searchParams.delete('theme');
-    url.searchParams.delete('character');
     url.hash = '';
     window.history.replaceState(null, '', url);
     apply();
@@ -155,27 +149,23 @@ function setUpFind(root) {
     let shown = 0;
     for (const figure of figures) {
       const inTheme = !theme || (figure.dataset.themes || '').split(' ').includes(theme);
-      const ofCharacter = !character || (figure.dataset.characters || '').split(' ').includes(character);
-      const match = inTheme && ofCharacter && words.every(word => text.get(figure).includes(word));
+      const match = inTheme && words.every(word => text.get(figure).includes(word));
       figure.hidden = !match;
       if (match) shown += 1;
     }
     for (const group of groups) group.hidden = !group.querySelector('.guide-quote:not([hidden])');
-    const narrowed = Boolean(words.length || theme || character);
+    const narrowed = Boolean(words.length || theme);
     for (const extra of extras) extra.hidden = narrowed;
     status.textContent = '';
     if (!narrowed) return;
-    const topic = theme ? themeNames[theme] : character ? characterNames[character] : '';
-    const what = topic ? (shown === 1 ? ' line on ' : ' lines on ') + topic : (shown === 1 ? ' line' : ' lines');
+    const what = theme ? (shown === 1 ? ' line on ' : ' lines on ') + themeNames[theme] : (shown === 1 ? ' line' : ' lines');
     status.append(shown ? shown + what + (words.length ? ' matching “' + input.value.trim() + '”' : '') + '. ' : 'No key line matches. ');
     const all = el('button', { type: 'button', text: 'Show all ' + figures.length });
     all.addEventListener('click', () => {
       input.value = '';
       theme = '';
-      character = '';
       const url = new URL(window.location.href);
       url.searchParams.delete('theme');
-      url.searchParams.delete('character');
       window.history.replaceState(null, '', url);
       apply();
       input.focus();
@@ -190,7 +180,7 @@ function setUpFind(root) {
   }
 
   input.addEventListener('input', apply);
-  if (theme || character) apply();
+  if (theme) apply();
 }
 
 // A reader sent to one line (…/quotations/#astor-quote-out-damned-spot) should

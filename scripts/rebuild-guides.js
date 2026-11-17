@@ -141,8 +141,7 @@ function quoteBlock(book, quotation, { explain = true, id = true } = {}) {
     : '';
   const tags = themeLinks.length ? '<p class="guide-quote-tags"><span class="guide-label">Themes</span> ' + themeLinks.join('<span aria-hidden="true"> · </span>') + '</p>' : '';
   return '<figure class="guide-quote"' + (id ? ' id="astor-quote-' + escapeHtml(quotation.id) + '" data-quote-id="' + escapeHtml(quotation.id) + '"' : '') +
-    ' data-reference="' + escapeHtml(referenceText(quotation)) + '" data-themes="' + escapeHtml((quotation.themes || []).join(' ')) + '"' +
-    ((quotation.characters || []).length ? ' data-characters="' + escapeHtml(quotation.characters.join(' ')) + '"' : '') + '>' +
+    ' data-reference="' + escapeHtml(referenceText(quotation)) + '" data-themes="' + escapeHtml((quotation.themes || []).join(' ')) + '">' +
     '<figcaption class="guide-quote-ref"><span class="guide-ref-place">' + escapeHtml(place) + '</span>' +
     (speaker ? '<span class="guide-ref-speaker">' + escapeHtml(speaker) + '</span>' : '') + '</figcaption>' +
     '<div class="guide-quote-main"><blockquote><p>' + quoteText(book, quotation.text) + '</p></blockquote>' +
@@ -240,42 +239,6 @@ function whatHappens(book) {
   return jumpNav(book.structure.map(stage => ({ id: stage.id, label: stage.label }))) + stages;
 }
 
-// A character's key lines: the ones they speak first, then the ones about
-// them, each group in the order of the book. Three are shown under the
-// character, with a link to all of them on the key quotations page.
-function linesFor(book, character) {
-  // The order of the book: its part, then the numbers in the reference
-  // ("1.4.52", "Chapter 23"), then the order of the record.
-  const stageIndex = new Map(book.structure.map((stage, index) => [stage.id, index]));
-  const keys = new Map(book.quotations.map((quotation, index) => [quotation,
-    [stageIndex.has(quotation.stage) ? stageIndex.get(quotation.stage) : 999, ...(String(quotation.reference).match(/\d+/g) || []).map(Number), index]]));
-  const byPlace = (a, b) => {
-    const x = keys.get(a), y = keys.get(b);
-    for (let i = 0; i < Math.max(x.length, y.length); i++) {
-      if ((x[i] ?? -1) !== (y[i] ?? -1)) return (x[i] ?? -1) - (y[i] ?? -1);
-    }
-    return 0;
-  };
-  const fold = text => String(text || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
-  const names = [character.name, character.shortName].filter(Boolean).map(fold);
-  const spoken = quotation => names.some(name => name && fold(quotation.speaker) === name);
-  return book.quotations
-    .filter(quotation => (quotation.characters || []).includes(character.id))
-    .sort((a, b) => (spoken(b) - spoken(a)) || byPlace(a, b));
-}
-
-function characterLines(book, character) {
-  const lines = linesFor(book, character);
-  if (!lines.length) return '';
-  const shown = lines.slice(0, 3).map(quotation =>
-    '<a href="' + guideHref(book.slug, 'quotations') + '#astor-quote-' + escapeHtml(quotation.id) + '">' + escapeHtml(quoteOpening(quotation.text)) + '</a>');
-  const all = lines.length > 3
-    ? '<a class="guide-entry-all" href="' + guideHref(book.slug, 'quotations') + '?character=' + escapeHtml(character.id) + '">All ' + lines.length + ' lines</a>'
-    : '';
-  return '<p class="guide-entry-lines"><span class="guide-label">' + (lines.length === 1 ? 'Key line' : 'Key lines') + '</span> ' +
-    shown.join('<span aria-hidden="true"> · </span>') + (all ? ' ' + all : '') + '</p>';
-}
-
 function characters(book) {
   const entries = book.characters.map(character => {
     const role = [character.role, character.firstAppearance ? 'first appears ' + character.firstAppearance : ''].filter(Boolean).join('; ');
@@ -283,7 +246,6 @@ function characters(book) {
       '<h2>' + escapeHtml(character.name) + '</h2>' +
       (role ? '<p class="guide-entry-role">' + escapeHtml(role.replace(/^./, c => c.toUpperCase())) + '</p>' : '') +
       '<p>' + escapeHtml(character.summary) + '</p>' +
-      characterLines(book, character) +
       '</section>';
   }).join('');
   const map = '<section class="guide-map" aria-labelledby="guide-map-title">' +
@@ -401,10 +363,9 @@ function quotations(book) {
   const single = groups.length === 1;
   const groupId = group => 'lines-' + (group.key || 'elsewhere');
   const themeNames = JSON.stringify(Object.fromEntries(book.themes.map(theme => [theme.id, theme.name])));
-  const characterNames = JSON.stringify(Object.fromEntries(book.characters.map(character => [character.id, character.name])));
   // Typing in the box narrows the page to matching lines; it appears only
   // when the script that runs it has loaded.
-  const find = '<div class="guide-find" data-guide-find data-themes="' + escapeHtml(themeNames) + '" data-characters="' + escapeHtml(characterNames) + '" hidden>' +
+  const find = '<div class="guide-find" data-guide-find data-themes="' + escapeHtml(themeNames) + '" hidden>' +
     '<label for="guide-find-input">Find a line</label>' +
     '<input id="guide-find-input" type="search" autocomplete="off" spellcheck="false" placeholder="A word, a speaker or a reference">' +
     themeRow(book) +
