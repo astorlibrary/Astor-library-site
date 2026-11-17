@@ -137,23 +137,6 @@ function validateBook(book, fileName) {
     }
   }
   const themeIds = new Set(themes.map(theme => theme?.id).filter(Boolean));
-  // A theme may choose the lines printed under it in the guide, each with a
-  // sentence saying what the line shows about the theme. The lines must be the
-  // book's own, filed under that theme, and given to one theme only, so a
-  // guide's Themes page never prints the same quotation twice.
-  const evidenceUse = new Map();
-  for (const theme of themes) {
-    if (!isPlainObject(theme) || theme.evidence === undefined) continue;
-    if (!Array.isArray(theme.evidence) || !theme.evidence.length) { problems.push(at('has malformed evidence for theme "' + theme.id + '"')); continue; }
-    for (const entry of theme.evidence) {
-      if (!isPlainObject(entry) || !nonEmptyString(entry.quote)) { problems.push(at('has evidence without a quotation for theme "' + theme.id + '"')); continue; }
-      const extra = Object.keys(entry).filter(key => !['quote', 'note'].includes(key));
-      if (extra.length) problems.push(at('has evidence with unknown fields: ' + extra.join(', ')));
-      if (!nonEmptyString(entry.note) || wordCount(entry.note) < 8) problems.push(at('gives "' + entry.quote + '" as evidence for "' + theme.id + '" without saying what it shows'));
-      if (evidenceUse.has(entry.quote)) problems.push(at('gives "' + entry.quote + '" as evidence for both "' + evidenceUse.get(entry.quote) + '" and "' + theme.id + '"'));
-      evidenceUse.set(entry.quote, theme.id);
-    }
-  }
 
   const techniques = Array.isArray(book.techniques) ? book.techniques : [];
   if (!Array.isArray(book.techniques)) problems.push(at('is missing the techniques list'));
@@ -184,10 +167,6 @@ function validateBook(book, fileName) {
     for (const id of quotation.techniques || []) if (!techniqueIds.has(id)) problems.push(at('links quotation "' + quotation.id + '" to the unknown technique "' + id + '"'));
     for (const id of quotation.characters || []) if (!characterIds.has(id)) problems.push(at('links quotation "' + quotation.id + '" to the unknown character "' + id + '"'));
     if (quotation.stage && !stageIds.has(quotation.stage)) problems.push(at('places quotation "' + quotation.id + '" in the unknown stage "' + quotation.stage + '"'));
-    if (evidenceUse.has(quotation.id)) {
-      if (!(quotation.themes || []).includes(evidenceUse.get(quotation.id))) problems.push(at('gives "' + quotation.id + '" as evidence for "' + evidenceUse.get(quotation.id) + '", a theme it is not filed under'));
-      evidenceUse.delete(quotation.id);
-    }
     for (const word of quotation.cloze || []) {
       if (!nonEmptyString(word)) problems.push(at('has an empty cloze word on "' + quotation.id + '"'));
       else if (!String(quotation.text).toLowerCase().includes(String(word).toLowerCase())) {
@@ -195,8 +174,6 @@ function validateBook(book, fileName) {
       }
     }
   }
-
-  for (const [quote, theme] of evidenceUse) problems.push(at('gives the unknown quotation "' + quote + '" as evidence for "' + theme + '"'));
 
   for (const entry of book.timeline || []) {
     if (!Number.isInteger(entry?.year)) problems.push(at('has a timeline entry without a year'));

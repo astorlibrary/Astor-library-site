@@ -130,9 +130,6 @@ function boxShelf(book, highlight = null) {
 // `only`, when given, is a set of lines to work through instead of the usual
 // queue: the ones just missed, for example, which are not due until tomorrow.
 function sitting(book, meta, mode, only = null) {
-  // As in a quiz round, the cards have the page: the heading and the
-  // breadcrumb step back (see "rx: in a round" in astor-study.css).
-  document.querySelector('main')?.classList.add('is-in-round');
   const live = el('p', { class: 'astor-game-live', 'aria-live': 'polite', role: 'status' });
   const planned = queueFor(book);
   const queue = only && only.length ? only : planned.queue;

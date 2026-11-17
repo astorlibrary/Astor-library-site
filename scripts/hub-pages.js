@@ -240,7 +240,7 @@ function readingRoutes(html, href) {
     body = body.replace(/<section class="page-intro"><div class="route-intro">([\s\S]*?)<\/div>\s*<aside class="source-note">[\s\S]*?<\/aside><\/section>/, (intro, content) =>
       '<section class="page-intro hub-intro">' + content.replace(/<p class="kicker">[\s\S]*?<\/p>\s*/, '') + '</section>');
     body = body.replace(/<span class="route-number">[\s\S]*?<\/span>/g, '');
-    body = body.replace(/<span>Continue with:<\/span>/g, '<span>Slide guides:</span>');
+    body = body.replace(/<span>Continue with:<\/span>/g, '<span>Free guides:</span>');
     body = stripHeadingStops(stripLabels(body));
     return open.replace('<main', '<main data-hub="routes"') + body + close;
   });
@@ -389,7 +389,7 @@ function classicPage(html, discovery) {
       '<li><a href="/reading-routes/">Reading lists</a> that group books from different periods around a question</li>' +
       '<li><a href="/subjects/">Subject guides</a> to forms such as tragedy, comedy and Gothic fiction</li>' +
       '<li><a href="/guides/">Study guides</a> to each book, free to read</li>' +
-      '<li><a href="/resources/">Slide guides</a> to Shakespeare, Victorian novels, poetry and drama (a free account opens each one after its first three slides)</li></ul></section>');
+      '<li><a href="/resources/">Illustrated guides</a> to Shakespeare, Victorian novels, poetry and drama</li></ul></section>');
     body = stripHeadingStops(stripLabels(body));
     return open.replace('<main', '<main data-hub="classic"') + body + close;
   });

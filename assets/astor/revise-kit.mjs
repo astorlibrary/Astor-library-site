@@ -17,7 +17,7 @@ export const QUIZZES = [
   { id: 'who-said-it', name: 'Who said it?', note: 'Read a line and name who says it.', group: 'words' },
   { id: 'fill-the-line', name: 'Fill the line', note: 'Put the missing words back.', group: 'words' },
   { id: 'theme-match', name: 'Theme match', note: 'Match a line to the theme it carries.', group: 'ideas' },
-  { id: 'technique-spotter', name: 'Technique spotter', note: 'Name the technique a line is using.', group: 'ideas' },
+  { id: 'technique-spotter', name: 'Technique spotter', note: 'Name the technique doing the work.', group: 'ideas' },
   { id: 'character-identification', name: 'Who is this?', note: 'Name a character from a description.', group: 'people' },
   { id: 'order-the-plot', name: 'Order the plot', note: 'Put the story back in order.', group: 'people' }
 ];
@@ -697,21 +697,6 @@ export function studyBar(head, { books, meta, icons, active, onChoose, allBooks 
   head.rxEdges = edges;
   window.addEventListener('resize', edges);
   head.append(bar, row);
-  // The same activities again, as plain links under the round. While a round
-  // is running the row above is put away and this list is where they are.
-  const after = (head.closest('main') || document).querySelector('#rv-after');
-  if (after) {
-    clear(after);
-    const others = ACTIVITIES.filter(activity => hasActivity(meta, activity.id) && activity.id !== active);
-    after.hidden = !others.length;
-    after.append(
-      el('p', { class: 'rx-after-title', text: 'More ways to revise ' + shortTitle(meta) }),
-      el('ul', {}, [
-        ...others.map(activity => el('li', {}, [el('a', { href: activityHref(activity.id, meta.slug), text: activity.name || activity.short })])),
-        el('li', {}, [el('a', { href: '/guides/' + encodeURIComponent(meta.slug) + '/quotations/', text: 'Read the key quotations' })])
-      ])
-    );
-  }
   if (meta.edition) coverBand(head.closest('main') || undefined);
   // Keep the current activity in view on a narrow screen, without moving the page.
   requestAnimationFrame(() => {

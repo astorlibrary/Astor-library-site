@@ -1,19 +1,15 @@
 // The site-wide search palette.
 //
 // Press / or Ctrl-K (Cmd-K) anywhere on the site and a box opens over the
-// page. It searches books, study guides, key quotations, the quizzes, close
-// readings, slide guides, Study Editions, writers, characters, themes and the
-// rest, so "Out, damned spot", "Macbeth quotes" and "Fleance" all reach a
-// page without a round trip. Each result says what it is, and whether it is
-// free on the web, needs a free account or is a printed book.
+// page. It searches books, writers, subjects, collections, guides, study
+// editions, close readings, seasons, characters, themes, techniques,
+// quotations and the study tools — so "Fleance", "equivocation" and "who said
+// it" all reach a page without a round trip.
 //
-// The ranking lives in search.mjs, which the Search page at /explore/ uses
-// too. The index is fetched the first time the palette opens, never on page
-// load.
+// The index is fetched the first time the palette opens, never on page load.
 
 import './offline.mjs';
 import { el, clear } from './util.mjs';
-import { shortlist, kindInfo, loadSearchIndex } from './search.mjs';
 
 const MAX_RESULTS = 12;
 let entries = null;
@@ -23,7 +19,6 @@ let list = null;
 let selected = 0;
 let lastFocus = null;
 let loadFailed = false;
-let allLink = null;
 
 document.addEventListener('keydown', event => {
   const openCombo = (event.key === 'k' || event.key === 'K') && (event.metaKey || event.ctrlKey);
@@ -49,16 +44,15 @@ function build() {
   list = el('ul', { class: 'astor-palette-results', id: 'astor-palette-results', role: 'listbox', 'aria-label': 'Search results' });
   input = el('input', {
     type: 'search', autocomplete: 'off', spellcheck: 'false',
-    placeholder: 'A book, a line, a character, a theme…',
+    placeholder: 'Search books, characters, themes, quotations…',
     'aria-label': 'Search Astor Library',
     role: 'combobox', 'aria-expanded': 'true', 'aria-controls': 'astor-palette-results', 'aria-autocomplete': 'list'
   });
-  allLink = el('a', { class: 'astor-palette-all', href: '/explore/', hidden: true });
   const box = el('div', { class: 'astor-palette-box' }, [
-    el('div', { class: 'astor-palette-heading' }, [el('strong', { text: 'Search Astor Library' }), el('button', { type: 'button', class: 'astor-palette-close', text: 'Close', onclick: close })]),
+    el('div', { class: 'astor-palette-heading' }, [el('strong', { text: 'Search the library' }), el('button', { type: 'button', class: 'astor-palette-close', text: 'Close', onclick: close })]),
     input,
     list,
-    el('p', { class: 'astor-palette-hint' }, [allLink, el('span', { text: 'Arrow keys to move, Enter to open, Esc to close.' })])
+    el('p', { class: 'astor-palette-hint', text: 'Arrow keys to move, Enter to open, Esc to close.' })
   ]);
   palette = el('dialog', { class: 'astor-palette', 'aria-label': 'Search Astor Library' }, [box]);
   palette.addEventListener('click', event => { if (event.target === palette) close(); });
@@ -79,7 +73,11 @@ async function open() {
   loadFailed = false;
   render();
   try {
-    entries = await loadSearchIndex();
+    const response = await fetch('/assets/search-index.json', { credentials: 'same-origin' });
+    if (!response.ok) throw new Error('Search index unavailable');
+    const payload = await response.json();
+    if (!Array.isArray(payload.entries)) throw new Error('Invalid search index');
+    entries = payload.entries;
     loadFailed = false;
   } catch {
     loadFailed = true;
@@ -119,15 +117,68 @@ function paintSelection(rows) {
   });
 }
 
+// Where a word is found decides the order. A match in an entry's own name
+// comes first (the start of the name, then a whole word, then the start of a
+// word, then the inside of one); then a match in the book or writer it belongs
+// to; then a match anywhere in its text. So "christmas" lists the Christmas
+// collection and the Christmas books before Scrooge, who matches only because
+// his book is A Christmas Carol. On an equal match, books, writers and pages
+// come before the characters, themes and quotations inside them.
+const WEIGHT = { Seasonal: 7, Writer: 7, Book: 6, 'Study guide': 5, Tool: 5, 'Study edition': 4, Subject: 3, Collection: 3, 'Free guide': 3, 'Close reading': 2, Character: 2, Theme: 2, Technique: 2, Quotation: 1 };
+const INSIDE = new Set(['Character', 'Theme', 'Technique', 'Quotation']);
+const fold = text => String(text || '').toLowerCase().replace(/[’‘]/g, "'");
+const isWordChar = c => !!c && /[\p{L}\p{N}]/u.test(c);
+
+// "Memory and time in A Christmas Carol": the book's title is not part of the
+// theme's own name. A title character keeps it ("Macbeth" in Macbeth).
+function ownName(entry) {
+  const name = fold(entry.t);
+  const book = (entry.k === 'Theme' || entry.k === 'Character') && fold(entry.n);
+  return book && name !== book ? name.replace(book, ' ') : name;
+}
+
+function inName(name, word, anyWord) {
+  const at = name.indexOf(word);
+  if (at < 0) return 0;
+  const starts = !isWordChar(name[at - 1]);
+  const ends = !isWordChar(name[at + word.length]);
+  if (starts && ends) return at === 0 || anyWord ? 6 : 5;
+  if (starts) return at === 0 ? 5 : 4;
+  return 3;
+}
+
+function wordScore(entry, word) {
+  if (entry.own === undefined) {
+    entry.own = ownName(entry);
+    entry.text = fold(entry.s);
+  }
+  // A writer is found by any of their names: "dickens" is Charles Dickens.
+  let found = inName(entry.own, word, entry.k === 'Writer');
+  // A quotation's title is a line of text, not a name.
+  if (found && INSIDE.has(entry.k)) found -= entry.k === 'Quotation' ? 2 : 1;
+  if (!found && fold(entry.n).includes(word) && entry.k !== 'Technique') found = 2;
+  if (!found && entry.text.includes(word)) found = 1;
+  return found || -1;
+}
+
+function score(entry, words) {
+  let total = 0;
+  for (const word of words) {
+    const found = wordScore(entry, word);
+    if (found < 0) return -1;
+    total += found;
+  }
+  return total * 10 + (WEIGHT[entry.k] || 1);
+}
+
 function render() {
   clear(list);
   input.removeAttribute('aria-activedescendant');
-  const typed = input.value.trim();
-  if (allLink) allLink.hidden = true;
+  const query = fold(input.value.trim());
 
   if (loadFailed) {
     list.append(el('li', {}, [el('p', { class: 'astor-palette-hint', text: 'Search could not load. You can still search the catalogue below, or close and retry.' })]));
-    list.append(row({ k: 'Search', t: 'Search the catalogue', h: '/explore/?q=' + encodeURIComponent(typed) }));
+    list.append(row({ k: 'Search', t: 'Search the catalogue', h: '/explore/?q=' + encodeURIComponent(input.value.trim()) }));
     paintSelection([...list.querySelectorAll('[role=option]')]);
     return;
   }
@@ -137,46 +188,40 @@ function render() {
     return;
   }
 
-  if (!typed) {
-    for (const suggestion of entries.filter(entry => entry.k === 'Tool').slice(0, 6)) {
+  if (!query) {
+    for (const suggestion of entries.filter(entry => entry.k === 'Tool').slice(0, 8)) {
       list.append(row(suggestion));
     }
     paintSelection([...list.querySelectorAll('[role=option]')]);
     return;
   }
 
-  const found = shortlist(entries, typed, MAX_RESULTS);
+  const words = query.split(/\s+/).filter(Boolean);
+  const ranked = entries
+    .map(entry => ({ entry, rank: score(entry, words) }))
+    .filter(item => item.rank >= 0)
+    .sort((a, b) => b.rank - a.rank)
+    .slice(0, MAX_RESULTS);
 
-  if (!found.length) {
-    list.append(el('li', {}, [el('p', { class: 'astor-palette-hint', text: 'No matches. Try one word from a title or a line.' })]));
-    list.append(row({ k: 'Search', t: 'Search the catalogue for “' + typed + '”', h: '/explore/?q=' + encodeURIComponent(typed), n: '' }));
+  if (!ranked.length) {
+    list.append(el('li', {}, [el('p', { class: 'astor-palette-hint', text: 'No matches. Try a single word.' })]));
+    list.append(row({ k: 'Search', t: 'Search the catalogue for “' + input.value.trim() + '”', h: '/explore/?q=' + encodeURIComponent(input.value.trim()), n: '' }));
     paintSelection([...list.querySelectorAll('[role=option]')]);
     return;
   }
 
-  // A misspelling put right: say what was searched for instead.
-  if (found.note) list.append(el('li', {}, [el('p', { class: 'astor-palette-hint is-note', text: 'Showing results for “' + found.note + '”.' })]));
-  for (const entry of found) list.append(row(entry));
-  if (allLink) {
-    allLink.hidden = false;
-    allLink.textContent = 'All results for “' + typed + '”';
-    allLink.setAttribute('href', '/explore/?q=' + encodeURIComponent(typed));
-  }
+  for (const item of ranked) list.append(row(item.entry));
   paintSelection([...list.querySelectorAll('[role=option]')]);
 }
 
-// One result: what kind of thing it is, its name, the book or writer it
-// belongs to, and what it takes to open it.
 function row(entry) {
-  const info = kindInfo(entry.k);
-  return el('li', { role: 'option', id: 'astor-result-' + list.querySelectorAll('[role=option]').length, 'aria-selected': 'false' }, [
+  return el('li', { role: 'option', id: 'astor-result-' + list.children.length, 'aria-selected': 'false' }, [
     el('a', { href: entry.h }, [
-      el('span', { class: 'astor-palette-kind', text: info.label }),
+      el('span', { class: 'astor-palette-kind', text: entry.k }),
       el('span', { class: 'astor-palette-title' }, [
         el('span', { text: entry.t }),
         entry.n ? el('small', { text: entry.n }) : null
-      ]),
-      info.access ? el('span', { class: 'astor-palette-access', text: info.access }) : null
+      ])
     ])
   ]);
 }
