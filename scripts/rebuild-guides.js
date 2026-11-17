@@ -26,12 +26,6 @@ const SECTIONS = [
   { slug: 'context', title: 'Context' }
 ];
 
-// AQA's GCSE English Literature set texts in the catalogue: the Shakespeare
-// plays, then the nineteenth-century novels, in the order the board lists them.
-const SET_TEXTS = [
-  'macbeth', 'romeo-and-juliet', 'the-tempest', 'the-merchant-of-venice', 'much-ado-about-nothing', 'julius-caesar',
-  'jekyll-and-hyde', 'a-christmas-carol', 'great-expectations', 'jane-eyre', 'frankenstein', 'pride-and-prejudice', 'sign-of-four'
-];
 const COLLECTION_ORDER = ['Shakespeare', 'Ancient & Epic', 'Renaissance & Early Modern', 'Restoration & Enlightenment', 'Romantic & Regency', 'Victorian', 'American Classics', 'Modern Classics', 'Russian'];
 
 function escapeHtml(value) {
@@ -214,16 +208,6 @@ function sceneLines(book, quotations) {
   return '<span class="guide-scene-lines"><span class="guide-label">' + (links.length === 1 ? 'Key line' : 'Key lines') + '</span> ' + links.join('<span aria-hidden="true"> · </span>') + '</span>';
 }
 
-// One tap to the lines on a theme: each link carries ?theme=, which the find
-// box reads, so the narrowed page has an address that can be shared. Themes
-// with no key line filed under them are left out.
-function themeRow(book) {
-  const themes = book.themes.filter(theme => book.quotations.some(quotation => (quotation.themes || []).includes(theme.id)));
-  if (themes.length < 2) return '';
-  return '<p class="guide-find-themes"><span class="guide-label">By theme</span> ' +
-    themes.map(theme => '<a href="?theme=' + escapeHtml(theme.id) + '" data-theme="' + escapeHtml(theme.id) + '">' + escapeHtml(theme.name) + '</a>').join('') + '</p>';
-}
-
 function whatHappens(book) {
   const anchors = sceneAnchors(book);
   const sceneId = (stage, scene) => anchors.get(scene);
@@ -374,7 +358,6 @@ function quotations(book) {
   const find = '<div class="guide-find" data-guide-find data-themes="' + escapeHtml(themeNames) + '" hidden>' +
     '<label for="guide-find-input">Find a line</label>' +
     '<input id="guide-find-input" type="search" autocomplete="off" spellcheck="false" placeholder="A word, a speaker or a reference">' +
-    themeRow(book) +
     '<p class="guide-find-status" data-guide-find-status role="status"></p></div>';
   const jump = single ? '' : jumpNav(groups.map(group => ({ id: groupId(group), label: group.label, count: group.items.length })));
   const index = '<details class="guide-line-index"><summary>All ' + book.quotations.length + ' lines in order</summary><ol>' +
@@ -623,18 +606,6 @@ function guidesHome(books, discovery) {
       entries.map(({ book }) => '<li data-find="' + escapeHtml([book.title, shortTitle(book), book.author].join(' ')) + '"><a href="' + guideHref(book.slug) + '"><span class="guides-title">' + escapeHtml(shortTitle(book)) + '</span>' + byline(book) + '</a></li>').join('') +
       '</ul></section>';
   }).join('');
-  // The set texts first: what a student with an exam or an essay is most
-  // likely to have come for, each with a way straight to the two pages an
-  // essay draws on. The order is AQA's, plays then novels.
-  const setTexts = SET_TEXTS.map(slug => books.find(book => book.slug === slug)).filter(Boolean);
-  const setGroup = setTexts.length
-    ? '<section class="guides-group guides-set" aria-labelledby="guides-set-title" data-guides-set><h2 id="guides-set-title">Set for GCSE</h2>' +
-      '<p class="guides-set-note">The Shakespeare plays and nineteenth-century novels on AQA’s GCSE English Literature list, each with a way straight to its key quotations and themes.</p>' +
-      '<ul class="guides-list guides-set-list">' + setTexts.map(book =>
-        '<li><a href="' + guideHref(book.slug) + '"><span class="guides-title">' + escapeHtml(shortTitle(book)) + '</span><span class="guides-author">' + escapeHtml(book.author) + '</span></a>' +
-        '<span class="guides-set-links"><a href="' + guideHref(book.slug, 'quotations') + '">Key quotations</a><a href="' + guideHref(book.slug, 'themes') + '">Themes</a></span></li>').join('') +
-      '</ul></section>'
-    : '';
   const body = `<main class="page-wrap guides-home">
   <nav class="book-breadcrumb" aria-label="Breadcrumb"><a href="/">Astor Library</a><span aria-hidden="true">/</span><span aria-current="page">Study guides</span></nav>
   <header class="guides-intro">
@@ -647,7 +618,6 @@ function guidesHome(books, discovery) {
       <p class="guides-find-status" data-guides-find-status aria-live="polite"></p>
     </form>
   </header>
-  ${setGroup}
   ${sections}
 </main>`;
   return shell({

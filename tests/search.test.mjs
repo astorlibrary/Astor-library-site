@@ -112,11 +112,3 @@ test('a short list keeps to the order of the match', () => {
   assert.equal(hrefs('christmas')[1], '/books/a-christmas-carol/');
   assert.equal(first('dickens').k, 'Writer');
 });
-
-test('a search made only of words about the course leads to the study guides, which open with the set texts', () => {
-  for (const query of ['gcse', 'aqa', 'gcse set texts', 'gcse english literature', 'revision guides']) {
-    assert.equal(first(query)?.h, '/guides/', query);
-  }
-  // With a book named, the book still leads.
-  assert.equal(first('macbeth gcse').h, '/books/macbeth/');
-});

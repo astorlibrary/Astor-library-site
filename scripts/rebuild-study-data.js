@@ -358,7 +358,7 @@ for (const book of entries) {
 
 // The first six are what the empty search box suggests.
 for (const tool of [
-  ['Tool', 'Study guides', '/guides/', 'Plot, characters, themes, key quotations and context, free on the web. The GCSE set texts come first', 'study guide guides notes summary revision gcse igcse aqa ocr edexcel wjec eduqas set texts set text exam english literature'],
+  ['Tool', 'Study guides', '/guides/', 'Plot, characters, themes, key quotations and context, free on the web', 'study guide guides notes summary'],
   ['Tool', 'Revise', '/play/', 'Ten questions on a book, with quizzes and flashcards', 'play games revise quiz quizzes revision flashcards'],
   ['Tool', 'All books', '/library/', 'Every Astor edition in print', 'books catalogue library editions buy'],
   ['Tool', 'Close readings', '/passage-room/', 'Famous passages with notes on the exact words', 'close readings passages passage room annotated'],
