@@ -589,6 +589,14 @@ export function openShelf({ books, current, recentSlugs = [], onChoose, heading 
     el('ul', { class: 'rx-shelf-grid is-row' }, recent.map(tile))
   ]) : null;
 
+  // The GCSE set texts as a row of their own, after the reader's recent
+  // books: the likeliest choices for somebody revising for an exam.
+  const setTexts = books.filter(book => book.set).sort((a, b) => a.set - b.set);
+  const setBlock = setTexts.length > 1 ? el('section', { class: 'rx-shelf-section' }, [
+    el('h3', { text: 'Set for GCSE' }),
+    el('ul', { class: 'rx-shelf-grid is-row is-strip' }, setTexts.map(tile))
+  ]) : null;
+
   const grid = el('ul', { class: 'rx-shelf-grid' });
   const count = el('p', { class: 'rx-shelf-count', 'aria-live': 'polite' });
   const draw = () => {
@@ -599,6 +607,7 @@ export function openShelf({ books, current, recentSlugs = [], onChoose, heading 
     for (const book of shown) grid.append(tile(book));
     count.textContent = shown.length === books.length ? books.length + ' books' : shown.length + ' of ' + books.length + ' books';
     if (recentBlock) recentBlock.hidden = Boolean(words.length || period);
+    if (setBlock) setBlock.hidden = Boolean(words.length || period);
     if (!shown.length) grid.append(el('li', { class: 'rx-shelf-none', text: 'No book matches that. Try part of the title or the author’s surname.' }));
   };
   search.addEventListener('input', draw);
@@ -609,7 +618,7 @@ export function openShelf({ books, current, recentSlugs = [], onChoose, heading 
       el('button', { type: 'button', class: 'rx-shelf-close', 'aria-label': 'Close', html: '&times;', onclick: close })
     ]),
     el('div', { class: 'rx-shelf-tools' }, [search, chips.childNodes.length ? chips : null]),
-    el('div', { class: 'rx-shelf-body' }, [recentBlock, el('section', { class: 'rx-shelf-section' }, [
+    el('div', { class: 'rx-shelf-body' }, [recentBlock, setBlock, el('section', { class: 'rx-shelf-section' }, [
       el('div', { class: 'rx-shelf-section-head' }, [el('h3', { text: 'All books' }), count]),
       grid
     ])])
