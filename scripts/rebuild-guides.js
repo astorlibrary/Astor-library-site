@@ -12,6 +12,7 @@
 const fs = require('fs');
 const path = require('path');
 const { loadBooks } = require('./book-data');
+const { inScene, quoteOpening } = require('./book-places');
 
 const root = process.cwd();
 const guidesRoot = path.join(root, 'guides');
@@ -59,7 +60,7 @@ const HEADER = `<header class="site-header">
 
 const FOOTER = '<footer class="site-footer"><div><p class="footer-brand">Astor Library</p></div><div class="footer-links"><a href="/library/">Books</a><a href="/guides/">Study guides</a><a href="/play/">Revise</a></div></footer>';
 
-function shell({ title, description, body, bookSlug, maps }) {
+function shell({ title, description, body, bookSlug, maps, script }) {
   return `<!doctype html>
 <html lang="en-GB">
 <head>
@@ -68,7 +69,7 @@ function shell({ title, description, body, bookSlug, maps }) {
   <title>${escapeHtml(title)}</title>
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="stylesheet" href="/assets/styles.css">
-${maps ? '  <link rel="stylesheet" href="/assets/astor-study.css">\n' : ''}${bookSlug ? '  <script type="module" src="/assets/astor/guide.mjs"></script>\n' : ''}</head>
+${maps ? '  <link rel="stylesheet" href="/assets/astor-study.css">\n' : ''}${bookSlug ? '  <script type="module" src="/assets/astor/guide.mjs"></script>\n' : ''}${script ? '  <script type="module" src="' + script + '"></script>\n' : ''}</head>
 <body>
 ${HEADER}
 ${body}
@@ -184,13 +185,37 @@ function sceneAnchors(book) {
   return anchors;
 }
 
+// The key quotations from each scene, where a quotation's reference places it
+// in exactly one scene of its part ("2.1.32" in 2.1, "Chapter 23" in
+// "Chapters 22-23"). A quotation that could belong to two scenes is left to
+// the part's own link.
+function linesByScene(book) {
+  const isPlay = book.form === 'play';
+  const byScene = new Map();
+  for (const quotation of book.quotations) {
+    const stage = book.structure.find(item => item.id === quotation.stage);
+    const scenes = (stage?.scenes || []).filter(scene => inScene(quotation.reference, scene.ref, isPlay));
+    if (scenes.length !== 1) continue;
+    if (!byScene.has(scenes[0])) byScene.set(scenes[0], []);
+    byScene.get(scenes[0]).push(quotation);
+  }
+  return byScene;
+}
+
+function sceneLines(book, quotations) {
+  if (!quotations || !quotations.length) return '';
+  const links = quotations.map(quotation => '<a href="' + guideHref(book.slug, 'quotations') + '#astor-quote-' + escapeHtml(quotation.id) + '">' + escapeHtml(quoteOpening(quotation.text)) + '</a>');
+  return '<span class="guide-scene-lines"><span class="guide-label">' + (links.length === 1 ? 'Key line' : 'Key lines') + '</span> ' + links.join('<span aria-hidden="true"> · </span>') + '</span>';
+}
+
 function whatHappens(book) {
   const anchors = sceneAnchors(book);
   const sceneId = (stage, scene) => anchors.get(scene);
+  const byScene = linesByScene(book);
   const stages = book.structure.map(stage => {
     const scenes = (stage.scenes || []).length
       ? '<dl class="guide-scenes">' + stage.scenes.map(scene =>
-        '<div id="' + escapeHtml(sceneId(stage, scene)) + '"><dt>' + escapeHtml(scene.ref) + '</dt><dd>' + escapeHtml(scene.summary) + '</dd></div>').join('') + '</dl>'
+        '<div id="' + escapeHtml(sceneId(stage, scene)) + '"><dt>' + escapeHtml(scene.ref) + '</dt><dd>' + escapeHtml(scene.summary) + sceneLines(book, byScene.get(scene)) + '</dd></div>').join('') + '</dl>'
       : '';
     const lines = book.quotations.filter(quotation => quotation.stage === stage.id).length;
     const more = lines
@@ -578,7 +603,7 @@ function guidesHome(books, discovery) {
     // Under the Shakespeare heading his name would repeat on every line.
     const byline = book => name === 'Shakespeare' && book.author === 'William Shakespeare' ? '' : '<span class="guides-author">' + escapeHtml(book.author) + '</span>';
     return '<section class="guides-group"><h2>' + escapeHtml(name) + '</h2><ul class="guides-list">' +
-      entries.map(({ book }) => '<li><a href="' + guideHref(book.slug) + '"><span class="guides-title">' + escapeHtml(shortTitle(book)) + '</span>' + byline(book) + '</a></li>').join('') +
+      entries.map(({ book }) => '<li data-find="' + escapeHtml([book.title, shortTitle(book), book.author].join(' ')) + '"><a href="' + guideHref(book.slug) + '"><span class="guides-title">' + escapeHtml(shortTitle(book)) + '</span>' + byline(book) + '</a></li>').join('') +
       '</ul></section>';
   }).join('');
   const body = `<main class="page-wrap guides-home">
@@ -587,11 +612,17 @@ function guidesHome(books, discovery) {
     <h1>Study guides</h1>
     <p>Guides to <span data-astor-count="guides">${books.length}</span> books in the Astor catalogue, free to read here with no account. Each one covers what happens, the characters, the themes, key quotations, form and language, and the book’s historical context. Every quotation has been checked against a named text of the book.</p>
     <p class="guides-kinds">Two other things on the site have “guide” or “study” in their names. The <a href="/study/">Study Editions</a> are printed books. The <a href="/resources/">slide guides</a> are illustrated slides, which ask for a free account after their first three.</p>
+    <form class="guides-find" action="/explore/" role="search" data-guides-find>
+      <label for="guides-find-input">Find a guide</label>
+      <input id="guides-find-input" name="q" type="search" autocomplete="off" spellcheck="false" placeholder="A title or a writer: Jekyll, Austen, Lear">
+      <p class="guides-find-status" data-guides-find-status aria-live="polite"></p>
+    </form>
   </header>
   ${sections}
 </main>`;
   return shell({
     title: 'Study Guides | Astor Library',
+    script: '/assets/astor/guides-find.mjs',
     description: 'Free study guides to ' + books.length + ' classic novels, plays and poems: plot, characters, themes, key quotations, form and language, and context.',
     body
   });

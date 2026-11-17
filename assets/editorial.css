@@ -370,6 +370,25 @@ html body :is(h2, h3):not(.home *, .season-page *, .rx-hero *, .rx-results *) {
   font-variant-numeric: tabular-nums;
 }
 
+.guide-scenes .guide-scene-lines {
+  display: block;
+  margin: 6px 0 0;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.55 var(--sans);
+}
+
+.guide-scenes .guide-scene-lines .guide-label {
+  display: inline;
+  margin: 0 6px 0 0;
+}
+
+.guide-scenes .guide-scene-lines a {
+  color: var(--wine-text, var(--ed-wine));
+  font-family: var(--serif);
+  font-size: 16px;
+  text-underline-offset: 3px;
+}
+
 .guide-scenes dd {
   margin: 0;
   color: var(--text-soft, var(--ed-soft));
@@ -1006,6 +1025,49 @@ html body :is(h2, h3):not(.home *, .season-page *, .rx-hero *, .rx-results *) {
 
 .guides-intro a {
   color: var(--wine-text, var(--ed-wine));
+}
+
+/* Finding one guide in the list. */
+.guides-find {
+  margin: 28px 0 0;
+  max-width: 34rem;
+}
+
+.guides-find label {
+  display: block;
+  margin: 0 0 6px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 600 12px/1.4 var(--sans);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.guides-find input {
+  width: 100%;
+  min-height: 52px;
+  padding: 0 16px;
+  border: 1px solid var(--line, var(--ed-rule-strong));
+  border-radius: 0;
+  background: var(--surface, #fffdf9);
+  color: var(--text, var(--ed-ink));
+  font: 400 20px/1.3 var(--serif);
+}
+
+.guides-find input:focus-visible {
+  outline: 2px solid var(--wine-text, var(--ed-wine));
+  outline-offset: 2px;
+}
+
+.guides-intro .guides-find-status {
+  margin: 8px 0 0;
+  min-height: 1.5em;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.5 var(--sans);
+}
+
+.guides-group[hidden],
+.guides-list li[hidden] {
+  display: none;
 }
 
 .guides-group {
@@ -4884,4 +4946,86 @@ main .page-intro:has(+ :is(.hub-dates, .shakespeare-collection-routes)) {
   .search-form button {
     padding: 0 18px;
   }
+}
+
+/* Where a close reading leads next: each place named for what it is, with a
+   line saying what is there. The same pattern as the study list on a book page. */
+main[data-hub="passage"] .passage-routes {
+  margin: 18px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 32px;
+  list-style: none;
+  border-top: 1px solid var(--line, var(--ed-rule));
+}
+
+main[data-hub="passage"] .passage-routes li {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line, rgba(31, 27, 24, 0.08));
+}
+
+main[data-hub="passage"] .passage-routes > li > a {
+  color: var(--wine-text, var(--ed-wine));
+  font: 400 21px/1.25 var(--serif);
+  text-decoration: none;
+}
+
+main[data-hub="passage"] .passage-routes > li > a:hover,
+main[data-hub="passage"] .passage-routes > li > a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+main[data-hub="passage"] .passage-routes span {
+  display: block;
+  margin-top: 4px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.5 var(--sans);
+}
+
+main[data-hub="passage"] .passage-routes span a {
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 620px) {
+  main[data-hub="passage"] .passage-routes {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* The page for an address that is not on the site. */
+.not-found-page .page-intro,
+.not-found-page .page-intro > div {
+  width: 100%;
+  max-width: 40rem;
+}
+
+.not-found-search {
+  margin: 28px 0 0;
+}
+
+.not-found-guesses {
+  margin: 28px 0 0;
+}
+
+.not-found-guesses[hidden] {
+  display: none;
+}
+
+.not-found-links {
+  margin: 28px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 22px;
+  font: 400 17px/1.5 var(--serif);
+}
+
+.not-found-links a {
+  color: var(--wine-text, var(--ed-wine));
+  text-underline-offset: 3px;
 }

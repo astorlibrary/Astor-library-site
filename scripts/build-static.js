@@ -12,6 +12,7 @@ const { loadBooks } = require('./book-data');
 const { accentFor, motifSvg, motifSvgByName, motifName, identityFor } = require('./book-motifs');
 const { restructureBookPage } = require('./book-page');
 const { plainHubPage } = require('./hub-pages');
+const { passageRoutes } = require('./passage-routes');
 const { searchDescription } = require('./text-excerpt');
 const { astorHomeCalendar } = require('./home-calendar-rules');
 const { astorHomeFeature } = require('./home-feature-rules');
@@ -270,6 +271,16 @@ function passageContext(source) {
   const href = pageHref(source);
   if (!href.startsWith('/passage-room/') || href === '/passage-room/') return null;
   return discovery.passages?.find(item => item.href === href) || null;
+}
+
+// A close reading ends with where to go next: its lines in the key
+// quotations, its scene, the study guide, Revise and the editions.
+function addPassageRoutes(html, source) {
+  const passage = passageContext(source);
+  if (!passage) return html;
+  const related = passage.relatedBooks || [];
+  const book = related.map(href => studyData.get(href.split('/')[2]) || studyEditions.get(href.split('/')[2])).find(Boolean) || null;
+  return passageRoutes(html, { book, bookHref: related[0] || '', discovery });
 }
 
 function studyContext(source) {
@@ -1498,6 +1509,7 @@ function prepareHtml(html, source) {
     html = addContextImageShelf(html, source);
     html = markCollectionPage(html, source);
     html = addStudyEditionPage(html, source);
+    html = addPassageRoutes(html, source);
     html = plainHubPage(html, pageHref(source), discovery);
   }
   html = addReviseShelf(html);
