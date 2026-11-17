@@ -450,10 +450,27 @@ html body :is(h2, h3):not(.home *, .season-page *, .rx-hero *, .rx-results *) {
   margin-top: 14px;
 }
 
-/* Key quotations. */
+/* Key quotations.
+
+   Three things, set three ways, so the eye can find any one of them without
+   reading the others: where the line is (sans, in the wine colour, in the
+   margin on a wide screen), the line itself (the serif at its largest, ruled
+   down its left side), and the analysis (roman text under its own label). */
+
+.guide-label {
+  margin: 0 0 4px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 600 12px/1.4 var(--sans) !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
 
 .guide-quote-group + .guide-quote-group {
-  margin-top: 24px;
+  margin-top: 40px;
+}
+
+.guide-quote-group {
+  scroll-margin-top: 90px;
 }
 
 .guide-quote-group > h2 {
@@ -463,13 +480,44 @@ html body :is(h2, h3):not(.home *, .season-page *, .rx-hero *, .rx-results *) {
 
 .guide-quote {
   margin: 0;
-  padding: 24px 0 18px;
+  padding: 26px 0 22px;
+  display: grid;
+  grid-template-columns: 7.5rem minmax(0, 1fr);
+  gap: 0 24px;
+  align-items: start;
   border-bottom: 1px solid var(--line, var(--ed-rule));
-  scroll-margin-top: 80px;
+  scroll-margin-top: 90px;
+}
+
+.guide-quote-ref {
+  margin: 0;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-family: var(--sans);
+}
+
+.guide-ref-place {
+  color: var(--wine-text, var(--ed-wine));
+  font: 600 15px/1.3 var(--sans);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
+}
+
+.guide-ref-speaker {
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 14px/1.35 var(--sans);
+}
+
+.guide-quote-main {
+  min-width: 0;
 }
 
 .guide-quote blockquote {
   margin: 0;
+  padding-left: 18px;
+  border-left: 2px solid var(--wine-text, var(--ed-wine));
 }
 
 .guide-quote blockquote p {
@@ -478,23 +526,50 @@ html body :is(h2, h3):not(.home *, .season-page *, .rx-hero *, .rx-results *) {
   font: italic 400 23px/1.45 var(--serif);
 }
 
-.guide-quote figcaption {
-  margin: 8px 0 12px;
+.guide-body .guide-quote-moment {
+  margin: 10px 0 0;
+  padding-left: 20px;
   color: var(--text-muted, var(--ed-muted));
-  font: 400 15px/1.4 var(--sans);
+  font: 400 15px/1.5 var(--sans);
 }
 
-.guide-quote-note p {
+.guide-quote-note {
+  margin-top: 18px;
+}
+
+.guide-body .guide-quote-note p:not(.guide-label) {
+  margin: 0;
   font-size: 18px;
+  line-height: 1.6;
+}
+
+.guide-body .guide-quote-tags {
+  margin: 14px 0 0;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 14px/1.5 var(--sans);
+}
+
+.guide-quote-tags .guide-label {
+  margin-right: 6px;
+}
+
+.guide-quote-tags a {
+  color: var(--text-soft, var(--ed-soft));
+  text-decoration-color: var(--line, var(--ed-rule-strong));
+}
+
+.guide-quote-tags a:hover {
+  color: var(--wine-text, var(--ed-wine));
 }
 
 .guide-keep {
-  margin-left: 10px;
+  margin: 6px 0 0;
   padding: 0;
+  align-self: flex-start;
   border: 0;
   background: none;
   color: var(--text-muted, var(--ed-muted));
-  font: 400 14px/1.4 var(--sans);
+  font: 400 13px/1.4 var(--sans);
   text-decoration: underline;
   text-decoration-color: var(--line, var(--ed-rule-strong));
   text-underline-offset: 3px;
@@ -506,9 +581,306 @@ html body :is(h2, h3):not(.home *, .season-page *, .rx-hero *, .rx-results *) {
   text-decoration: none;
 }
 
+/* The line a reader was sent to: a rule in the margin, no wash of colour. */
 .guide-quote.is-target,
 .guide-quote:target {
-  background: linear-gradient(90deg, rgba(var(--wine-rgb, 110, 31, 43), 0.06), transparent 70%);
+  box-shadow: -14px 0 0 var(--surface-paper, var(--ed-paper)), -18px 0 0 var(--wine-text, var(--ed-wine));
+}
+
+.guide-quote[hidden],
+.guide-quote-group[hidden] {
+  display: none;
+}
+
+/* Getting to a part of the page: a line of links under the heading. */
+
+.guide-jump {
+  margin: 0 0 30px;
+  padding: 12px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 18px;
+  border-top: 1px solid var(--line, var(--ed-rule));
+  border-bottom: 1px solid var(--line, var(--ed-rule));
+}
+
+.guide-jump .guide-label {
+  margin: 0;
+  flex: none;
+}
+
+/* The line of links already rules off the first entry below it. */
+.guide-jump + .guide-entry,
+.guide-jump + .guide-stage,
+.guide-jump + .guide-dates {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.guide-jump ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 18px;
+  list-style: none;
+}
+
+.guide-jump a {
+  display: inline-block;
+  padding: 4px 0;
+  color: var(--text, var(--ed-ink));
+  font: 400 15px/1.4 var(--sans);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.guide-jump a:hover,
+.guide-jump a:focus-visible {
+  color: var(--wine-text, var(--ed-wine));
+  border-bottom-color: currentColor;
+}
+
+.guide-jump-count {
+  color: var(--text-muted, var(--ed-muted));
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Finding one line among the key quotations. */
+
+.guide-find {
+  margin: 0 0 18px;
+}
+
+.guide-find[hidden] {
+  display: none;
+}
+
+.guide-find label {
+  display: block;
+  margin: 0 0 6px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 600 12px/1.4 var(--sans);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.guide-find input {
+  width: 100%;
+  min-height: 50px;
+  padding: 0 16px;
+  border: 1px solid var(--line, var(--ed-rule-strong));
+  border-radius: 0;
+  background: var(--surface, #fffdf9);
+  color: var(--text, var(--ed-ink));
+  font: 400 19px/1.3 var(--serif);
+}
+
+.guide-find input:focus-visible {
+  outline: 2px solid var(--wine-text, var(--ed-wine));
+  outline-offset: 2px;
+}
+
+.guide-body .guide-find-status {
+  margin: 8px 0 0;
+  min-height: 1.5em;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 14px/1.5 var(--sans);
+}
+
+.guide-find-status button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--wine-text, var(--ed-wine));
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.guide-line-index {
+  margin: 0 0 34px;
+  font-family: var(--sans);
+}
+
+.guide-line-index summary {
+  width: fit-content;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 15px/1.4 var(--sans);
+  cursor: pointer;
+}
+
+.guide-line-index summary:hover {
+  color: var(--wine-text, var(--ed-wine));
+}
+
+.guide-line-index ol {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  columns: 2 17rem;
+  column-gap: 32px;
+  border-top: 1px solid var(--line, var(--ed-rule));
+}
+
+.guide-line-index li {
+  break-inside: avoid;
+  border-bottom: 1px solid var(--line, rgba(31, 27, 24, 0.08));
+}
+
+.guide-line-index a {
+  display: grid;
+  grid-template-columns: 5.2rem minmax(0, 1fr);
+  gap: 10px;
+  padding: 7px 0;
+  text-decoration: none;
+}
+
+.guide-line-index .guide-ref-place {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.guide-line-words {
+  color: var(--text, var(--ed-ink));
+  font: italic 400 16px/1.4 var(--serif);
+}
+
+.guide-line-index a:hover .guide-line-words {
+  color: var(--wine-text, var(--ed-wine));
+}
+
+/* Evidence under a theme: the line, then what it shows. */
+
+.guide-development .guide-label {
+  display: block;
+}
+
+.guide-evidence {
+  margin: 22px 0 0;
+}
+
+.guide-evidence > .guide-label {
+  margin-bottom: 2px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line, var(--ed-rule));
+}
+
+.guide-evidence-item {
+  padding: 16px 0 14px;
+  border-bottom: 1px solid var(--line, rgba(31, 27, 24, 0.08));
+}
+
+.guide-evidence-item .guide-example {
+  margin: 0 0 10px;
+  border-left-color: var(--wine-text, var(--ed-wine));
+}
+
+.guide-body .guide-evidence-note {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.guide-body .guide-more {
+  margin: 14px 0 0;
+  font: 400 15px/1.5 var(--sans);
+}
+
+.guide-example footer a {
+  color: var(--wine-text, var(--ed-wine));
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.guide-example footer a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* The edition and revision, at the foot of a guide's list of parts. */
+
+.guide-toc-edition {
+  margin-top: 26px;
+  display: grid;
+  gap: 12px;
+}
+
+.guide-toc-book {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  color: var(--text, var(--ed-ink));
+  text-decoration: none;
+}
+
+.guide-toc-book img {
+  display: block;
+  width: 44px;
+  height: auto;
+  box-shadow: 0 1px 2px rgba(31, 27, 24, 0.14), 0 4px 10px rgba(31, 27, 24, 0.12);
+}
+
+.guide-toc-book b {
+  display: block;
+  font: 600 14px/1.3 var(--sans);
+}
+
+.guide-toc-book small {
+  display: block;
+  margin-top: 2px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 13px/1.35 var(--sans);
+}
+
+.guide-toc-book:hover b {
+  color: var(--wine-text, var(--ed-wine));
+}
+
+.guide-toc-revise {
+  padding: 10px 14px;
+  border: 1px solid var(--wine-text, var(--ed-wine));
+  color: var(--wine-text, var(--ed-wine));
+  font: 600 14px/1.3 var(--sans);
+  text-align: center;
+  text-decoration: none;
+}
+
+.guide-toc-revise:hover,
+.guide-toc-revise:focus-visible {
+  background: var(--ed-wine);
+  color: #fffaf4;
+}
+
+/* What each part of this book's guide holds, under its name in the contents. */
+
+.guide-contents-name {
+  display: block;
+}
+
+.guide-contents-name small {
+  display: block;
+  margin-top: 3px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.4 var(--sans);
+}
+
+.guide-links .guide-link-main {
+  padding: 11px 20px;
+  background: var(--ed-wine);
+  color: #fffaf4;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.guide-links .guide-link-main:hover,
+.guide-links .guide-link-main:focus-visible {
+  background: #14233a;
 }
 
 /* Context. */
@@ -682,14 +1054,72 @@ html body :is(h2, h3):not(.home *, .season-page *, .rx-hero *, .rx-results *) {
 
 @media (max-width: 900px) {
   .guide-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 0;
   }
 
+  /* The six parts of the guide run in one line across the top; the edition
+     and the way to revise move to the end of the page. */
   .guide-toc {
     position: static;
-    order: 2;
-    margin-top: 48px;
+    display: contents;
+  }
+
+  .guide-toc-title {
+    display: none;
+  }
+
+  .guide-toc ol {
+    order: -1;
+    margin: 0 -24px 26px;
+    padding: 0 24px;
+    display: flex;
+    gap: 22px;
+    overflow-x: auto;
+    border-top: 0;
+    border-bottom: 1px solid var(--line, var(--ed-rule));
+    scrollbar-width: none;
+  }
+
+  .guide-toc ol::-webkit-scrollbar {
+    display: none;
+  }
+
+  .guide-toc li a {
+    padding: 10px 0 11px;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+  }
+
+  .guide-toc li a .guide-toc-number {
+    display: none;
+  }
+
+  .guide-toc li a[aria-current="page"] {
+    border-bottom-color: var(--wine-text, var(--ed-wine));
+  }
+
+  .guide-toc-edition {
+    order: 3;
+    margin-top: 36px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line, var(--ed-rule));
+  }
+
+  .guide-quote {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .guide-quote-ref {
+    padding: 0 0 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px 12px;
+  }
+
+  .guide-keep {
+    margin: 0 0 0 auto;
   }
 
   .guide-intro {
@@ -1113,6 +1543,99 @@ main.book-page .book-links a {
   font-family: var(--sans);
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+/* The free study guide and revision for this book, each with what it is. */
+main.book-page .book-study {
+  margin: 26px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 32px;
+  list-style: none;
+  border-top: 1px solid var(--line, var(--ed-rule));
+}
+
+main.book-page .book-study li {
+  padding: 14px 0;
+}
+
+main.book-page .book-study a {
+  color: var(--wine-text, var(--ed-wine));
+  font: 400 22px/1.2 var(--serif);
+  text-decoration: none;
+}
+
+main.book-page .book-study a:hover,
+main.book-page .book-study a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+main.book-page .book-study span {
+  display: block;
+  margin-top: 4px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.5 var(--sans);
+}
+
+/* The place for Astor Pro: the complete text on screen, with its notes. */
+main.book-page .book-pro {
+  margin: 6px 0 0;
+  padding: 16px 0 0;
+  border-top: 1px solid var(--line, var(--ed-rule));
+}
+
+main.book-page .book-pro-head {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 14px;
+}
+
+main.book-page .book-pro-name {
+  color: var(--text, var(--ed-ink));
+  font: 400 22px/1.2 var(--serif);
+}
+
+main.book-page .book-pro-status {
+  color: var(--text-muted, var(--ed-muted));
+  font: 600 12px/1.4 var(--sans);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+main.book-page .book-pro-note {
+  max-width: 34rem;
+  margin: 4px 0 0;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.5 var(--sans);
+}
+
+main.book-page .book-pro-note cite {
+  font-style: italic;
+}
+
+main.book-page .book-pro-action {
+  margin: 10px 0 0;
+  font: 500 16px/1.4 var(--sans);
+}
+
+main.book-page .book-pro-action a {
+  color: var(--wine-text, var(--ed-wine));
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 620px) {
+  main.book-page .book-study {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  main.book-page .book-study li + li {
+    border-top: 1px solid var(--line, rgba(31, 27, 24, 0.08));
+  }
 }
 
 main.book-page .study-edition-links .book-format-buy {
@@ -3982,4 +4505,383 @@ main.passage-room-page .passage-next h2 {
    the line to it, rather than drawing a second one a few pixels above. */
 main .page-intro:has(+ :is(.hub-dates, .shakespeare-collection-routes)) {
   border-bottom: 0;
+}
+
+/* --- Search (/explore/) ------------------------------------------------------
+
+   One box, then results under headings that say what each kind of thing is
+   and what it takes to open it. Before anybody types: three ways in, set
+   large, then the rest of the site as a plain list. */
+
+.search-page {
+  max-width: 1120px;
+  padding: 40px 24px 96px;
+  color: var(--text, var(--ed-ink));
+}
+
+.search-head {
+  max-width: 46rem;
+}
+
+.search-head h1 {
+  margin: 0 0 22px;
+}
+
+.search-form label {
+  display: block;
+  margin: 0 0 8px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 16px/1.4 var(--sans);
+}
+
+.search-form-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.search-form input {
+  min-width: 0;
+  min-height: 60px;
+  padding: 0 18px;
+  border: 1px solid var(--line, var(--ed-rule-strong));
+  border-right: 0;
+  border-radius: 0;
+  background: var(--surface, #fffdf9);
+  color: var(--text, var(--ed-ink));
+  font: 400 22px/1.3 var(--serif);
+}
+
+.search-form input:focus-visible {
+  outline: 2px solid var(--wine-text, var(--ed-wine));
+  outline-offset: -2px;
+}
+
+.search-form button {
+  min-height: 60px;
+  padding: 0 26px;
+  border: 0;
+  border-radius: 0;
+  background: var(--ed-wine);
+  color: #fffaf4;
+  font: 600 16px/1 var(--sans);
+  cursor: pointer;
+}
+
+.search-form button:hover,
+.search-form button:focus-visible {
+  background: #14233a;
+}
+
+.search-page #explore-count {
+  min-height: 1.5em;
+  margin: 12px 0 0;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.5 var(--sans);
+  text-align: left;
+}
+
+.search-results {
+  max-width: 46rem;
+  margin-top: 12px;
+}
+
+.search-results[hidden],
+.search-start[hidden] {
+  display: none;
+}
+
+.search-none {
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 19px/1.55 var(--serif);
+}
+
+.search-group {
+  padding: 22px 0 10px;
+  border-top: 1px solid var(--line, var(--ed-rule-strong));
+}
+
+.search-group h2 {
+  margin: 0 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 14px;
+  font: 400 26px/1.2 var(--serif);
+}
+
+.search-group h2 small {
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 14px/1.4 var(--sans);
+  letter-spacing: 0;
+}
+
+.search-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.search-list li + li {
+  border-top: 1px solid var(--line, rgba(31, 27, 24, 0.08));
+}
+
+.search-list a {
+  display: block;
+  padding: 11px 0;
+  color: var(--text, var(--ed-ink));
+  text-decoration: none;
+}
+
+.search-list a.has-cover {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+}
+
+.search-list img {
+  display: block;
+  width: 40px;
+  height: auto;
+  box-shadow: 0 1px 2px rgba(31, 27, 24, 0.14), 0 3px 8px rgba(31, 27, 24, 0.1);
+}
+
+.search-row-text {
+  display: block;
+  min-width: 0;
+}
+
+.search-row-kind {
+  display: block;
+  color: var(--text-muted, var(--ed-muted));
+  font: 600 11px/1.5 var(--sans);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.search-row-title {
+  display: block;
+  font: 400 20px/1.3 var(--serif);
+}
+
+.search-row-note {
+  display: block;
+  margin-top: 1px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 14px/1.4 var(--sans);
+}
+
+.search-list a:hover .search-row-title,
+.search-list a:focus-visible .search-row-title {
+  color: var(--wine-text, var(--ed-wine));
+}
+
+.search-more {
+  margin: 6px 0 12px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--wine-text, var(--ed-wine));
+  font: 400 15px/1.5 var(--sans);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+/* Before a search. */
+
+.search-start {
+  margin-top: 28px;
+}
+
+.search-lead {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 40px;
+  list-style: none;
+  border-top: 1px solid var(--line, var(--ed-rule-strong));
+}
+
+.search-lead a {
+  display: block;
+  padding: 22px 0 26px;
+  color: var(--text, var(--ed-ink));
+  text-decoration: none;
+}
+
+.search-lead b {
+  display: block;
+  font: 400 34px/1.1 var(--serif);
+  letter-spacing: -0.005em;
+}
+
+.search-lead span {
+  display: block;
+  margin-top: 10px;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 17px/1.5 var(--serif);
+}
+
+.search-lead a:hover b,
+.search-lead a:focus-visible b {
+  color: var(--wine-text, var(--ed-wine));
+}
+
+.search-also {
+  padding-top: 22px;
+  border-top: 1px solid var(--line, var(--ed-rule));
+}
+
+.search-also h2,
+.search-browse h2 {
+  margin: 0 0 10px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 600 12px/1.4 var(--sans);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.search-also ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  columns: 2 22rem;
+  column-gap: 40px;
+}
+
+.search-also li {
+  padding: 9px 0;
+  break-inside: avoid;
+  border-top: 1px solid var(--line, rgba(31, 27, 24, 0.08));
+}
+
+.search-also a {
+  color: var(--text, var(--ed-ink));
+  font: 400 20px/1.3 var(--serif);
+  text-decoration: none;
+}
+
+.search-also a:hover {
+  color: var(--wine-text, var(--ed-wine));
+}
+
+.search-also span {
+  display: block;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 14px/1.45 var(--sans);
+}
+
+.search-reference {
+  margin: 22px 0 0;
+  padding-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+  border-top: 1px solid var(--line, var(--ed-rule));
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.6 var(--sans);
+}
+
+.search-reference span {
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.search-reference a {
+  color: var(--text-soft, var(--ed-soft));
+  text-decoration-color: var(--line, var(--ed-rule-strong));
+  text-underline-offset: 3px;
+}
+
+.search-reference a:hover {
+  color: var(--wine-text, var(--ed-wine));
+}
+
+/* Every page by name, folded away. */
+
+.search-browse {
+  margin-top: 56px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line, var(--ed-rule-strong));
+}
+
+.search-browse-group {
+  border-bottom: 1px solid var(--line, rgba(31, 27, 24, 0.08));
+}
+
+.search-browse-group summary {
+  padding: 10px 0;
+  font: 400 19px/1.3 var(--serif);
+  cursor: pointer;
+}
+
+.search-browse-group summary span {
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 13px/1 var(--sans);
+}
+
+.search-browse-group ul {
+  margin: 0 0 18px;
+  padding: 0;
+  list-style: none;
+  columns: 3 15rem;
+  column-gap: 32px;
+}
+
+.search-browse-group li {
+  padding: 4px 0;
+  break-inside: avoid;
+  font: 400 15px/1.45 var(--sans);
+}
+
+.search-browse-group li a {
+  color: var(--text, var(--ed-ink));
+  text-decoration: none;
+}
+
+.search-browse-group li a:hover {
+  color: var(--wine-text, var(--ed-wine));
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.search-browse-group li span {
+  color: var(--text-muted, var(--ed-muted));
+  font-size: 13px;
+}
+
+@media (max-width: 760px) {
+  .search-lead {
+    grid-template-columns: 1fr;
+  }
+
+  .search-lead a {
+    padding: 16px 0 18px;
+    border-bottom: 1px solid var(--line, rgba(31, 27, 24, 0.08));
+  }
+
+  .search-lead b {
+    font-size: 28px;
+  }
+
+  .search-lead span {
+    margin-top: 4px;
+    font-size: 16px;
+  }
+
+  .search-also {
+    border-top: 0;
+  }
+
+  .search-form input {
+    font-size: 19px;
+  }
+
+  .search-form button {
+    padding: 0 18px;
+  }
 }

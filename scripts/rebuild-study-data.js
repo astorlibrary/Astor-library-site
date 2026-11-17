@@ -202,33 +202,94 @@ const discovery = fs.existsSync(discoveryFile) ? JSON.parse(fs.readFileSync(disc
 const searchEntries = [];
 const seenHrefs = new Set();
 
-function addEntry(kind, title, href, note, terms) {
+function addEntry(kind, title, href, note, terms, image) {
   const key = kind + '|' + href + '|' + title;
   if (seenHrefs.has(key)) return;
   seenHrefs.add(key);
-  searchEntries.push({ k: kind, t: title, h: href, n: note || '', s: (terms || title).toLowerCase() });
+  const entry = { k: kind, t: title, h: href, n: note || '', s: (terms || title).toLowerCase() };
+  if (image) entry.i = image;
+  searchEntries.push(entry);
 }
 
+// The names the search uses for each kind of page (assets/astor/search.mjs
+// says what each means to a reader): the web study guides are "Study guide",
+// the slide guides under /resources/ are "Slide guide", and the printed
+// Study Editions are "Study Edition".
 const discoveryGroups = [
   ['books', 'Book'],
   ['authors', 'Writer'],
   ['subjects', 'Subject'],
   ['collections', 'Collection'],
-  ['resources', 'Free guide'],
-  ['studyEditions', 'Study edition'],
+  ['resources', 'Slide guide'],
+  ['studyEditions', 'Study Edition'],
   ['passages', 'Close reading'],
   ['seasons', 'Seasonal']
 ];
+const bookTitleByHref = new Map((discovery.books || []).map(item => [item.href, item]));
+const searchThumbs = fs.existsSync(path.join(root, 'assets', 'book-thumbnails.json'))
+  ? JSON.parse(fs.readFileSync(path.join(root, 'assets', 'book-thumbnails.json'), 'utf8')) : {};
+const smallCover = image => (searchThumbs[image] || '').replace(/\.jpg$/, '-360.jpg');
+const passageCards = fs.existsSync(path.join(root, 'scripts', 'passage-cards.json'))
+  ? JSON.parse(fs.readFileSync(path.join(root, 'scripts', 'passage-cards.json'), 'utf8')) : {};
+const bookFormatNames = fs.existsSync(path.join(root, 'scripts', 'book-formats.json'))
+  ? JSON.parse(fs.readFileSync(path.join(root, 'scripts', 'book-formats.json'), 'utf8')) : {};
 for (const [group, label] of discoveryGroups) {
   for (const item of discovery[group] || []) {
-    if (!item.href || !item.href.startsWith('/')) continue;
-    addEntry(label, item.title, item.href, item.author || item.collection || '', [item.title, item.author, item.collection].filter(Boolean).join(' '));
+    // A paired Study Edition has no page of its own; it is sold from the
+    // page of the first book in it.
+    const pairedOnly = label === 'Study Edition' && item.href && !item.href.startsWith('/') && (item.relatedBooks || [])[0];
+    const href = pairedOnly ? item.relatedBooks[0] + '#buy' : item.href;
+    if (!href || !href.startsWith('/')) continue;
+    const related = (item.relatedBooks || []).map(href => bookTitleByHref.get(href)).filter(Boolean);
+    const relatedTitles = related.map(book => book.title);
+    let note = item.author || item.collection || '';
+    const terms = [item.title, item.author, item.collection];
+    let image = '';
+    if (label === 'Book') {
+      const slug = item.href.split('/')[2];
+      const formats = (bookFormatNames[slug] || []).map(format => format.format);
+      terms.push('book edition buy', ...formats);
+      image = smallCover(item.image);
+    } else if (label === 'Close reading') {
+      const card = passageCards[item.href.split('/')[2]];
+      note = card?.small || relatedTitles.join(', ');
+      terms.push(item.search, ...relatedTitles, 'close reading passage annotated');
+    } else if (label === 'Slide guide') {
+      note = relatedTitles.join(', ') || item.subject || '';
+      terms.push(...relatedTitles, ...(item.tags || []).slice(0, 2), 'slides illustrated guide');
+    } else if (label === 'Study Edition') {
+      note = item.paired ? 'Two texts in one volume' : (related[0]?.author || '');
+      terms.push(...relatedTitles, 'study edition printed print book buy');
+      image = smallCover(item.image);
+    } else if (label === 'Seasonal') {
+      terms.push('season seasonal');
+    }
+    addEntry(label, item.title, href, note, terms.filter(Boolean).join(' '), image);
   }
 }
 
+// What each part of a guide is called, and the other words a reader might use
+// for it: "Macbeth plot", "Macbeth summary" and "Macbeth what happens" are the
+// same request.
+const GUIDE_PARTS = [
+  ['what-happens', 'what happens', 'plot summary synopsis story what happens act scene chapter'],
+  ['characters', 'characters', 'characters character people who is who'],
+  ['themes', 'themes', 'themes theme ideas'],
+  ['form-and-language', 'form and language', 'language form structure techniques methods devices'],
+  ['context', 'context', 'context history background dates critics criticism']
+];
+
 for (const book of entries) {
   const guide = '/guides/' + book.slug + '/';
-  addEntry('Study guide', book.title + ' study guide', guide, book.author, book.title + ' ' + book.author + ' study guide notes summary');
+  const name = String(book.title).split(';')[0].trim();
+  addEntry('Study guide', name + ' study guide', guide, book.author, name + ' ' + book.author + ' study guide notes summary analysis revision');
+  addEntry('Key quotations', name + ': key quotations', guide + 'quotations/', book.quotations.length + ' lines with references and analysis',
+    name + ' ' + book.author + ' quotes quotations quote key lines important');
+  addEntry('Revise', 'Revise ' + name, '/play/?book=' + book.slug, 'Ten questions, quizzes and flashcards',
+    name + ' ' + book.author + ' revise revision quiz quizzes test practice practise flashcards questions');
+  for (const [part, label, words] of GUIDE_PARTS) {
+    addEntry('Guide part', name + ': ' + label, guide + part + '/', book.author, name + ' ' + book.author + ' ' + words);
+  }
   for (const character of book.characters) {
     addEntry('Character', character.name, guide + 'characters/#astor-character-' + character.id, book.title, character.name + ' ' + book.title + ' ' + (character.role || ''));
   }
@@ -239,37 +300,41 @@ for (const book of entries) {
     addEntry('Technique', technique.name, '/explore/techniques/#' + technique.id, technique.definition, technique.name);
   }
   for (const quotation of book.quotations) {
-    addEntry('Quotation', quotation.text.length > 76 ? quotation.text.slice(0, 74).trim() + '\u2026' : quotation.text,
-      guide + 'quotations/#astor-quote-' + quotation.id, book.title + ' ' + quotation.reference,
+    addEntry('Quotation', quotation.text.length > 76 ? quotation.text.slice(0, 74).trim() + '…' : quotation.text,
+      guide + 'quotations/#astor-quote-' + quotation.id, [quotation.speaker, book.title + ' ' + quotation.reference].filter(Boolean).join(', '),
       quotation.text + ' ' + (quotation.speaker || '') + ' ' + book.title);
   }
 }
 
+// The first six are what the empty search box suggests.
 for (const tool of [
-  ['Tool', 'Study guides', '/guides/', 'Plot, characters, themes, quotations, language and context', 'study guide guides notes summary'],
-  ['Tool', 'Revise', '/play/', 'Quizzes and flashcards', 'play games revise quiz quizzes revision flashcards'],
-  ['Tool', 'Today', '/today/', 'Five questions a day on books, plays and poems', 'daily puzzle today quiz'],
-  ['Tool', 'Quotation explorer', '/explore/quotations/', 'Filter every quotation by theme, character and technique', 'quotations explorer filter'],
+  ['Tool', 'Study guides', '/guides/', 'Plot, characters, themes, key quotations and context, free on the web', 'study guide guides notes summary'],
+  ['Tool', 'Revise', '/play/', 'Ten questions on a book, with quizzes and flashcards', 'play games revise quiz quizzes revision flashcards'],
+  ['Tool', 'All books', '/library/', 'Every Astor edition in print', 'books catalogue library editions buy'],
+  ['Tool', 'Close readings', '/passage-room/', 'Famous passages with notes on the exact words', 'close readings passages passage room annotated'],
+  ['Tool', 'Quotations across the library', '/explore/quotations/', 'Every key line, by book, theme and technique', 'quotations quotes explorer filter'],
+  ['Tool', 'Today’s five questions', '/today/', 'Five questions a day on books, plays and poems', 'daily puzzle today quiz five questions'],
+  ['Tool', 'Slide guides', '/resources/', 'Illustrated guides; a free account opens each one after its first three slides', 'slides illustrated guides free resources presentations'],
+  ['Tool', 'Study Editions', '/study/', 'Printed books with the text and study material together', 'study editions printed print'],
+  ['Tool', 'My library', '/my-library/', 'Saved books, reading progress, scores and kept quotations', 'my library saved progress commonplace'],
+  ['Tool', 'Literary terms', '/explore/techniques/', 'What each term means, with a line from a book using it', 'technique glossary terms devices'],
   ['Tool', 'Literature timeline', '/explore/timeline/', 'Every book in order, with its dates', 'timeline history dates'],
   ['Tool', 'Character maps', '/explore/characters/', 'Who is linked to whom in each book', 'characters relationships map diagram'],
-  ['Tool', 'Themes across the library', '/explore/themes/', 'Each shared theme, book by book', 'themes theme explorer compare'],
-  ['Tool', 'Literary terms', '/explore/techniques/', 'Literary terms, with examples from the books', 'technique glossary terms devices'],
+  ['Tool', 'Themes across the library', '/explore/themes/', 'Each shared theme, book by book', 'themes theme explorer'],
   ['Tool', 'Map of settings', '/explore/map/', 'Where the books take place', 'map places settings geography'],
-  ['Tool', 'Compare two texts', '/explore/compare/', 'Shared themes and techniques, side by side', 'compare comparative essay two texts'],
-  ['Tool', 'My library', '/my-library/', 'Saved books, reading progress, scores and kept quotations', 'my library saved progress commonplace'],
+  ['Tool', 'Two books side by side', '/explore/compare/', 'The facts and themes of two books, set next to each other', 'compare comparative comparison two texts side by side'],
   // The Revise games, so "who said it" or "flashcards" opens the game itself.
-  // They come after the tools above, which the empty search box suggests.
   ['Tool', 'Who said it?', '/play/who-said-it/', 'Name the speaker of a line', 'quiz revise speaker'],
   ['Tool', 'Fill the line', '/play/fill-the-line/', 'Put the missing words back into a speech', 'quiz revise gap missing words'],
   ['Tool', 'Which book?', '/play/which-book/', 'One line, the whole library', 'quiz revise'],
   ['Tool', 'Who is this?', '/play/character-identification/', 'A character described without being named', 'quiz revise character'],
   ['Tool', 'Theme match', '/play/theme-match/', 'Decide which theme a quotation carries', 'quiz revise themes'],
-  ['Tool', 'Technique spotter', '/play/technique-spotter/', 'Name the device doing the work', 'quiz revise techniques devices'],
+  ['Tool', 'Technique spotter', '/play/technique-spotter/', 'Name the technique used in a line', 'quiz revise techniques devices'],
   ['Tool', 'Order the plot', '/play/order-the-plot/', 'Put acts, chapters and scenes back in sequence', 'quiz revise plot sequence'],
   ['Tool', 'Which year?', '/play/context-sprint/', 'Place an event in the right year', 'quiz revise dates context'],
   ['Tool', 'Opening lines', '/play/opening-lines/', 'Name the book from its first sentence', 'quiz revise first lines'],
   ['Tool', 'Ten questions', '/play/mixed-round/', 'Ten questions on one book', 'quiz revise mixed round'],
-  ['Tool', 'Flashcards', '/play/flashcards/', 'Spaced repetition over a title’s quotations', 'flashcards revise spaced repetition']
+  ['Tool', 'Flashcards', '/play/flashcards/', 'Learn a book’s key lines a few at a time', 'flashcards revise spaced repetition']
 ]) addEntry(tool[0], tool[1], tool[2], tool[3], tool[4]);
 
 fs.writeFileSync(searchFile, JSON.stringify({ entries: searchEntries }, null, 0) + '\n');

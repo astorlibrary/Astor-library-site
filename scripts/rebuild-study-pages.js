@@ -108,7 +108,7 @@ const GAMES = [
     slug: 'technique-spotter',
     name: 'Technique spotter',
     scope: 'book',
-    blurb: 'Name the device doing the work in a line.',
+    blurb: 'Name the technique a line is using.',
     deck: 'Name the technique at work in the line.',
     why: 'Naming a device earns nothing on its own. Every answer here pairs the term with the job it is doing in that line, so the habit you build is the useful one.'
   },
@@ -162,6 +162,27 @@ const GAMES = [
   }
 ];
 
+// The four pairs Astor prints in one volume, each with the study guides of
+// its two texts, for "Two books side by side". Titles and addresses come from
+// scripts/study-editions.json.
+const PAIRED_SLUGS = {
+  'Macbeth and Jekyll and Hyde': ['macbeth', 'jekyll-and-hyde'],
+  'Macbeth and A Christmas Carol': ['macbeth', 'a-christmas-carol'],
+  'Romeo and Juliet and Jekyll and Hyde': ['romeo-and-juliet', 'jekyll-and-hyde'],
+  'Romeo and Juliet and A Christmas Carol': ['romeo-and-juliet', 'a-christmas-carol']
+};
+const PAIRED_EDITIONS = require('./study-editions.json').list
+  .filter(edition => edition.paired)
+  .map(edition => {
+    const slugs = PAIRED_SLUGS[edition.title];
+    if (!slugs) throw new Error('A paired Study Edition has no study guides named for it: ' + edition.title);
+    return { slugs, title: edition.title, href: edition.book + '#buy' };
+  });
+
+// Once a round is under way the question has the page; the other activities
+// for the same book are listed here, under it (revise-kit.mjs fills this in).
+const OTHER_ACTIVITIES = '  <nav class="rx-after" id="rv-after" aria-label="Other ways to revise this book" hidden></nav>';
+
 // --------------------------------------------------------------- the pages
 
 function buildPages() {
@@ -178,8 +199,8 @@ function buildPages() {
     breadcrumb: '<a href="/">Astor Library</a><span aria-hidden="true">/</span><span aria-current="page">Revise</span>',
     module: 'revise-hub.mjs',
     bare: true,
-    intro: `  <section class="rx-hero rx-hub-hero" id="rv-title" aria-label="The book you are revising">
-    <div class="rx-hero-inner"><div class="rx-hero-words"><p class="rx-hero-kicker">Revise</p><h1 class="rx-hero-title">Revise a book</h1><p class="rx-hero-author">Quizzes and flashcards on any book with a study guide.</p></div></div>
+    intro: `  <section class="rv-start" id="rv-title" aria-label="The book you are revising">
+    <div class="rv-start-inner"><div class="rv-start-words"><p class="rv-start-kicker">Revise</p><h1 class="rv-start-title">Revise a book</h1><p class="rv-start-author">Ten questions, quizzes and flashcards on any book with a study guide.</p></div></div>
   </section>`,
     mount: `  <div class="rv-hub" id="rv-hub"><p class="rv-loading">Finding your book…</p></div>`,
     fallback: 'The quizzes need JavaScript. The key quotations are in each <a href="/guides/">study guide</a>.',
@@ -205,7 +226,7 @@ function buildPages() {
   </header>`,
       mount: `  <div class="rv-quiz" id="astor-game" data-game="${escapeHtml(game.slug)}" data-scope="${game.scope}"></div>`,
       fallback: 'This quiz needs JavaScript. The quotations are on the book pages: <a href="/library/">browse the catalogue</a>.',
-      tail: '',
+      tail: game.scope === 'book' ? OTHER_ACTIVITIES : '',
       links: [{ href: '/play/', label: 'Revise' }, { href: '/today/', label: 'Today' }]
     }));
   }
@@ -228,7 +249,7 @@ function buildPages() {
   </header>`,
     mount: '  <div class="rv-quiz" id="astor-flashcards"></div>',
     fallback: 'The flashcards need JavaScript. The same quotations are on each book page.',
-    tail: '',
+    tail: OTHER_ACTIVITIES,
     links: [{ href: '/play/', label: 'Revise' }, { href: '/my-library/', label: 'My library' }]
   }));
 
@@ -317,7 +338,7 @@ function buildPages() {
     mount: `  <div class="astor-chooser" id="astor-theme-search"></div>
   <div id="astor-theme-list"></div>`,
     fallback: 'This needs JavaScript. Each book page covers its own themes.',
-    links: [{ href: '/explore/quotations/', label: 'Quotation explorer' }, { href: '/explore/compare/', label: 'Compare two texts' }]
+    links: [{ href: '/explore/quotations/', label: 'Quotation explorer' }, { href: '/guides/', label: 'Study guides' }]
   }));
 
   // --- explore: techniques ---
@@ -357,14 +378,15 @@ function buildPages() {
   // --- explore: compare ---
   written.push(page({
     dir: 'explore/compare',
-    title: 'Compare two texts | Astor Library',
-    description: 'Put two Astor Library titles side by side: shared themes and techniques, and paired quotations.',
+    title: 'Two books side by side | Astor Library',
+    description: 'Put two Astor Library titles side by side: when and how each was written, where it is set, and the themes its study guide covers.',
     kicker: 'Explore',
-    heading: 'Compare two books.',
-    deck: 'Choose two books to see the themes and techniques they share, with a quotation from each book for every shared theme.',
-    breadcrumb: '<a href="/explore/">Explore</a><span aria-hidden="true">/</span><span aria-current="page">Compare</span>',
+    heading: 'Two books side by side.',
+    deck: 'Choose two books to set their dates, settings and themes next to each other. Where the study guides treat a theme under the same heading in both books, a line from each is paired.',
+    breadcrumb: '<a href="/explore/">Search</a><span aria-hidden="true">/</span><span aria-current="page">Two books side by side</span>',
     module: 'compare.mjs',
-    intro: '  <div class="astor-chooser" id="astor-compare-chooser"></div>',
+    // The pairs Astor prints in one volume, so the page can point to the book.
+    intro: '  <div class="astor-chooser" id="astor-compare-chooser" data-paired="' + escapeHtml(JSON.stringify(PAIRED_EDITIONS)) + '"></div>',
     mount: '  <div id="astor-compare"></div>',
     fallback: 'This needs JavaScript. Each book page lists its own themes and techniques.',
     links: [{ href: '/reading-routes/', label: 'Reading routes' }, { href: '/explore/quotations/', label: 'Quotation explorer' }]
