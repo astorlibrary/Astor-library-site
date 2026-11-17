@@ -72,14 +72,16 @@ test('the not-found page searches for the words in the address', () => {
   assert.match(script, /shortlist\(entries, words/);
 });
 
-test('the paired Study Edition texts and the other GCSE set texts have hand-chosen evidence for every theme', () => {
+test('the GCSE set texts and the A-level texts most often studied have hand-chosen evidence for every theme', () => {
   const books = new Map(loadBooks().map(book => [book.slug, book]));
   const chosen = [
     // The five texts in Astor's paired Study Editions.
     'macbeth', 'a-christmas-carol', 'pride-and-prejudice', 'jekyll-and-hyde', 'romeo-and-juliet',
     // The other nineteenth-century novels and Shakespeare plays set for GCSE English Literature.
     'frankenstein', 'great-expectations', 'jane-eyre', 'sign-of-four',
-    'the-tempest', 'the-merchant-of-venice', 'much-ado-about-nothing', 'julius-caesar'
+    'the-tempest', 'the-merchant-of-venice', 'much-ado-about-nothing', 'julius-caesar',
+    // Texts often studied at A-level.
+    'hamlet', 'othello', 'king-lear', 'wuthering-heights', 'dracula', 'dorian-gray', 'the-great-gatsby', 'tess-of-the-durbervilles'
   ];
   for (const slug of chosen) {
     const book = books.get(slug);
