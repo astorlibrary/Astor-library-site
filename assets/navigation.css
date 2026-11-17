@@ -734,7 +734,7 @@ body:has(.astor-palette[open]) { overflow: hidden; }
 
 .astor-palette-results li a {
   display: grid;
-  grid-template-columns: 96px minmax(0, 1fr);
+  grid-template-columns: 104px minmax(0, 1fr) auto;
   gap: 12px;
   align-items: baseline;
   padding: 10px 20px;
@@ -751,11 +751,18 @@ body:has(.astor-palette[open]) { overflow: hidden; }
 .astor-palette-title { font-size: 15px; line-height: 1.4; }
 .astor-palette-title small { display: block; color: var(--text-muted,#5a514c); font-size: 13px; }
 .astor-palette-hint { margin: 0; padding: 12px 20px; border-top: 1px solid var(--astor-nav-line); font-family: var(--astor-nav-sans); font-size: 12px; color: var(--text-muted,#5a514c); }
+.astor-palette-hint:has(.astor-palette-all) { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 16px; }
+.astor-palette-all { color: var(--wine-text,var(--astor-nav-wine)); font-size: 14px; font-weight: 600; text-underline-offset: 3px; }
+.astor-palette-all[hidden] { display: none; }
+.astor-palette-hint.is-note { border-top: 0; padding: 8px 20px 4px; font-size: 13px; }
+/* What it takes to open a result: free on the web, a free account, a printed book. */
+.astor-palette-access { color: var(--text-muted,#5a514c); font-size: 12px; white-space: nowrap; }
 
 
 @media (max-width: 680px) {
   .astor-palette { padding: 4vh 8px 8px; }
   .astor-palette-results li a { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  .astor-palette-access { white-space: normal; }
 }
 
 @media print {

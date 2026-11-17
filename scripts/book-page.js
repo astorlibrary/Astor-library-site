@@ -259,6 +259,29 @@ function formatRows(formats, mainImage, listHtml, bookTitle, detailsHtml) {
   }).join('');
 }
 
+// The place on a book page for Astor Pro: the complete text on screen, with
+// the edition's annotations. Until it opens the place says what is coming and
+// links nowhere. When it opens, give `href` the address (the book's title is
+// appended as ?book=<slug> if `perBook` is true) and change `status`.
+const ASTOR_PRO = {
+  status: 'Coming soon',
+  name: 'Astor Pro',
+  // {title} is the book's title, set in italics.
+  note: 'The complete text of {title} to read on screen, with the edition’s annotations beside it.',
+  href: '',
+  action: 'Read it in Astor Pro'
+};
+
+function astorProPlace(title) {
+  const note = escapeHtml(ASTOR_PRO.note).replace('{title}', '<cite>' + escapeHtml(title) + '</cite>');
+  const action = ASTOR_PRO.href
+    ? '<p class="book-pro-action"><a href="' + escapeHtml(ASTOR_PRO.href) + '">' + escapeHtml(ASTOR_PRO.action) + '</a></p>'
+    : '';
+  return '<div class="book-pro" id="astor-pro"><p class="book-pro-head"><span class="book-pro-name">' + escapeHtml(ASTOR_PRO.name) + '</span>' +
+    '<span class="book-pro-status">' + escapeHtml(ASTOR_PRO.status) + '</span></p>' +
+    '<p class="book-pro-note">' + note + '</p>' + action + '</div>';
+}
+
 function restructureBookPage(html, ctx) {
   const mainOpen = html.match(/<main\b[^>]*>/);
   if (!mainOpen) return html;
@@ -399,10 +422,19 @@ function restructureBookPage(html, ctx) {
   if (sourcesHtml && !/id="sources"/.test(sourcesHtml)) sourcesHtml = sourcesHtml.replace('<section class="section-title"', '<section class="section-title" id="sources"');
 
   // --- the new opening --------------------------------------------------------------
-  const links = [];
-  if (guideSlug) links.push('<a href="/guides/' + escapeHtml(guideSlug) + '/">The free study guide</a>');
-  if (guideSlug) links.push('<a href="/play/?book=' + escapeHtml(guideSlug) + '">Quizzes and flashcards</a>');
-  const linkLine = links.length ? '<p class="book-links">' + links.join('') + '</p>' : '';
+  // Under the printed formats: the two free things this site has for the
+  // book, each with a line saying what it is.
+  const linkLine = guideSlug
+    ? '<ul class="book-study">' +
+      '<li><a href="/guides/' + escapeHtml(guideSlug) + '/">Study guide</a><span>What happens, the characters, the themes and the key quotations. Free on the web, no account.</span></li>' +
+      '<li><a href="/play/?book=' + escapeHtml(guideSlug) + '">Revise</a><span>Ten questions on the book, then quizzes and flashcards on its key lines.</span></li>' +
+      '</ul>'
+    : '';
+  // Astor Pro, the complete text to read on screen with its annotations, is
+  // on its way. ASTOR_PRO below says what the place holds until then, and
+  // where it should point once there is somewhere to send a reader. It
+  // appears on the pages of books that have a study guide.
+  const proNote = ctx.pro === false || !guideSlug ? '' : astorProPlace(plain(titleHtml));
 
   const cover = coverSrc
     ? '<figure class="book-cover"><img src="' + escapeHtml(coverSrc) + '" alt="' + escapeHtml(plain(titleHtml)) + ', Astor Library edition" width="400" height="600"></figure>'
@@ -426,6 +458,7 @@ function restructureBookPage(html, ctx) {
     (buyRows ? '<ul class="book-formats astor-buy-list">' + buyRows + '</ul>' : '') +
     otherEdition +
     linkLine +
+    proNote +
     '</section>';
 
   // --- the foot --------------------------------------------------------------------
@@ -474,4 +507,4 @@ function restructureBookPage(html, ctx) {
   return out;
 }
 
-module.exports = { restructureBookPage, STUDY_HEADINGS };
+module.exports = { restructureBookPage, STUDY_HEADINGS, ASTOR_PRO };

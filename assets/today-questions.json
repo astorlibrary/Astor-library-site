@@ -1,8 +1,562 @@
 {
-  "note": "Written and checked by hand. Each question: four options with the right answer first, a hint and an explanation shown after answering. today-pick.mjs chooses five a day and shuffles the options. Titles of works are marked *thus* and set in italics.",
+  "note": "Written and checked by hand. Each question: four options with the right answer first, a hint and an explanation shown after answering. \"kind\" says what it is about: the text itself, how the book was written and printed (book), or the life, sources, stage and readers round it (world). \"book\" names the work, so a day can open and close on one book. A question with \"on\" (MM-DD) is asked on that day each year, introduced by its \"occasion\". today-pick.mjs chooses the day’s five and shuffles the options. Titles of works are marked *thus* and set in italics.",
+  "books": {
+    "a-christmas-carol": {
+      "title": "A Christmas Carol",
+      "href": "/guides/a-christmas-carol/",
+      "revise": true
+    },
+    "a-connecticut-yankee-in-king-arthurs-court": {
+      "title": "A Connecticut Yankee in King Arthur’s Court",
+      "href": "/guides/a-connecticut-yankee-in-king-arthurs-court/",
+      "revise": true
+    },
+    "a-dolls-house": {
+      "title": "A Doll’s House",
+      "href": "/guides/a-dolls-house/",
+      "revise": true
+    },
+    "a-midsummer-nights-dream": {
+      "title": "A Midsummer Night’s Dream",
+      "href": "/guides/a-midsummer-nights-dream/",
+      "revise": true
+    },
+    "a-room-of-ones-own": {
+      "title": "A Room of One’s Own",
+      "href": "/books/a-room-of-ones-own/",
+      "revise": false
+    },
+    "a-victorian-bonfire-night": {
+      "title": "A Victorian Bonfire Night",
+      "href": "/books/a-victorian-bonfire-night/",
+      "revise": false
+    },
+    "a-victorian-christmas": {
+      "title": "A Victorian Christmas",
+      "href": "/books/a-victorian-christmas/",
+      "revise": false
+    },
+    "adventures-of-huckleberry-finn": {
+      "title": "Adventures of Huckleberry Finn",
+      "href": "/guides/adventures-of-huckleberry-finn/",
+      "revise": true
+    },
+    "adventures-of-sherlock-holmes": {
+      "title": "The Adventures of Sherlock Holmes",
+      "href": "/guides/adventures-of-sherlock-holmes/",
+      "revise": true
+    },
+    "alices-adventures-in-wonderland": {
+      "title": "Alice’s Adventures in Wonderland",
+      "href": "/guides/alices-adventures-in-wonderland/",
+      "revise": true
+    },
+    "animal-farm": {
+      "title": "Animal Farm",
+      "href": "/books/animal-farm/",
+      "revise": false
+    },
+    "anne-of-green-gables": {
+      "title": "Anne of Green Gables",
+      "href": "/guides/anne-of-green-gables/",
+      "revise": true
+    },
+    "antony-and-cleopatra": {
+      "title": "Antony and Cleopatra",
+      "href": "/guides/antony-and-cleopatra/",
+      "revise": true
+    },
+    "arden-of-faversham": {
+      "title": "Arden of Faversham",
+      "href": "/books/arden-of-faversham/",
+      "revise": false
+    },
+    "as-you-like-it": {
+      "title": "As You Like It",
+      "href": "/guides/as-you-like-it/",
+      "revise": true
+    },
+    "call-of-the-wild": {
+      "title": "The Call of the Wild",
+      "href": "/guides/call-of-the-wild/",
+      "revise": true
+    },
+    "carmilla": {
+      "title": "Carmilla",
+      "href": "/guides/carmilla/",
+      "revise": true
+    },
+    "carnacki-the-ghost-finder": {
+      "title": "Carnacki, the Ghost-Finder",
+      "href": "/guides/carnacki-the-ghost-finder/",
+      "revise": true
+    },
+    "charles-i-selected-writings": {
+      "title": "Charles I: Selected Writings",
+      "href": "/books/charles-i-selected-writings/",
+      "revise": false
+    },
+    "comedy-of-errors": {
+      "title": "The Comedy of Errors",
+      "href": "/guides/comedy-of-errors/",
+      "revise": true
+    },
+    "common-sense-and-the-american-crisis": {
+      "title": "Common Sense and The American Crisis",
+      "href": "/guides/common-sense-and-the-american-crisis/",
+      "revise": true
+    },
+    "coriolanus": {
+      "title": "Coriolanus",
+      "href": "/guides/coriolanus/",
+      "revise": true
+    },
+    "doctor-faustus": {
+      "title": "Doctor Faustus",
+      "href": "/guides/doctor-faustus/",
+      "revise": true
+    },
+    "dorian-gray": {
+      "title": "The Picture of Dorian Gray",
+      "href": "/guides/dorian-gray/",
+      "revise": true
+    },
+    "dracula": {
+      "title": "Dracula",
+      "href": "/guides/dracula/",
+      "revise": true
+    },
+    "edgar-allan-poe-selected-tales": {
+      "title": "Edgar Allan Poe: Selected Tales",
+      "href": "/books/edgar-allan-poe-selected-tales/",
+      "revise": false
+    },
+    "ethan-frome": {
+      "title": "Ethan Frome",
+      "href": "/guides/ethan-frome/",
+      "revise": true
+    },
+    "frankenstein": {
+      "title": "Frankenstein",
+      "href": "/guides/frankenstein/",
+      "revise": true
+    },
+    "great-expectations": {
+      "title": "Great Expectations",
+      "href": "/guides/great-expectations/",
+      "revise": true
+    },
+    "gullivers-travels": {
+      "title": "Gulliver’s Travels",
+      "href": "/guides/gullivers-travels/",
+      "revise": true
+    },
+    "hamlet": {
+      "title": "Hamlet",
+      "href": "/guides/hamlet/",
+      "revise": true
+    },
+    "heart-of-darkness": {
+      "title": "Heart of Darkness",
+      "href": "/guides/heart-of-darkness/",
+      "revise": true
+    },
+    "henry-v": {
+      "title": "Henry V",
+      "href": "/guides/henry-v/",
+      "revise": true
+    },
+    "henry-viii": {
+      "title": "Henry VIII",
+      "href": "/books/henry-viii/",
+      "revise": false
+    },
+    "jane-eyre": {
+      "title": "Jane Eyre",
+      "href": "/guides/jane-eyre/",
+      "revise": true
+    },
+    "jekyll-and-hyde": {
+      "title": "Strange Case of Dr Jekyll and Mr Hyde",
+      "href": "/guides/jekyll-and-hyde/",
+      "revise": true
+    },
+    "julius-caesar": {
+      "title": "Julius Caesar",
+      "href": "/guides/julius-caesar/",
+      "revise": true
+    },
+    "king-lear": {
+      "title": "King Lear",
+      "href": "/guides/king-lear/",
+      "revise": true
+    },
+    "loves-labours-lost": {
+      "title": "Love’s Labour’s Lost",
+      "href": "/guides/loves-labours-lost/",
+      "revise": true
+    },
+    "lyrical-ballads": {
+      "title": "Lyrical Ballads",
+      "href": "/guides/lyrical-ballads/",
+      "revise": true
+    },
+    "m-r-james-collected-ghost-stories": {
+      "title": "M. R. James: Collected Ghost Stories",
+      "href": "/guides/m-r-james-collected-ghost-stories/",
+      "revise": true
+    },
+    "macbeth": {
+      "title": "Macbeth",
+      "href": "/guides/macbeth/",
+      "revise": true
+    },
+    "measure-for-measure": {
+      "title": "Measure for Measure",
+      "href": "/guides/measure-for-measure/",
+      "revise": true
+    },
+    "michael-robartes-and-the-dancer": {
+      "title": "Michael Robartes and the Dancer",
+      "href": "/books/michael-robartes-and-the-dancer/",
+      "revise": false
+    },
+    "moby-dick": {
+      "title": "Moby-Dick",
+      "href": "/guides/moby-dick/",
+      "revise": true
+    },
+    "mrs-dalloway": {
+      "title": "Mrs Dalloway",
+      "href": "/guides/mrs-dalloway/",
+      "revise": true
+    },
+    "much-ado-about-nothing": {
+      "title": "Much Ado About Nothing",
+      "href": "/guides/much-ado-about-nothing/",
+      "revise": true
+    },
+    "narrative-of-the-life-of-frederick-douglass": {
+      "title": "Narrative of the Life of Frederick Douglass",
+      "href": "/guides/narrative-of-the-life-of-frederick-douglass/",
+      "revise": true
+    },
+    "notes-from-underground": {
+      "title": "Notes from Underground",
+      "href": "/guides/notes-from-underground/",
+      "revise": true
+    },
+    "oroonoko": {
+      "title": "Oroonoko",
+      "href": "/books/oroonoko/",
+      "revise": false
+    },
+    "othello": {
+      "title": "Othello",
+      "href": "/guides/othello/",
+      "revise": true
+    },
+    "pamela": {
+      "title": "Pamela; or, Virtue Rewarded",
+      "href": "/books/pamela/",
+      "revise": false
+    },
+    "paradise-lost": {
+      "title": "Paradise Lost",
+      "href": "/guides/paradise-lost/",
+      "revise": true
+    },
+    "pericles-prince-of-tyre": {
+      "title": "Pericles, Prince of Tyre",
+      "href": "/books/pericles-prince-of-tyre/",
+      "revise": false
+    },
+    "pride-and-prejudice": {
+      "title": "Pride and Prejudice",
+      "href": "/guides/pride-and-prejudice/",
+      "revise": true
+    },
+    "puddnhead-wilson": {
+      "title": "The Tragedy of Pudd’nhead Wilson",
+      "href": "/guides/puddnhead-wilson/",
+      "revise": true
+    },
+    "red-badge-of-courage": {
+      "title": "The Red Badge of Courage",
+      "href": "/guides/red-badge-of-courage/",
+      "revise": true
+    },
+    "richard-iii": {
+      "title": "Richard III",
+      "href": "/guides/richard-iii/",
+      "revise": true
+    },
+    "robinson-crusoe": {
+      "title": "Robinson Crusoe",
+      "href": "/guides/robinson-crusoe/",
+      "revise": true
+    },
+    "romeo-and-juliet": {
+      "title": "Romeo and Juliet",
+      "href": "/guides/romeo-and-juliet/",
+      "revise": true
+    },
+    "selected-poems-of-john-skelton": {
+      "title": "Selected Poems of John Skelton",
+      "href": "/books/selected-poems-of-john-skelton/",
+      "revise": false
+    },
+    "sense-and-sensibility": {
+      "title": "Sense and Sensibility",
+      "href": "/guides/sense-and-sensibility/",
+      "revise": true
+    },
+    "seven-pillars-of-wisdom": {
+      "title": "Seven Pillars of Wisdom",
+      "href": "/books/seven-pillars-of-wisdom/",
+      "revise": false
+    },
+    "shakespeares-sonnets": {
+      "title": "Shakespeare’s Sonnets",
+      "href": "/guides/shakespeares-sonnets/",
+      "revise": true
+    },
+    "sign-of-four": {
+      "title": "The Sign of Four",
+      "href": "/guides/sign-of-four/",
+      "revise": true
+    },
+    "sir-thomas-more": {
+      "title": "Sir Thomas More",
+      "href": "/books/sir-thomas-more/",
+      "revise": false
+    },
+    "sleepy-hollow-and-other-stories": {
+      "title": "Sleepy Hollow and Other American Halloween Stories",
+      "href": "/guides/sleepy-hollow-and-other-stories/",
+      "revise": true
+    },
+    "songs-of-innocence-and-of-experience": {
+      "title": "Songs of Innocence and of Experience",
+      "href": "/guides/songs-of-innocence-and-of-experience/",
+      "revise": true
+    },
+    "taming-of-the-shrew": {
+      "title": "The Taming of the Shrew",
+      "href": "/guides/taming-of-the-shrew/",
+      "revise": true
+    },
+    "tess-of-the-durbervilles": {
+      "title": "Tess of the d’Urbervilles",
+      "href": "/guides/tess-of-the-durbervilles/",
+      "revise": true
+    },
+    "the-adventures-of-tom-sawyer": {
+      "title": "The Adventures of Tom Sawyer",
+      "href": "/guides/the-adventures-of-tom-sawyer/",
+      "revise": true
+    },
+    "the-aeneid": {
+      "title": "The Aeneid",
+      "href": "/books/the-aeneid/",
+      "revise": false
+    },
+    "the-awakening": {
+      "title": "The Awakening",
+      "href": "/guides/the-awakening/",
+      "revise": true
+    },
+    "the-blue-castle": {
+      "title": "The Blue Castle",
+      "href": "/books/the-blue-castle/",
+      "revise": false
+    },
+    "the-brothers-karamazov": {
+      "title": "The Brothers Karamazov",
+      "href": "/guides/the-brothers-karamazov/",
+      "revise": true
+    },
+    "the-death-of-ivan-ilyich": {
+      "title": "The Death of Ivan Ilyich",
+      "href": "/guides/the-death-of-ivan-ilyich/",
+      "revise": true
+    },
+    "the-diary-of-a-nobody": {
+      "title": "The Diary of a Nobody",
+      "href": "/guides/the-diary-of-a-nobody/",
+      "revise": true
+    },
+    "the-duchess-of-malfi": {
+      "title": "The Duchess of Malfi",
+      "href": "/guides/the-duchess-of-malfi/",
+      "revise": true
+    },
+    "the-great-gatsby": {
+      "title": "The Great Gatsby",
+      "href": "/guides/the-great-gatsby/",
+      "revise": true
+    },
+    "the-hound-of-the-baskervilles": {
+      "title": "The Hound of the Baskervilles",
+      "href": "/guides/the-hound-of-the-baskervilles/",
+      "revise": true
+    },
+    "the-iliad": {
+      "title": "The Iliad",
+      "href": "/guides/the-iliad/",
+      "revise": true
+    },
+    "the-importance-of-being-earnest": {
+      "title": "The Importance of Being Earnest",
+      "href": "/guides/the-importance-of-being-earnest/",
+      "revise": true
+    },
+    "the-man-who-was-thursday": {
+      "title": "The Man Who Was Thursday",
+      "href": "/guides/the-man-who-was-thursday/",
+      "revise": true
+    },
+    "the-merchant-of-venice": {
+      "title": "The Merchant of Venice",
+      "href": "/guides/the-merchant-of-venice/",
+      "revise": true
+    },
+    "the-metamorphosis": {
+      "title": "The Metamorphosis",
+      "href": "/books/the-metamorphosis/",
+      "revise": false
+    },
+    "the-moonstone": {
+      "title": "The Moonstone",
+      "href": "/guides/the-moonstone/",
+      "revise": true
+    },
+    "the-odyssey": {
+      "title": "The Odyssey",
+      "href": "/guides/the-odyssey/",
+      "revise": true
+    },
+    "the-overcoat": {
+      "title": "The Overcoat",
+      "href": "/guides/the-overcoat/",
+      "revise": true
+    },
+    "the-prince": {
+      "title": "The Prince",
+      "href": "/guides/the-prince/",
+      "revise": true
+    },
+    "the-railway-children": {
+      "title": "The Railway Children",
+      "href": "/guides/the-railway-children/",
+      "revise": true
+    },
+    "the-rape-of-the-lock-and-an-essay-on-criticism": {
+      "title": "The Rape of the Lock and An Essay on Criticism",
+      "href": "/guides/the-rape-of-the-lock-and-an-essay-on-criticism/",
+      "revise": true
+    },
+    "the-rime-of-the-ancient-mariner": {
+      "title": "The Rime of the Ancient Mariner",
+      "href": "/guides/the-rime-of-the-ancient-mariner/",
+      "revise": true
+    },
+    "the-scarlet-letter": {
+      "title": "The Scarlet Letter",
+      "href": "/guides/the-scarlet-letter/",
+      "revise": true
+    },
+    "the-sorrows-of-young-werther": {
+      "title": "The Sorrows of Young Werther",
+      "href": "/books/the-sorrows-of-young-werther/",
+      "revise": false
+    },
+    "the-tempest": {
+      "title": "The Tempest",
+      "href": "/guides/the-tempest/",
+      "revise": true
+    },
+    "the-turn-of-the-screw": {
+      "title": "The Turn of the Screw",
+      "href": "/guides/the-turn-of-the-screw/",
+      "revise": true
+    },
+    "the-willows": {
+      "title": "The Willows",
+      "href": "/guides/the-willows/",
+      "revise": true
+    },
+    "the-wind-in-the-willows": {
+      "title": "The Wind in the Willows",
+      "href": "/guides/the-wind-in-the-willows/",
+      "revise": true
+    },
+    "the-winters-tale": {
+      "title": "The Winter’s Tale",
+      "href": "/guides/the-winters-tale/",
+      "revise": true
+    },
+    "the-woman-in-white": {
+      "title": "The Woman in White",
+      "href": "/guides/the-woman-in-white/",
+      "revise": true
+    },
+    "the-yellow-wallpaper-and-the-giant-wistaria": {
+      "title": "The Yellow Wall-Paper and The Giant Wistaria",
+      "href": "/guides/the-yellow-wallpaper-and-the-giant-wistaria/",
+      "revise": true
+    },
+    "three-men-in-a-boat": {
+      "title": "Three Men in a Boat",
+      "href": "/guides/three-men-in-a-boat/",
+      "revise": true
+    },
+    "titus-andronicus": {
+      "title": "Titus Andronicus",
+      "href": "/guides/titus-andronicus/",
+      "revise": true
+    },
+    "twelfth-night": {
+      "title": "Twelfth Night",
+      "href": "/guides/twelfth-night/",
+      "revise": true
+    },
+    "uncle-toms-cabin": {
+      "title": "Uncle Tom’s Cabin",
+      "href": "/guides/uncle-toms-cabin/",
+      "revise": true
+    },
+    "utopia": {
+      "title": "Utopia",
+      "href": "/guides/utopia/",
+      "revise": true
+    },
+    "venus-and-adonis": {
+      "title": "Venus and Adonis",
+      "href": "/guides/venus-and-adonis/",
+      "revise": true
+    },
+    "war-of-the-worlds": {
+      "title": "The War of the Worlds",
+      "href": "/guides/war-of-the-worlds/",
+      "revise": true
+    },
+    "white-nights": {
+      "title": "White Nights",
+      "href": "/guides/white-nights/",
+      "revise": true
+    },
+    "wuthering-heights": {
+      "title": "Wuthering Heights",
+      "href": "/guides/wuthering-heights/",
+      "revise": true
+    }
+  },
   "questions": [
     {
       "id": "winters-tale-bear",
+      "kind": "text",
+      "book": "the-winters-tale",
       "question": "Which play contains the stage direction “Exit, pursued by a bear”?",
       "options": [
         "*The Winter’s Tale*",
@@ -20,6 +574,8 @@
     },
     {
       "id": "macbeth-sleepwalk-witnesses",
+      "kind": "text",
+      "book": "macbeth",
       "question": "Which two people watch Lady Macbeth sleepwalking in Act 5, scene 1 of *Macbeth*?",
       "options": [
         "A doctor and a gentlewoman",
@@ -31,12 +587,14 @@
       "hint": "One of them says the disease is “beyond my practice”.",
       "explanation": "A waiting-gentlewoman has called in a doctor of physic. They see Lady Macbeth rub her hands and hear her speak of Duncan’s blood and Lady Macduff’s death.",
       "link": {
-        "href": "/guides/macbeth/what-happens/",
-        "label": "Macbeth: what happens"
+        "href": "/guides/macbeth/quotations/#astor-quote-out-damned-spot",
+        "label": "Read the line: “Out, damned spot”"
       }
     },
     {
       "id": "hamlet-mousetrap",
+      "kind": "text",
+      "book": "hamlet",
       "question": "Which play does Hamlet ask the travelling players to perform before Claudius?",
       "options": [
         "*The Murder of Gonzago*",
@@ -54,6 +612,8 @@
     },
     {
       "id": "hamlet-yorick",
+      "kind": "text",
+      "book": "hamlet",
       "question": "Whose skull does Hamlet hold in the graveyard scene?",
       "options": [
         "Yorick’s",
@@ -65,12 +625,14 @@
       "hint": "He was the king’s jester.",
       "explanation": "The First Gravedigger says the skull has lain in the earth twenty-three years and belonged to Yorick, the King’s jester. Hamlet remembers being carried on his back.",
       "link": {
-        "href": "/guides/hamlet/",
-        "label": "Hamlet study guide"
+        "href": "/guides/hamlet/quotations/#astor-quote-alas-poor-yorick",
+        "label": "Read the line: “Alas, poor Yorick”"
       }
     },
     {
       "id": "as-you-like-it-names",
+      "kind": "text",
+      "book": "as-you-like-it",
       "question": "In which play do Rosalind, Orlando and Touchstone appear?",
       "options": [
         "*As You Like It*",
@@ -88,6 +650,8 @@
     },
     {
       "id": "othello-strawberries",
+      "kind": "text",
+      "book": "othello",
       "question": "In *Othello*, what is the handkerchief Othello gave Desdemona embroidered with?",
       "options": [
         "Strawberries",
@@ -99,12 +663,14 @@
       "hint": "Iago describes it to Othello in Act 3, scene 3.",
       "explanation": "Iago calls it a handkerchief “spotted with strawberries”. Emilia picks it up when Desdemona drops it and gives it to Iago, who leaves it in Cassio’s lodging.",
       "link": {
-        "href": "/guides/othello/",
-        "label": "Othello study guide"
+        "href": "/passage-room/othello-trifles-proof/",
+        "label": "Read Iago on the handkerchief"
       }
     },
     {
       "id": "tempest-sycorax",
+      "kind": "text",
+      "book": "the-tempest",
       "question": "In *The Tempest*, who imprisoned Ariel in a cloven pine before Prospero came to the island?",
       "options": [
         "Sycorax",
@@ -122,6 +688,8 @@
     },
     {
       "id": "twelfth-night-stockings",
+      "kind": "text",
+      "book": "twelfth-night",
       "question": "In *Twelfth Night*, what colour stockings does the forged letter tell Malvolio to wear?",
       "options": [
         "Yellow",
@@ -139,6 +707,8 @@
     },
     {
       "id": "romeo-plague",
+      "kind": "text",
+      "book": "romeo-and-juliet",
       "question": "Who says “A plague o’ both your houses!” in *Romeo and Juliet*?",
       "options": [
         "Mercutio",
@@ -150,12 +720,14 @@
       "hint": "He is fatally wounded when Romeo steps between him and his opponent.",
       "explanation": "Mercutio is stabbed by Tybalt under Romeo’s arm in Act 3, scene 1. He curses both the Montagues and the Capulets before he dies.",
       "link": {
-        "href": "/guides/romeo-and-juliet/",
-        "label": "Romeo and Juliet study guide"
+        "href": "/guides/romeo-and-juliet/quotations/#astor-quote-plague-o-both",
+        "label": "Read the line and its analysis"
       }
     },
     {
       "id": "julius-caesar-antony",
+      "kind": "text",
+      "book": "julius-caesar",
       "question": "Who begins a speech “Friends, Romans, countrymen, lend me your ears”?",
       "options": [
         "Mark Antony",
@@ -167,12 +739,14 @@
       "hint": "He has been given permission to speak at Caesar’s funeral.",
       "explanation": "Mark Antony speaks after Brutus in Act 3, scene 2 of *Julius Caesar*. By repeating that Brutus is “an honourable man” he turns the crowd against the conspirators.",
       "link": {
-        "href": "/guides/julius-caesar/",
-        "label": "Julius Caesar study guide"
+        "href": "/guides/julius-caesar/quotations/#astor-quote-friends-romans-countrymen",
+        "label": "Read the line and its analysis"
       }
     },
     {
       "id": "much-ado-dogberry",
+      "kind": "text",
+      "book": "much-ado-about-nothing",
       "question": "In *Much Ado About Nothing*, who is the constable of the Watch?",
       "options": [
         "Dogberry",
@@ -190,6 +764,8 @@
     },
     {
       "id": "merchant-casket",
+      "kind": "text",
+      "book": "the-merchant-of-venice",
       "question": "In *The Merchant of Venice*, which casket holds Portia’s portrait?",
       "options": [
         "Lead",
@@ -207,6 +783,8 @@
     },
     {
       "id": "dream-bottom",
+      "kind": "text",
+      "book": "a-midsummer-nights-dream",
       "question": "In *A Midsummer Night’s Dream*, what does Puck give Bottom in place of his own head?",
       "options": [
         "An ass’s head",
@@ -218,12 +796,14 @@
       "hint": "Quince cries out that Bottom is “translated”.",
       "explanation": "Puck transforms Bottom while the workmen rehearse their play in the wood. Titania, under the spell of the love-juice, wakes and falls in love with him.",
       "link": {
-        "href": "/guides/a-midsummer-nights-dream/",
-        "label": "A Midsummer Night’s Dream study guide"
+        "href": "/guides/a-midsummer-nights-dream/quotations/#astor-quote-enamoured-of-an-ass",
+        "label": "Read Titania’s line"
       }
     },
     {
       "id": "richard-iii-opening",
+      "kind": "text",
+      "book": "richard-iii",
       "question": "Which play opens “Now is the winter of our discontent / Made glorious summer by this sun of York”?",
       "options": [
         "*Richard III*",
@@ -235,12 +815,14 @@
       "hint": "The speaker is the Duke of Gloucester.",
       "explanation": "Richard, Duke of Gloucester, speaks the opening soliloquy alone on stage. The “sun of York” is his brother, King Edward IV.",
       "link": {
-        "href": "/guides/richard-iii/",
-        "label": "Richard III study guide"
+        "href": "/passage-room/richard-iii-winter-of-our-discontent/",
+        "label": "Read the speech with its notes"
       }
     },
     {
       "id": "henry-v-crispin",
+      "kind": "text",
+      "book": "henry-v",
       "question": "Before which battle does Henry V speak about St Crispin’s Day?",
       "options": [
         "Agincourt",
@@ -252,25 +834,27 @@
       "hint": "It was fought on 25 October 1415.",
       "explanation": "Henry speaks in Act 4, scene 3, when Westmorland wishes they had more men. The battle of Agincourt was fought on the feast of Saints Crispin and Crispinian.",
       "link": {
-        "href": "/books/henry-v/",
-        "label": "Henry V"
+        "href": "/passage-room/henry-v-band-of-brothers/",
+        "label": "Read the speech with its notes"
       }
     },
     {
-      "id": "first-folio-year",
-      "question": "In which year was the First Folio of Shakespeare’s plays published?",
+      "id": "first-folio-first-printed",
+      "kind": "book",
+      "question": "Eighteen of the plays in the First Folio of 1623 had never been printed before. Which of these was one of them?",
       "options": [
-        "1623",
-        "1616",
-        "1609",
-        "1603"
+        "*Macbeth*",
+        "*Hamlet*",
+        "*Romeo and Juliet*",
+        "*King Lear*"
       ],
       "answer": 0,
-      "hint": "It came out seven years after his death.",
-      "explanation": "*Mr. William Shakespeares Comedies, Histories, & Tragedies* was published in 1623. It contains thirty-six plays, eighteen of which had not been printed before, *Macbeth* and *The Tempest* among them."
+      "hint": "It is the shortest of the tragedies.",
+      "explanation": "*Mr. William Shakespeares Comedies, Histories, & Tragedies* was published in 1623. It contains thirty-six plays, eighteen of which had not been printed before, *Macbeth* and *The Tempest* among them. *Hamlet*, *Romeo and Juliet* and *King Lear* had all appeared as quartos."
     },
     {
       "id": "first-folio-editors",
+      "kind": "book",
       "question": "Which two actors gathered the plays for the First Folio?",
       "options": [
         "John Heminges and Henry Condell",
@@ -284,6 +868,8 @@
     },
     {
       "id": "sonnets-mr-wh",
+      "kind": "book",
+      "book": "shakespeares-sonnets",
       "question": "To whom is the 1609 edition of Shakespeare’s Sonnets dedicated?",
       "options": [
         "“Mr. W. H.”",
@@ -301,6 +887,8 @@
     },
     {
       "id": "shortest-play",
+      "kind": "book",
+      "book": "comedy-of-errors",
       "question": "Which is usually described as Shakespeare’s shortest play?",
       "options": [
         "*The Comedy of Errors*",
@@ -318,6 +906,10 @@
     },
     {
       "id": "globe-fire",
+      "kind": "world",
+      "book": "henry-viii",
+      "on": "06-29",
+      "occasion": "The first Globe Theatre burned down on this day in 1613.",
       "question": "During a performance of which play did the first Globe Theatre burn down in 1613?",
       "options": [
         "*Henry VIII*",
@@ -335,6 +927,7 @@
     },
     {
       "id": "second-best-bed",
+      "kind": "world",
       "question": "What did Shakespeare leave his wife, Anne, in his will?",
       "options": [
         "His “second best bed”",
@@ -348,6 +941,8 @@
     },
     {
       "id": "coriolanus-mother",
+      "kind": "text",
+      "book": "coriolanus",
       "question": "What is the name of Coriolanus’s mother?",
       "options": [
         "Volumnia",
@@ -365,6 +960,8 @@
     },
     {
       "id": "titus-goths",
+      "kind": "text",
+      "book": "titus-andronicus",
       "question": "At the start of *Titus Andronicus*, Tamora is queen of which people?",
       "options": [
         "The Goths",
@@ -382,6 +979,8 @@
     },
     {
       "id": "measure-vienna",
+      "kind": "text",
+      "book": "measure-for-measure",
       "question": "In which city is *Measure for Measure* set?",
       "options": [
         "Vienna",
@@ -399,6 +998,8 @@
     },
     {
       "id": "shrew-sly",
+      "kind": "text",
+      "book": "taming-of-the-shrew",
       "question": "Who is the drunken tinker tricked into believing he is a lord in the Induction to *The Taming of the Shrew*?",
       "options": [
         "Christopher Sly",
@@ -415,17 +1016,19 @@
       }
     },
     {
-      "id": "loves-labours-three-years",
-      "question": "In *Love’s Labour’s Lost*, for how long do the King of Navarre and his lords swear to study and keep away from women?",
+      "id": "loves-labours-oath",
+      "kind": "text",
+      "book": "loves-labours-lost",
+      "question": "In *Love’s Labour’s Lost*, the King of Navarre and three lords swear to study for three years. Whom does the oath forbid them to see?",
       "options": [
-        "Three years",
-        "One year",
-        "Seven years",
-        "Twelve months and a day"
+        "Women",
+        "Their own families",
+        "Actors and musicians",
+        "Other scholars"
       ],
       "answer": 0,
       "hint": "Berowne says the oath is impossible to keep almost as soon as he signs it.",
-      "explanation": "The King, Berowne, Longaville and Dumaine swear a three-year oath. The Princess of France and her ladies arrive on an embassy at once.",
+      "explanation": "The King, Berowne, Longaville and Dumaine swear to study for three years and to see no woman in that time. The Princess of France and her ladies arrive on an embassy at once.",
       "link": {
         "href": "/guides/loves-labours-lost/",
         "label": "Love’s Labour’s Lost study guide"
@@ -433,6 +1036,8 @@
     },
     {
       "id": "pericles-wilkins",
+      "kind": "book",
+      "book": "pericles-prince-of-tyre",
       "question": "Which writer is generally thought to have written the first two acts of *Pericles*?",
       "options": [
         "George Wilkins",
@@ -450,6 +1055,8 @@
     },
     {
       "id": "historical-macbeth",
+      "kind": "world",
+      "book": "macbeth",
       "question": "Which king did the historical Macbeth defeat and kill in 1040?",
       "options": [
         "Duncan I",
@@ -467,6 +1074,8 @@
     },
     {
       "id": "hamlet-q1",
+      "kind": "book",
+      "book": "hamlet",
       "question": "Which early printed text of *Hamlet* is much the shortest?",
       "options": [
         "The First Quarto, 1603",
@@ -484,6 +1093,8 @@
     },
     {
       "id": "elsinore",
+      "kind": "world",
+      "book": "hamlet",
       "question": "Elsinore, where *Hamlet* is set, is the English name for which Danish town?",
       "options": [
         "Helsingør",
@@ -501,6 +1112,8 @@
     },
     {
       "id": "forman-macbeth",
+      "kind": "world",
+      "book": "macbeth",
       "question": "Who wrote notes on a performance of *Macbeth* at the Globe in April 1611?",
       "options": [
         "Simon Forman",
@@ -518,6 +1131,10 @@
     },
     {
       "id": "platter-caesar",
+      "kind": "world",
+      "book": "julius-caesar",
+      "on": "09-21",
+      "occasion": "On this day in 1599 a traveller saw *Julius Caesar* on Bankside.",
       "question": "Which Swiss traveller saw *Julius Caesar* on Bankside in September 1599?",
       "options": [
         "Thomas Platter",
@@ -535,6 +1152,10 @@
     },
     {
       "id": "pepys-dream",
+      "kind": "world",
+      "book": "a-midsummer-nights-dream",
+      "on": "09-29",
+      "occasion": "On this day in 1662 Samuel Pepys went to the theatre and did not enjoy it.",
       "question": "Which play did Samuel Pepys call “the most insipid ridiculous play that ever I saw in my life”?",
       "options": [
         "*A Midsummer Night’s Dream*",
@@ -552,6 +1173,8 @@
     },
     {
       "id": "tate-lear",
+      "kind": "world",
+      "book": "king-lear",
       "question": "In Nahum Tate’s 1681 version of *King Lear*, whom does Cordelia marry?",
       "options": [
         "Edgar",
@@ -569,6 +1192,8 @@
     },
     {
       "id": "romeo-brooke",
+      "kind": "world",
+      "book": "romeo-and-juliet",
       "question": "Which English poem of 1562 was Shakespeare’s main source for *Romeo and Juliet*?",
       "options": [
         "*The Tragicall Historye of Romeus and Juliet*",
@@ -586,6 +1211,8 @@
     },
     {
       "id": "othello-cinthio",
+      "kind": "world",
+      "book": "othello",
       "question": "Shakespeare took the story of *Othello* from a tale by which Italian writer?",
       "options": [
         "Giraldi Cinthio",
@@ -603,6 +1230,8 @@
     },
     {
       "id": "north-plutarch",
+      "kind": "world",
+      "book": "antony-and-cleopatra",
       "question": "For his Roman plays Shakespeare read Plutarch in whose English translation?",
       "options": [
         "Sir Thomas North",
@@ -620,6 +1249,8 @@
     },
     {
       "id": "garnet-equivocator",
+      "kind": "world",
+      "book": "macbeth",
       "question": "The Porter in *Macbeth* jokes about an “equivocator”. Which Jesuit, executed in 1606, is usually thought to lie behind the joke?",
       "options": [
         "Henry Garnet",
@@ -637,6 +1268,8 @@
     },
     {
       "id": "bodkin",
+      "kind": "text",
+      "book": "hamlet",
       "question": "When Hamlet speaks of making his “quietus” with “a bare bodkin”, what is a bodkin?",
       "options": [
         "A dagger",
@@ -648,12 +1281,14 @@
       "hint": "He is thinking about suicide.",
       "explanation": "In the “To be, or not to be” soliloquy a bodkin is a short dagger. A quietus is the settling of an account.",
       "link": {
-        "href": "/guides/hamlet/quotations/",
-        "label": "Hamlet: key quotations"
+        "href": "/passage-room/hamlet-to-be/",
+        "label": "Read the speech with its notes"
       }
     },
     {
       "id": "thane",
+      "kind": "text",
+      "book": "macbeth",
       "question": "In *Macbeth*, what is a thane?",
       "options": [
         "A Scottish nobleman",
@@ -671,6 +1306,8 @@
     },
     {
       "id": "groundlings",
+      "kind": "text",
+      "book": "hamlet",
       "question": "In *Hamlet*, who are the “groundlings”?",
       "options": [
         "Standing playgoers",
@@ -688,6 +1325,8 @@
     },
     {
       "id": "lear-cordelia",
+      "kind": "text",
+      "book": "king-lear",
       "question": "Which of King Lear’s daughters refuses to compete in praising him?",
       "options": [
         "Cordelia",
@@ -699,13 +1338,15 @@
       "hint": "Her answer is “Nothing, my lord.”",
       "explanation": "Cordelia says she loves Lear “according to my bond, no more nor less”. He divides her share of the kingdom between her sisters.",
       "link": {
-        "href": "/guides/king-lear/",
-        "label": "King Lear study guide"
+        "href": "/guides/king-lear/quotations/#astor-quote-cannot-heave-my-heart",
+        "label": "Read Cordelia’s answer"
       }
     },
     {
       "id": "antony-asp",
-      "question": "How does Cleopatra die?",
+      "kind": "text",
+      "book": "antony-and-cleopatra",
+      "question": "How does Cleopatra die in Shakespeare’s *Antony and Cleopatra*?",
       "options": [
         "By the bite of an asp",
         "By poison in a cup",
@@ -722,6 +1363,8 @@
     },
     {
       "id": "iliad-anger",
+      "kind": "text",
+      "book": "the-iliad",
       "question": "Whose anger does the first line of the *Iliad* announce as its subject?",
       "options": [
         "Achilles’",
@@ -739,6 +1382,8 @@
     },
     {
       "id": "odyssey-argos",
+      "kind": "text",
+      "book": "the-odyssey",
       "question": "What is the name of Odysseus’s old dog, who recognises him on his return to Ithaca?",
       "options": [
         "Argos",
@@ -756,6 +1401,8 @@
     },
     {
       "id": "odyssey-nobody",
+      "kind": "text",
+      "book": "the-odyssey",
       "question": "What name does Odysseus give the Cyclops Polyphemus?",
       "options": [
         "Nobody",
@@ -767,12 +1414,14 @@
       "hint": "It means the other Cyclopes think Polyphemus is not being attacked at all.",
       "explanation": "In Greek the name is Outis. When Polyphemus shouts that Nobody is killing him, the other Cyclopes go away. Butler’s translation renders the name as “Noman”.",
       "link": {
-        "href": "/guides/the-odyssey/",
-        "label": "The Odyssey study guide"
+        "href": "/guides/the-odyssey/quotations/#astor-quote-my-name-is-noman",
+        "label": "Read the line and its analysis"
       }
     },
     {
       "id": "odyssey-shroud",
+      "kind": "text",
+      "book": "the-odyssey",
       "question": "Penelope tells her suitors she will choose a husband when she has finished weaving a shroud. Whose shroud is it?",
       "options": [
         "Laertes’",
@@ -790,6 +1439,8 @@
     },
     {
       "id": "odyssey-poseidon",
+      "kind": "text",
+      "book": "the-odyssey",
       "question": "Odysseus angers which god by blinding the Cyclops Polyphemus?",
       "options": [
         "Poseidon",
@@ -807,6 +1458,8 @@
     },
     {
       "id": "iliad-end",
+      "kind": "text",
+      "book": "the-iliad",
       "question": "The *Iliad* ends with the funeral of which hero?",
       "options": [
         "Hector",
@@ -824,6 +1477,8 @@
     },
     {
       "id": "iliad-astyanax",
+      "kind": "text",
+      "book": "the-iliad",
       "question": "In Book 6 of the *Iliad*, why does Hector’s baby son Astyanax cry when his father reaches for him?",
       "options": [
         "His father’s helmet frightens him",
@@ -835,12 +1490,14 @@
       "hint": "Hector laughs and takes the helmet off.",
       "explanation": "Hector has come in from the fighting to see Andromache. The boy shrinks back from the bronze helmet and its horsehair plume; Hector lays it down, kisses him and prays that he will be a better man than his father.",
       "link": {
-        "href": "/guides/the-iliad/",
-        "label": "The Iliad study guide"
+        "href": "/passage-room/iliad-hectors-helmet/",
+        "label": "Read the passage with its notes"
       }
     },
     {
       "id": "aeneid-anchises",
+      "kind": "text",
+      "book": "the-aeneid",
       "question": "Whom does Aeneas carry on his shoulders out of burning Troy?",
       "options": [
         "His father, Anchises",
@@ -858,6 +1515,8 @@
     },
     {
       "id": "aeneid-augustus",
+      "kind": "world",
+      "book": "the-aeneid",
       "question": "According to the ancient lives of Virgil, he asked for the unfinished *Aeneid* to be burned. Who overruled him?",
       "options": [
         "Augustus",
@@ -875,6 +1534,8 @@
     },
     {
       "id": "aeneid-dido",
+      "kind": "text",
+      "book": "the-aeneid",
       "question": "Which queen falls in love with Aeneas and kills herself when he leaves?",
       "options": [
         "Dido",
@@ -892,6 +1553,8 @@
     },
     {
       "id": "butler-authoress",
+      "kind": "world",
+      "book": "the-odyssey",
       "question": "In *The Authoress of the Odyssey* (1897), Samuel Butler argued that the poem was written by whom?",
       "options": [
         "A young woman in Sicily",
@@ -908,24 +1571,9 @@
       }
     },
     {
-      "id": "paradise-lost-books",
-      "question": "In how many books was *Paradise Lost* first published in 1667?",
-      "options": [
-        "Ten",
-        "Twelve",
-        "Nine",
-        "Twenty-four"
-      ],
-      "answer": 0,
-      "hint": "The second edition, of 1674, divided two of them.",
-      "explanation": "Milton split Books 7 and 10 for the 1674 edition, making twelve books, the number in Virgil’s *Aeneid*.",
-      "link": {
-        "href": "/books/paradise-lost/",
-        "label": "Paradise Lost"
-      }
-    },
-    {
       "id": "paradise-lost-reign",
+      "kind": "text",
+      "book": "paradise-lost",
       "question": "Who says “Better to reign in Hell, than serve in Heav’n” in *Paradise Lost*?",
       "options": [
         "Satan",
@@ -937,29 +1585,14 @@
       "hint": "He has just woken in the burning lake.",
       "explanation": "Satan says it in Book 1, after he and Beelzebub have raised themselves from the burning lake.",
       "link": {
-        "href": "/books/paradise-lost/",
-        "label": "Paradise Lost"
-      }
-    },
-    {
-      "id": "faustus-years",
-      "question": "For how many years does Faustus’s pact give him the service of Mephistopheles?",
-      "options": [
-        "Twenty-four",
-        "Twelve",
-        "Seven",
-        "Forty"
-      ],
-      "answer": 0,
-      "hint": "Faustus signs the deed in his own blood.",
-      "explanation": "At the end of the twenty-four years Faustus waits for his last hour to strike and the devils come for him.",
-      "link": {
-        "href": "/books/doctor-faustus/",
-        "label": "Doctor Faustus"
+        "href": "/passage-room/paradise-lost-mind-its-own-place/",
+        "label": "Read the speech with its notes"
       }
     },
     {
       "id": "faustus-helen",
+      "kind": "text",
+      "book": "doctor-faustus",
       "question": "In *Doctor Faustus*, whose face “launched a thousand ships”?",
       "options": [
         "Helen of Troy’s",
@@ -971,12 +1604,16 @@
       "hint": "Mephistopheles makes a spirit appear in her shape.",
       "explanation": "Faustus says “Was this the face that launched a thousand ships / And burnt the topless towers of Ilium?” when the spirit of Helen appears, near the end of the play.",
       "link": {
-        "href": "/books/doctor-faustus/",
-        "label": "Doctor Faustus"
+        "href": "/passage-room/doctor-faustus-thousand-ships/",
+        "label": "Read the speech with its notes"
       }
     },
     {
       "id": "marlowe-deptford",
+      "kind": "world",
+      "book": "doctor-faustus",
+      "on": "05-30",
+      "occasion": "Christopher Marlowe was killed on this day in 1593.",
       "question": "Christopher Marlowe was killed in 1593 in which place?",
       "options": [
         "Deptford",
@@ -994,6 +1631,8 @@
     },
     {
       "id": "malfi-cover-her-face",
+      "kind": "text",
+      "book": "the-duchess-of-malfi",
       "question": "In *The Duchess of Malfi*, who says “Cover her face; mine eyes dazzle: she died young”?",
       "options": [
         "Ferdinand",
@@ -1011,6 +1650,8 @@
     },
     {
       "id": "utopia-latin",
+      "kind": "book",
+      "book": "utopia",
       "question": "In which language did Thomas More first publish *Utopia* in 1516?",
       "options": [
         "Latin",
@@ -1028,6 +1669,8 @@
     },
     {
       "id": "utopia-hythloday",
+      "kind": "text",
+      "book": "utopia",
       "question": "Who describes the island of Utopia in More’s book?",
       "options": [
         "Raphael Hythloday",
@@ -1045,6 +1688,8 @@
     },
     {
       "id": "prince-dedication",
+      "kind": "book",
+      "book": "the-prince",
       "question": "To whom did Machiavelli dedicate *The Prince*?",
       "options": [
         "Lorenzo de’ Medici",
@@ -1061,24 +1706,9 @@
       }
     },
     {
-      "id": "prince-printed",
-      "question": "Machiavelli wrote *The Prince* in about 1513. When was it first printed?",
-      "options": [
-        "1532",
-        "1513",
-        "1559",
-        "1600"
-      ],
-      "answer": 0,
-      "hint": "Machiavelli had been dead for five years.",
-      "explanation": "*The Prince* circulated in manuscript and was printed in 1532. In 1559 it was placed on the Church’s Index of Prohibited Books.",
-      "link": {
-        "href": "/books/the-prince/",
-        "label": "The Prince"
-      }
-    },
-    {
       "id": "arden-murder",
+      "kind": "world",
+      "book": "arden-of-faversham",
       "question": "*Arden of Faversham* dramatises a real murder of 1551. Who arranged the killing of Thomas Arden?",
       "options": [
         "His wife, Alice, and her lover",
@@ -1096,6 +1726,8 @@
     },
     {
       "id": "more-hand-d",
+      "kind": "book",
+      "book": "sir-thomas-more",
       "question": "In the manuscript of the play *Sir Thomas More*, which section is widely believed to be in Shakespeare’s handwriting?",
       "options": [
         "The pages in Hand D",
@@ -1113,6 +1745,8 @@
     },
     {
       "id": "venus-southampton",
+      "kind": "book",
+      "book": "venus-and-adonis",
       "question": "To whom did Shakespeare dedicate *Venus and Adonis* in 1593?",
       "options": [
         "The Earl of Southampton",
@@ -1122,7 +1756,7 @@
       ],
       "answer": 0,
       "hint": "He dedicated *The Rape of Lucrece* to the same man a year later.",
-      "explanation": "Both poems are dedicated to Henry Wriothesley, third Earl of Southampton. *Venus and Adonis* was the first work published under Shakespeare’s name.",
+      "explanation": "*Venus and Adonis* and *The Rape of Lucrece* (1594) are both dedicated to Henry Wriothesley, third Earl of Southampton. *Venus and Adonis* was the first work published under Shakespeare’s name.",
       "link": {
         "href": "/books/venus-and-adonis/",
         "label": "Venus and Adonis"
@@ -1130,6 +1764,8 @@
     },
     {
       "id": "skeltonics",
+      "kind": "world",
+      "book": "selected-poems-of-john-skelton",
       "question": "The short, rapidly rhyming lines known as “Skeltonics” are named after which poet?",
       "options": [
         "John Skelton",
@@ -1147,6 +1783,8 @@
     },
     {
       "id": "gulliver-houyhnhnms",
+      "kind": "text",
+      "book": "gullivers-travels",
       "question": "In *Gulliver’s Travels*, what are the Houyhnhnms?",
       "options": [
         "Horses who live by reason",
@@ -1164,6 +1802,8 @@
     },
     {
       "id": "gulliver-eggs",
+      "kind": "text",
+      "book": "gullivers-travels",
       "question": "Lilliput and Blefuscu go to war over which end to break what?",
       "options": [
         "A boiled egg",
@@ -1181,6 +1821,8 @@
     },
     {
       "id": "gulliver-title-page",
+      "kind": "book",
+      "book": "gullivers-travels",
       "question": "When *Gulliver’s Travels* was published in 1726, whose name appeared as the author?",
       "options": [
         "Lemuel Gulliver’s",
@@ -1198,6 +1840,8 @@
     },
     {
       "id": "crusoe-friday",
+      "kind": "text",
+      "book": "robinson-crusoe",
       "question": "Why does Robinson Crusoe call the man he rescues Friday?",
       "options": [
         "Because that is the day he saves him",
@@ -1215,6 +1859,8 @@
     },
     {
       "id": "selkirk",
+      "kind": "world",
+      "book": "robinson-crusoe",
       "question": "Which Scottish sailor, marooned on a Pacific island from 1704 to 1709, is often named as an inspiration for *Robinson Crusoe*?",
       "options": [
         "Alexander Selkirk",
@@ -1232,6 +1878,8 @@
     },
     {
       "id": "oroonoko-surinam",
+      "kind": "text",
+      "book": "oroonoko",
       "question": "Where is most of Aphra Behn’s *Oroonoko* set?",
       "options": [
         "Surinam",
@@ -1249,6 +1897,8 @@
     },
     {
       "id": "woolf-behn",
+      "kind": "text",
+      "book": "a-room-of-ones-own",
       "question": "In *A Room of One’s Own*, on whose tomb does Woolf say “all women together ought to let flowers fall”?",
       "options": [
         "Aphra Behn’s",
@@ -1266,6 +1916,8 @@
     },
     {
       "id": "rape-of-lock-fermor",
+      "kind": "world",
+      "book": "the-rape-of-the-lock-and-an-essay-on-criticism",
       "question": "*The Rape of the Lock* grew out of a quarrel after Lord Petre cut a lock of hair from which woman?",
       "options": [
         "Arabella Fermor",
@@ -1283,6 +1935,8 @@
     },
     {
       "id": "essay-criticism-learning",
+      "kind": "text",
+      "book": "the-rape-of-the-lock-and-an-essay-on-criticism",
       "question": "Which poem by Alexander Pope contains the line “A little learning is a dang’rous thing”?",
       "options": [
         "*An Essay on Criticism*",
@@ -1300,6 +1954,8 @@
     },
     {
       "id": "pamela-subtitle",
+      "kind": "book",
+      "book": "pamela",
       "question": "What is the subtitle of Samuel Richardson’s *Pamela* (1740)?",
       "options": [
         "*Virtue Rewarded*",
@@ -1316,17 +1972,21 @@
       }
     },
     {
-      "id": "common-sense-date",
-      "question": "When was Thomas Paine’s pamphlet *Common Sense* published?",
+      "id": "common-sense-pamphlet",
+      "kind": "book",
+      "book": "common-sense-and-the-american-crisis",
+      "on": "01-10",
+      "occasion": "On this day in 1776 a pamphlet went on sale in Philadelphia.",
+      "question": "Which pamphlet, published in Philadelphia in January 1776, argued that the American colonies should be independent of Britain?",
       "options": [
-        "January 1776",
-        "July 1776",
-        "December 1773",
-        "April 1775"
+        "*Common Sense*",
+        "*The American Crisis*",
+        "*Rights of Man*",
+        "*The Federalist*"
       ],
       "answer": 0,
       "hint": "It came out six months before the Declaration of Independence.",
-      "explanation": "*Common Sense* was published in Philadelphia on 10 January 1776 and argued for independence from Britain. It sold in very large numbers in its first year.",
+      "explanation": "Thomas Paine’s *Common Sense* was published in Philadelphia on 10 January 1776. It sold in very large numbers in its first year.",
       "link": {
         "href": "/books/common-sense-and-the-american-crisis/",
         "label": "Common Sense and The American Crisis"
@@ -1334,6 +1994,8 @@
     },
     {
       "id": "american-crisis-opening",
+      "kind": "text",
+      "book": "common-sense-and-the-american-crisis",
       "question": "Which work of Thomas Paine opens “These are the times that try men’s souls”?",
       "options": [
         "*The American Crisis*",
@@ -1351,6 +2013,8 @@
     },
     {
       "id": "eikon-basilike",
+      "kind": "book",
+      "book": "charles-i-selected-writings",
       "question": "Which book, published days after Charles I’s execution in 1649, presented itself as the king’s own meditations?",
       "options": [
         "*Eikon Basilike*",
@@ -1368,6 +2032,8 @@
     },
     {
       "id": "frankenstein-diodati",
+      "kind": "book",
+      "book": "frankenstein",
       "question": "At which house near Geneva did Mary Shelley begin *Frankenstein* in the summer of 1816?",
       "options": [
         "The Villa Diodati",
@@ -1385,6 +2051,10 @@
     },
     {
       "id": "frankenstein-subtitle",
+      "kind": "book",
+      "book": "frankenstein",
+      "on": "01-01",
+      "occasion": "*Frankenstein* was published on this day in 1818.",
       "question": "What is the subtitle of *Frankenstein*?",
       "options": [
         "*The Modern Prometheus*",
@@ -1402,6 +2072,8 @@
     },
     {
       "id": "frankenstein-ingolstadt",
+      "kind": "text",
+      "book": "frankenstein",
       "question": "At which university does Victor Frankenstein study natural philosophy?",
       "options": [
         "Ingolstadt",
@@ -1419,6 +2091,8 @@
     },
     {
       "id": "frankenstein-de-lacey",
+      "kind": "text",
+      "book": "frankenstein",
       "question": "Which family does the creature watch through a gap in the wall of a cottage?",
       "options": [
         "The De Laceys",
@@ -1436,6 +2110,8 @@
     },
     {
       "id": "pride-first-impressions",
+      "kind": "book",
+      "book": "pride-and-prejudice",
       "question": "What was the original title of *Pride and Prejudice*?",
       "options": [
         "*First Impressions*",
@@ -1445,7 +2121,7 @@
       ],
       "answer": 0,
       "hint": "Austen wrote the first version in 1796–97.",
-      "explanation": "Her father offered *First Impressions* to the publisher Thomas Cadell in 1797, who declined it unseen. It was revised and published as *Pride and Prejudice* in 1813.",
+      "explanation": "Austen’s father offered *First Impressions* to the publisher Thomas Cadell in 1797, who declined it unseen. It was revised and published as *Pride and Prejudice* in 1813.",
       "link": {
         "href": "/guides/pride-and-prejudice/",
         "label": "Pride and Prejudice study guide"
@@ -1453,6 +2129,8 @@
     },
     {
       "id": "pride-opening",
+      "kind": "text",
+      "book": "pride-and-prejudice",
       "question": "Which novel opens “It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife”?",
       "options": [
         "*Pride and Prejudice*",
@@ -1464,12 +2142,14 @@
       "hint": "The family it introduces has five daughters.",
       "explanation": "The rest of the first chapter shows that it is Mrs Bennet, with five unmarried daughters, who is in want of a rich husband for one of them.",
       "link": {
-        "href": "/guides/pride-and-prejudice/",
-        "label": "Pride and Prejudice study guide"
+        "href": "/guides/pride-and-prejudice/quotations/#astor-quote-truth-universally",
+        "label": "Read the sentence and its analysis"
       }
     },
     {
       "id": "sense-by-a-lady",
+      "kind": "book",
+      "book": "sense-and-sensibility",
       "question": "How was the author of *Sense and Sensibility* identified on its title page in 1811?",
       "options": [
         "“By a Lady”",
@@ -1487,6 +2167,8 @@
     },
     {
       "id": "lyrical-ballads-opening",
+      "kind": "book",
+      "book": "lyrical-ballads",
       "question": "Which poem opened the first edition of *Lyrical Ballads* in 1798?",
       "options": [
         "The Rime of the Ancyent Marinere",
@@ -1504,6 +2186,8 @@
     },
     {
       "id": "mariner-crossbow",
+      "kind": "text",
+      "book": "the-rime-of-the-ancient-mariner",
       "question": "What does the Ancient Mariner use to shoot the albatross?",
       "options": [
         "A crossbow",
@@ -1515,12 +2199,14 @@
       "hint": "“With my cross-bow / I shot the Albatross.”",
       "explanation": "The Mariner kills the bird at the end of Part 1 without giving a reason. His shipmates hang it round his neck in Part 2.",
       "link": {
-        "href": "/guides/the-rime-of-the-ancient-mariner/",
-        "label": "The Rime of the Ancient Mariner study guide"
+        "href": "/guides/the-rime-of-the-ancient-mariner/quotations/#astor-quote-i-shot-the-albatross",
+        "label": "Read the line and its analysis"
       }
     },
     {
       "id": "mariner-gloss",
+      "kind": "book",
+      "book": "the-rime-of-the-ancient-mariner",
       "question": "In which book of 1817 did Coleridge first print the prose notes in the margins of *The Rime of the Ancient Mariner*?",
       "options": [
         "*Sibylline Leaves*",
@@ -1538,6 +2224,10 @@
     },
     {
       "id": "tintern-wye",
+      "kind": "text",
+      "book": "lyrical-ballads",
+      "on": "07-13",
+      "occasion": "Wordsworth dated one of his best-known poems on this day in 1798.",
       "question": "Wordsworth’s Lines written a few miles above Tintern Abbey revisits the banks of which river?",
       "options": [
         "The Wye",
@@ -1549,12 +2239,14 @@
       "hint": "It forms part of the border between England and Wales.",
       "explanation": "Wordsworth dated the poem 13 July 1798 and recalled a first visit five years earlier. He walked there with his sister Dorothy, who is addressed at the end.",
       "link": {
-        "href": "/books/lyrical-ballads/",
-        "label": "Lyrical Ballads"
+        "href": "/passage-room/tintern-abbey-sense-sublime/",
+        "label": "Read the lines with their notes"
       }
     },
     {
       "id": "blake-tyger",
+      "kind": "text",
+      "book": "songs-of-innocence-and-of-experience",
       "question": "Which of Blake’s poems asks “What immortal hand or eye / Could frame thy fearful symmetry?”",
       "options": [
         "The Tyger",
@@ -1572,6 +2264,8 @@
     },
     {
       "id": "blake-printing",
+      "kind": "book",
+      "book": "songs-of-innocence-and-of-experience",
       "question": "How did William Blake print *Songs of Innocence and of Experience*?",
       "options": [
         "By relief etching, coloured by hand",
@@ -1589,6 +2283,8 @@
     },
     {
       "id": "werther-coat",
+      "kind": "world",
+      "book": "the-sorrows-of-young-werther",
       "question": "What did young admirers of Goethe’s *Werther* copy from the novel’s hero?",
       "options": [
         "His blue coat and yellow waistcoat",
@@ -1606,6 +2302,8 @@
     },
     {
       "id": "jane-eyre-currer-bell",
+      "kind": "book",
+      "book": "jane-eyre",
       "question": "Under which name did Charlotte Brontë publish *Jane Eyre* in 1847?",
       "options": [
         "Currer Bell",
@@ -1623,6 +2321,8 @@
     },
     {
       "id": "jane-eyre-st-john",
+      "kind": "text",
+      "book": "jane-eyre",
       "question": "Who asks Jane Eyre to marry him and go with him to India as a missionary?",
       "options": [
         "St John Rivers",
@@ -1640,6 +2340,8 @@
     },
     {
       "id": "wuthering-nelly",
+      "kind": "text",
+      "book": "wuthering-heights",
       "question": "Who tells most of the story of *Wuthering Heights* to Mr Lockwood?",
       "options": [
         "Nelly Dean",
@@ -1657,6 +2359,8 @@
     },
     {
       "id": "great-expectations-magazine",
+      "kind": "book",
+      "book": "great-expectations",
       "question": "In which magazine was *Great Expectations* first published?",
       "options": [
         "*All the Year Round*",
@@ -1674,6 +2378,8 @@
     },
     {
       "id": "great-expectations-benefactor",
+      "kind": "text",
+      "book": "great-expectations",
       "question": "Who turns out to be Pip’s secret benefactor in *Great Expectations*?",
       "options": [
         "Magwitch",
@@ -1691,6 +2397,8 @@
     },
     {
       "id": "great-expectations-ending",
+      "kind": "book",
+      "book": "great-expectations",
       "question": "Which novelist persuaded Dickens to change the ending of *Great Expectations*?",
       "options": [
         "Edward Bulwer-Lytton",
@@ -1708,6 +2416,10 @@
     },
     {
       "id": "carol-stave",
+      "kind": "text",
+      "book": "a-christmas-carol",
+      "on": "12-19",
+      "occasion": "*A Christmas Carol* was published on this day in 1843.",
       "question": "*A Christmas Carol* is divided into five staves. What is a stave?",
       "options": [
         "A verse of a song",
@@ -1725,6 +2437,8 @@
     },
     {
       "id": "carol-fezziwig",
+      "kind": "text",
+      "book": "a-christmas-carol",
       "question": "At whose Christmas party does the Ghost of Christmas Past show Scrooge his younger self?",
       "options": [
         "Old Fezziwig’s",
@@ -1736,12 +2450,14 @@
       "hint": "He was Scrooge’s first employer.",
       "explanation": "Scrooge had been apprenticed to Fezziwig. Watching the party makes him remember his own clerk, Bob Cratchit.",
       "link": {
-        "href": "/guides/a-christmas-carol/",
-        "label": "A Christmas Carol study guide"
+        "href": "/guides/a-christmas-carol/quotations/#astor-quote-fezziwig-power",
+        "label": "Read what Scrooge says of Fezziwig"
       }
     },
     {
       "id": "dracula-whitby",
+      "kind": "text",
+      "book": "dracula",
       "question": "At which English port does Dracula come ashore?",
       "options": [
         "Whitby",
@@ -1753,12 +2469,14 @@
       "hint": "He leaps from a wrecked ship in the shape of a large dog.",
       "explanation": "The Russian schooner Demeter runs aground with its dead captain lashed to the wheel. Stoker had stayed in Whitby in 1890 and found the name Dracula in a book in the town’s library.",
       "link": {
-        "href": "/guides/dracula/",
-        "label": "Dracula study guide"
+        "href": "/guides/dracula/what-happens/",
+        "label": "Dracula: what happens"
       }
     },
     {
       "id": "dracula-carfax",
+      "kind": "text",
+      "book": "dracula",
       "question": "What is the name of the house near London that Dracula buys?",
       "options": [
         "Carfax",
@@ -1776,6 +2494,8 @@
     },
     {
       "id": "jekyll-utterson",
+      "kind": "text",
+      "book": "jekyll-and-hyde",
       "question": "Which lawyer’s inquiries frame *Strange Case of Dr Jekyll and Mr Hyde*?",
       "options": [
         "Mr Utterson",
@@ -1793,6 +2513,8 @@
     },
     {
       "id": "jekyll-carew",
+      "kind": "text",
+      "book": "jekyll-and-hyde",
       "question": "Which murder makes Hyde a wanted man?",
       "options": [
         "The murder of Sir Danvers Carew",
@@ -1810,6 +2532,8 @@
     },
     {
       "id": "dorian-lippincott",
+      "kind": "book",
+      "book": "dorian-gray",
       "question": "In which magazine did *The Picture of Dorian Gray* first appear, in 1890?",
       "options": [
         "*Lippincott’s Monthly Magazine*",
@@ -1827,6 +2551,8 @@
     },
     {
       "id": "dorian-basil",
+      "kind": "text",
+      "book": "dorian-gray",
       "question": "Who paints the portrait of Dorian Gray?",
       "options": [
         "Basil Hallward",
@@ -1844,6 +2570,8 @@
     },
     {
       "id": "tess-subtitle",
+      "kind": "book",
+      "book": "tess-of-the-durbervilles",
       "question": "What is the subtitle of *Tess of the d’Urbervilles*?",
       "options": [
         "*A Pure Woman Faithfully Presented*",
@@ -1861,6 +2589,8 @@
     },
     {
       "id": "moonstone-eliot",
+      "kind": "world",
+      "book": "the-moonstone",
       "question": "Which poet called *The Moonstone* “the first, the longest, and the best of modern English detective novels”?",
       "options": [
         "T. S. Eliot",
@@ -1878,6 +2608,8 @@
     },
     {
       "id": "woman-in-white-fosco",
+      "kind": "text",
+      "book": "the-woman-in-white",
       "question": "Which character in *The Woman in White* keeps white mice, a cockatoo and canaries?",
       "options": [
         "Count Fosco",
@@ -1895,6 +2627,8 @@
     },
     {
       "id": "holmes-beeton",
+      "kind": "book",
+      "book": "adventures-of-sherlock-holmes",
       "question": "In which publication did Sherlock Holmes first appear, in 1887?",
       "options": [
         "*Beeton’s Christmas Annual*",
@@ -1912,6 +2646,8 @@
     },
     {
       "id": "holmes-the-woman",
+      "kind": "text",
+      "book": "adventures-of-sherlock-holmes",
       "question": "Who is always “the woman” to Sherlock Holmes?",
       "options": [
         "Irene Adler",
@@ -1923,12 +2659,14 @@
       "hint": "She outwits him in “A Scandal in Bohemia”.",
       "explanation": "Watson says Holmes never spoke of her under any other title. Irene Adler keeps the photograph the King of Bohemia wanted recovered.",
       "link": {
-        "href": "/books/adventures-of-sherlock-holmes/",
-        "label": "The Adventures of Sherlock Holmes"
+        "href": "/passage-room/sherlock-holmes-scandal/",
+        "label": "Read the opening with its notes"
       }
     },
     {
       "id": "sign-of-four-cocaine",
+      "kind": "text",
+      "book": "sign-of-four",
       "question": "At the start of *The Sign of Four*, what is Holmes injecting himself with?",
       "options": [
         "Cocaine",
@@ -1940,12 +2678,14 @@
       "hint": "Watson asks which it is today.",
       "explanation": "It is cocaine, a seven-per-cent solution. Holmes says he takes the drug when he has no work for his mind. Mary Morstan then arrives with her case.",
       "link": {
-        "href": "/books/sign-of-four/",
-        "label": "The Sign of Four"
+        "href": "/passage-room/sign-of-four-seven-per-cent/",
+        "label": "Read the passage with its notes"
       }
     },
     {
       "id": "hound-dartmoor",
+      "kind": "text",
+      "book": "the-hound-of-the-baskervilles",
       "question": "On which moor is *The Hound of the Baskervilles* set?",
       "options": [
         "Dartmoor",
@@ -1963,6 +2703,10 @@
     },
     {
       "id": "alice-liddell",
+      "kind": "world",
+      "book": "alices-adventures-in-wonderland",
+      "on": "07-04",
+      "occasion": "On this day in 1862 Charles Dodgson first told the story of Alice.",
       "question": "On a boat trip on 4 July 1862, Charles Dodgson first told the Alice story to three sisters. What was their surname?",
       "options": [
         "Liddell",
@@ -1980,6 +2724,8 @@
     },
     {
       "id": "alice-tenniel",
+      "kind": "book",
+      "book": "alices-adventures-in-wonderland",
       "question": "Who drew the illustrations for the first edition of *Alice’s Adventures in Wonderland* (1865)?",
       "options": [
         "John Tenniel",
@@ -1997,6 +2743,8 @@
     },
     {
       "id": "nobody-laurels",
+      "kind": "text",
+      "book": "the-diary-of-a-nobody",
       "question": "What is the name of the Pooters’ house in *The Diary of a Nobody*?",
       "options": [
         "The Laurels",
@@ -2014,6 +2762,8 @@
     },
     {
       "id": "three-men-dog",
+      "kind": "text",
+      "book": "three-men-in-a-boat",
       "question": "What is the name of the dog in *Three Men in a Boat*?",
       "options": [
         "Montmorency",
@@ -2031,6 +2781,8 @@
     },
     {
       "id": "war-of-worlds-horsell",
+      "kind": "text",
+      "book": "war-of-the-worlds",
       "question": "Where does the first Martian cylinder land in *The War of the Worlds*?",
       "options": [
         "Horsell Common",
@@ -2048,6 +2800,8 @@
     },
     {
       "id": "war-of-worlds-bacteria",
+      "kind": "text",
+      "book": "war-of-the-worlds",
       "question": "What finally kills the Martians in *The War of the Worlds*?",
       "options": [
         "Bacteria",
@@ -2065,6 +2819,8 @@
     },
     {
       "id": "mr-james-whistle",
+      "kind": "text",
+      "book": "m-r-james-collected-ghost-stories",
       "question": "In M. R. James’s story “Oh, Whistle, and I’ll Come to You, My Lad”, what does Professor Parkins find in a ruined Templar preceptory?",
       "options": [
         "A bronze whistle",
@@ -2082,6 +2838,8 @@
     },
     {
       "id": "carmilla-anagram",
+      "kind": "text",
+      "book": "carmilla",
       "question": "In Sheridan Le Fanu’s *Carmilla*, the names Millarca and Mircalla are what?",
       "options": [
         "Anagrams of Carmilla",
@@ -2099,6 +2857,8 @@
     },
     {
       "id": "turn-screw-bly",
+      "kind": "text",
+      "book": "the-turn-of-the-screw",
       "question": "What is the name of the house where the governess looks after Miles and Flora in *The Turn of the Screw*?",
       "options": [
         "Bly",
@@ -2116,6 +2876,8 @@
     },
     {
       "id": "gilman-mitchell",
+      "kind": "world",
+      "book": "the-yellow-wallpaper-and-the-giant-wistaria",
       "question": "Charlotte Perkins Gilman wrote “The Yellow Wall-Paper” after undergoing which physician’s “rest cure”?",
       "options": [
         "Silas Weir Mitchell",
@@ -2133,6 +2895,10 @@
     },
     {
       "id": "christmas-card",
+      "kind": "world",
+      "book": "a-victorian-christmas",
+      "on": "12-24",
+      "occasion": "Today is Christmas Eve.",
       "question": "Who commissioned the first commercially printed Christmas card, in 1843?",
       "options": [
         "Henry Cole",
@@ -2150,6 +2916,10 @@
     },
     {
       "id": "cracker-tom-smith",
+      "kind": "world",
+      "book": "a-victorian-christmas",
+      "on": "12-25",
+      "occasion": "Today is Christmas Day.",
       "question": "Which London confectioner is credited with inventing the Christmas cracker?",
       "options": [
         "Tom Smith",
@@ -2167,6 +2937,8 @@
     },
     {
       "id": "moby-the-whale",
+      "kind": "book",
+      "book": "moby-dick",
       "question": "Under what title was *Moby-Dick* first published in London in October 1851?",
       "options": [
         "*The Whale*",
@@ -2184,6 +2956,8 @@
     },
     {
       "id": "moby-doubloon",
+      "kind": "text",
+      "book": "moby-dick",
       "question": "What does Captain Ahab nail to the mainmast as a reward for the first man to sight Moby Dick?",
       "options": [
         "A gold doubloon",
@@ -2201,6 +2975,8 @@
     },
     {
       "id": "scarlet-pearl",
+      "kind": "text",
+      "book": "the-scarlet-letter",
       "question": "What is the name of Hester Prynne’s daughter in *The Scarlet Letter*?",
       "options": [
         "Pearl",
@@ -2218,6 +2994,8 @@
     },
     {
       "id": "scarlet-custom-house",
+      "kind": "text",
+      "book": "the-scarlet-letter",
       "question": "*The Scarlet Letter* begins with an introduction about Hawthorne’s years in which job?",
       "options": [
         "Surveyor at the Salem Custom House",
@@ -2235,6 +3013,8 @@
     },
     {
       "id": "huck-jim",
+      "kind": "text",
+      "book": "adventures-of-huckleberry-finn",
       "question": "Who travels down the Mississippi on a raft with Huck Finn?",
       "options": [
         "Jim",
@@ -2252,6 +3032,8 @@
     },
     {
       "id": "hemingway-huck",
+      "kind": "world",
+      "book": "adventures-of-huckleberry-finn",
       "question": "Which writer said that “all modern American literature comes from one book by Mark Twain called Huckleberry Finn”?",
       "options": [
         "Ernest Hemingway",
@@ -2269,6 +3051,8 @@
     },
     {
       "id": "tom-sawyer-fence",
+      "kind": "text",
+      "book": "the-adventures-of-tom-sawyer",
       "question": "Which chore does Tom Sawyer trick other boys into doing for him?",
       "options": [
         "Whitewashing a fence",
@@ -2285,24 +3069,9 @@
       }
     },
     {
-      "id": "gatsby-1922",
-      "question": "In which summer is *The Great Gatsby* set?",
-      "options": [
-        "1922",
-        "1919",
-        "1925",
-        "1929"
-      ],
-      "answer": 0,
-      "hint": "Nick Carraway turns thirty during the novel.",
-      "explanation": "Nick rents a house in West Egg in the spring of 1922. Fitzgerald published the novel in April 1925.",
-      "link": {
-        "href": "/guides/the-great-gatsby/",
-        "label": "The Great Gatsby study guide"
-      }
-    },
-    {
       "id": "gatsby-trimalchio",
+      "kind": "book",
+      "book": "the-great-gatsby",
       "question": "Which title, taken from a character in Petronius’s *Satyricon*, did Fitzgerald consider for *The Great Gatsby*?",
       "options": [
         "*Trimalchio in West Egg*",
@@ -2320,6 +3089,8 @@
     },
     {
       "id": "douglass-auld",
+      "kind": "text",
+      "book": "narrative-of-the-life-of-frederick-douglass",
       "question": "Who first taught Frederick Douglass the alphabet?",
       "options": [
         "Sophia Auld, the wife of his enslaver",
@@ -2331,12 +3102,14 @@
       "hint": "Her husband stopped the lessons.",
       "explanation": "Hugh Auld told his wife that learning would make Douglass unfit to be a slave. Douglass writes that this showed him the “pathway from slavery to freedom”, and he went on learning from boys in the street.",
       "link": {
-        "href": "/books/narrative-of-the-life-of-frederick-douglass/",
-        "label": "Narrative of the Life of Frederick Douglass"
+        "href": "/passage-room/douglass-pathway-freedom/",
+        "label": "Read the passage with its notes"
       }
     },
     {
       "id": "douglass-escape",
+      "kind": "book",
+      "book": "narrative-of-the-life-of-frederick-douglass",
       "question": "Why did Douglass leave out the details of his escape from his *Narrative* of 1845?",
       "options": [
         "To protect the people who helped him",
@@ -2354,6 +3127,8 @@
     },
     {
       "id": "uncle-tom-eliza",
+      "kind": "text",
+      "book": "uncle-toms-cabin",
       "question": "In *Uncle Tom’s Cabin*, how does Eliza escape across the Ohio River with her child?",
       "options": [
         "Across the ice floes",
@@ -2365,12 +3140,14 @@
       "hint": "The river is breaking up in early spring.",
       "explanation": "Eliza runs when she learns her son Harry is to be sold. Harriet Beecher Stowe’s novel was serialised in 1851–52 and published as a book in 1852.",
       "link": {
-        "href": "/books/uncle-toms-cabin/",
-        "label": "Uncle Tom’s Cabin"
+        "href": "/passage-room/uncle-toms-cabin-ice/",
+        "label": "Read the passage with its notes"
       }
     },
     {
       "id": "call-wild-buck",
+      "kind": "text",
+      "book": "call-of-the-wild",
       "question": "Where does Buck live before he is stolen and sold in *The Call of the Wild*?",
       "options": [
         "On Judge Miller’s estate, Santa Clara Valley",
@@ -2387,17 +3164,19 @@
       }
     },
     {
-      "id": "crane-born",
-      "question": "Stephen Crane published *The Red Badge of Courage*, a novel of the American Civil War, in 1895. When was he born?",
+      "id": "crane-no-battle",
+      "kind": "world",
+      "book": "red-badge-of-courage",
+      "question": "*The Red Badge of Courage* (1895) is a novel of the American Civil War. What was Stephen Crane’s own experience of that war?",
       "options": [
-        "1871",
-        "1845",
-        "1858",
-        "1863"
+        "None: he was born after it ended",
+        "He fought in it as a private",
+        "He reported on it for a newspaper",
+        "He nursed the wounded in Washington"
       ],
       "answer": 0,
-      "hint": "He had never seen a battle when he wrote it.",
-      "explanation": "Crane was born six years after the war ended. He drew on veterans’ accounts, including the series *Battles and Leaders of the Civil War*.",
+      "hint": "He was in his early twenties when the novel came out.",
+      "explanation": "Crane was born in 1871, six years after the war ended. He drew on veterans’ accounts, including the series *Battles and Leaders of the Civil War*.",
       "link": {
         "href": "/books/red-badge-of-courage/",
         "label": "The Red Badge of Courage"
@@ -2405,6 +3184,8 @@
     },
     {
       "id": "awakening-grand-isle",
+      "kind": "text",
+      "book": "the-awakening",
       "question": "Where does Edna Pontellier spend the summer at the start of *The Awakening*?",
       "options": [
         "Grand Isle",
@@ -2422,6 +3203,8 @@
     },
     {
       "id": "ethan-frome-starkfield",
+      "kind": "text",
+      "book": "ethan-frome",
       "question": "In which fictional New England town is *Ethan Frome* set?",
       "options": [
         "Starkfield",
@@ -2439,6 +3222,8 @@
     },
     {
       "id": "sleepy-hollow-hessian",
+      "kind": "text",
+      "book": "sleepy-hollow-and-other-stories",
       "question": "According to the legend in Washington Irving’s story, who was the Headless Horseman in life?",
       "options": [
         "A Hessian trooper killed by a cannonball",
@@ -2456,6 +3241,8 @@
     },
     {
       "id": "poe-dupin",
+      "kind": "text",
+      "book": "edgar-allan-poe-selected-tales",
       "question": "Which detective did Edgar Allan Poe introduce in “The Murders in the Rue Morgue” (1841)?",
       "options": [
         "C. Auguste Dupin",
@@ -2473,6 +3260,8 @@
     },
     {
       "id": "yankee-eclipse",
+      "kind": "text",
+      "book": "a-connecticut-yankee-in-king-arthurs-court",
       "question": "How does Hank Morgan escape being burned at the stake in *A Connecticut Yankee in King Arthur’s Court*?",
       "options": [
         "He claims to cause a solar eclipse",
@@ -2490,6 +3279,8 @@
     },
     {
       "id": "puddnhead-fingerprints",
+      "kind": "text",
+      "book": "puddnhead-wilson",
       "question": "What evidence does David Wilson use to solve the murder in *Pudd’nhead Wilson*?",
       "options": [
         "Fingerprints",
@@ -2507,6 +3298,8 @@
     },
     {
       "id": "anne-boy",
+      "kind": "text",
+      "book": "anne-of-green-gables",
       "question": "In *Anne of Green Gables*, what had Matthew and Marilla Cuthbert asked the orphanage to send?",
       "options": [
         "A boy, to help on the farm",
@@ -2524,6 +3317,8 @@
     },
     {
       "id": "blue-castle-letter",
+      "kind": "text",
+      "book": "the-blue-castle",
       "question": "What news makes Valancy Stirling change her life in L. M. Montgomery’s *The Blue Castle*?",
       "options": [
         "A doctor’s letter giving her a year to live",
@@ -2541,6 +3336,8 @@
     },
     {
       "id": "dalloway-flowers",
+      "kind": "text",
+      "book": "mrs-dalloway",
       "question": "In the first sentence of *Mrs Dalloway*, what does Clarissa say she will buy herself?",
       "options": [
         "The flowers",
@@ -2552,12 +3349,14 @@
       "hint": "She is preparing for a party that evening.",
       "explanation": "The novel follows one day in June 1923. Clarissa’s party, which ends the book, is the event the day leads to.",
       "link": {
-        "href": "/guides/mrs-dalloway/",
-        "label": "Mrs Dalloway study guide"
+        "href": "/passage-room/mrs-dalloway-flowers-herself/",
+        "label": "Read the opening with its notes"
       }
     },
     {
       "id": "dalloway-hours",
+      "kind": "book",
+      "book": "mrs-dalloway",
       "question": "What was Virginia Woolf’s working title for *Mrs Dalloway*?",
       "options": [
         "*The Hours*",
@@ -2567,7 +3366,7 @@
       ],
       "answer": 0,
       "hint": "Michael Cunningham later used it for a novel.",
-      "explanation": "Big Ben strikes the hours through the book. Cunningham’s *The Hours* (1998) follows three women connected to *Mrs Dalloway*.",
+      "explanation": "Big Ben strikes the hours through the book. Michael Cunningham’s novel *The Hours* (1998) follows three women connected to *Mrs Dalloway*.",
       "link": {
         "href": "/guides/mrs-dalloway/",
         "label": "Mrs Dalloway study guide"
@@ -2575,6 +3374,8 @@
     },
     {
       "id": "room-colleges",
+      "kind": "book",
+      "book": "a-room-of-ones-own",
       "question": "*A Room of One’s Own* grew out of lectures Woolf gave in 1928 at which two Cambridge colleges?",
       "options": [
         "Newnham and Girton",
@@ -2592,6 +3393,8 @@
     },
     {
       "id": "room-five-hundred",
+      "kind": "text",
+      "book": "a-room-of-ones-own",
       "question": "How much money a year does Woolf say a woman needs in order to write fiction?",
       "options": [
         "Five hundred pounds",
@@ -2609,6 +3412,8 @@
     },
     {
       "id": "room-judith",
+      "kind": "text",
+      "book": "a-room-of-ones-own",
       "question": "In *A Room of One’s Own*, whose imagined life does Woolf use to show what would have happened to a woman of genius in the sixteenth century?",
       "options": [
         "Shakespeare’s sister, Judith",
@@ -2626,6 +3431,8 @@
     },
     {
       "id": "heart-intended",
+      "kind": "text",
+      "book": "heart-of-darkness",
       "question": "In *Heart of Darkness*, what does Marlow tell Kurtz’s Intended were his last words?",
       "options": [
         "Her name",
@@ -2643,6 +3450,8 @@
     },
     {
       "id": "heart-achebe",
+      "kind": "world",
+      "book": "heart-of-darkness",
       "question": "Which Nigerian novelist argued in a 1975 lecture that *Heart of Darkness* denies Africans their humanity?",
       "options": [
         "Chinua Achebe",
@@ -2660,6 +3469,8 @@
     },
     {
       "id": "metamorphosis-job",
+      "kind": "text",
+      "book": "the-metamorphosis",
       "question": "What is Gregor Samsa’s job before his transformation?",
       "options": [
         "Travelling salesman",
@@ -2671,12 +3482,14 @@
       "hint": "He worries about missing his train.",
       "explanation": "Gregor supports his parents and sister and hates his work. Kafka himself worked for an accident insurance institute in Prague.",
       "link": {
-        "href": "/books/the-metamorphosis/",
-        "label": "The Metamorphosis"
+        "href": "/passage-room/metamorphosis-vermin/",
+        "label": "Read the opening with its notes"
       }
     },
     {
       "id": "metamorphosis-cover",
+      "kind": "book",
+      "book": "the-metamorphosis",
       "question": "In 1915 Kafka wrote to his publisher with an instruction about the cover of *The Metamorphosis*. What was it?",
       "options": [
         "The insect itself must not be drawn",
@@ -2694,6 +3507,8 @@
     },
     {
       "id": "animal-farm-eliot",
+      "kind": "book",
+      "book": "animal-farm",
       "question": "Which poet, then a director at Faber and Faber, turned down *Animal Farm* in 1944?",
       "options": [
         "T. S. Eliot",
@@ -2711,6 +3526,8 @@
     },
     {
       "id": "animal-farm-equal",
+      "kind": "text",
+      "book": "animal-farm",
       "question": "How does the last version of the commandments on the barn wall read in *Animal Farm*?",
       "options": [
         "All animals are equal but some animals are more equal than others",
@@ -2728,6 +3545,8 @@
     },
     {
       "id": "thursday-subtitle",
+      "kind": "book",
+      "book": "the-man-who-was-thursday",
       "question": "What is the subtitle of G. K. Chesterton’s *The Man Who Was Thursday*?",
       "options": [
         "*A Nightmare*",
@@ -2745,6 +3564,8 @@
     },
     {
       "id": "lawrence-reading",
+      "kind": "book",
+      "book": "seven-pillars-of-wisdom",
       "question": "Where did T. E. Lawrence lose most of the first draft of *Seven Pillars of Wisdom* in 1919?",
       "options": [
         "At Reading railway station",
@@ -2762,6 +3583,8 @@
     },
     {
       "id": "yeats-second-coming",
+      "kind": "text",
+      "book": "michael-robartes-and-the-dancer",
       "question": "Which poem by Yeats ends “And what rough beast, its hour come round at last, / Slouches towards Bethlehem to be born?”",
       "options": [
         "The Second Coming",
@@ -2773,12 +3596,14 @@
       "hint": "It was collected in *Michael Robartes and the Dancer* (1921).",
       "explanation": "Yeats wrote the poem in January 1919. The same collection contains “Easter, 1916”.",
       "link": {
-        "href": "/books/michael-robartes-and-the-dancer/",
-        "label": "Michael Robartes and the Dancer"
+        "href": "/passage-room/yeats-the-second-coming/",
+        "label": "Read the poem with its notes"
       }
     },
     {
       "id": "railway-children-father",
+      "kind": "text",
+      "book": "the-railway-children",
       "question": "Why has the children’s father gone away in *The Railway Children*?",
       "options": [
         "He has been wrongly imprisoned as a spy",
@@ -2796,6 +3621,8 @@
     },
     {
       "id": "willows-piper",
+      "kind": "world",
+      "book": "the-wind-in-the-willows",
       "question": "Which chapter title of *The Wind in the Willows* did Pink Floyd use for their first album?",
       "options": [
         "The Piper at the Gates of Dawn",
@@ -2807,12 +3634,14 @@
       "hint": "In the chapter Rat and Mole meet the god Pan.",
       "explanation": "Rat and Mole search the river at night for Otter’s missing son and find him asleep at the feet of Pan. Pink Floyd’s album came out in 1967.",
       "link": {
-        "href": "/books/the-wind-in-the-willows/",
-        "label": "The Wind in the Willows"
+        "href": "/passage-room/wind-in-the-willows-piper/",
+        "label": "Read the passage with its notes"
       }
     },
     {
       "id": "blackwood-danube",
+      "kind": "text",
+      "book": "the-willows",
       "question": "On which river are the two travellers canoeing in Algernon Blackwood’s story “The Willows”?",
       "options": [
         "The Danube",
@@ -2830,6 +3659,8 @@
     },
     {
       "id": "carnacki-pentacle",
+      "kind": "text",
+      "book": "carnacki-the-ghost-finder",
       "question": "What does Carnacki, William Hope Hodgson’s ghost-finder, use to protect himself?",
       "options": [
         "An electric pentacle",
@@ -2847,6 +3678,8 @@
     },
     {
       "id": "dolls-house-ending",
+      "kind": "world",
+      "book": "a-dolls-house",
       "question": "For a German production in 1880 Ibsen reluctantly wrote a different ending to *A Doll’s House*. What happens in it?",
       "options": [
         "Nora sees her sleeping children and stays",
@@ -2864,6 +3697,8 @@
     },
     {
       "id": "earnest-handbag",
+      "kind": "text",
+      "book": "the-importance-of-being-earnest",
       "question": "Where was Jack Worthing found as a baby in *The Importance of Being Earnest*?",
       "options": [
         "In a handbag at Victoria Station",
@@ -2881,6 +3716,8 @@
     },
     {
       "id": "overcoat-saying",
+      "kind": "world",
+      "book": "the-overcoat",
       "question": "The saying “We all came out from under Gogol’s Overcoat” is often credited to which novelist, though there is no record of him saying it?",
       "options": [
         "Dostoevsky",
@@ -2898,6 +3735,8 @@
     },
     {
       "id": "underground-opening",
+      "kind": "text",
+      "book": "notes-from-underground",
       "question": "Which work opens “I am a sick man… I am a spiteful man”?",
       "options": [
         "*Notes from Underground*",
@@ -2915,6 +3754,8 @@
     },
     {
       "id": "karamazov-inquisitor",
+      "kind": "text",
+      "book": "the-brothers-karamazov",
       "question": "Which of the Karamazov brothers tells the story of the Grand Inquisitor?",
       "options": [
         "Ivan",
@@ -2931,33 +3772,18 @@
       }
     },
     {
-      "id": "karamazov-last",
-      "question": "*The Brothers Karamazov* was the last novel Dostoevsky completed. When did he die?",
+      "id": "white-nights-canal",
+      "kind": "text",
+      "book": "white-nights",
+      "question": "Where does the narrator of Dostoevsky’s *White Nights* first meet Nastenka?",
       "options": [
-        "1881",
-        "1872",
-        "1890",
-        "1866"
+        "By a canal in St Petersburg",
+        "In a Moscow theatre",
+        "On a train to Pavlovsk",
+        "At her grandmother’s lodgings"
       ],
       "answer": 0,
-      "hint": "The novel had finished its serial run only a few months before.",
-      "explanation": "The novel appeared in *The Russian Messenger* in 1879–80. Dostoevsky died in St Petersburg in February 1881.",
-      "link": {
-        "href": "/books/the-brothers-karamazov/",
-        "label": "The Brothers Karamazov"
-      }
-    },
-    {
-      "id": "white-nights-four",
-      "question": "Over how many nights does Dostoevsky’s *White Nights* take place?",
-      "options": [
-        "Four",
-        "Seven",
-        "One",
-        "Twelve"
-      ],
-      "answer": 0,
-      "hint": "The last section is called “Morning”.",
+      "hint": "She is leaning on a railing, crying.",
       "explanation": "The narrator, a lonely dreamer, meets Nastenka by the canal and they talk on four successive nights in the St Petersburg summer.",
       "link": {
         "href": "/books/white-nights/",
@@ -2966,6 +3792,8 @@
     },
     {
       "id": "ivan-ilyich-curtains",
+      "kind": "text",
+      "book": "the-death-of-ivan-ilyich",
       "question": "How does Ivan Ilyich receive the injury that begins his illness?",
       "options": [
         "He falls while showing a workman how to hang curtains",
@@ -2983,6 +3811,9 @@
     },
     {
       "id": "burns-halloween",
+      "kind": "world",
+      "on": "10-31",
+      "occasion": "Today is Halloween.",
       "question": "Which Scottish poet wrote a poem called “Halloween”, published in 1786 with notes on the customs it describes?",
       "options": [
         "Robert Burns",
@@ -3000,6 +3831,7 @@
     },
     {
       "id": "otranto",
+      "kind": "world",
       "question": "Which novel of 1764 is usually called the first Gothic novel?",
       "options": [
         "*The Castle of Otranto*",
@@ -3013,6 +3845,7 @@
     },
     {
       "id": "boz",
+      "kind": "book",
       "question": "Which writer used the pen name “Boz”?",
       "options": [
         "Charles Dickens",
@@ -3026,6 +3859,10 @@
     },
     {
       "id": "gunpowder-fawkes",
+      "kind": "world",
+      "book": "a-victorian-bonfire-night",
+      "on": "11-05",
+      "occasion": "Today is Bonfire Night.",
       "question": "Where was Guy Fawkes arrested in November 1605?",
       "options": [
         "In a cellar beneath the House of Lords",

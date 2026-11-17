@@ -35,6 +35,38 @@ Permanent Amazon destinations are in `worker/book-links.json`; format buttons ar
 in `scripts/book-formats.json`. See [docs/BOOK-LINKS.md](docs/BOOK-LINKS.md) for new
 titles, Kindle editions, country fallbacks and the supplied September descriptions.
 
+## The homepage's close reading
+
+Under the seasonal hero the homepage prints one short passage with two of its
+notes, and changes it every Monday. Nothing is written for it: the passage, the
+marked phrases and the notes are read out of a close reading under
+`/passage-room/`. `scripts/home-features.json` says which readings suit which
+part of the year (date windows, the shorter one winning where two overlap) and
+the order they take turns in. To feature something else, add its slug to a
+window and run `node scripts/rebuild-library.js`; `ASTOR_HOME_FEATURE=<slug>`
+forces one, and `?date=YYYY-MM-DD` on the homepage shows another day's.
+
+## Search, and the three kinds of guide
+
+The palette that opens over any page and the Search page at `/explore/` rank
+the same index (`assets/search-index.json`) with the same code
+(`assets/astor/search.mjs`). Results say what they are, because three things
+on the site have "guide" or "study" in their names:
+
+- **Study guides** (`/guides/`) are web pages, free to read with no account.
+- **Slide guides** (`/resources/`) are illustrated slides. The first three of
+  each are open; a free account opens the rest.
+- **Study Editions** (`/study/`) are printed books.
+
+Use those three names wherever one of them is mentioned.
+
+## Astor Pro
+
+Book pages that have a study guide carry a place for Astor Pro under the
+printed formats. Its wording, and the address it should link to once Pro
+opens, are in `ASTOR_PRO` at the top of `restructureBookPage` in
+`scripts/book-page.js`.
+
 ## Light and dark themes
 
 The site has its original light theme and a warm-charcoal dark one. A reader's

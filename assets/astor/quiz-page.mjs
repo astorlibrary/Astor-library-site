@@ -109,6 +109,9 @@ async function runBook(container, gameId, shelf, meta) {
     next: current => nextStep(current, { exclude: gameId })
   });
   round.start();
+  // From here the question has the page: the heading, the breadcrumb and the
+  // row of activities step back (see "rx: in a round" in astor-study.css).
+  document.querySelector('main')?.classList.add('is-in-round');
 }
 
 function runLibrary(container, gameId, index, shelf) {
@@ -126,6 +129,7 @@ function runLibrary(container, gameId, index, shelf) {
     reshuffle: build
   });
   round.start();
+  document.querySelector('main')?.classList.add('is-in-round');
 }
 
 // Started last, once every declaration above has run. Safari stops with

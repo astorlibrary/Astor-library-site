@@ -222,6 +222,7 @@ require('./rebuild-discovery');
 require('./rebuild-passage-hub');
 
 require('./rebuild-seasons');
+require('./rebuild-home-feature');
 require('./rebuild-study-data');
 
 console.log('Built ' + require('./rebuild-guides').rebuildGuides() + ' study guides.');
