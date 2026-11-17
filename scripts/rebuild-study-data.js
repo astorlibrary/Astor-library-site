@@ -202,12 +202,16 @@ const discovery = fs.existsSync(discoveryFile) ? JSON.parse(fs.readFileSync(disc
 const searchEntries = [];
 const seenHrefs = new Set();
 
-function addEntry(kind, title, href, note, terms, image) {
+// `also` is the other names an entry answers to: a study guide is what
+// somebody means by "notes", "summary" or "analysis", and the key quotations
+// are "quotes". The search treats them as part of the entry's name.
+function addEntry(kind, title, href, note, terms, image, also) {
   const key = kind + '|' + href + '|' + title;
   if (seenHrefs.has(key)) return;
   seenHrefs.add(key);
   const entry = { k: kind, t: title, h: href, n: note || '', s: (terms || title).toLowerCase() };
   if (image) entry.i = image;
+  if (also) entry.a = also;
   searchEntries.push(entry);
 }
 
@@ -272,23 +276,66 @@ for (const [group, label] of discoveryGroups) {
 // for it: "Macbeth plot", "Macbeth summary" and "Macbeth what happens" are the
 // same request.
 const GUIDE_PARTS = [
-  ['what-happens', 'what happens', 'plot summary synopsis story what happens act scene chapter'],
-  ['characters', 'characters', 'characters character people who is who'],
-  ['themes', 'themes', 'themes theme ideas'],
-  ['form-and-language', 'form and language', 'language form structure techniques methods devices'],
-  ['context', 'context', 'context history background dates critics criticism']
+  ['what-happens', 'what happens', 'plot summary synopsis story'],
+  ['characters', 'characters', 'character people'],
+  ['themes', 'themes', 'theme ideas'],
+  ['form-and-language', 'form and language', 'structure techniques methods devices'],
+  ['context', 'context', 'history background dates critics criticism']
 ];
+
+// "Act I" is also "act 1" and "act one"; "Chapters 1–4" is also "chapter 3".
+const ROMAN = { i: 1, ii: 2, iii: 3, iv: 4, v: 5, vi: 6, vii: 7, viii: 8, ix: 9, x: 10, xi: 11, xii: 12, xiii: 13, xiv: 14, xv: 15, xvi: 16, xvii: 17, xviii: 18, xix: 19, xx: 20, xxi: 21, xxii: 22, xxiii: 23, xxiv: 24 };
+const NUMBER_WORDS = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve'];
+// Other ways of naming a part of a book, each a whole name the search can
+// match exactly ("Hamlet Act 3"), joined by "|".
+function numberForms(name, label) {
+  const forms = [];
+  const text = String(label);
+  // Act I, Stave III, Book XII, Part II
+  const roman = text.match(/^(Act|Stave|Book|Part|Canto|Volume|Chapter|Letter) ([IVXL]+)\b/);
+  if (roman && ROMAN[roman[2].toLowerCase()]) {
+    const n = ROMAN[roman[2].toLowerCase()];
+    forms.push(name + ' ' + roman[1] + ' ' + n);
+    if (NUMBER_WORDS[n]) forms.push(name + ' ' + roman[1] + ' ' + NUMBER_WORDS[n]);
+  }
+  // Chapters 1–4, Books 1–3, Letters 1–4
+  const range = text.match(/^(Chapters|Books|Letters|Parts|Scenes|Cantos) (\d+)[–-](\d+)$/);
+  if (range && Number(range[3]) - Number(range[2]) < 40) {
+    const unit = range[1].replace(/s$/, '');
+    for (let n = Number(range[2]); n <= Number(range[3]); n++) forms.push(unit + ' ' + n);
+  }
+  return forms.join(' | ');
+}
+
+const { sceneAnchors } = require('./rebuild-guides');
 
 for (const book of entries) {
   const guide = '/guides/' + book.slug + '/';
   const name = String(book.title).split(';')[0].trim();
-  addEntry('Study guide', name + ' study guide', guide, book.author, name + ' ' + book.author + ' study guide notes summary analysis revision');
+  addEntry('Study guide', name + ' study guide', guide, book.author, name + ' ' + book.author, '', 'notes summary analysis revision');
   addEntry('Key quotations', name + ': key quotations', guide + 'quotations/', book.quotations.length + ' lines with references and analysis',
-    name + ' ' + book.author + ' quotes quotations quote key lines important');
+    name + ' ' + book.author + ' important', '', 'quotes quote lines');
   addEntry('Revise', 'Revise ' + name, '/play/?book=' + book.slug, 'Ten questions, quizzes and flashcards',
-    name + ' ' + book.author + ' revise revision quiz quizzes test practice practise flashcards questions');
+    name + ' ' + book.author + ' questions', '', 'revision quiz quizzes test practice practise flashcards');
   for (const [part, label, words] of GUIDE_PARTS) {
-    addEntry('Guide part', name + ': ' + label, guide + part + '/', book.author, name + ' ' + book.author + ' ' + words);
+    addEntry('Guide part', name + ': ' + label, guide + part + '/', book.author, name + ' ' + book.author, '', words);
+  }
+  // What happens, act by act and scene by scene: "Macbeth act 1 scene 7",
+  // "Christmas Carol stave 3", "Jane Eyre chapter 23".
+  const anchors = sceneAnchors(book);
+  const clip = text => (String(text).length > 84 ? String(text).slice(0, 82).replace(/\s+\S*$/, '') + '…' : String(text));
+  for (const stage of book.structure) {
+    addEntry('Scene', name + ', ' + stage.label, guide + 'what-happens/#' + stage.id, stage.title && stage.title !== stage.label ? stage.title : clip(stage.summary),
+      name + ' ' + stage.label + ' ' + (stage.title || ''), '', numberForms(name, stage.label));
+    for (const scene of stage.scenes || []) {
+      const ref = String(scene.ref);
+      const play = ref.match(/^(\d+)\.(\d+)$/);
+      const title = play ? name + ', Act ' + play[1] + ', Scene ' + play[2] : name + ', ' + ref;
+      const forms = play
+        ? name + ' ' + ref + (NUMBER_WORDS[play[1]] && NUMBER_WORDS[play[2]] ? ' | ' + name + ' Act ' + NUMBER_WORDS[play[1]] + ' Scene ' + NUMBER_WORDS[play[2]] : '')
+        : numberForms(name, ref);
+      addEntry('Scene', title, guide + 'what-happens/#' + anchors.get(scene), clip(scene.summary), name + ' ' + ref + ' ' + (scene.title || ''), '', forms);
+    }
   }
   for (const character of book.characters) {
     addEntry('Character', character.name, guide + 'characters/#astor-character-' + character.id, book.title, character.name + ' ' + book.title + ' ' + (character.role || ''));
@@ -299,10 +346,13 @@ for (const book of entries) {
   for (const technique of book.techniques) {
     addEntry('Technique', technique.name, '/explore/techniques/#' + technique.id, technique.definition, technique.name);
   }
+  // A line is also found by the themes it is filed under: "Macbeth ambition quotes".
+  const themeName = new Map(book.themes.map(theme => [theme.id, theme.name]));
   for (const quotation of book.quotations) {
+    const about = (quotation.themes || []).map(id => themeName.get(id)).filter(Boolean).join(' ');
     addEntry('Quotation', quotation.text.length > 76 ? quotation.text.slice(0, 74).trim() + '…' : quotation.text,
       guide + 'quotations/#astor-quote-' + quotation.id, [quotation.speaker, book.title + ' ' + quotation.reference].filter(Boolean).join(', '),
-      quotation.text + ' ' + (quotation.speaker || '') + ' ' + book.title);
+      quotation.text + ' ' + (quotation.speaker || '') + ' ' + book.title + ' ' + about);
   }
 }
 

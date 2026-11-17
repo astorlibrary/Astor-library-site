@@ -154,6 +154,8 @@ function render() {
     return;
   }
 
+  // A misspelling put right: say what was searched for instead.
+  if (found.note) list.append(el('li', {}, [el('p', { class: 'astor-palette-hint is-note', text: 'Showing results for “' + found.note + '”.' })]));
   for (const entry of found) list.append(row(entry));
   if (allLink) {
     allLink.hidden = false;
@@ -167,7 +169,7 @@ function render() {
 // belongs to, and what it takes to open it.
 function row(entry) {
   const info = kindInfo(entry.k);
-  return el('li', { role: 'option', id: 'astor-result-' + list.children.length, 'aria-selected': 'false' }, [
+  return el('li', { role: 'option', id: 'astor-result-' + list.querySelectorAll('[role=option]').length, 'aria-selected': 'false' }, [
     el('a', { href: entry.h }, [
       el('span', { class: 'astor-palette-kind', text: info.label }),
       el('span', { class: 'astor-palette-title' }, [

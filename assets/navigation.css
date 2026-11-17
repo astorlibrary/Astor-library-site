@@ -754,6 +754,7 @@ body:has(.astor-palette[open]) { overflow: hidden; }
 .astor-palette-hint:has(.astor-palette-all) { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 16px; }
 .astor-palette-all { color: var(--wine-text,var(--astor-nav-wine)); font-size: 14px; font-weight: 600; text-underline-offset: 3px; }
 .astor-palette-all[hidden] { display: none; }
+.astor-palette-hint.is-note { border-top: 0; padding: 8px 20px 4px; font-size: 13px; }
 /* What it takes to open a result: free on the web, a free account, a printed book. */
 .astor-palette-access { color: var(--text-muted,#5a514c); font-size: 12px; white-space: nowrap; }
 

@@ -166,14 +166,27 @@ function idSlug(text) {
   return String(text).toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
-function whatHappens(book) {
+// The address of each scene or chapter on What happens: the act's id, then
+// the scene's reference (act-1-1-7 for Macbeth 1.7), numbered where two in
+// one act would otherwise share an address. The search index uses the same
+// addresses, so "Macbeth act 1 scene 7" goes to the scene.
+function sceneAnchors(book) {
   const used = new Set(book.structure.map(stage => stage.id));
-  const sceneId = (stage, scene) => {
-    let id = stage.id + '-' + idSlug(scene.ref);
-    for (let n = 2; used.has(id); n++) id = stage.id + '-' + idSlug(scene.ref) + '-' + n;
-    used.add(id);
-    return id;
-  };
+  const anchors = new Map();
+  for (const stage of book.structure) {
+    for (const scene of stage.scenes || []) {
+      let id = stage.id + '-' + idSlug(scene.ref);
+      for (let n = 2; used.has(id); n++) id = stage.id + '-' + idSlug(scene.ref) + '-' + n;
+      used.add(id);
+      anchors.set(scene, id);
+    }
+  }
+  return anchors;
+}
+
+function whatHappens(book) {
+  const anchors = sceneAnchors(book);
+  const sceneId = (stage, scene) => anchors.get(scene);
   const stages = book.structure.map(stage => {
     const scenes = (stage.scenes || []).length
       ? '<dl class="guide-scenes">' + stage.scenes.map(scene =>
@@ -606,4 +619,4 @@ if (require.main === module) {
   console.log('Built ' + rebuildGuides() + ' study guides.');
 }
 
-module.exports = { SECTIONS, guideHref, rebuildGuides };
+module.exports = { SECTIONS, guideHref, rebuildGuides, sceneAnchors };

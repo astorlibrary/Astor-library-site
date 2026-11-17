@@ -94,7 +94,8 @@ function render(typed) {
     mount.append(el('p', { class: 'search-none', text: 'Try one word from the title or the line, or a writer’s surname. The lists at the foot of this page have every book, guide and close reading by name.' }));
     return;
   }
-  status.textContent = found.total + (found.total === 1 ? ' result' : ' results') + ' for “' + typed + '”';
+  status.textContent = found.total + (found.total === 1 ? ' result' : ' results') + ' for “' + (found.note || typed) + '”' +
+    (found.note ? '. Nothing matched “' + typed + '”, so this is the nearest spelling.' : '');
   for (const group of found.groups) mount.append(drawGroup(group, typed));
 }
 
