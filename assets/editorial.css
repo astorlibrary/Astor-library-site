@@ -5029,3 +5029,28 @@ main[data-hub="passage"] .passage-routes span a {
   color: var(--wine-text, var(--ed-wine));
   text-underline-offset: 3px;
 }
+
+/* My library on a first visit: what the page will hold. */
+.astor-dash-grid .astor-dash-welcome {
+  grid-column: 1 / -1;
+  max-width: 40rem;
+  padding: 18px 0;
+}
+
+.astor-dash-welcome p {
+  margin: 0;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 18px/1.6 var(--serif);
+}
+
+.astor-dash-welcome .astor-dash-welcome-links {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 24px;
+}
+
+.astor-dash-welcome-links a {
+  color: var(--wine-text, var(--ed-wine));
+  text-underline-offset: 3px;
+}

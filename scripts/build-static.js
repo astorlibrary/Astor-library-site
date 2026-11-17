@@ -422,7 +422,7 @@ function addResourceStructuredData(html, source) {
     breadcrumb: {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Free resources', item: absoluteUrl('/resources/') },
+        { '@type': 'ListItem', position: 1, name: 'Slide guides', item: absoluteUrl('/resources/') },
         ...(relatedBook ? [{ '@type': 'ListItem', position: 2, name: relatedBook.title, item: absoluteUrl(relatedBook.href) }] : []),
         { '@type': 'ListItem', position: relatedBook ? 3 : 2, name: resource.title, item: absoluteUrl(href) }
       ]
@@ -825,7 +825,7 @@ function addResourceReadingNavigation(html, source) {
     const middle = relatedBook
       ? '<a href="' + escapeHtml(relatedBook.href) + '">' + escapeHtml(relatedBook.title) + '</a><span aria-hidden="true">/</span>'
       : '';
-    const breadcrumb = '<nav class="book-breadcrumb resource-breadcrumb" aria-label="Breadcrumb"><a href="/resources/">Free resources</a><span aria-hidden="true">/</span>' + middle + '<span aria-current="page">' + escapeHtml(resource.title) + '</span></nav>';
+    const breadcrumb = '<nav class="book-breadcrumb resource-breadcrumb" aria-label="Breadcrumb"><a href="/resources/">Slide guides</a><span aria-hidden="true">/</span>' + middle + '<span aria-current="page">' + escapeHtml(resource.title) + '</span></nav>';
     const withIntro = html.replace('<section class="page-intro"', breadcrumb + '<section class="page-intro"');
     html = withIntro === html ? html.replace(/(<main\b[^>]*>)/i, '$1' + breadcrumb) : withIntro;
   }

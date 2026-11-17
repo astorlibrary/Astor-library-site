@@ -66,9 +66,22 @@ function renderDash(index) {
   const day = today();
   const due = studied.filter(card => card.due <= day).length;
 
+  // A first visit: say what the page will hold, not five zeros.
+  const titles = Object.keys(progress).length;
+  if (!savedBooks().length && !readStages && !commonplace().length && !played && !studied.length) {
+    mounts.dash.append(el('div', { class: 'astor-dash-welcome' }, [
+      el('p', { text: 'Nothing is kept here yet. As you use the site, this page gathers the books you save from a study guide, the sections you mark as read, the lines you keep from the key quotations, and your Revise scores. It is all stored in this browser, with no account.' }),
+      el('p', { class: 'astor-dash-welcome-links' }, [
+        el('a', { href: '/guides/', text: 'Open a study guide' }),
+        el('a', { href: '/play/', text: 'Start a Revise round' })
+      ])
+    ]));
+    return;
+  }
+
   const tiles = [
     ['Saved books', String(savedBooks().length), 'on your shelf.'],
-    ['Sections read', String(readStages), 'across ' + Object.keys(progress).length + ' ' + (Object.keys(progress).length === 1 ? 'title' : 'titles') + '.'],
+    ['Sections read', String(readStages), titles ? 'across ' + titles + ' ' + (titles === 1 ? 'title' : 'titles') + '.' : 'None marked yet.'],
     ['Quotations kept', String(commonplace().length), 'in your commonplace book.'],
     ['Quizzes done', String(played), played ? 'so far.' : 'Try one from Revise.'],
     ['Flashcards to review', String(due), !studied.length ? 'You haven’t started a deck yet.' : due ? 'of the ' + studied.length + ' cards you have studied.' : 'Nothing to review today.']
