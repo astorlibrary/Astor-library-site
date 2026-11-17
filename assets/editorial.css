@@ -702,6 +702,11 @@ html body :is(h2, h3):not(.home *, .season-page *, .rx-hero *, .rx-results *) {
   outline-offset: 2px;
 }
 
+/* "Print these 8" stands a little apart from "Show all 22". */
+.guide-find-status .guide-print {
+  margin-left: 14px;
+}
+
 /* One tap to the lines on a theme. */
 .guide-find-themes {
   margin: 12px 0 0;
