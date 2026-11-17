@@ -7,7 +7,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { loadBooks, validateAll, SET_TEXTS } = require('./book-data');
+const { loadBooks, validateAll } = require('./book-data');
 const { loadVocabulary } = require('./rebuild-vocabulary');
 
 const root = process.cwd();
@@ -183,9 +183,7 @@ fs.writeFileSync(path.join(root, 'assets', 'timeline-index.json'), JSON.stringif
         quotations: book.quotations.length, characters: book.characters.length,
         stages: book.structure.length,
         openingLine: book.openingLine || '',
-        quizzes: quizzesFor(book),
-        // Its place on the GCSE set-text list, for the row in "Choose a book".
-        ...(SET_TEXTS.includes(book.slug) ? { set: SET_TEXTS.indexOf(book.slug) + 1 } : {})
+        quizzes: quizzesFor(book)
       };
     })
   }) + '\n');

@@ -11,7 +11,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { loadBooks, SET_TEXTS } = require('./book-data');
+const { loadBooks } = require('./book-data');
 const { inScene, quoteOpening } = require('./book-places');
 
 const root = process.cwd();
@@ -26,6 +26,12 @@ const SECTIONS = [
   { slug: 'context', title: 'Context' }
 ];
 
+// AQA's GCSE English Literature set texts in the catalogue: the Shakespeare
+// plays, then the nineteenth-century novels, in the order the board lists them.
+const SET_TEXTS = [
+  'macbeth', 'romeo-and-juliet', 'the-tempest', 'the-merchant-of-venice', 'much-ado-about-nothing', 'julius-caesar',
+  'jekyll-and-hyde', 'a-christmas-carol', 'great-expectations', 'jane-eyre', 'frankenstein', 'pride-and-prejudice', 'sign-of-four'
+];
 const COLLECTION_ORDER = ['Shakespeare', 'Ancient & Epic', 'Renaissance & Early Modern', 'Restoration & Enlightenment', 'Romantic & Regency', 'Victorian', 'American Classics', 'Modern Classics', 'Russian'];
 
 function escapeHtml(value) {

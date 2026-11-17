@@ -247,18 +247,8 @@ function validateAll(books) {
   return books.flatMap(book => validateBook(book, book.fileName || (book.slug || 'unknown') + '.json'));
 }
 
-// AQA's GCSE English Literature set texts in the catalogue: the Shakespeare
-// plays, then the nineteenth-century novels, in the order the board lists them.
-// The Study guides page lists them first, and Revise offers them as a row
-// when a reader chooses a book.
-const SET_TEXTS = [
-  'macbeth', 'romeo-and-juliet', 'the-tempest', 'the-merchant-of-venice', 'much-ado-about-nothing', 'julius-caesar',
-  'jekyll-and-hyde', 'a-christmas-carol', 'great-expectations', 'jane-eyre', 'frankenstein', 'pride-and-prejudice', 'sign-of-four'
-];
-
 module.exports = {
   dataDirectory,
-  SET_TEXTS,
   FORMS,
   TIMELINE_KINDS,
   RELATIONSHIP_KINDS,

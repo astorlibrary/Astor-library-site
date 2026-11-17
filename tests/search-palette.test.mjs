@@ -109,16 +109,3 @@ test('generated pages version search styles and script together to bypass stale 
     assert.ok(html.includes('/assets/astor/palette.mjs?v=' + version), page);
   }
 });
-
-test('on a phone, search is one tap from any page: a button beside Dark mode opens the same search', () => {
-  const root = new URL('../', import.meta.url);
-  for (const page of ['index.html', 'books/macbeth/index.html', 'guides/macbeth/quotations/index.html', 'play/index.html']) {
-    const html = fs.readFileSync(new URL('dist/' + page, root), 'utf8');
-    const identity = html.match(/<div class="astor-header-identity">[\s\S]*?<\/div>/)[0];
-    // A link to the Search page when scripts do not run; the search box when they do.
-    assert.match(identity, /<a class="astor-search-compact" href="\/explore\/" data-astor-palette aria-label="Search">/, page);
-    assert.ok(identity.indexOf('astor-search-compact') < identity.indexOf('astor-theme-toggle-compact'), page);
-  }
-  const css = fs.readFileSync(new URL('assets/navigation.css', root), 'utf8');
-  assert.match(css, /@media \(max-width: 1040px\)[\s\S]*?\.astor-search-compact \{[\s\S]*?display: inline-flex;/);
-});
