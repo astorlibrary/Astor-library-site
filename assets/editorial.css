@@ -1303,12 +1303,30 @@ html body :is(h2, h3):not(.home *, .season-page *, .rx-hero *, .rx-results *) {
   .guide-links,
   .guide-read,
   .guide-keep,
-  .guide-map {
+  .guide-map,
+  .guide-jump,
+  .guide-line-index,
+  .guide-find label,
+  .guide-find input,
+  .guide-find-themes,
+  .guide-find-status button {
     display: none !important;
   }
 
   .guide-layout {
     display: block;
+  }
+
+  /* On paper the line saying what was chosen ("8 lines on Ambition") heads
+     the sheet, and no line is split across two pages. */
+  .guide-body .guide-find-status {
+    margin: 0 0 12pt;
+    color: #000;
+    font-size: 12pt;
+  }
+
+  .guide-quote {
+    break-inside: avoid;
   }
 }
 

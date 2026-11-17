@@ -115,3 +115,13 @@ test('Revise offers the GCSE set texts as a row when choosing a book, from the s
   assert.match(kit, /text: 'Set for GCSE'/);
   assert.match(kit, /setBlock\.hidden = Boolean\(words\.length \|\| period\)/);
 });
+
+test('a narrowed list of key quotations prints as a revision sheet', () => {
+  const script = read('assets/astor/guide.mjs');
+  assert.match(script, /class: 'guide-print', text: shown === 1 \? 'Print this line' : 'Print these ' \+ shown/);
+  assert.match(script, /window\.print\(\)/);
+  const css = read('assets/editorial.css');
+  const print = css.match(/@media print \{\s*\.guide-toc,[\s\S]*?\n\}/)[0];
+  for (const hidden of ['.guide-find input', '.guide-find-themes', '.guide-find-status button', '.guide-line-index']) assert.ok(print.includes(hidden), hidden);
+  assert.match(print, /\.guide-quote \{\s*break-inside: avoid;/);
+});
