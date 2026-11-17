@@ -48,6 +48,16 @@ test('the list of study guides has a find box that falls back to the Search page
   assert.match(page, /src="\/assets\/astor\/guides-find\.mjs"/);
   const entries = [...page.matchAll(/<li data-find="([^"]+)"><a href="\/guides\/([^/]+)\/">/g)];
   assert.equal(entries.length, loadBooks().length);
+  // The set texts come first, each with its key quotations and themes, and
+  // are left out of the find box's list so a book is found once.
+  const set = page.match(/<section class="guides-group guides-set"[\s\S]*?<\/section>/)[0];
+  assert.equal(page.indexOf(set) < page.indexOf('<section class="guides-group"><h2>'), true);
+  const setBooks = [...set.matchAll(/<li><a href="\/guides\/([^/]+)\/">/g)].map(match => match[1]);
+  assert.equal(setBooks.length, 13);
+  for (const slug of setBooks) {
+    assert.match(set, new RegExp('href="/guides/' + slug + '/quotations/">Key quotations</a><a href="/guides/' + slug + '/themes/">Themes</a>'));
+  }
+  assert.doesNotMatch(set, /data-find=/);
   const jekyll = entries.find(entry => entry[2] === 'jekyll-and-hyde');
   assert.match(jekyll[1], /Jekyll/);
   assert.match(jekyll[1], /Stevenson/);

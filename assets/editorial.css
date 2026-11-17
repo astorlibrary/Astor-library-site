@@ -1065,6 +1065,34 @@ html body :is(h2, h3):not(.home *, .season-page *, .rx-hero *, .rx-results *) {
   font: 400 15px/1.5 var(--sans);
 }
 
+/* The set texts, first on the list of guides. */
+.guides-set .guides-set-note {
+  max-width: 40rem;
+  margin: -4px 0 14px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.5 var(--sans);
+}
+
+.guides-set-list li {
+  padding: 0 0 8px;
+}
+
+.guides-set-list .guides-set-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 18px;
+  margin-top: -6px;
+  font: 400 14px/1.5 var(--sans);
+}
+
+.guides-set-list .guides-set-links a {
+  padding: 6px 0;
+  display: inline;
+  color: var(--wine-text, var(--ed-wine));
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .guides-group[hidden],
 .guides-list li[hidden] {
   display: none;

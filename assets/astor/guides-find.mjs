@@ -13,7 +13,10 @@ function start() {
   const input = form.querySelector('input');
   const status = form.querySelector('[data-guides-find-status]');
   const items = [...document.querySelectorAll('.guides-list li[data-find]')];
-  const groups = [...document.querySelectorAll('.guides-group')];
+  // The set texts are listed again in their collections; while a search is
+  // typed they step aside, so a book is found once.
+  const setGroup = document.querySelector('[data-guides-set]');
+  const groups = [...document.querySelectorAll('.guides-group')].filter(group => group !== setGroup);
   const text = new Map(items.map(item => [item, ' ' + fold(item.dataset.find) + ' ']));
 
   function shown() {
@@ -24,6 +27,7 @@ function start() {
     const words = fold(input.value).split(' ').filter(Boolean);
     for (const item of items) item.hidden = !words.every(word => text.get(item).includes(' ' + word) || (word.length > 3 && text.get(item).includes(word)));
     for (const group of groups) group.hidden = !group.querySelector('li[data-find]:not([hidden])');
+    if (setGroup) setGroup.hidden = words.length > 0;
     status.textContent = '';
     if (!words.length) return;
     const count = shown().length;
