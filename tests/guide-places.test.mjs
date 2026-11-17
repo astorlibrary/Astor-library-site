@@ -62,10 +62,20 @@ test('the not-found page searches for the words in the address', () => {
   assert.match(script, /shortlist\(entries, words/);
 });
 
-test('the paired Study Edition texts have hand-chosen evidence for every theme', () => {
+test('the paired Study Edition texts and the other GCSE set texts have hand-chosen evidence for every theme', () => {
   const books = new Map(loadBooks().map(book => [book.slug, book]));
-  for (const slug of ['macbeth', 'a-christmas-carol', 'pride-and-prejudice', 'jekyll-and-hyde', 'romeo-and-juliet']) {
-    for (const theme of books.get(slug).themes) {
+  const chosen = [
+    // The five texts in Astor's paired Study Editions.
+    'macbeth', 'a-christmas-carol', 'pride-and-prejudice', 'jekyll-and-hyde', 'romeo-and-juliet',
+    // The other nineteenth-century novels and Shakespeare plays set for GCSE English Literature.
+    'frankenstein', 'great-expectations', 'jane-eyre', 'sign-of-four',
+    'the-tempest', 'the-merchant-of-venice', 'much-ado-about-nothing', 'julius-caesar'
+  ];
+  for (const slug of chosen) {
+    const book = books.get(slug);
+    for (const theme of book.themes) {
+      // A theme with no key quotation filed under it has nothing to choose from.
+      if (!book.quotations.some(quotation => (quotation.themes || []).includes(theme.id))) continue;
       assert.ok(Array.isArray(theme.evidence) && theme.evidence.length, slug + ': ' + theme.id);
     }
   }
