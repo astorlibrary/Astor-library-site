@@ -12,8 +12,10 @@ const { loadBooks } = require('./book-data');
 const { accentFor, motifSvg, motifSvgByName, motifName, identityFor } = require('./book-motifs');
 const { restructureBookPage } = require('./book-page');
 const { plainHubPage } = require('./hub-pages');
+const { passageRoutes } = require('./passage-routes');
 const { searchDescription } = require('./text-excerpt');
 const { astorHomeCalendar } = require('./home-calendar-rules');
+const { astorHomeFeature } = require('./home-feature-rules');
 
 const root = process.cwd();
 const seasonalStylesVersion = require('crypto').createHash('sha256').update(fs.readFileSync(path.join(root, 'assets/seasons.css'))).digest('hex').slice(0, 10);
@@ -36,7 +38,7 @@ function versionOf(assetPath) {
 const VERSIONED_ASSETS = [
   '/assets/styles.css', '/assets/astor-study.css', '/assets/home.css', '/assets/seasons.css',
   '/assets/account.css', '/assets/presentation-viewer.css', '/assets/site.js', '/assets/catalogue.js',
-  '/assets/explore.js', '/assets/resources.js', '/assets/resource-library.js', '/assets/seasonal-theme.css',
+  '/assets/resources.js', '/assets/resource-library.js', '/assets/seasonal-theme.css',
   '/assets/theme.css', '/assets/editorial.css'
 ];
 
@@ -271,6 +273,16 @@ function passageContext(source) {
   return discovery.passages?.find(item => item.href === href) || null;
 }
 
+// A close reading ends with where to go next: its lines in the key
+// quotations, its scene, the study guide, Revise and the editions.
+function addPassageRoutes(html, source) {
+  const passage = passageContext(source);
+  if (!passage) return html;
+  const related = passage.relatedBooks || [];
+  const book = related.map(href => studyData.get(href.split('/')[2]) || studyEditions.get(href.split('/')[2])).find(Boolean) || null;
+  return passageRoutes(html, { book, bookHref: related[0] || '', discovery });
+}
+
 function studyContext(source) {
   const href = pageHref(source);
   if (!href.startsWith('/study/') || href === '/study/') return null;
@@ -410,7 +422,7 @@ function addResourceStructuredData(html, source) {
     breadcrumb: {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Free resources', item: absoluteUrl('/resources/') },
+        { '@type': 'ListItem', position: 1, name: 'Slide guides', item: absoluteUrl('/resources/') },
         ...(relatedBook ? [{ '@type': 'ListItem', position: 2, name: relatedBook.title, item: absoluteUrl(relatedBook.href) }] : []),
         { '@type': 'ListItem', position: relatedBook ? 3 : 2, name: resource.title, item: absoluteUrl(href) }
       ]
@@ -813,7 +825,7 @@ function addResourceReadingNavigation(html, source) {
     const middle = relatedBook
       ? '<a href="' + escapeHtml(relatedBook.href) + '">' + escapeHtml(relatedBook.title) + '</a><span aria-hidden="true">/</span>'
       : '';
-    const breadcrumb = '<nav class="book-breadcrumb resource-breadcrumb" aria-label="Breadcrumb"><a href="/resources/">Free resources</a><span aria-hidden="true">/</span>' + middle + '<span aria-current="page">' + escapeHtml(resource.title) + '</span></nav>';
+    const breadcrumb = '<nav class="book-breadcrumb resource-breadcrumb" aria-label="Breadcrumb"><a href="/resources/">Slide guides</a><span aria-hidden="true">/</span>' + middle + '<span aria-current="page">' + escapeHtml(resource.title) + '</span></nav>';
     const withIntro = html.replace('<section class="page-intro"', breadcrumb + '<section class="page-intro"');
     html = withIntro === html ? html.replace(/(<main\b[^>]*>)/i, '$1' + breadcrumb) : withIntro;
   }
@@ -1149,12 +1161,13 @@ function addGlobalNavigation(html, source) {
   const reviseCurrent = inRoute('/play/');
   const todayCurrent = href === '/today/';
   const booksMenuCurrent = booksSection || studyCurrent;
-  const exploreMenuCurrent = exploreSection || resourcesCurrent || passageCurrent;
+  const exploreMenuCurrent = exploreSection || resourcesCurrent || todayCurrent;
 
   const header = `<header class="site-header astor-global-header">
   <div class="astor-header-identity">
     <a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-header-mark.png" alt="" width="24" height="54"><span class="word">LIBRARY</span></a>
     <p class="astor-header-strap">Annotated editions of classic literature</p>
+    <a class="astor-search-compact" href="/explore/" data-astor-palette aria-label="Search"><span class="astor-search-icon" aria-hidden="true"></span></a>
     <button class="astor-theme-toggle-compact" type="button" data-theme-toggle aria-pressed="false" aria-label="Dark mode"><span class="astor-theme-icon" aria-hidden="true"></span></button>
     <button class="site-nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span>Menu</span><span class="site-nav-mark" aria-hidden="true"></span></button>
   </div>
@@ -1187,26 +1200,23 @@ function addGlobalNavigation(html, source) {
         </div>
       </details>
       <a class="nav-link" href="/guides/"${current(guidesCurrent, href === '/guides/')}>Study guides</a>
-      <a class="nav-link" href="/play/"${current(reviseCurrent, href === '/play/')}>Revise</a>
-      <a class="nav-link" href="/today/"${current(todayCurrent)}>Today</a>
+      <a class="nav-link" href="/play/"${current(reviseCurrent || todayCurrent, href === '/play/')}>Revise</a>
+      <a class="nav-link" href="/passage-room/"${current(passageCurrent, href === '/passage-room/')}>Close readings</a>
       <details class="astor-browse-menu astor-menu${exploreMenuCurrent ? ' is-current-section' : ''}">
         <summary aria-controls="astor-menu-explore"><span>Explore</span></summary>
         <div class="astor-browse-panel astor-menu-panel is-two" id="astor-menu-explore">
           <div class="astor-menu-col">
-            <h2>Reading</h2>
-            <a href="/passage-room/"${current(passageCurrent, href === '/passage-room/')}>Close readings</a>
-            <a href="/resources/"${current(resourcesCurrent, href === '/resources/')}>Illustrated guides</a>
+            <h2>More to read</h2>
+            <a href="/resources/"${current(resourcesCurrent, href === '/resources/')}>Slide guides</a>
             <a href="/reading-routes/"${current(readingRoutesCurrent, href === '/reading-routes/')}>Reading routes</a>
+            <a href="/today/"${current(todayCurrent)}>Today’s five questions</a>
           </div>
           <div class="astor-menu-col">
-            <h2>Across the library</h2>
+            <h2>Reference</h2>
             <a href="/explore/quotations/"${current(href === '/explore/quotations/')}>Quotations</a>
-            <a href="/explore/timeline/"${current(href === '/explore/timeline/')}>Timeline</a>
-            <a href="/explore/characters/"${current(href === '/explore/characters/')}>Character maps</a>
-            <a href="/explore/themes/"${current(href === '/explore/themes/')}>Themes</a>
             <a href="/explore/techniques/"${current(href === '/explore/techniques/')}>Literary terms</a>
-            <a href="/explore/map/"${current(href === '/explore/map/')}>Map of settings</a>
-            <a href="/explore/compare/"${current(href === '/explore/compare/')}>Compare two books</a>
+            <a href="/explore/timeline/"${current(href === '/explore/timeline/')}>Timeline</a>
+            <a href="/explore/"${current(href === '/explore/')}>Everything on the site</a>
           </div>
         </div>
       </details>
@@ -1224,7 +1234,7 @@ function addGlobalNavigation(html, source) {
   const footer = `<footer class="site-footer astor-global-footer">
   <div class="astor-footer-signature"><p class="footer-brand">Astor Library</p><p>Annotated editions of classic literature, with free study guides.</p></div>
   <div class="astor-footer-group"><h2>Books</h2><a href="/library/">All books</a><a href="/shakespeare/">Shakespeare</a><a href="/study/">Study Editions</a><a href="/hardbacks/">Hardbacks</a><a href="/seasons/">The seasonal library</a><a href="/authors/">Writers</a><a href="/subjects/">Subjects</a></div>
-  <div class="astor-footer-group"><h2>Study</h2><a href="/guides/">Study guides</a><a href="/play/">Revise</a><a href="/today/">Today</a><a href="/passage-room/">Close readings</a><a href="/resources/">Illustrated guides</a><a href="/explore/quotations/">Quotations</a><a href="/my-library/">My library</a></div>
+  <div class="astor-footer-group"><h2>Study</h2><a href="/guides/">Study guides</a><a href="/play/">Revise</a><a href="/today/">Today’s five questions</a><a href="/passage-room/">Close readings</a><a href="/resources/">Slide guides</a><a href="/explore/quotations/">Quotations</a><a href="/my-library/">My library</a></div>
   <div class="astor-footer-group"><h2>Astor</h2><a href="/about/">About</a><a href="/editorial/">Editorial standards</a><a href="/privacy/">Privacy</a><a href="mailto:support@astorlibrary.com">Contact</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a><a href="/site-index/">Site index</a></div>
 </footer>`;
 
@@ -1442,6 +1452,25 @@ function currentSeasonHero(html, source) {
   return html.slice(0, from + marker.length) + '\n  ' + hero + '\n  ' + html.slice(to);
 }
 
+// The homepage's close reading of the week, as the seasonal hero above it: the
+// committed page carries one reading, and the build puts in the one for the
+// day it runs. ASTOR_HOME_FEATURE=<slug> forces a reading.
+function currentHomeFeature(html, source) {
+  if (path.relative(root, source) !== 'index.html') return html;
+  const committed = (html.match(/data-home-feature="([a-z0-9-]+)"/) || [])[1];
+  if (!committed) return html;
+  const plan = JSON.parse(fs.readFileSync(path.join(__dirname, 'home-features.json'), 'utf8'));
+  const date = process.env.ASTOR_HOME_DATE ? new Date(process.env.ASTOR_HOME_DATE + 'T12:00:00') : new Date();
+  const today = process.env.ASTOR_HOME_FEATURE || astorHomeFeature(date, plan);
+  const fragment = path.join(root, 'assets', 'home-features', today + '.json');
+  if (!today || today === committed || !fs.existsSync(fragment)) return html;
+  const marker = '<!-- home-feature:start -->';
+  const from = html.indexOf(marker);
+  const to = html.indexOf('<script data-home-feature-calendar>', from);
+  if (from === -1 || to === -1) return html;
+  return html.slice(0, from + marker.length) + '\n  ' + JSON.parse(fs.readFileSync(fragment, 'utf8')).html + '\n  ' + html.slice(to);
+}
+
 // The house style sets a curly apostrophe, but titles and older pages carry
 // the straight one, so a list could show "A Midsummer Night's Dream" beside
 // "Love’s Labour’s Lost". In the text a reader sees (not in scripts, code,
@@ -1453,6 +1482,7 @@ function curlApostrophes(html) {
 
 function prepareHtml(html, source) {
   html = currentSeasonHero(html, source);
+  html = currentHomeFeature(html, source);
   html = html.replace(/(<span data-count="books">)\d+(<\/span>)/g, '$1' + catalogueBookCount + '$2');
   // The site publishes British English and stamps en-GB metadata everywhere;
   // normalise the bare lang="en" used by older source pages to match.
@@ -1480,6 +1510,7 @@ function prepareHtml(html, source) {
     html = addContextImageShelf(html, source);
     html = markCollectionPage(html, source);
     html = addStudyEditionPage(html, source);
+    html = addPassageRoutes(html, source);
     html = plainHubPage(html, pageHref(source), discovery);
   }
   html = addReviseShelf(html);

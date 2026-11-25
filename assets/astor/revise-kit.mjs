@@ -17,7 +17,7 @@ export const QUIZZES = [
   { id: 'who-said-it', name: 'Who said it?', note: 'Read a line and name who says it.', group: 'words' },
   { id: 'fill-the-line', name: 'Fill the line', note: 'Put the missing words back.', group: 'words' },
   { id: 'theme-match', name: 'Theme match', note: 'Match a line to the theme it carries.', group: 'ideas' },
-  { id: 'technique-spotter', name: 'Technique spotter', note: 'Name the technique doing the work.', group: 'ideas' },
+  { id: 'technique-spotter', name: 'Technique spotter', note: 'Name the technique a line is using.', group: 'ideas' },
   { id: 'character-identification', name: 'Who is this?', note: 'Name a character from a description.', group: 'people' },
   { id: 'order-the-plot', name: 'Order the plot', note: 'Put the story back in order.', group: 'people' }
 ];
@@ -589,6 +589,14 @@ export function openShelf({ books, current, recentSlugs = [], onChoose, heading 
     el('ul', { class: 'rx-shelf-grid is-row' }, recent.map(tile))
   ]) : null;
 
+  // The GCSE set texts as a row of their own, after the reader's recent
+  // books: the likeliest choices for somebody revising for an exam.
+  const setTexts = books.filter(book => book.set).sort((a, b) => a.set - b.set);
+  const setBlock = setTexts.length > 1 ? el('section', { class: 'rx-shelf-section' }, [
+    el('h3', { text: 'Set for GCSE' }),
+    el('ul', { class: 'rx-shelf-grid is-row is-strip' }, setTexts.map(tile))
+  ]) : null;
+
   const grid = el('ul', { class: 'rx-shelf-grid' });
   const count = el('p', { class: 'rx-shelf-count', 'aria-live': 'polite' });
   const draw = () => {
@@ -599,6 +607,7 @@ export function openShelf({ books, current, recentSlugs = [], onChoose, heading 
     for (const book of shown) grid.append(tile(book));
     count.textContent = shown.length === books.length ? books.length + ' books' : shown.length + ' of ' + books.length + ' books';
     if (recentBlock) recentBlock.hidden = Boolean(words.length || period);
+    if (setBlock) setBlock.hidden = Boolean(words.length || period);
     if (!shown.length) grid.append(el('li', { class: 'rx-shelf-none', text: 'No book matches that. Try part of the title or the author’s surname.' }));
   };
   search.addEventListener('input', draw);
@@ -609,7 +618,7 @@ export function openShelf({ books, current, recentSlugs = [], onChoose, heading 
       el('button', { type: 'button', class: 'rx-shelf-close', 'aria-label': 'Close', html: '&times;', onclick: close })
     ]),
     el('div', { class: 'rx-shelf-tools' }, [search, chips.childNodes.length ? chips : null]),
-    el('div', { class: 'rx-shelf-body' }, [recentBlock, el('section', { class: 'rx-shelf-section' }, [
+    el('div', { class: 'rx-shelf-body' }, [recentBlock, setBlock, el('section', { class: 'rx-shelf-section' }, [
       el('div', { class: 'rx-shelf-section-head' }, [el('h3', { text: 'All books' }), count]),
       grid
     ])])
@@ -697,6 +706,21 @@ export function studyBar(head, { books, meta, icons, active, onChoose, allBooks 
   head.rxEdges = edges;
   window.addEventListener('resize', edges);
   head.append(bar, row);
+  // The same activities again, as plain links under the round. While a round
+  // is running the row above is put away and this list is where they are.
+  const after = (head.closest('main') || document).querySelector('#rv-after');
+  if (after) {
+    clear(after);
+    const others = ACTIVITIES.filter(activity => hasActivity(meta, activity.id) && activity.id !== active);
+    after.hidden = !others.length;
+    after.append(
+      el('p', { class: 'rx-after-title', text: 'More ways to revise ' + shortTitle(meta) }),
+      el('ul', {}, [
+        ...others.map(activity => el('li', {}, [el('a', { href: activityHref(activity.id, meta.slug), text: activity.name || activity.short })])),
+        el('li', {}, [el('a', { href: '/guides/' + encodeURIComponent(meta.slug) + '/quotations/', text: 'Read the key quotations' })])
+      ])
+    );
+  }
   if (meta.edition) coverBand(head.closest('main') || undefined);
   // Keep the current activity in view on a narrow screen, without moving the page.
   requestAnimationFrame(() => {

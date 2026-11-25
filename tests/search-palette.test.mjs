@@ -25,8 +25,9 @@ function setup(fetch) {
   const document = { body: new Element('body'), activeElement: trigger, createElement: tag => new Element(tag), addEventListener() {}, querySelectorAll: () => [trigger] };
   const context = vm.createContext({ document, fetch, encodeURIComponent });
   const util = fs.readFileSync(new URL('../assets/astor/util.mjs', import.meta.url), 'utf8').replaceAll('export ', '');
+  const search = fs.readFileSync(new URL('../assets/astor/search.mjs', import.meta.url), 'utf8').replaceAll('export ', '');
   const source = fs.readFileSync(new URL('../assets/astor/palette.mjs', import.meta.url), 'utf8').replace(/^import .*;$/gm, '');
-  vm.runInContext(util + '\n' + source, context);
+  vm.runInContext(util + '\n' + search + '\n' + source, context);
   return { run: code => vm.runInContext(code, context), clicked: () => clicked, trigger };
 }
 
@@ -107,4 +108,17 @@ test('generated pages version search styles and script together to bypass stale 
     assert.ok(html.includes('/assets/navigation.css?v=' + version), page);
     assert.ok(html.includes('/assets/astor/palette.mjs?v=' + version), page);
   }
+});
+
+test('on a phone, search is one tap from any page: a button beside Dark mode opens the same search', () => {
+  const root = new URL('../', import.meta.url);
+  for (const page of ['index.html', 'books/macbeth/index.html', 'guides/macbeth/quotations/index.html', 'play/index.html']) {
+    const html = fs.readFileSync(new URL('dist/' + page, root), 'utf8');
+    const identity = html.match(/<div class="astor-header-identity">[\s\S]*?<\/div>/)[0];
+    // A link to the Search page when scripts do not run; the search box when they do.
+    assert.match(identity, /<a class="astor-search-compact" href="\/explore\/" data-astor-palette aria-label="Search">/, page);
+    assert.ok(identity.indexOf('astor-search-compact') < identity.indexOf('astor-theme-toggle-compact'), page);
+  }
+  const css = fs.readFileSync(new URL('assets/navigation.css', root), 'utf8');
+  assert.match(css, /@media \(max-width: 1040px\)[\s\S]*?\.astor-search-compact \{[\s\S]*?display: inline-flex;/);
 });

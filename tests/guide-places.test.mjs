@@ -1,0 +1,146 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import { createRequire } from 'node:module';
+
+const require = createRequire(import.meta.url);
+const { inScene, quoteOpening } = require('../scripts/book-places.js');
+const { loadBooks } = require('../scripts/book-data.js');
+const read = path => fs.readFileSync(new URL('../' + path, import.meta.url), 'utf8');
+
+test('a quotation is placed in the scene its reference falls in', () => {
+  assert.equal(inScene('2.1.32', '2.1', true), true);
+  assert.equal(inScene('2.1.32', '2.2', true), false);
+  assert.equal(inScene('Chapter 23', 'Chapters 22-23', false), true);
+  assert.equal(inScene('Chapter II', 'Chapters I-II', false), true);
+  assert.equal(inScene('18.1–2', 'Sonnet 18', false), true);
+  assert.equal(inScene('Story of the Door', 'Story of the Door', false), true);
+  assert.equal(inScene('Stave I', 'Counting house', false), false);
+});
+
+test('a quotation is shortened at a natural break and keeps its speech marks balanced', () => {
+  assert.equal(quoteOpening('Fair is foul, and foul is fair: / Hover through the fog and filthy air.'), '“Fair is foul, and foul is fair”');
+  assert.equal(quoteOpening('the moment I choose, I can be rid of Mr. Hyde.'), '“the moment I choose, I can be rid of Mr. Hyde.”');
+  assert.equal(quoteOpening('“Are there no prisons?” asked Scrooge.'), '“Are there no prisons?” asked Scrooge.');
+  for (const book of loadBooks()) {
+    for (const quotation of book.quotations) {
+      const short = quoteOpening(quotation.text);
+      assert.equal((short.match(/“/g) || []).length, (short.match(/”/g) || []).length, book.slug + ': ' + short);
+      assert.ok(short.split(/\s+/).length <= 14, book.slug + ': ' + short);
+    }
+  }
+});
+
+test('What happens lists each scene’s key lines, and each one exists', () => {
+  const page = read('guides/macbeth/what-happens/index.html');
+  const scene = page.match(/<div id="act-1-1-5">[\s\S]*?<\/div>/)[0];
+  assert.match(scene, /Key lines/);
+  const quotations = read('guides/macbeth/quotations/index.html');
+  for (const [, id] of page.matchAll(/href="\/guides\/macbeth\/quotations\/#(astor-quote-[^"]+)"/g)) {
+    assert.match(quotations, new RegExp('id="' + id + '"'), id);
+  }
+});
+
+test('the list of study guides has a find box that falls back to the Search page', () => {
+  const page = read('guides/index.html');
+  assert.match(page, /<form class="guides-find" action="\/explore\/" role="search" data-guides-find>/);
+  assert.match(page, /<input id="guides-find-input" name="q"/);
+  assert.match(page, /src="\/assets\/astor\/guides-find\.mjs"/);
+  const entries = [...page.matchAll(/<li data-find="([^"]+)"><a href="\/guides\/([^/]+)\/">/g)];
+  assert.equal(entries.length, loadBooks().length);
+  // The set texts come first, each with its key quotations and themes, and
+  // are left out of the find box's list so a book is found once.
+  const set = page.match(/<section class="guides-group guides-set"[\s\S]*?<\/section>/)[0];
+  assert.equal(page.indexOf(set) < page.indexOf('<section class="guides-group"><h2>'), true);
+  const setBooks = [...set.matchAll(/<li><a href="\/guides\/([^/]+)\/">/g)].map(match => match[1]);
+  assert.equal(setBooks.length, 13);
+  for (const slug of setBooks) {
+    assert.match(set, new RegExp('href="/guides/' + slug + '/quotations/">Key quotations</a><a href="/guides/' + slug + '/themes/">Themes</a>'));
+  }
+  assert.doesNotMatch(set, /data-find=/);
+  const jekyll = entries.find(entry => entry[2] === 'jekyll-and-hyde');
+  assert.match(jekyll[1], /Jekyll/);
+  assert.match(jekyll[1], /Stevenson/);
+});
+
+test('the not-found page searches for the words in the address', () => {
+  const page = read('404.html');
+  assert.match(page, /<form class="search-form not-found-search" role="search" action="\/explore\/"/);
+  assert.match(page, /src="\/assets\/astor\/not-found\.mjs"/);
+  assert.match(page, /data-not-found hidden/);
+  const script = read('assets/astor/not-found.mjs');
+  assert.match(script, /shortlist\(entries, words/);
+});
+
+test('the GCSE set texts and the A-level texts most often studied have hand-chosen evidence for every theme', () => {
+  const books = new Map(loadBooks().map(book => [book.slug, book]));
+  const chosen = [
+    // The five texts in Astor's paired Study Editions.
+    'macbeth', 'a-christmas-carol', 'pride-and-prejudice', 'jekyll-and-hyde', 'romeo-and-juliet',
+    // The other nineteenth-century novels and Shakespeare plays set for GCSE English Literature.
+    'frankenstein', 'great-expectations', 'jane-eyre', 'sign-of-four',
+    'the-tempest', 'the-merchant-of-venice', 'much-ado-about-nothing', 'julius-caesar',
+    // Texts often studied at A-level.
+    'hamlet', 'othello', 'king-lear', 'wuthering-heights', 'dracula', 'dorian-gray', 'the-great-gatsby', 'tess-of-the-durbervilles'
+  ];
+  for (const slug of chosen) {
+    const book = books.get(slug);
+    for (const theme of book.themes) {
+      // A theme with no key quotation filed under it has nothing to choose from.
+      if (!book.quotations.some(quotation => (quotation.themes || []).includes(theme.id))) continue;
+      assert.ok(Array.isArray(theme.evidence) && theme.evidence.length, slug + ': ' + theme.id);
+    }
+  }
+});
+
+test('key quotations can be narrowed to one theme with a tap, at an address that can be shared', () => {
+  for (const book of loadBooks()) {
+    const page = read('guides/' + book.slug + '/quotations/index.html');
+    const filed = book.themes.filter(theme => book.quotations.some(quotation => (quotation.themes || []).includes(theme.id)));
+    const row = (page.match(/<p class="guide-find-themes">[\s\S]*?<\/p>/) || [''])[0];
+    if (filed.length < 2) { assert.equal(row, '', book.slug); continue; }
+    const links = [...row.matchAll(/<a href="\?theme=([^"]+)" data-theme="\1">/g)].map(match => match[1]);
+    assert.deepEqual(links, filed.map(theme => theme.id), book.slug);
+  }
+  const script = read('assets/astor/guide.mjs');
+  assert.match(script, /searchParams\.set\('theme', theme\)/);
+});
+
+test('Revise offers the GCSE set texts as a row when choosing a book, from the same list as Study guides', () => {
+  const { SET_TEXTS } = require('../scripts/book-data.js');
+  const shelf = JSON.parse(read('assets/revise-index.json'));
+  const marked = shelf.books.filter(book => book.set).sort((a, b) => a.set - b.set).map(book => book.slug);
+  assert.deepEqual(marked, SET_TEXTS);
+  const guides = read('guides/index.html').match(/<section class="guides-group guides-set"[\s\S]*?<\/section>/)[0];
+  assert.deepEqual([...guides.matchAll(/<li><a href="\/guides\/([^/]+)\/">/g)].map(match => match[1]), SET_TEXTS);
+  const kit = read('assets/astor/revise-kit.mjs');
+  assert.match(kit, /text: 'Set for GCSE'/);
+  assert.match(kit, /setBlock\.hidden = Boolean\(words\.length \|\| period\)/);
+});
+
+test('a narrowed list of key quotations prints as a revision sheet', () => {
+  const script = read('assets/astor/guide.mjs');
+  assert.match(script, /class: 'guide-print', text: shown === 1 \? 'Print this line' : 'Print these ' \+ shown/);
+  assert.match(script, /window\.print\(\)/);
+  const css = read('assets/editorial.css');
+  const print = css.match(/@media print \{\s*\.guide-toc,[\s\S]*?\n\}/)[0];
+  for (const hidden of ['.guide-find input', '.guide-find-themes', '.guide-find-status button', '.guide-line-index']) assert.ok(print.includes(hidden), hidden);
+  assert.match(print, /\.guide-quote \{\s*break-inside: avoid;/);
+});
+
+test('each character lists their key lines, and Key quotations can show one character’s lines', () => {
+  const page = read('guides/macbeth/characters/index.html');
+  const lady = page.match(/<section class="guide-entry" id="astor-character-lady-macbeth">[\s\S]*?<\/section>/)[0];
+  const shown = [...lady.matchAll(/<a href="\/guides\/macbeth\/quotations\/#astor-quote-([^"]+)">/g)].map(match => match[1]);
+  assert.equal(shown.length, 3);
+  assert.match(lady, /<a class="guide-entry-all" href="\/guides\/macbeth\/quotations\/\?character=lady-macbeth">All 7 lines<\/a>/);
+  // Macbeth's own lines come first, in the order of the play: 1.4 before 1.7.
+  const macbeth = page.match(/<section class="guide-entry" id="astor-character-macbeth">[\s\S]*?<\/section>/)[0];
+  assert.match(macbeth, /#astor-quote-stars-hide-your-fires">[^<]*<\/a>/);
+  assert.ok(macbeth.indexOf('stars-hide-your-fires') < macbeth.indexOf('vaulting-ambition'));
+  const quotations = read('guides/macbeth/quotations/index.html');
+  assert.match(quotations, /data-characters="\{[^"]*lady-macbeth[^"]*\}"/);
+  assert.equal((quotations.match(/data-characters="[^"{]*\blady-macbeth\b[^"]*"/g) || []).length, 7);
+  const script = read('assets/astor/guide.mjs');
+  assert.match(script, /params\.get\('character'\)/);
+});
